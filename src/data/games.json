@@ -1,0 +1,20 @@
+{
+  "games": {
+    "snakegame": {
+      "title": "Snake Game",
+      "image": "/images/games/snakegame.png",
+      "genre": "Arcade",
+      "description": "Eat apples to grow and avoid crashing into walls or yourself."
+    },
+    "spidergame": {
+      "title": "Spider Game",
+      "image": "/images/games/spidergame.png",
+      "genre": "Action",
+      "description": "Swing on webs, climb and dodge traps."
+    }
+  },
+  "sections": {
+    "featured": ["snakegame"],
+    "new": ["spidergame"]
+  }
+}

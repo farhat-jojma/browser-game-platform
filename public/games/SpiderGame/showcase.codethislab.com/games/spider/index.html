@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SPIDER SOLITAIRE</title>
+        <link rel="stylesheet" href="css/reset.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel="stylesheet" href="css/orientation_utils.css" type="text/css">
+        <link rel="stylesheet" href="css/ios_fullscreen.css" type="text/css">
+        <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+        <meta name="msapplication-tap-highlight" content="no" />
+
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/easeljs-NEXT.min.js"></script>
+        <script type="text/javascript" src="js/howler.min.js"></script>
+        <script type="text/javascript" src="js/CLang.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+        
+
+        <script>
+            window["GD_OPTIONS"] = {
+    "gameId": "4ddd996c793145fe8a1a5be3085a3a62",
+    "onEvent": function(event) {
+        switch (event.name) {
+            case "SDK_GAME_START":
+                // advertisement done, resume game logic and unmute audio
+                break;
+            case "SDK_GAME_PAUSE":
+                // pause game logic / mute audio
+                break;
+            case "SDK_GDPR_TRACKING":
+                // this event is triggered when your user doesn't want to be tracked
+                break;
+            case "SDK_GDPR_TARGETING":
+                // this event is triggered when your user doesn't want personalised targeting of ads and such
+                break;
+            case "SDK_REWARDED_WATCH_COMPLETE":
+                // this event is triggered when your user completely watched rewarded ad
+                break;
+        }
+    },
+};
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = 'https://html5.api.gamedistribution.com/main.min.js';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'gamedistribution-jssdk'));
+        </script>
+    </head>
+
+    <body ondragstart="return false;" ondrop="return false;">
+        <div style="position: fixed; background-color: transparent; top: 0px; left: 0px; width: 100%; height: 100%"></div>
+        <script>
+            $(document).ready(function() {
+                var oMain = new CMain({
+
+                    points_to_lose: -1, //Number of losing points per move
+                    points_to_win: 100, //Points win by a complete flush                                           
+                    fullscreen: true, //SET THIS TO FALSE IF YOU DON'T WANT TO SHOW FULLSCREEN BUTTON
+                    check_orientation: false, //SET TO FALSE IF YOU DON'T WANT TO SHOW ORIENTATION ALERT ON MOBILE DEVICES        
+                    audio_enable_on_startup: false, //ENABLE/DISABLE AUDIO WHEN GAME STARTS 
+                });
+
+
+                $(oMain).on("start_session", function(evt) {
+                    if (getParamValue('ctl-arcade') === "true") {
+                        parent.__ctlArcadeStartSession();
+                    }
+                    //...ADD YOUR CODE HERE EVENTUALLY
+                });
+
+                $(oMain).on("end_session", function(evt) {
+                    if (getParamValue('ctl-arcade') === "true") {
+                        parent.__ctlArcadeEndSession();
+                    }
+                    //...ADD YOUR CODE HERE EVENTUALLY
+                });
+
+                $(oMain).on("restart_level", function(evt, iLevel) {
+                    if (getParamValue('ctl-arcade') === "true") {
+                        parent.__ctlArcadeRestartLevel({
+                            level: iLevel
+                        });
+                    }
+                    //...ADD YOUR CODE HERE EVENTUALLY
+                });
+
+                $(oMain).on("save_score", function(evt, iScore, szMode) {
+                    if (getParamValue('ctl-arcade') === "true") {
+                        parent.__ctlArcadeSaveScore({
+                            score: iScore,
+                            mode: szMode
+                        });
+                    }
+                    //...ADD YOUR CODE HERE EVENTUALLY
+                });
+
+                $(oMain).on("start_level", function(evt, iLevel) {
+                    if (getParamValue('ctl-arcade') === "true") {
+                        parent.__ctlArcadeStartLevel({
+                            level: iLevel
+                        });
+                    }
+                    //...ADD YOUR CODE HERE EVENTUALLY
+                });
+
+                $(oMain).on("end_level", function(evt, iLevel) {
+                    if (getParamValue('ctl-arcade') === "true") {
+                        parent.__ctlArcadeEndLevel({
+                            level: iLevel
+                        });
+                    }
+                    //...ADD YOUR CODE HERE EVENTUALLY
+                });
+
+                $(oMain).on("show_interlevel_ad", function(evt) {
+                    if (getParamValue('ctl-arcade') === "true") {
+                        parent.__ctlArcadeShowInterlevelAD();
+                    }
+                    //...ADD YOUR CODE HERE EVENTUALLY
+                });
+
+                $(oMain).on("share_event", function(evt, iScore) {
+                    if (getParamValue('ctl-arcade') === "true") {
+                        parent.__ctlArcadeShareEvent({
+                            img: TEXT_SHARE_IMAGE,
+                            title: TEXT_SHARE_TITLE,
+                            msg: TEXT_SHARE_MSG1 + iScore + TEXT_SHARE_MSG2,
+                            msg_share: TEXT_SHARE_SHARE1 + iScore + TEXT_SHARE_SHARE1
+                        });
+                    }
+                    //...ADD YOUR CODE HERE EVENTUALLY
+                });
+
+                if (isIOS()) {
+                    setTimeout(function() {
+                        sizeHandler();
+                    }, 200);
+                } else {
+                    sizeHandler();
+                }
+            });
+        </script>
+
+        <div class="check-fonts">
+            <p class="check-font-1">bubblegumregular</p>
+        </div>
+
+        <canvas id="canvas" class='ani_hack' width="1600" height="768"> </canvas>
+        <div data-orientation="landscape" class="orientation-msg-container">
+            <p class="orientation-msg-text">Please rotate your device</p>
+        </div>
+        <div id="block_game" style="position: fixed; background-color: transparent; top: 0px; left: 0px; width: 100%; height: 100%; display:none"></div>
+        
+        <!-- AD BREAK OVERLAY -->
+        <div id="adBreakOverlay" style="
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+            font-family: Arial, sans-serif;
+            color: rgb(255, 255, 255);
+            z-index: 9999;
+            display: none;">
+            AD BREAK
+        </div>
+
+        <script>
+                function showAdBreak() {
+            const overlay = document.getElementById('adBreakOverlay');
+            overlay.style.display = 'flex';
+
+            setTimeout(() => {
+            overlay.style.display = 'none';
+
+            // Show ad banner if SDK is ready
+            if (typeof gdsdk !== 'undefined' && gdsdk.showAd !== 'undefined') {
+         gdsdk.showAd();
+            }
+            }, 3000);
+        }
+
+        // Start repeating every 30 seconds
+        setInterval(showAdBreak, 180000);
+        </script>
+
+    </body>
+
+</html>

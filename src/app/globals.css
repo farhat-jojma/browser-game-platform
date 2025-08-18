@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Hide horizontal scrollbar in carousels */
+.scroller::-webkit-scrollbar { display: none; }
+.scroller { scrollbar-width: none; -ms-overflow-style: none; }
+
+/* Simple shimmering skeleton */
+.skeleton {
+  background: linear-gradient(90deg, rgba(255,255,255,.08), rgba(255,255,255,.14), rgba(255,255,255,.08));
+  background-size: 200% 100%;
+  animation: skeleton 1.2s ease-in-out infinite;
+}
+@keyframes skeleton {
+  0% { background-position: 0 0; }
+  100% { background-position: -200% 0; }
+}

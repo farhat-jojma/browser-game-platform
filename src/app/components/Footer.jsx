@@ -1,11 +1,11 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-gray-300 py-6 mt-10">
-      <div className="container mx-auto text-center">
-        <p className="text-sm">&copy; {new Date().getFullYear()} Browser Game Platform. All rights reserved.</p>
+    <footer className="mt-8 border-t border-white/5">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-sm text-white/60">
+        © {new Date().getFullYear()} Browser Game Platform. All rights reserved.
         <div className="mt-2 space-x-4">
-          <a href="#" className="hover:text-yellow-400">Privacy Policy</a>
-          <a href="#" className="hover:text-yellow-400">Terms of Service</a>
+          <a className="hover:text-white" href="#">Privacy Policy</a>
+          <a className="hover:text-white" href="#">Terms of Service</a>
         </div>
       </div>
     </footer>

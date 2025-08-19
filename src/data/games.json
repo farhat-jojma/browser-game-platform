@@ -11,199 +11,232 @@
       "title": "Color Water Sort",
       "image": "/images/games/color-water-sort.png",
       "genre": "Puzzle",
-      "playPath": "/games/ColorWaterSort/index.html"
+      "playPath": "/games/ColorWaterSort/index.html",
+      "description": "/games/ColorWaterSort/description.html"
     },
     "drag-slam": {
       "title": "Drag Slam",
       "image": "/images/games/DragSlam.png",
       "genre": "Adventure",
-      "playPath": "/games/DragSlam/index.html"
+      "playPath": "/games/DragSlam/index.html",
+      "description": "/games/DragSlam/description.html"
     },
     "dungeon-quest": {
       "title": "Dungeon Quest",
       "image": "/images/games/dungeon-quest.png",
       "genre": "Adventure",
-      "playPath": "/games/DungeonQuest/index.html"
+      "playPath": "/games/DungeonQuest/index.html",
+      "description": "/games/DungeonQuest/description.html"
     },
     "dunk-drawing": {
       "title": "Dunk Drawing",
       "image": "/images/games/dunk-drawing.png",
       "genre": "Sports",
-      "playPath": "/games/DunkDrawing/index.html"
+      "playPath": "/games/DunkDrawing/index.html",
+      "description": "/games/DunkDrawing/description.html"
     },
     "foot-pong": {
       "title": "Foot Pong",
       "image": "/images/games/foot-pong.png",
       "genre": "Sports",
-      "playPath": "/games/FootPong/index.html"
+      "playPath": "/games/FootPong/index.html",
+      "description": "/games/FootPong/description.html"
     },
     "fruit-party": {
       "title": "Fruit Party",
       "image": "/images/games/fruit-party.avif",
       "genre": "Puzzle",
-      "playPath": "/games/FruitParty/index.html"
+      "playPath": "/games/FruitParty/index.html",
+      "description": "/games/FruitParty/description.html"
     },
     "granny-hero": {
       "title": "Granny Hero",
       "image": "/images/games/granny-hero.png",
       "genre": "Action",
-      "playPath": "/games/GrannyHero/index.html"
+      "playPath": "/games/GrannyHero/index.html",
+      "description": "/games/GrannyHero/description.html"
     },
     "hero-blaster": {
       "title": "Hero Blaster",
       "image": "/images/games/hero-blaster.png",
       "genre": "Shooter",
-      "playPath": "/games/HeroBlaster/index.html"
+      "playPath": "/games/HeroBlaster/index.html",
+      "description": "/games/HeroBlaster/description.html"
     },
     "invace-spaders": {
       "title": "Invace Spaders",
       "image": "/images/games/invace-spaders.png",
       "genre": "Shooter",
-      "playPath": "/games/InvaceSpaders/index.html"
+      "playPath": "/games/InvaceSpaders/index.html",
+      "description": "/games/InvaceSpaders/description.html"
     },
     "math-tiles": {
       "title": "Math Tiles",
       "image": "/images/games/mathup.png",
       "genre": "Brain",
-      "playPath": "/games/MathTiles/index.html"
+      "playPath": "/games/MathTiles/index.html",
+      "description": "/games/MathTiles/description.html"
     },
     "mathup": {
       "title": "MathUp",
       "image": "/images/games/mathup.png",
       "genre": "Brain",
-      "playPath": "/games/MathUp/index.html"
+      "playPath": "/games/MathUp/index.html",
+      "description": "/games/MathUp/description.html"
     },
     "neon-pong": {
       "title": "Neon Pong",
       "image": "/images/games/neon-pong.jpg",
       "genre": "Arcade",
-      "playPath": "/games/NeonPong/index.html"
+      "playPath": "/games/NeonPong/index.html",
+      "description": "/games/NeonPong/description.html"
     },
     "neon-rider": {
       "title": "Neon Rider",
       "image": "/images/games/neon-rider.png",
       "genre": "Bike",
-      "playPath": "/games/NeonRider/index.html"
+      "playPath": "/games/NeonRider/index.html",
+      "description": "/games/NeonRider/description.html"
     },
     "pac-chef": {
       "title": "Pac Chef",
       "image": "/images/games/pac-chef.png",
       "genre": "Arcade",
-      "playPath": "/games/PacChef/index.html"
+      "playPath": "/games/PacChef/index.html",
+      "description": "/games/PacChef/description.html"
     },
     "pac-rat": {
       "title": "Pac Rat",
       "image": "/images/games/pac-rat.jpg",
       "genre": "Arcade",
-      "playPath": "/games/PacRat/index.html"
+      "playPath": "/games/PacRat/index.html",
+      "description": "/games/PacRat/description.html"
     },
     "pink-and-blue": {
       "title": "Pink and Blue",
       "image": "/images/games/pink-and-blue.png",
       "genre": "Puzzle Platformer",
-      "playPath": "/games/PinkAndBlue/index.html"
+      "playPath": "/games/PinkAndBlue/index.html",
+      "description": "/games/PinkAndBlue/description.html"
     },
     "retro-bowl": {
       "title": "Retro Bowl",
       "image": "/images/games/retro-bowl.png",
       "genre": "Sports",
-      "playPath": "/games/RetroBowl/index.html"
+      "playPath": "/games/RetroBowl/index.html",
+      "description": "/games/RetroBowl/description.html"
     },
     "snakegame": {
       "title": "Snake Game",
       "image": "/images/games/snakegame.png",
       "genre": "Arcade",
-      "playPath": "/games/SnakeGame/index.html"
+      "playPath": "/games/SnakeGame/index.html",
+      "description": "/games/SnakeGame/description.html"
     },
     "space-invace": {
       "title": "Space Invace",
       "image": "/images/games/space-invace.png",
       "genre": "Shooter",
-      "playPath": "/games/SpaceInvace/index.html"
+      "playPath": "/games/SpaceInvace/index.html",
+      "description": "/games/SpaceInvace/description.html"
     },
     "spider-solitaire": {
       "title": "Spider Solitaire",
       "image": "/images/games/spider-solitaire.jpg",
       "genre": "Shooter",
-      "playPath": "/games/SpiderSolitaire/index.html"
+      "playPath": "/games/SpiderSolitaire/index.html",
+      "description": "/games/SpiderSolitaire/description.html"
     },
     "sticky": {
       "title": "Sticky",
       "image": "/images/games/sticky.png",
       "genre": "Arcade",
-      "playPath": "/games/Sticky/index.html"
+      "playPath": "/games/Sticky/index.html",
+      "description": "/games/Sticky/description.html"
     },
     "super-agent": {
       "title": "Super Agent",
       "image": "/images/games/super-agent.png",
       "genre": "Action",
-      "playPath": "/games/SuperAgent/index.html"
+      "playPath": "/games/SuperAgent/index.html",
+      "description": "/games/SuperAgent/description.html"
     },
     "super-pix": {
       "title": "Super Pix",
       "image": "/images/games/super-pix.png",
       "genre": "Arcade",
-      "playPath": "/games/SuperPix/index.html"
+      "playPath": "/games/SuperPix/index.html",
+      "description": "/games/SuperPix/description.html"
     },
     "treasure-hunters": {
       "title": "Treasure Hunters",
       "image": "/images/games/treasure-hunters.png",
       "genre": "Adventure",
-      "playPath": "/games/TreasureHunters/index.html"
+      "playPath": "/games/TreasureHunters/index.html",
+      "description": "/games/TreasureHunters/description.html"
     },
     "plug-heads": {
       "title": "Plug Heads",
       "image": "/images/games/plug-heads.png",
       "genre": "Multiplayer",
-      "playPath": "/games/PlugHeads/index.html"
+      "playPath": "/games/PlugHeads/index.html",
+      "description": "/games/PlugHeads/description.html"
     },
     "gun-merge": {
       "title": "Gun Merge",
       "image": "/images/games/gun-merge.png",
       "genre": "Merge",
-      "playPath": "/games/GunMerge/index.html"
+      "playPath": "/games/GunMerge/index.html",
+      "description": "/games/GunMerge/description.html"
     },
     "braindom": {
       "title": "Braindom",
       "image": "/images/games/braindom.png",
       "genre": "Brain",
-      "playPath": "/games/Braindom/index.html"
+      "playPath": "/games/Braindom/index.html",
+      "description": "/games/Braindom/description.html"
     },
     "braindom-2": {
       "title": "Braindom 2",
       "image": "/images/games/braindom-2.png",
       "genre": "Brain",
-      "playPath": "/games/Braindom2/index.html"
+      "playPath": "/games/Braindom2/index.html",
+      "description": "/games/Braindom2/description.html"
     },
     "rotated-cups": {
       "title": "Rotated Cups",
       "image": "/images/games/rotated-cups.png",
       "genre": "Puzzle",
-      "playPath": "/games/RotatedCups/index.html"
+      "playPath": "/games/RotatedCups/index.html",
+      "description": "/games/RotatedCups/description.html"
     },
     "cups-tower-builder": {
       "title": "Cups Tower Builder",
       "image": "/images/games/cups-tower-builder.png",
       "genre": "Stack",
-      "playPath": "/games/CupsTowerBuilder/index.html"
+      "playPath": "/games/CupsTowerBuilder/index.html",
+      "description": "/games/CupsTowerBuilder/description.html"
     },
     "fire-truck-driving": {
       "title": "Fire Truck Driving",
       "image": "/images/games/fire-truck-driving.png",
       "genre": "Driving",
-      "playPath": "/games/FireTruckDriving/index.html"
+      "playPath": "/games/FireTruckDriving/index.html",
+      "description": "/games/FireTruckDriving/description.html"
     },
     "archery": {
       "title": "Archery",
       "image": "/images/games/archery.png",
       "genre": "Sports",
-      "playPath": "/games/archery/index.html"
+      "playPath": "/games/archery/index.html",
+      "description": "/games/archery/description.html"
     },
     "three-cups": {
       "title": "Three Cups",
       "image": "/images/games/three-cups.png",
       "genre": "Puzzle",
-      "playPath": "/games/ThreeCups/index.html"
+      "playPath": "/games/ThreeCups/index.html",
+      "description": "/games/ThreeCups/description.html"
     }
   },
   "sections": {

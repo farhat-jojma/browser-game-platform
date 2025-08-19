@@ -74,7 +74,7 @@ canvas {
     clip: rect(1px, 1px, 1px, 1px);
 }
 
-        #adBreakOverlay {
+        /* #adBreakOverlay {
             position: fixed;
             top: 0;
             left: 0;
@@ -88,4 +88,4 @@ canvas {
             font-size: 3em;
             font-weight: bold;
             color: black;
-        }
+        } */

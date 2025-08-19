@@ -1,3 +1,4 @@
+// src/app/game/[slug]/page.jsx
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -8,12 +9,24 @@ export async function generateStaticParams() {
   return Object.keys(data?.games ?? {}).map((slug) => ({ slug }));
 }
 
+// ✅ Add this here
+export function generateMetadata({ params }) {
+  const g = data?.games?.[params.slug];
+  if (!g) return { title: "Game not found – Browser Game Platform" };
+  return {
+    title: `${g.title} – Browser Game Platform`,
+    description: g.description,
+    // optional extras:
+    // openGraph: { title: `${g.title} – Browser Game Platform`, description: g.description, images: [g.image] },
+    // twitter:   { card: "summary_large_image", title: `${g.title} – Browser Game Platform`, description: g.description, images: [g.image] },
+  };
+}
+
 export default function GamePage({ params }) {
   const { slug } = params;
   const game = data?.games?.[slug];
   if (!game) return notFound();
 
-  // ✅ prefer explicit playPath from JSON; fallback to /games/<slug>/index.html
   const playerSrc = game.playPath || `/games/${slug}/index.html`;
 
   const moreGames = Object.entries(data.games)
@@ -30,7 +43,7 @@ export default function GamePage({ params }) {
 
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6">
         <div className="space-y-4">
-          <GamePlayer src={playerSrc} title={game.title} />
+          <GamePlayer src={playerSrc} title={game.title} coverSrc={game.image} />
           <section className="mt-2">
             <h2 className="text-lg font-semibold mb-2">About {game.title}</h2>
             <p className="text-white/75 leading-relaxed">{game.description}</p>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hand Slam</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+
+    <meta name="generator" content="Scirra Construct" />
+    <meta name="author" content="chc" />
+    <meta
+      name="description"
+      content="It is a casual basketball game where you can play as different characters and compete in various modes. You can choose from a variety of locations, such as the beach, the park, the rooftop, or the gym."
+    />
+    <link rel="manifest" href="appmanifest.json" />
+    <link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png" />
+    <link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512.png" />
+    <link rel="icon" type="image/png" href="icons/icon-512.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- MONETIZER ADS -->
+    <script type="text/javascript">
+      window.SDK_OPTIONS = {
+          gameId: "lyi8fzmq4dkpg71rj10y1py4ygapl348",
+          onEvent: function (a) {
+            switch (a.name) {
+                case "SDK_GAME_PAUSE":
+                  // pause game logic / mute audio
+                  break;
+                case "SDK_GAME_START":
+                  // advertisement done, resume game logic and unmute audio
+                  break;
+                case "SDK_READY":
+                  // when sdk is ready
+                  break;
+            }
+          }
+      };
+    (function (a, b, c) {
+      var d = a.getElementsByTagName(b)[0];
+      a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+    })(document, "script", "gamemonetize-sdk"); 
+    </script>
+
+    <!-- AD PLACEMENT API -->
+     <!-- <script async
+        data-adbreak-test="on"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-123456789" # your publisher ID
+        crossorigin="anonymous">
+   </script>
+   <script>
+      window.adsbygoogle = window.adsbygoogle || [];
+      var adBreak = adConfig = function(o) {adsbygoogle.push(o);}
+   </script> -->
+  </head>
+  <body>
+    <script>
+      if (location.protocol.substr(0, 4) === "file") {
+        alert(
+          "Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)"
+        );
+      }
+    </script>
+    <script src="box2d.wasm.js"></script>
+    <noscript>
+      <div id="notSupportedWrap">
+        <h2 id="notSupportedTitle">This content requires JavaScript</h2>
+        <p class="notSupportedMessage">
+          JavaScript appears to be disabled. Please enable it to view this
+          content.
+        </p>
+      </div>
+    </noscript>
+    <script src="scripts/supportcheck.js"></script>
+    <script src="scripts/offlineclient.js" type="module"></script>
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/register-sw.js" type="module"></script>
+    <style>
+    #adBreakOverlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        font-size: 3em;
+        font-weight: bold;
+        color: wh4;
+    }
+    </style>
+
+    <div id="adBreakOverlay">AD BREAK</div>
+
+    <script>
+        function showAdBreak() {
+            const overlay = document.getElementById('adBreakOverlay');
+            overlay.style.display = 'flex';
+            setTimeout(() => {
+            overlay.style.display = 'none';
+
+            // Show ad banner if SDK is ready
+            if (typeof sdk !== 'undefined' && typeof sdk.showBanner === 'function') {
+                sdk.showBanner();
+            }
+            }, 3000);
+        }
+
+        // Start repeating every 30 seconds
+        setInterval(showAdBreak, 180000);
+    </script>
+
+    <!-- <script>
+        function showAdBreak() {
+            adBreak(
+              {
+                type: 'next',                     // The type of this placement
+                name: 'ads',                     // A descriptive name for this placement
+                
+              }
+            );
+            setTimeout(() => {
+            overlay.style.display = 'none';
+
+            // Show ad banner if SDK is ready
+            if (typeof sdk !== 'undefined' && typeof sdk.showBanner === 'function') {
+                sdk.showBanner();
+            }
+            }, 3000);
+        }
+
+        setInterval(showAdBreak, 60000);
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,44 @@
+{"frames": [
+
+{
+	"filename": "fever_eff_1.png",
+	"frame": {"x":1,"y":1,"w":360,"h":587},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":360,"h":587},
+	"sourceSize": {"w":360,"h":587}
+},
+{
+	"filename": "fever_eff_2.png",
+	"frame": {"x":363,"y":1,"w":360,"h":587},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":360,"h":587},
+	"sourceSize": {"w":360,"h":587}
+},
+{
+	"filename": "fever_eff_3.png",
+	"frame": {"x":725,"y":1,"w":360,"h":587},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":360,"h":587},
+	"sourceSize": {"w":360,"h":587}
+},
+{
+	"filename": "fever_eff_4.png",
+	"frame": {"x":1087,"y":1,"w":360,"h":587},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":360,"h":587},
+	"sourceSize": {"w":360,"h":587}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "atlasAnimation.png",
+	"format": "RGBA8888",
+	"size": {"w":2048,"h":2048},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:896a892fc2600bf5da028234040ffdf8:360bc0b92a0b5c86c4dd1c4fe4ba2fb7:ea3889c5b722e93a2f9b3dfcf87399db$"
+}
+}

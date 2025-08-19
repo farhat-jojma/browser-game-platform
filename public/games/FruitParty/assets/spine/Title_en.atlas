@@ -1,0 +1,153 @@
+
+Title_en.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Title/BGColor
+  rotate: false
+  xy: 492, 669
+  size: 148, 260
+  orig: 148, 260
+  offset: 0, 0
+  index: -1
+Title/BestScore
+  rotate: false
+  xy: 1, 1
+  size: 257, 36
+  orig: 257, 36
+  offset: 0, 0
+  index: -1
+Title/Btn_GameStart
+  rotate: false
+  xy: 921, 972
+  size: 4, 4
+  orig: 4, 4
+  offset: 0, 0
+  index: -1
+Title/Btn_Setup
+  rotate: false
+  xy: 921, 972
+  size: 4, 4
+  orig: 4, 4
+  offset: 0, 0
+  index: -1
+Title/Ranking
+  rotate: false
+  xy: 921, 972
+  size: 4, 4
+  orig: 4, 4
+  offset: 0, 0
+  index: -1
+Title/Score
+  rotate: false
+  xy: 921, 972
+  size: 4, 4
+  orig: 4, 4
+  offset: 0, 0
+  index: -1
+Title/Frame
+  rotate: false
+  xy: 1, 240
+  size: 490, 736
+  orig: 490, 736
+  offset: 0, 0
+  index: -1
+Title/Fruit01
+  rotate: false
+  xy: 641, 725
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+Title/Fruit02
+  rotate: false
+  xy: 720, 795
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+Title/Fruit03
+  rotate: false
+  xy: 799, 865
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+Title/Fruit04
+  rotate: false
+  xy: 492, 355
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+Title/Fruit05
+  rotate: false
+  xy: 492, 290
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+Title/Highscore_1
+  rotate: false
+  xy: 641, 860
+  size: 78, 69
+  orig: 78, 69
+  offset: 0, 0
+  index: -1
+Title/Highscore_2
+  rotate: false
+  xy: 492, 490
+  size: 78, 69
+  orig: 78, 69
+  offset: 0, 0
+  index: -1
+Title/Highscore_3
+  rotate: false
+  xy: 641, 790
+  size: 78, 69
+  orig: 78, 69
+  offset: 0, 0
+  index: -1
+Title/Highscore_4
+  rotate: false
+  xy: 720, 860
+  size: 78, 69
+  orig: 78, 69
+  offset: 0, 0
+  index: -1
+Title/Highscore_5
+  rotate: false
+  xy: 492, 420
+  size: 78, 69
+  orig: 78, 69
+  offset: 0, 0
+  index: -1
+Title/Icon_Grade
+  rotate: false
+  xy: 492, 560
+  size: 108, 108
+  orig: 108, 108
+  offset: 0, 0
+  index: -1
+Title/Stem
+  rotate: true
+  xy: 427, 143
+  size: 96, 44
+  orig: 96, 44
+  offset: 0, 0
+  index: -1
+Title/SubTitle_en
+  rotate: false
+  xy: 492, 930
+  size: 428, 46
+  orig: 428, 46
+  offset: 0, 0
+  index: -1
+Title/Title
+  rotate: false
+  xy: 1, 38
+  size: 425, 201
+  orig: 425, 201
+  offset: 0, 0
+  index: -1

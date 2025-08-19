@@ -1,0 +1,91 @@
+@font-face {
+    font-family: upheaval_tt_brkregular;
+    src: url('fonts/upheavtt-webfont.woff2') format('woff2'), url('fonts/upheavtt-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal
+}
+
+html {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #001932
+}
+
+#mainLoader {
+    position: absolute;
+    z-index: 5;
+    display: none;
+    font-size: 35px;
+    line-height: 35px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    font-family: upheaval_tt_brkregular
+}
+
+#mainHolder {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+#notSupportHolder {
+    width: 90%;
+    margin: 5% auto;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    font-family: upheaval_tt_brkregular;
+    display: none
+}
+
+@-moz-keyframes spin {
+    50% {
+        -moz-transform: rotate(0)
+    }
+    100% {
+        -moz-transform: rotate(0)
+    }
+}
+
+@-webkit-keyframes spin {
+    50% {
+        -webkit-transform: rotate(90deg)
+    }
+    100% {
+        -webkit-transform: rotate(0)
+    }
+}
+
+@keyframes spin {
+    50% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg)
+    }
+    100% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg)
+    }
+}
+
+#canvasHolder {
+    display: none;
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    margin: auto;
+    position: relative
+}
+
+canvas {
+    position: fixed
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both
+}

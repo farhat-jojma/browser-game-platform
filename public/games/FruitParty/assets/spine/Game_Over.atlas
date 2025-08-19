@@ -1,0 +1,125 @@
+
+Game_Over.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Game_Over/BGMask
+  rotate: false
+  xy: 1, 440
+  size: 148, 260
+  orig: 148, 260
+  offset: 0, 0
+  index: -1
+Game_Over/Btn_Home
+  rotate: false
+  xy: 639, 892
+  size: 4, 4
+  orig: 4, 4
+  offset: 0, 0
+  index: -1
+Game_Over/Btn_Replay
+  rotate: false
+  xy: 639, 892
+  size: 4, 4
+  orig: 4, 4
+  offset: 0, 0
+  index: -1
+Game_Over/Frame
+  rotate: false
+  xy: 639, 892
+  size: 4, 4
+  orig: 4, 4
+  offset: 0, 0
+  index: -1
+Game_Over/HighScore
+  rotate: false
+  xy: 639, 892
+  size: 4, 4
+  orig: 4, 4
+  offset: 0, 0
+  index: -1
+Game_Over/Score
+  rotate: false
+  xy: 639, 892
+  size: 4, 4
+  orig: 4, 4
+  offset: 0, 0
+  index: -1
+Game_Over/Fruit_01
+  rotate: false
+  xy: 495, 819
+  size: 56, 56
+  orig: 56, 56
+  offset: 0, 0
+  index: -1
+Game_Over/Fruit_02
+  rotate: false
+  xy: 878, 939
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+Game_Over/Fruit_03
+  rotate: true
+  xy: 1, 126
+  size: 156, 110
+  orig: 156, 110
+  offset: 0, 0
+  index: -1
+Game_Over/Fruit_04
+  rotate: true
+  xy: 1, 1
+  size: 124, 86
+  orig: 124, 86
+  offset: 0, 0
+  index: -1
+Game_Over/Icon_Highscore
+  rotate: false
+  xy: 150, 658
+  size: 44, 42
+  orig: 44, 42
+  offset: 0, 0
+  index: -1
+Game_Over/New_Glow
+  rotate: true
+  xy: 252, 771
+  size: 104, 242
+  orig: 104, 242
+  offset: 0, 0
+  index: -1
+Game_Over/New_Star
+  rotate: true
+  xy: 1, 283
+  size: 156, 150
+  orig: 156, 150
+  offset: 0, 0
+  index: -1
+Game_Over/New_Text
+  rotate: false
+  xy: 252, 722
+  size: 74, 48
+  orig: 74, 48
+  offset: 0, 0
+  index: -1
+Game_Over/TextBack
+  rotate: false
+  xy: 1, 876
+  size: 637, 147
+  orig: 637, 147
+  offset: 0, 0
+  index: -1
+Game_Over/TextFront
+  rotate: false
+  xy: 639, 897
+  size: 238, 126
+  orig: 238, 126
+  offset: 0, 0
+  index: -1
+Game_Over/Watermelon
+  rotate: false
+  xy: 1, 701
+  size: 250, 174
+  orig: 250, 174
+  offset: 0, 0
+  index: -1

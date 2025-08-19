@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#000000" />
+    <title>Snake Game</title>
+    <meta
+      name="description"
+      content="Snake Game is a HTML5 game where you control a snake to eat food and grow, don"
+    />
+    <meta name="keywords" content="game, html5, mobile, fun" />
+    <meta name="author" content="demonisblack" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://demonisblack.com/code/2022/snakegame/game/"
+    />
+    <meta property="og:title" content="Snake Game" />
+    <meta
+      property="og:description"
+      content="Snake Game is a HTML5 game where you control a snake to eat food and grow, don"
+    />
+    <meta
+      property="og:image"
+      content="https://demonisblack.com/code/2022/snakegame/game/share.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://demonisblack.com/code/2022/snakegame/game/"
+    />
+    <meta name="twitter:title" content="Snake Game" />
+    <meta
+      name="twitter:description"
+      content="Snake Game is a HTML5 game where you control a snake to eat food and grow, don"
+    />
+    <meta
+      name="twitter:image"
+      content="https://demonisblack.com/code/2022/snakegame/game/share.jpg"
+    />
+    <meta name="application-name" content="Snake Game" />
+    <meta name="author" content="demonisblack" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="icons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" />
+    <link rel="shortcut icon" href="icons/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="icons/site.webmanifest" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- ADS MONETIZE -->
+    <!-- <script type="text/javascript">
+      window.SDK_OPTIONS = {
+          gameId: "7gbn82pn3ulcnax36eeksv8efj1kjp1o",
+          onEvent: function (a) {
+            switch (a.name) {
+                case "SDK_GAME_PAUSE":
+                  // pause game logic / mute audio
+                  break;
+                case "SDK_GAME_START":
+                  // advertisement done, resume game logic and unmute audio
+                  break;
+                case "SDK_READY":
+                  // when sdk is ready
+                  break;
+            }
+          }
+      };
+    (function (a, b, c) {
+      var d = a.getElementsByTagName(b)[0];
+      a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/sdk.js", d.parentNode.insertBefore(a, d))
+    })(document, "script", "gamemonetize-sdk"); 
+      </script> -->
+      <!-- AD PLACEMENT API -->
+        <!-- <script async
+      data-adbreak-test="on"
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-123456789"
+      crossorigin="anonymous">
+</script>
+<script>
+   window.adsbygoogle = window.adsbygoogle || [];
+   var adBreak = adConfig = function(o) {adsbygoogle.push(o);}
+</script> -->
+    <!-- ADS DISTRIBUTION -->
+   <!-- <script>
+    window["GD_OPTIONS"] = {
+    "gameId": "abf0cf748daa432aa40bb49c13597362",
+    "onEvent": function(event) {
+        switch (event.name) {
+            case "SDK_GAME_START":
+                // advertisement done, resume game logic and unmute audio
+                break;
+            case "SDK_GAME_PAUSE":
+                // pause game logic / mute audio
+                break;
+            case "SDK_GDPR_TRACKING":
+                // this event is triggered when your user doesn't want to be tracked
+                break;
+            case "SDK_GDPR_TARGETING":
+                // this event is triggered when your user doesn't want personalised targeting of ads and such
+                break;
+            case "SDK_REWARDED_WATCH_COMPLETE":
+                // this event is triggered when your user completely watched rewarded ad
+                break;
+        }
+    },
+};
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = 'https://html5.api.gamedistribution.com/main.min.js';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'gamedistribution-jssdk'));
+   </script> -->
+
+      
+
+  </head>
+  <body>
+    <div id="mainLoader">
+      <img src="assets/loader.png" /><br /><span>0</span>
+    </div>
+    <div id="mainHolder">
+      <div id="notSupportHolder">
+        <div class="notSupport">
+          Your browser isn’t supported.<br />Please update your browser in order
+          to run the game.
+        </div>
+      </div>
+      <div id="canvasHolder">
+        <canvas id="gameCanvas" width="1280" height="768"></canvas>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src="js/vendor/jquery.min.js"><\/script>');
+    </script>
+    <script src="js/vendor/mobile-detect.js"></script>
+    <script src="js/vendor/createjs.min.js"></script>
+    <script src="js/vendor/TweenMax.min.js"></script>
+    <script src="js/init.js"></script>
+    <script
+      src="../../../cross/cross.js"
+      data-banner="true"
+      data-link="https://codecanyon.net/item/snake-game-html5-game/39791213"
+    ></script>
+    <!-- <style>
+      #adBreakOverlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.7);
+          display: none;
+          justify-content: center;
+          align-items: center;
+          z-index: 9999;
+          font-size: 3em;
+          font-weight: bold;
+          color: black;
+      }
+    </style>
+
+    <div id="adBreakOverlay">AD BREAK</div> -->
+    <!-- ADS MINETIZE ET DISTRIBUTION -->
+    <!-- <script>
+        function showAdBreak() {
+            const overlay = document.getElementById('adBreakOverlay');
+            overlay.style.display = 'flex';
+            setTimeout(() => {
+            overlay.style.display = 'none';
+
+            // Show ad banner if SDK is ready
+
+              if (typeof sdk !== 'undefined' && typeof sdk.showBanner === 'function') {
+                  sdk.showBanner();
+              }
+    //           if (typeof gdsdk !== 'undefined' && gdsdk.showAd !== 'undefined') {
+    //      gdsdk.showAd();
+    // }
+            }, 3000);
+        }
+
+        // Start repeating every 30 seconds
+        setInterval(showAdBreak, 180000);
+    </script> -->
+
+    <!-- AD PLACEMENT API -->
+<!-- <script>
+        function showAdBreak() {
+            adBreak({
+              type: 'next',                      // The type of this placement
+              name: 'ads',                      // A descriptive name for this placement
+            });
+            setTimeout(() => {
+            overlay.style.display = 'none';
+
+            // Show ad banner if SDK is ready
+            if (typeof sdk !== 'undefined' && typeof sdk.showBanner === 'function') {
+                sdk.showBanner();
+            }
+            }, 3000);
+        }
+
+        // Start repeating every 30 seconds
+        setInterval(showAdBreak, 180000);
+    </script> -->
+    
+
+  </body>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QF80SGRJM"></script>
+  <script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    (window.dataLayer = window.dataLayer || []),
+      gtag("js", new Date()),
+      gtag("config", "G-0QF80SGRJM");
+  </script>
+    
+</html>

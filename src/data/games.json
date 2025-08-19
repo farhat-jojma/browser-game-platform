@@ -1,23 +1,289 @@
 {
   "games": {
+    "bomberman": {
+      "title": "BomberMan",
+      "image": "/images/games/bomberman.png",
+      "genre": "Arcade",
+      "playPath": "/games/BomberMan/index.html"
+    },
+    "color-water-sort": {
+      "title": "Color Water Sort",
+      "image": "/images/games/color-water-sort.png",
+      "genre": "Puzzle",
+      "playPath": "/games/ColorWaterSort/index.html"
+    },
+    "drag-slam": {
+      "title": "Drag Slam",
+      "image": "/images/games/DragSlam.png",
+      "genre": "Adventure",
+      "playPath": "/games/DragSlam/index.html"
+    },
+    "dungeon-quest": {
+      "title": "Dungeon Quest",
+      "image": "/images/games/dungeon-quest.png",
+      "genre": "Adventure",
+      "playPath": "/games/DungeonQuest/index.html"
+    },
+    "dunk-drawing": {
+      "title": "Dunk Drawing",
+      "image": "/images/games/dunk-drawing.png",
+      "genre": "Sports",
+      "playPath": "/games/DunkDrawing/index.html"
+    },
+    "foot-pong": {
+      "title": "Foot Pong",
+      "image": "/images/games/foot-pong.png",
+      "genre": "Sports",
+      "playPath": "/games/FootPong/index.html"
+    },
+    "fruit-party": {
+      "title": "Fruit Party",
+      "image": "/images/games/fruit-party.avif",
+      "genre": "Puzzle",
+      "playPath": "/games/FruitParty/index.html"
+    },
+    "granny-hero": {
+      "title": "Granny Hero",
+      "image": "/images/games/granny-hero.png",
+      "genre": "Action",
+      "playPath": "/games/GrannyHero/index.html"
+    },
+    "hero-blaster": {
+      "title": "Hero Blaster",
+      "image": "/images/games/hero-blaster.png",
+      "genre": "Shooter",
+      "playPath": "/games/HeroBlaster/index.html"
+    },
+    "invace-spaders": {
+      "title": "Invace Spaders",
+      "image": "/images/games/invace-spaders.png",
+      "genre": "Shooter",
+      "playPath": "/games/InvaceSpaders/index.html"
+    },
+    "math-tiles": {
+      "title": "Math Tiles",
+      "image": "/images/games/mathup.png",
+      "genre": "Brain",
+      "playPath": "/games/MathTiles/index.html"
+    },
+    "mathup": {
+      "title": "MathUp",
+      "image": "/images/games/mathup.png",
+      "genre": "Brain",
+      "playPath": "/games/MathUp/index.html"
+    },
+    "neon-pong": {
+      "title": "Neon Pong",
+      "image": "/images/games/neon-pong.jpg",
+      "genre": "Arcade",
+      "playPath": "/games/NeonPong/index.html"
+    },
+    "neon-rider": {
+      "title": "Neon Rider",
+      "image": "/images/games/neon-rider.png",
+      "genre": "Bike",
+      "playPath": "/games/NeonRider/index.html"
+    },
+    "pac-chef": {
+      "title": "Pac Chef",
+      "image": "/images/games/pac-chef.png",
+      "genre": "Arcade",
+      "playPath": "/games/PacChef/index.html"
+    },
+    "pac-rat": {
+      "title": "Pac Rat",
+      "image": "/images/games/pac-rat.jpg",
+      "genre": "Arcade",
+      "playPath": "/games/PacRat/index.html"
+    },
+    "pink-and-blue": {
+      "title": "Pink and Blue",
+      "image": "/images/games/pink-and-blue.png",
+      "genre": "Puzzle Platformer",
+      "playPath": "/games/PinkAndBlue/index.html"
+    },
+    "retro-bowl": {
+      "title": "Retro Bowl",
+      "image": "/images/games/retro-bowl.png",
+      "genre": "Sports",
+      "playPath": "/games/RetroBowl/index.html"
+    },
     "snakegame": {
       "title": "Snake Game",
       "image": "/images/games/snakegame.png",
       "genre": "Arcade",
-      "description": "Eat apples to grow and avoid crashing into walls or yourself.",
-      "playPath": "/games/SnakeGame/code/2022/snakegame/game/index.html"
+      "playPath": "/games/SnakeGame/index.html"
     },
-    "spidergame": {
-      "title": "Spider Game",
-      "image": "/images/games/spidergame.png",
+    "space-invace": {
+      "title": "Space Invace",
+      "image": "/images/games/space-invace.png",
+      "genre": "Shooter",
+      "playPath": "/games/SpaceInvace/index.html"
+    },
+    "spider-solitaire": {
+      "title": "Spider Solitaire",
+      "image": "/images/games/spider-solitaire.jpg",
+      "genre": "Shooter",
+      "playPath": "/games/SpiderSolitaire/index.html"
+    },
+    "sticky": {
+      "title": "Sticky",
+      "image": "/images/games/sticky.png",
+      "genre": "Arcade",
+      "playPath": "/games/Sticky/index.html"
+    },
+    "super-agent": {
+      "title": "Super Agent",
+      "image": "/images/games/super-agent.png",
       "genre": "Action",
-      "description": "Swing on webs, climb and dodge traps.",
-      "playPath": "/games/SpiderGame/showcase.codethislab.com/games/spider/index.html"
+      "playPath": "/games/SuperAgent/index.html"
+    },
+    "super-pix": {
+      "title": "Super Pix",
+      "image": "/images/games/super-pix.png",
+      "genre": "Arcade",
+      "playPath": "/games/SuperPix/index.html"
+    },
+    "treasure-hunters": {
+      "title": "Treasure Hunters",
+      "image": "/images/games/treasure-hunters.png",
+      "genre": "Adventure",
+      "playPath": "/games/TreasureHunters/index.html"
+    },
+    "plug-heads": {
+      "title": "Plug Heads",
+      "image": "/images/games/plug-heads.png",
+      "genre": "Multiplayer",
+      "playPath": "/games/PlugHeads/index.html"
+    },
+    "gun-merge": {
+      "title": "Gun Merge",
+      "image": "/images/games/gun-merge.png",
+      "genre": "Merge",
+      "playPath": "/games/GunMerge/index.html"
+    },
+    "braindom": {
+      "title": "Braindom",
+      "image": "/images/games/braindom.png",
+      "genre": "Brain",
+      "playPath": "/games/Braindom/index.html"
+    },
+    "braindom-2": {
+      "title": "Braindom 2",
+      "image": "/images/games/braindom-2.png",
+      "genre": "Brain",
+      "playPath": "/games/Braindom2/index.html"
+    },
+    "rotated-cups": {
+      "title": "Rotated Cups",
+      "image": "/images/games/rotated-cups.png",
+      "genre": "Puzzle",
+      "playPath": "/games/RotatedCups/index.html"
+    },
+    "cups-tower-builder": {
+      "title": "Cups Tower Builder",
+      "image": "/images/games/cups-tower-builder.png",
+      "genre": "Stack",
+      "playPath": "/games/CupsTowerBuilder/index.html"
+    },
+    "fire-truck-driving": {
+      "title": "Fire Truck Driving",
+      "image": "/images/games/fire-truck-driving.png",
+      "genre": "Driving",
+      "playPath": "/games/FireTruckDriving/index.html"
+    },
+    "archery": {
+      "title": "Archery",
+      "image": "/images/games/archery.png",
+      "genre": "Sports",
+      "playPath": "/games/archery/index.html"
+    },
+    "three-cups": {
+      "title": "Three Cups",
+      "image": "/images/games/three-cups.png",
+      "genre": "Puzzle",
+      "playPath": "/games/ThreeCups/index.html"
     }
   },
-  "sections": {
-    "trending": ["snakegame", "spidergame"],
-    "featured": ["snakegame"],
-    "new": ["spidergame"]
-  }
+    "sections": {
+      "featured": [
+        "neon-rider",
+        "sticky",
+        "plug-heads",
+        "bomberman",
+        "fruit-party",
+        "retro-bowl"
+      ],
+      "new": [
+        "braindom-2",
+        "rotated-cups",
+        "cups-tower-builder",
+        "fire-truck-driving",
+        "neon-pong",
+        "super-pix"
+      ],
+
+      "arcade": [
+        "bomberman",
+        "neon-pong",
+        "snakegame",
+        "sticky",
+        "pac-chef",
+        "pac-rat",
+        "super-pix"
+      ],
+      "puzzle": [
+        "color-water-sort",
+        "rotated-cups",
+        "three-cups",
+        "dunk-drawing",
+        "pink-and-blue",
+        "math-tiles",
+        "mathup",
+        "fruit-party"
+      ],
+      "sports": [
+        "retro-bowl",
+        "foot-pong",
+        "archery",
+        "dunk-drawing",
+        "drag-slam"
+      ],
+      "adventure": [
+        "dungeon-quest",
+        "treasure-hunters",
+        "granny-hero",
+        "pink-and-blue"
+      ],
+      "shooter": [
+        "hero-blaster",
+        "invace-spaders",
+        "space-invace",
+        "gun-merge"
+      ],
+      "driving": [
+        "neon-rider",
+        "fire-truck-driving"
+      ],
+      "action": [
+        "super-agent",
+        "granny-hero",
+        "plug-heads"
+      ],
+      "brain": [
+        "math-tiles",
+        "mathup",
+        "braindom",
+        "braindom-2"
+      ],
+      "merge": [
+        "gun-merge"
+      ],
+      "stack": [
+        "cups-tower-builder"
+      ],
+      "multiplayer": [
+        "plug-heads"
+      ]
+    }
 }

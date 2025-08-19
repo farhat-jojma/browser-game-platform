@@ -1,0 +1,30 @@
+{
+  "version": 1698134838204,
+  "fileList": [
+    "scripts/c3runtime.js",
+    "data.json",
+    "style.css",
+    "scripts/offlineclient.js",
+    "images/shared-0-sheet0.png",
+    "images/shared-0-sheet1.png",
+    "images/shared-0-sheet2.png",
+    "scripts/opus.wasm.js",
+    "scripts/opus.wasm.wasm",
+    "scripts/main.js",
+    "workermain.js",
+    "scripts/dispatchworker.js",
+    "scripts/jobworker.js",
+    "scripts/supportcheck.js",
+    "icons/icon-32.png",
+    "icons/icon-64.png",
+    "icons/icon-128.png",
+    "icons/icon-256.png",
+    "icons/loading-logo.png",
+    "icons/icon-16.png",
+    "icons/icon-512.png",
+    "media/referee-whistle-blow-gymnasium-6320.webm",
+    "media/ui-click-97915.webm",
+    "media/soccer-ball-kick-37625.webm",
+    "scripts/register-sw.js"
+  ]
+}

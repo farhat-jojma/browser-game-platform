@@ -1,0 +1,202 @@
+
+Fruit_EFX.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Fruit_EFX/Pop_00
+  rotate: false
+  xy: 1, 202
+  size: 331, 309
+  orig: 331, 309
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_01
+  rotate: false
+  xy: 130, 45
+  size: 52, 40
+  orig: 52, 40
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_02
+  rotate: false
+  xy: 174, 14
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_03
+  rotate: true
+  xy: 105, 5
+  size: 26, 22
+  orig: 26, 22
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_04
+  rotate: false
+  xy: 130, 1
+  size: 43, 43
+  orig: 43, 43
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_05
+  rotate: false
+  xy: 33, 1
+  size: 30, 28
+  orig: 30, 28
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_06
+  rotate: true
+  xy: 188, 52
+  size: 34, 53
+  orig: 34, 53
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_A_1
+  rotate: false
+  xy: 381, 412
+  size: 78, 99
+  orig: 78, 99
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_A_2
+  rotate: false
+  xy: 234, 129
+  size: 71, 72
+  orig: 71, 72
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_A_3
+  rotate: false
+  xy: 68, 32
+  size: 61, 37
+  orig: 61, 37
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_B_1
+  rotate: false
+  xy: 68, 70
+  size: 59, 131
+  orig: 59, 131
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_B_2
+  rotate: true
+  xy: 381, 363
+  size: 48, 73
+  orig: 48, 73
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_B_3
+  rotate: true
+  xy: 242, 49
+  size: 37, 48
+  orig: 37, 48
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_C_1
+  rotate: false
+  xy: 1, 30
+  size: 66, 171
+  orig: 66, 171
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_C_2
+  rotate: false
+  xy: 128, 86
+  size: 59, 115
+  orig: 59, 115
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_C_3
+  rotate: true
+  xy: 333, 202
+  size: 41, 57
+  orig: 41, 57
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_D_1
+  rotate: false
+  xy: 342, 140
+  size: 33, 61
+  orig: 33, 61
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_D_2
+  rotate: false
+  xy: 376, 146
+  size: 27, 55
+  orig: 27, 55
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_D_3
+  rotate: false
+  xy: 205, 28
+  size: 19, 23
+  orig: 19, 23
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_E_1
+  rotate: false
+  xy: 333, 362
+  size: 47, 149
+  orig: 47, 149
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_E_2
+  rotate: false
+  xy: 333, 244
+  size: 46, 117
+  orig: 46, 117
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_E_3
+  rotate: false
+  xy: 291, 47
+  size: 34, 39
+  orig: 34, 39
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_F_1
+  rotate: false
+  xy: 460, 417
+  size: 38, 94
+  orig: 38, 94
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_F_2
+  rotate: false
+  xy: 306, 141
+  size: 35, 60
+  orig: 35, 60
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_F_3
+  rotate: true
+  xy: 1, 1
+  size: 28, 31
+  orig: 28, 31
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_G_1
+  rotate: false
+  xy: 188, 87
+  size: 45, 114
+  orig: 45, 114
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_G_2
+  rotate: true
+  xy: 234, 87
+  size: 41, 78
+  orig: 41, 78
+  offset: 0, 0
+  index: -1
+Fruit_EFX/Pop_G_3
+  rotate: true
+  xy: 68, 1
+  size: 30, 36
+  orig: 30, 36
+  offset: 0, 0
+  index: -1

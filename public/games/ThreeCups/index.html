@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#000000">
+    <title>Magic Cup</title>
+    <meta name="description" content="Magic Cup is a HTML5 game where the ball is placed into one of the three cups and get shuffled while you try to keep your eye on the one your ball was originally placed.">
+    <meta name="keywords" content="html5 game, memory game, magic cup, find the ball, cup shuffle, concentration game, shuffle game, tracking game, mind game, cup game, speed game, magic trick, fun game, ball tracking">
+    <meta name="author" content="demonisblack">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://demonisblack.com/code/2016/magiccup/game/">
+    <meta property="og:title" content="Magic Cup">
+    <meta property="og:description" content="Magic Cup is a HTML5 game where the ball is placed into one of the three cups and get shuffled while you try to keep your eye on the one your ball was originally placed.">
+    <meta property="og:image" content="https://demonisblack.com/code/2016/magiccup/game/share.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://demonisblack.com/code/2016/magiccup/game/">
+    <meta name="twitter:title" content="Magic Cup">
+    <meta name="twitter:description" content="Magic Cup is a HTML5 game where the ball is placed into one of the three cups and get shuffled while you try to keep your eye on the one your ball was originally placed.">
+    <meta name="twitter:image" content="https://demonisblack.com/code/2016/magiccup/game/share.jpg">
+    <meta name="application-name" content="Magic Cup">
+    <meta name="author" content="demonisblack">
+    <link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="mainLoader">0</div>
+    <div id="mainHolder">
+        <div id="notSupportHolder">
+            <div class="notSupport">YOUR BROWSER ISN'T SUPPORTED.<br>PLEASE UPDATE YOUR BROWSER IN ORDER TO RUN THE GAME</div>
+        </div>
+        <div id="rotateHolder">
+            <div class="mobileRotate">
+                <div class="rotateImg"><img src="assets/rotate.png"></div>
+                <div class="rotateDesc">Rotate your device<br>to landscape</div>
+            </div>
+        </div>
+        <div id="canvasHolder"><canvas id="gameCanvas" width="1024" height="768"></canvas></div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery.min.js">')
+    </script>
+    <script src="js/vendor/mobile-detect.js"></script>
+    <script src="js/vendor/createjs.min.js"></script>
+    <script src="js/vendor/TweenMax.min.js"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPP0X3R8QN"></script> -->
+    <script>
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+        window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-YPP0X3R8QN")
+    </script>
+    <script src="js/init.js"></script>
+    <script src="../../../cross/cross.js" data-banner="true" data-link="https://codecanyon.net/item/magic-cup-html5-game/16077935"></script>
+</body>
+
+</html>

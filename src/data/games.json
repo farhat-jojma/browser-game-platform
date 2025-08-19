@@ -4,7 +4,8 @@
       "title": "BomberMan",
       "image": "/images/games/bomberman.png",
       "genre": "Arcade",
-      "playPath": "/games/BomberMan/index.html"
+      "playPath": "/games/BomberMan/index.html",
+      "description": "/games/BomberMan/description.html"
     },
     "color-water-sort": {
       "title": "Color Water Sort",

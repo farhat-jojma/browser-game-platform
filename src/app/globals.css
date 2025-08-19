@@ -83,3 +83,7 @@
   border-radius: 9999px; background-clip: padding-box; border: 3px solid transparent;
   box-shadow: inset 0 0 0 1px rgba(255,255,255,0.15);
 }
+
+/* Fancy Carousel */
+.hide-scrollbar { scrollbar-width: none; }
+.hide-scrollbar::-webkit-scrollbar { display: none; }

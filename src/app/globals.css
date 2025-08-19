@@ -16,3 +16,70 @@
   0% { background-position: 0 0; }
   100% { background-position: -200% 0; }
 }
+
+/* ---- Sidebar scrollbar: hidden by default, pretty on hover ---- */
+
+/* Firefox */
+.sidebar-scroll { scrollbar-width: none; }            /* hide */
+.sidebar-scroll:hover { scrollbar-width: thin; }      /* show a thin bar on hover */
+
+/* Chromium/Safari */
+.sidebar-scroll::-webkit-scrollbar { width: 0; height: 0; }                   /* hide */
+.sidebar-scroll:hover::-webkit-scrollbar { width: 10px; }                     /* show on hover */
+.sidebar-scroll:hover::-webkit-scrollbar-track {
+  background: transparent;                     /* no bright track */
+  margin: 6px 0;                               /* top/bottom gap */
+}
+.sidebar-scroll:hover::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #6d28d9, #a855f7); /* violet gradient */
+  border-radius: 9999px;
+  border: 2px solid rgba(15, 19, 29, 0.6);     /* blends with your sidebar bg (#0f131d) */
+}
+.sidebar-scroll:hover::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #8b5cf6, #d946ef); /* hover accent */
+}
+
+
+
+/* ===== Pretty, minimal sidebar scrollbar ===== */
+
+/* Default: hidden until hover (Firefox) */
+.sidebar-scroll { scrollbar-width: none; }
+.sidebar-scroll:hover {
+  scrollbar-width: thin;                 /* show when hovered */
+  scrollbar-color: #b5bcd3 transparent;  /* thumb / track */
+}
+
+/* Default: hidden until hover (Chromium/Safari) */
+.sidebar-scroll::-webkit-scrollbar { width: 0; height: 0; } /* hide */
+.sidebar-scroll:hover::-webkit-scrollbar { width: 10px; }   /* show on hover */
+
+/* Track */
+.sidebar-scroll:hover::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.04); /* subtle track like the screenshot */
+  border-radius: 9999px;
+  margin: 6px 0;                      /* gap top/bottom */
+}
+
+/* Thumb (pill, light grey, slight inner edge) */
+.sidebar-scroll:hover::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #cfd4e2, #a7aec2);
+  border-radius: 9999px;
+  background-clip: padding-box;
+  border: 3px solid transparent;                 /* inset effect so thumb isn't 'stuck' to edges */
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.15);
+}
+
+/* Corner (for two-direction scroll containers) */
+.sidebar-scroll:hover::-webkit-scrollbar-corner { background: transparent; }
+
+/* ===== OPTIONAL: always-visible version ===== */
+/* Apply an extra class "scrollbar-always" to the element if you want it always shown */
+.scrollbar-always { scrollbar-width: thin; }
+.scrollbar-always::-webkit-scrollbar { width: 10px; height: 10px; }
+.scrollbar-always::-webkit-scrollbar-track { background: rgba(255,255,255,0.04); border-radius: 9999px; }
+.scrollbar-always::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #cfd4e2, #a7aec2);
+  border-radius: 9999px; background-clip: padding-box; border: 3px solid transparent;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.15);
+}

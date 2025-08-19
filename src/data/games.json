@@ -205,85 +205,33 @@
       "playPath": "/games/ThreeCups/index.html"
     }
   },
-    "sections": {
-      "featured": [
-        "neon-rider",
-        "sticky",
-        "plug-heads",
-        "bomberman",
-        "fruit-party",
-        "retro-bowl"
-      ],
-      "new": [
-        "braindom-2",
-        "rotated-cups",
-        "cups-tower-builder",
-        "fire-truck-driving",
-        "neon-pong",
-        "super-pix"
-      ],
+  "sections": {
+    "featured": ["neon-rider", "sticky", "plug-heads", "bomberman", "fruit-party", "retro-bowl"],
+    "new": ["braindom-2", "rotated-cups", "cups-tower-builder", "fire-truck-driving", "neon-pong", "super-pix"],
 
-      "arcade": [
-        "bomberman",
-        "neon-pong",
-        "snakegame",
-        "sticky",
-        "pac-chef",
-        "pac-rat",
-        "super-pix"
-      ],
-      "puzzle": [
-        "color-water-sort",
-        "rotated-cups",
-        "three-cups",
-        "dunk-drawing",
-        "pink-and-blue",
-        "math-tiles",
-        "mathup",
-        "fruit-party"
-      ],
-      "sports": [
-        "retro-bowl",
-        "foot-pong",
-        "archery",
-        "dunk-drawing",
-        "drag-slam"
-      ],
-      "adventure": [
-        "dungeon-quest",
-        "treasure-hunters",
-        "granny-hero",
-        "pink-and-blue"
-      ],
-      "shooter": [
-        "hero-blaster",
-        "invace-spaders",
-        "space-invace",
-        "gun-merge"
-      ],
-      "driving": [
-        "neon-rider",
-        "fire-truck-driving"
-      ],
-      "action": [
-        "super-agent",
-        "granny-hero",
-        "plug-heads"
-      ],
-      "brain": [
-        "math-tiles",
-        "mathup",
-        "braindom",
-        "braindom-2"
-      ],
-      "merge": [
-        "gun-merge"
-      ],
-      "stack": [
-        "cups-tower-builder"
-      ],
-      "multiplayer": [
-        "plug-heads"
-      ]
-    }
+    "trending": ["neon-rider", "retro-bowl", "fruit-party", "sticky", "super-pix"],
+    "updated": ["braindom-2", "rotated-cups", "fire-truck-driving", "gun-merge"],
+    "originals": ["super-agent", "plug-heads", "super-pix"],
+
+    "multiplayer": ["plug-heads"],
+    "action": ["super-agent", "granny-hero"],
+    "adventure": ["dungeon-quest", "treasure-hunters", "pink-and-blue"],
+    "sports": ["retro-bowl", "foot-pong", "archery"],
+    "driving": ["neon-rider", "fire-truck-driving"],
+    "racing": ["neon-rider", "fire-truck-driving"],
+
+    "arcade": ["bomberman", "neon-pong", "snakegame", "sticky", "pac-chef", "pac-rat", "super-pix"],
+    "puzzle": ["color-water-sort", "rotated-cups", "three-cups", "dunk-drawing", "pink-and-blue", "mathup", "fruit-party"],
+    "shooter": ["hero-blaster", "invace-spaders", "space-invace", "gun-merge"],
+    "brain": ["mathup", "braindom", "braindom-2"],
+    "merge": ["gun-merge"],
+    "stack": ["cups-tower-builder"],
+    "platformer": ["pink-and-blue"],
+    "strategy": ["gun-merge", "cups-tower-builder", "rotated-cups"],
+    "rpg": ["dungeon-quest", "treasure-hunters"],
+    "physics": ["dunk-drawing"],
+    "retro": ["pac-chef", "pac-rat", "bomberman", "snakegame", "space-invace", "neon-pong"],
+    "kids": ["fruit-party", "color-water-sort", "mathup", "pink-and-blue"]
+  }
+
 }

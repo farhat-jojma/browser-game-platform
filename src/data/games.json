@@ -16,6 +16,7 @@
     }
   },
   "sections": {
+    "trending": ["snakegame", "spidergame"],
     "featured": ["snakegame"],
     "new": ["spidergame"]
   }

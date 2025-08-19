@@ -1,5 +1,6 @@
 import SimpleGameCard from "./components/SimpleGameCard";
 import data from "../data/games.json";
+import Link from "next/link";
 
 // Turn a list of slugs into card props from games.json
 function slugsToItems(slugs = [], games = {}) {
@@ -59,12 +60,12 @@ export default function Pages() {
         <section key={section.id}>
           <div className="mb-4 flex items-center justify-between">
             <h2 className="text-xl font-bold">{section.title}</h2>
-            <a
-              href={`/section/${section.id}`}
-              className="text-sm text-white/70 hover:text-white"
-            >
-              View more
-            </a>
+              <Link
+                href={`/section/${section.id}`}
+                className="text-sm text-white/70 hover:text-white"
+              >
+                View more
+              </Link>
           </div>
 
           <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">

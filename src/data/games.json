@@ -3,9 +3,16 @@
     "bomberman": {
       "title": "BomberMan",
       "image": "/images/games/bomberman.png",
-      "genre": "Arcade",
+      "genre": "Brain",
       "playPath": "/games/BomberMan/index.html",
       "description": "/games/BomberMan/description.html"
+    },
+    "brain-game": {
+      "title": "Brain Game",
+      "image": "/images/games/brain-game.png",
+      "genre": "Arcade",
+      "playPath": "/games/BrainGame/index.html",
+      "description": "/games/BrainGame/description.html"
     },
     "color-water-sort": {
       "title": "Color Water Sort",
@@ -212,7 +219,7 @@
     },
     "cups-tower-builder": {
       "title": "Cups Tower Builder",
-      "image": "/images/games/cups-tower-builder.png",
+      "image": "/images/games/cups-tower-builder.jpeg",
       "genre": "Stack",
       "playPath": "/games/CupsTowerBuilder/index.html",
       "description": "/games/CupsTowerBuilder/description.html"
@@ -241,27 +248,27 @@
   },
   "sections": {
     "featured": ["neon-rider", "sticky", "plug-heads", "bomberman", "fruit-party", "retro-bowl"],
-    "new": ["braindom-2", "rotated-cups", "cups-tower-builder", "fire-truck-driving", "neon-pong", "super-pix"],
+    "new": ["braindom", "braindom-2", "rotated-cups", "cups-tower-builder", "fire-truck-driving", "neon-pong", "super-pix"],
 
     "trending": ["neon-rider", "retro-bowl", "fruit-party", "sticky", "super-pix"],
     "updated": ["braindom-2", "rotated-cups", "fire-truck-driving", "gun-merge"],
     "originals": ["super-agent", "plug-heads", "super-pix"],
 
-    "multiplayer": ["plug-heads"],
+    "multiplayer": ["pink-and-blue", "neon-pong"],
     "action": ["super-agent", "granny-hero"],
     "adventure": ["dungeon-quest", "treasure-hunters", "pink-and-blue"],
-    "sports": ["retro-bowl", "foot-pong", "archery"],
+    "sports": ["retro-bowl", "foot-pong", "archery", "drag-slam", "dunk-drawing"],
     "driving": ["neon-rider", "fire-truck-driving"],
-    "racing": ["neon-rider", "fire-truck-driving"],
+    "racing": ["neon-rider"],
 
     "arcade": ["bomberman", "neon-pong", "snakegame", "sticky", "pac-chef", "pac-rat", "super-pix"],
     "puzzle": ["color-water-sort", "rotated-cups", "three-cups", "dunk-drawing", "pink-and-blue", "mathup", "fruit-party"],
     "shooter": ["hero-blaster", "invace-spaders", "space-invace", "gun-merge"],
-    "brain": ["mathup", "braindom", "braindom-2"],
+    "brain": ["brain-game", "mathup", "braindom", "braindom-2", "math-tiles"],
     "merge": ["gun-merge"],
     "stack": ["cups-tower-builder"],
     "platformer": ["pink-and-blue"],
-    "strategy": ["gun-merge", "cups-tower-builder", "rotated-cups"],
+    "strategy": ["spider-solitaire", "gun-merge", "cups-tower-builder", "rotated-cups"],
     "rpg": ["dungeon-quest", "treasure-hunters"],
     "physics": ["dunk-drawing"],
     "retro": ["pac-chef", "pac-rat", "bomberman", "snakegame", "space-invace", "neon-pong"],

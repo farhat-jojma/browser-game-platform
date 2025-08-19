@@ -1,0 +1,164 @@
+{
+	"data" : [
+		{
+			"type" : 1,
+			"health" : 10,
+			"damage" : 10,
+			"bonus" : 50,
+			"speed_move" : 1,
+			"speed_attack" : 1
+		},
+		{
+			"type" :2,
+			"health" : 10,
+			"damage" : 10,
+			"bonus" : 50,
+			"speed_move" : 1,
+			"speed_attack" : 1
+		},
+		{
+			"type" :3,
+			"health" : 10,
+			"damage" : 10,
+			"bonus" : 50,
+			"speed_move" : 1,
+			"speed_attack" : 1
+		},
+		{
+			"type" :4,
+			"health" : 10,
+			"damage" : 10,
+			"bonus" : 50,
+			"speed_move" : 1,
+			"speed_attack" : 1
+		},
+		{
+			"type" :5,
+			"health" : 10,
+			"damage" : 10,
+			"bonus" : 50,
+			"speed_move" : 1,
+			"speed_attack" : 1
+		},
+		{
+			"type" :6,
+			"health" : 10,
+			"damage" : 10,
+			"bonus" : 50,
+			"speed_move" : 1,
+			"speed_attack" : 1
+		},
+		{
+			"type" :7,
+			"health" : 10,
+			"damage" : 10,
+			"bonus" : 50,
+			"speed_move" : 1,
+			"speed_attack" : 1
+		},
+		{
+			"type" :8,
+			"health" : 10,
+			"damage" : 10,
+			"bonus" : 50,
+			"speed_move" : 1,
+			"speed_attack" : 1
+		},
+		{
+			"type" :9,
+			"health" : 10,
+			"damage" : 10,
+			"bonus" : 50,
+			"speed_move" : 1,
+			"speed_attack" : 1
+		},
+		{
+			"type" :10,
+			"health" : 10,
+			"damage" : 10,
+			"bonus" : 50,
+			"speed_move" : 1,
+			"speed_attack" : 1
+		},
+		{
+			"type" :11,
+			"health" : 10,
+			"damage" : 10,
+			"bonus" : 50,
+			"speed_move" : 1,
+			"speed_attack" : 1
+		},
+		{
+			"type" :12,
+			"health" : 10,
+			"damage" : 10,
+			"bonus" : 50,
+			"speed_move" : 1,
+			"speed_attack" : 1
+		},
+		{
+			"type" :13,
+			"health" : 10,
+			"damage" : 10,
+			"bonus" : 50,
+			"speed_move" : 1,
+			"speed_attack" : 1
+		},
+		{
+			"type" :14,
+			"health" : 10,
+			"damage" : 10,
+			"bonus" : 50,
+			"speed_move" : 1,
+			"speed_attack" : 1
+		},
+		{
+			"type" :15,
+			"health" : 10,
+			"damage" : 10,
+			"bonus" : 50,
+			"speed_move" : 1,
+			"speed_attack" : 1
+		},
+		{
+			"type" :16,
+			"health" : 10,
+			"damage" : 10,
+			"bonus" : 50,
+			"speed_move" : 1,
+			"speed_attack" : 1
+		},
+		{
+			"type" :17,
+			"health" : 10,
+			"damage" : 10,
+			"bonus" : 50,
+			"speed_move" : 1,
+			"speed_attack" : 1
+		},
+		{
+			"type" : 18,
+			"health" : 10,
+			"damage" : 10,
+			"bonus" : 50,
+			"speed_move" : 1,
+			"speed_attack" : 1
+		},
+		{
+			"type" :19,
+			"health" : 10,
+			"damage" : 10,
+			"bonus" : 50,
+			"speed_move" : 1,
+			"speed_attack" : 1
+		},
+		{
+			"type" :20,
+			"health" : 10,
+			"damage" : 10,
+			"bonus" : 50,
+			"speed_move" : 1,
+			"speed_attack" : 1
+		}
+	]
+}

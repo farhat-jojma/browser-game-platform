@@ -244,6 +244,20 @@
       "genre": "Puzzle",
       "playPath": "/games/ThreeCups/index.html",
       "description": "/games/ThreeCups/description.html"
+    },
+      "kindergarten-teacher": {
+        "title": "Kindergarten Teacher",
+        "image": "/images/games/mathup.png",
+        "genre": "Puzzle",
+        "playPath": "/games/KindergartenTeacher/index.html",
+        "description": "/games/KindergartenTeacher/description.html"
+    },
+    "what-is-the-password": {
+      "title": "What Is The Password",
+      "image": "/images/games/mathup.png",
+      "genre": "Brain",
+      "playPath": "/games/WhatIsThePassword/index.html",
+      "description": "/games/WhatIsThePassword/description.html"
     }
   },
   "sections": {
@@ -262,9 +276,9 @@
     "racing": ["neon-rider"],
 
     "arcade": ["bomberman", "neon-pong", "snakegame", "sticky", "pac-chef", "pac-rat", "super-pix"],
-    "puzzle": ["color-water-sort", "rotated-cups", "three-cups", "dunk-drawing", "pink-and-blue", "mathup", "fruit-party"],
+    "puzzle": ["color-water-sort", "rotated-cups", "three-cups", "dunk-drawing", "pink-and-blue", "mathup", "fruit-party", "kindergarten-teacher"],
     "shooter": ["hero-blaster", "invace-spaders", "space-invace", "gun-merge"],
-    "brain": ["brain-game", "mathup", "braindom", "braindom-2", "math-tiles"],
+    "brain": ["brain-game", "mathup", "braindom", "braindom-2", "math-tiles", "what-is-the-password"],
     "merge": ["gun-merge"],
     "stack": ["cups-tower-builder"],
     "platformer": ["pink-and-blue"],

@@ -20,6 +20,7 @@ const GENRE_BADGE = {
   Strategy:    "from-slate-300   to-slate-600   text-white",
   Retro:       "from-pink-300    to-pink-500    text-black",
   Kids:        "from-green-300   to-green-500   text-black",
+  Bike:        "from-green-300   to-green-500   text-black",
 };
 
 /** Hover border color per genre (inside overlay) */
@@ -40,6 +41,7 @@ const GENRE_BORDER = {
   Strategy:    "border-slate-400",
   Retro:       "border-pink-400",
   Kids:        "border-green-400",
+  Bike:        "border-green-400",
 };
 
 function badgeGradientFor(genre) {

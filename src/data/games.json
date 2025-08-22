@@ -122,7 +122,7 @@
     "pink-and-blue": {
       "title": "Pink and Blue",
       "image": "/images/games/pink-and-blue.png",
-      "genre": "Puzzle Platformer",
+      "genre": "Puzzle",
       "playPath": "/games/PinkAndBlue/index.html",
       "description": "/games/PinkAndBlue/description.html"
     },

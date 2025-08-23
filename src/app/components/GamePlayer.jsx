@@ -7,38 +7,78 @@ import { useRouter } from "next/navigation";
 export default function GamePlayer({ src, title, coverSrc }) {
   const router = useRouter();
   const containerRef = useRef(null);
+  const iframeRef = useRef(null);
 
   const [status, setStatus] = useState("checking"); // 'checking' | 'ok' | 'missing'
   const [started, setStarted] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const [reloadKey, setReloadKey] = useState(0);
+  const [gameActive, setGameActive] = useState(false);
 
-  // Prevent page scroll while user interacts with the iframe (arrows/space/page keys)
+  // Prevent page scroll when game is active
   useEffect(() => {
-    const keys = new Set([
-      "ArrowUp",
-      "ArrowDown",
-      "ArrowLeft",
-      "ArrowRight",
-      "PageUp",
-      "PageDown",
-      "Home",
-      "End",
-      " ",
-      "Spacebar",
-    ]);
-    const handler = (e) => {
-      const el = containerRef.current;
-      if (!el) return;
-      const active =
-        el.matches(":hover, :focus-within") ||
-        document.activeElement === el ||
-        el.contains(document.activeElement);
-      if (active && keys.has(e.key)) e.preventDefault();
+    if (!gameActive || !loaded || !started) return;
+
+    const preventScroll = (e) => {
+      // Prevent all scrolling when game is active
+      e.preventDefault();
     };
-    window.addEventListener("keydown", handler, { passive: false });
-    return () => window.removeEventListener("keydown", handler);
-  }, []);
+
+    const preventKeyScroll = (e) => {
+      const scrollKeys = [
+        'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
+        'PageUp', 'PageDown', 'Home', 'End', ' ', 'Spacebar'
+      ];
+      
+      if (scrollKeys.includes(e.key)) {
+        e.preventDefault();
+      }
+    };
+
+    // Prevent scroll via wheel, touch, and keyboard
+    document.addEventListener('wheel', preventScroll, { passive: false });
+    document.addEventListener('touchmove', preventScroll, { passive: false });
+    document.addEventListener('keydown', preventKeyScroll, { passive: false });
+    
+    // Also prevent scrolling on the body
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.removeEventListener('wheel', preventScroll);
+      document.removeEventListener('touchmove', preventScroll);
+      document.removeEventListener('keydown', preventKeyScroll);
+      document.body.style.overflow = '';
+    };
+  }, [gameActive, loaded, started]);
+
+  // Track when game area is active
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container || !loaded || !started) return;
+
+    const handleMouseEnter = () => setGameActive(true);
+    const handleMouseLeave = () => setGameActive(false);
+    const handleFocus = () => setGameActive(true);
+    
+    // Handle clicks outside the game area to deactivate
+    const handleDocumentClick = (e) => {
+      if (!container.contains(e.target)) {
+        setGameActive(false);
+      }
+    };
+
+    container.addEventListener('mouseenter', handleMouseEnter);
+    container.addEventListener('mouseleave', handleMouseLeave);
+    container.addEventListener('focus', handleFocus);
+    document.addEventListener('click', handleDocumentClick);
+
+    return () => {
+      container.removeEventListener('mouseenter', handleMouseEnter);
+      container.removeEventListener('mouseleave', handleMouseLeave);
+      container.removeEventListener('focus', handleFocus);
+      document.removeEventListener('click', handleDocumentClick);
+    };
+  }, [loaded, started]);
 
   // HEAD check to avoid loading your 404 in the iframe
   useEffect(() => {
@@ -46,6 +86,7 @@ export default function GamePlayer({ src, title, coverSrc }) {
     setStatus("checking");
     setStarted(false);
     setLoaded(false);
+    setGameActive(false);
 
     fetch(src, { method: "HEAD" })
       .then((res) => !cancelled && setStatus(res.ok ? "ok" : "missing"))
@@ -63,37 +104,60 @@ export default function GamePlayer({ src, title, coverSrc }) {
     else el.requestFullscreen?.();
   };
 
+  const handleGameClick = () => {
+    setGameActive(true);
+  };
+
   return (
     <div className="w-full">
-      {/* === TOP TOOLBAR (outside the frame) === */}
-      <div className="mb-2 flex items-center justify-end gap-2">
-        <button
-          onClick={() => setReloadKey((k) => k + 1)}
-          className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium
-                     rounded-md bg-white/10 hover:bg-white/20 transition"
-          aria-label="Reload game"
-        >
-          <span>↻</span> Reload
-        </button>
-        <button
-          onClick={toggleFullscreen}
-          className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium
-                     rounded-md bg-white/10 hover:bg-white/20 transition"
-          aria-label="Enter fullscreen"
-        >
-          <span>⤢</span> Fullscreen
-        </button>
+      {/* === TOP TOOLBAR === */}
+      <div className="mb-2 flex items-center justify-between gap-2">
+        <div className="text-xs text-white/60">
+          {gameActive && loaded && started && (
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+              Game controls active - Click outside to scroll page
+            </div>
+          )}
+        </div>
+        <div className="flex gap-2">
+          <button
+            onClick={() => {
+              setGameActive(false);
+              setReloadKey((k) => k + 1);
+            }}
+            className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium
+                       rounded-md bg-white/10 hover:bg-white/20 transition"
+            aria-label="Reload game"
+          >
+            <span>↻</span> Reload
+          </button>
+          <button
+            onClick={toggleFullscreen}
+            className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium
+                       rounded-md bg-white/10 hover:bg-white/20 transition"
+            aria-label="Enter fullscreen"
+          >
+            <span>⤢</span> Fullscreen
+          </button>
+        </div>
       </div>
 
       {/* === PLAYER FRAME === */}
       <div
         ref={containerRef}
-        className="relative w-full rounded-xl overflow-hidden border border-white/10 bg-black aspect-video"
-        tabIndex={-1}
+        className={`relative w-full rounded-xl overflow-hidden border bg-black aspect-video transition-all duration-200 ${
+          gameActive && loaded && started 
+            ? 'border-violet-500 ring-2 ring-violet-500/30 shadow-lg shadow-violet-500/20' 
+            : 'border-white/10'
+        }`}
+        tabIndex={0}
+        onClick={handleGameClick}
       >
         {/* IFRAME (only after Play Now) */}
         {status === "ok" && started && (
           <iframe
+            ref={iframeRef}
             key={reloadKey}
             src={src}
             title={title}
@@ -169,7 +233,7 @@ export default function GamePlayer({ src, title, coverSrc }) {
                 </svg>
               </div>
 
-              <h3 className="text-2xl font-extrabold">Oops! We can’t load this game</h3>
+              <h3 className="text-2xl font-extrabold">Oops! We can't load this game</h3>
               <p className="mt-2 text-slate-700">Please try again, or pick another game.</p>
 
               <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
@@ -196,6 +260,13 @@ export default function GamePlayer({ src, title, coverSrc }) {
           </div>
         )}
       </div>
+
+      {/* Instructions */}
+      {loaded && started && (
+        <div className="mt-2 text-xs text-white/50 text-center">
+          Hover over the game or click to activate controls. Click outside the game area to scroll the page.
+        </div>
+      )}
     </div>
   );
 }

@@ -2,6 +2,8 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { ThemeToggle } from "./ThemeToggle";
+
 
 export default function Header({ onToggleSidebar, isSidebarOpen }) {
   const [bgOpacity, setBgOpacity] = useState(0.95);
@@ -49,6 +51,10 @@ export default function Header({ onToggleSidebar, isSidebarOpen }) {
         <div className="flex-1 max-w-xl mx-2">
           <HeaderSearch />
         </div>
+        {/* Right actions */}
+        <div className="flex items-center gap-1">
+  <ThemeToggle />
+</div>
 
         <div className="w-10 shrink-0" />
       </div>

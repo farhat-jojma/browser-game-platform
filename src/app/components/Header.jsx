@@ -49,7 +49,7 @@ export default function Header({ onToggleSidebar, isSidebarOpen }) {
         </Link>
 
         {/* Search -> only routes to /search */}
-        <div className="hidden xs:block flex-1 max-w-[120px] xs:max-w-[180px] sm:max-w-xs md:max-w-md lg:max-w-xl mx-2">
+        <div className="hidden sm:block flex-1 max-w-[120px] sm:max-w-xs md:max-w-md lg:max-w-xl mx-2">
           <HeaderSearch />
         </div>
         {/* Right actions */}

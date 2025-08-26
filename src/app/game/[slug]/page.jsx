@@ -15,8 +15,22 @@ export async function generateStaticParams() {
 async function loadDescriptionHTML(descField) {
   if (!descField) return null;
   const trimmed = String(descField).trim();
+
+  // ✅ If it's already HTML markup
   if (trimmed.startsWith("<")) return trimmed;
 
+  // ✅ If it's a full URL → fetch from web
+  if (trimmed.startsWith("http://") || trimmed.startsWith("https://")) {
+    try {
+      const res = await fetch(trimmed, { cache: "no-store" });
+      if (!res.ok) return null;
+      return await res.text();
+    } catch {
+      return null;
+    }
+  }
+
+  // ✅ Otherwise assume it's a relative path inside /public
   const rel = trimmed.startsWith("/") ? trimmed.slice(1) : trimmed;
   const full = path.join(process.cwd(), "public", rel);
   try {
@@ -26,14 +40,15 @@ async function loadDescriptionHTML(descField) {
   }
 }
 
+
 export default async function GamePage({ params }) {
   const { slug } = params;
   const game = data?.games?.[slug];
   if (!game) return notFound();
 
+  // ✅ use external playPath if present, otherwise fallback to local
   const playerSrc = game.playPath || `/games/${slug}/index.html`;
 
-  // 👇 pick a nice backdrop (prefer explicit one if present)
   const coverSrc = game.cover || game.banner || game.backdrop || game.image;
 
   const moreGames = Object.entries(data.games)
@@ -52,17 +67,18 @@ export default async function GamePage({ params }) {
 
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6">
         <div className="space-y-4">
-          {/* ✅ pass coverSrc */}
           <GamePlayer src={playerSrc} title={game.title} coverSrc={coverSrc} />
 
           <section className="mt-2">
             <h2 className="text-lg font-semibold mb-3">About {game.title}</h2>
             {descHTML ? (
-              <article className="leading-relaxed text-white/80 space-y-3
-                                  [&_h2]:mt-6 [&_h2]:text-xl [&_h2]:font-semibold
-                                  [&_h3]:mt-4 [&_h3]:text-lg [&_h3]:font-semibold
-                                  [&_a]:text-violet-400 hover:[&_a]:underline
-                                  [&_img]:rounded-xl [&_img]:my-3">
+              <article
+                className="leading-relaxed text-white/80 space-y-3
+                  [&_h2]:mt-6 [&_h2]:text-xl [&_h2]:font-semibold
+                  [&_h3]:mt-4 [&_h3]:text-lg [&_h3]:font-semibold
+                  [&_a]:text-violet-400 hover:[&_a]:underline
+                  [&_img]:rounded-xl [&_img]:my-3"
+              >
                 <div dangerouslySetInnerHTML={{ __html: descHTML }} />
               </article>
             ) : (
@@ -85,10 +101,17 @@ export default async function GamePage({ params }) {
                 className="flex items-center gap-3 rounded-lg p-2 hover:bg-white/5 transition"
               >
                 <div className="relative w-24 min-w-24 aspect-video rounded-md overflow-hidden bg-white/5">
-                  <Image src={g.image} alt={g.title} fill className="object-cover" />
+                  <Image
+                    src={g.image}
+                    alt={g.title}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="min-w-0">
-                  <div className="font-medium leading-tight truncate">{g.title}</div>
+                  <div className="font-medium leading-tight truncate">
+                    {g.title}
+                  </div>
                   <div className="text-xs text-white/50">{g.genre}</div>
                 </div>
               </Link>

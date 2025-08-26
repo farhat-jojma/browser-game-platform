@@ -8,7 +8,7 @@ export default function AppShell({ children }) {
   const [sidebarOpen, setSidebarOpen] = useState(true);
 
   return (
-    <div className="min-h-screen bg-[#0c0f14] text-gray-100">
+    <div className="min-h-screen bg-background text-foreground">
       {/* Fixed, full-width header */}
       <Header
         onToggleSidebar={() => setSidebarOpen((s) => !s)}

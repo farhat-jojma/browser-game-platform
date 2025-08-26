@@ -73,14 +73,14 @@ export default function Sidebar({ isOpen, onClose, desktopInGrid = false }) {
       {/* Mobile overlay */}
       <div
         onClick={onClose}
-        className={`fixed inset-0 z-40 bg-black/50 lg:hidden transition-opacity
+        className={`fixed inset-0 z-40 lg:hidden transition-opacity bg-black/40 dark:bg-black/50
           ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
       />
 
       {/* Mobile drawer */}
       <div
         className={`fixed top-14 left-0 z-50 h-[calc(100vh-56px)] w-64
-          bg-[#0f131d] border-r border-white/5 overflow-y-auto overscroll-contain sidebar-scroll
+          bg-card text-foreground border-r border-border overflow-y-auto overscroll-contain sidebar-scroll
           lg:hidden transform transition-transform duration-200
           ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
@@ -92,7 +92,7 @@ export default function Sidebar({ isOpen, onClose, desktopInGrid = false }) {
         className={`${
           desktopInGrid
             ? "hidden lg:block lg:sticky lg:top-14 lg:h-[calc(100vh-56px)] " +
-              "bg-[#0f131d] border-r border-white/5 overflow-y-auto overscroll-contain sidebar-scroll"
+              "bg-card text-foreground border-r border-border overflow-y-auto overscroll-contain sidebar-scroll"
             : "hidden"
         }`}
       >
@@ -110,13 +110,13 @@ function Nav() {
     <nav className="px-2 py-3">
       {items.map((it, idx) =>
         it.divider ? (
-          <div key={`div-${idx}`} className="my-2 border-t border-white/10" />
+          <div key={`div-${idx}`} className="my-2 border-t border-border" />
         ) : (
           <Link
             key={it.href}
             href={it.href}
             className={`flex items-center gap-3 px-3 py-2 rounded-lg transition
-              ${isActive(pathname, it.href) ? "bg-white/10" : "hover:bg-white/5"}`}
+              ${isActive(pathname, it.href) ? "bg-black/10 dark:bg-white/10" : "hover:bg-black/5 dark:hover:bg-white/5"}`}
           >
             <span className="text-xl">{it.icon}</span>
             <span className="text-sm">{it.label}</span>

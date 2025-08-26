@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import SimpleGameCard from "../components/SimpleGameCard";
 import data from "../../data/games.json";
 
@@ -24,8 +27,9 @@ function resolveSectionId(query) {
   return null;
 }
 
-export default function SearchPage({ searchParams }) {
-  const q = (searchParams?.q ?? "").trim();
+export default function SearchPage() {
+  const params = useSearchParams();
+  const q = (params.get("q") ?? "").trim();
 
   const gamesMap = data?.games ?? {};
   const sections = data?.sections ?? {};
@@ -35,7 +39,7 @@ export default function SearchPage({ searchParams }) {
     title: g.title,
     image: g.image,
     genre: g.genre,
-    tags: g.tags || [], // optional in games.json
+    tags: g.tags || [],
   }));
 
   if (!q) {
@@ -48,18 +52,14 @@ export default function SearchPage({ searchParams }) {
   }
 
   const nq = norm(q);
-
-  // If query looks like a section name, include that section
   const matchedSectionId = resolveSectionId(q);
   const sectionSet = matchedSectionId ? new Set(sections[matchedSectionId] || []) : new Set();
 
-  // Try to infer a genre from query (e.g. "arcade", "puzzle")
   const genreCandidates = new Set(all.map((g) => norm(String(g.genre || ""))).filter(Boolean));
   const inferredGenres = Array.from(genreCandidates).filter(
     (g) => g && (nq === g || nq.includes(g))
   );
 
-  // Scoring function: higher = more relevant
   const scoreOf = (g) => {
     const t = norm(g.title);
     const s = norm(g.id);
@@ -72,9 +72,9 @@ export default function SearchPage({ searchParams }) {
     if (s.includes(nq))   score += 3;
     if (gg.includes(nq))  score += 3;
 
-    if (inferredGenres.some((ig) => gg === ig)) score += 4; // genre hint boost
-    if (tags.some((tag) => tag.includes(nq)))   score += 2; // tag boost
-    if (sectionSet.has(g.id))                   score += 5; // section alias boost
+    if (inferredGenres.some((ig) => gg === ig)) score += 4;
+    if (tags.some((tag) => tag.includes(nq)))   score += 2;
+    if (sectionSet.has(g.id))                   score += 5;
 
     return score;
   };
@@ -101,21 +101,20 @@ export default function SearchPage({ searchParams }) {
 
       {total > 0 ? (
         <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
-    {results.map(({ _score, ...g }) => (
-      <SimpleGameCard key={g.id} game={g} />
-    ))}
-  </div>
+          {results.map(({ _score, ...g }) => (
+            <SimpleGameCard key={g.id} game={g} />
+          ))}
+        </div>
       ) : (
         <div className="min-h-[calc(100vh-56px)]">
-    <NoResultsFull query={q} />
-  </div>
+          <NoResultsFull query={q} />
+        </div>
       )}
     </div>
   );
 }
 
-/* ───────────── Aesthetic empty state ───────────── */
-
+/* ───────────── Empty state ───────────── */
 function NoResultsFull({ query }) {
   const suggestions = [
     { label: "Featured", href: "/section/featured" },
@@ -128,28 +127,21 @@ function NoResultsFull({ query }) {
 
   return (
     <div className="relative h-full w-full overflow-hidden">
-      {/* background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950" />
       <div className="pointer-events-none absolute -top-40 -left-40 h-96 w-96 rounded-full bg-violet-600/25 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-40 -right-32 h-96 w-96 rounded-full bg-fuchsia-500/20 blur-3xl" />
-
-      {/* content centered */}
       <div className="relative h-full w-full flex flex-col items-center justify-center p-6 text-center">
-        {/* icon */}
         <div className="mx-auto mb-5 grid h-16 w-16 place-items-center rounded-2xl bg-white/5 ring-1 ring-white/10">
           <svg width="28" height="28" viewBox="0 0 24 24" className="text-white/85" fill="none">
             <circle cx="11" cy="11" r="7" stroke="currentColor" strokeWidth="1.6" />
             <path d="M20 20l-3.4-3.4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/>
           </svg>
         </div>
-
         <h2 className="text-3xl font-extrabold">No games found</h2>
         <p className="mt-2 max-w-xl text-white/70">
           We couldn’t find results for <span className="text-white/90">“{query}”</span>. 
           Try another keyword or explore a category below.
         </p>
-
-        {/* actions */}
         <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
           <a href="/search" className="rounded-full px-4 py-2 bg-white/10 hover:bg-white/20 text-sm">
             Clear search
@@ -158,8 +150,6 @@ function NoResultsFull({ query }) {
             Browse all games
           </a>
         </div>
-
-        {/* quick suggestions */}
         <div className="mt-6 flex flex-wrap justify-center gap-2">
           {suggestions.map((s) => (
             <a

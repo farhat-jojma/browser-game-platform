@@ -1,10 +1,8 @@
-// next.config.js
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: "export",   // ✅ active le static export
+module.exports = {
+  output: "export",
   images: {
-    unoptimized: true // ✅ évite l’Image Optimization de Next (non supportée par Pages)
-  }
+    // autorise les images distantes depuis picsum.photos
+    domains: ["picsum.photos"],
+  },
 };
-
-module.exports = nextConfig;

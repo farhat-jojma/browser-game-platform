@@ -3,6 +3,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 import data from "../../data/games.json"; // adjust the relative path if needed
 
 // Labels/icons for known sections
@@ -79,7 +80,7 @@ export default function Sidebar({ isOpen, onClose, desktopInGrid = false }) {
 
       {/* Mobile drawer */}
       <div
-        className={`fixed top-14 left-0 z-50 h-[calc(100vh-56px)] w-64
+        className={`fixed top-14 left-0 z-50 h-[calc(100vh-56px)] w-14
           bg-card text-foreground border-r border-border overflow-y-auto overscroll-contain sidebar-scroll
           lg:hidden transform transition-transform duration-200
           ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
@@ -87,7 +88,7 @@ export default function Sidebar({ isOpen, onClose, desktopInGrid = false }) {
         <Nav />
       </div>
 
-      {/* Desktop sidebar (sticky under 56px header; own scroll; no scroll chaining) */}
+      {/* Desktop sidebar */}
       <aside
         className={`${
           desktopInGrid
@@ -110,16 +111,18 @@ function Nav() {
     <nav className="px-2 py-3">
       {items.map((it, idx) =>
         it.divider ? (
-          <div key={`div-${idx}`} className="my-2 border-t border-border" />
+          <div key={`div-${idx}`} className="my-2 border-t border-border w-8 mx-auto" />
         ) : (
           <Link
             key={it.href}
             href={it.href}
-            className={`flex items-center gap-3 px-3 py-2 rounded-lg transition
+            className={`flex flex-col items-center justify-center px-0 py-3 rounded-lg transition
               ${isActive(pathname, it.href) ? "bg-black/10 dark:bg-white/10" : "hover:bg-black/5 dark:hover:bg-white/5"}`}
           >
-            <span className="text-xl">{it.icon}</span>
-            <span className="text-sm">{it.label}</span>
+            <span className="text-2xl">{it.icon}</span>
+            <span className="text-xs mt-1 hidden lg:inline">
+              {it.label}
+            </span>
           </Link>
         )
       )}

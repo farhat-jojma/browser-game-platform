@@ -71,7 +71,6 @@ export default function SearchPage() {
     if (t.includes(nq))   score += 4;
     if (s.includes(nq))   score += 3;
     if (gg.includes(nq))  score += 3;
-
     if (inferredGenres.some((ig) => gg === ig)) score += 4;
     if (tags.some((tag) => tag.includes(nq)))   score += 2;
     if (sectionSet.has(g.id))                   score += 5;

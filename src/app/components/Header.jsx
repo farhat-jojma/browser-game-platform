@@ -25,10 +25,11 @@ export default function Header({ onToggleSidebar, isSidebarOpen }) {
 
   return (
     <header
-      className="fixed inset-x-0 top-0 z-50 h-14 backdrop-blur border-b border-border transition-colors duration-300"
+      className="fixed inset-x-0 top-0 z-50 h-14 sm:h-16 backdrop-blur border-b border-border transition-colors duration-300"
       style={{ backgroundColor: `hsl(var(--background) / ${bgOpacity})` }}
     >
-      <div className="flex items-center justify-between h-full px-4 sm:px-6 lg:px-8 gap-3">
+      <div className="flex flex-wrap items-center justify-between h-full px-4 sm:px-6 lg:px-8 gap-3">
+
         {/* Toggle */}
         <button
           onClick={onToggleSidebar}
@@ -44,11 +45,11 @@ export default function Header({ onToggleSidebar, isSidebarOpen }) {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
           <span className="text-2xl">🎮</span>
-          <span className="font-semibold">Browser Game Platform</span>
+          <span className="font-semibold text-base">Browser Game Platform</span>
         </Link>
 
         {/* Search -> only routes to /search */}
-        <div className="flex-1 max-w-xl mx-2">
+        <div className="hidden xs:block flex-1 max-w-[120px] xs:max-w-[180px] sm:max-w-xs md:max-w-md lg:max-w-xl mx-2">
           <HeaderSearch />
         </div>
         {/* Right actions */}

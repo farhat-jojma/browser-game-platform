@@ -78,7 +78,7 @@ function MobileNav() {
   const items = buildItems();
 
   return (
-    <nav className="px-1 py-3">
+    <nav className="px-1 py-3 overflow-x-hidden">
       {items.map((it, idx) =>
         it.divider ? (
           <div key={`div-${idx}`} className="my-2 border-t border-border mx-2" />
@@ -86,7 +86,7 @@ function MobileNav() {
           <Link
             key={it.href}
             href={it.href}
-            className={`flex items-center justify-center w-12 h-12 mx-auto mb-2 rounded-lg transition group relative
+            className={`flex items-center justify-center w-12 h-12 mx-auto mb-2 rounded-lg transition group relative overflow-hidden
               ${isActive(pathname, it.href) 
                 ? "bg-black/10 dark:bg-white/10" 
                 : "hover:bg-black/5 dark:hover:bg-white/5"}`}
@@ -95,7 +95,7 @@ function MobileNav() {
             <span className="text-xl">{it.icon}</span>
             
             {/* Tooltip on hover */}
-            <div className="absolute left-full ml-2 px-2 py-1 bg-gray-900 text-white text-xs rounded 
+            <div className="hidden md:block absolute left-full ml-2 px-2 py-1 bg-gray-900 text-white text-xs rounded 
                            opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none
                            whitespace-nowrap z-50 dark:bg-gray-100 dark:text-gray-900">
               {it.label}
@@ -120,7 +120,7 @@ export default function MobileSidebar({ isOpen, onClose }) {
       {/* Mobile drawer - ICON ONLY VERSION */}
       <div
         className={`fixed top-14 left-0 z-50 h-[calc(100vh-56px)] w-16
-          bg-card text-foreground border-r border-border overflow-y-auto overscroll-contain sidebar-scroll
+          bg-card text-foreground border-r border-border overflow-y-auto overflow-x-hidden overscroll-contain sidebar-scroll touch-pan-y
           lg:hidden transform transition-transform duration-200
           ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
       >

@@ -72,32 +72,45 @@ function isActive(pathname, href) {
   return pathname.startsWith(href);
 }
 
-export default function DesktopSidebar({ show = true }) {
+// Desktop Navigation - Full labels
+function DesktopNav() {
   const pathname = usePathname();
   const items = buildItems();
 
-  if (!show) return null;
-
   return (
-    <aside className="hidden lg:block lg:sticky lg:top-14 lg:h-[calc(100vh-56px)] w-64 
-                     bg-card text-foreground border-r border-border overflow-y-auto overscroll-contain sidebar-scroll">
-      <nav className="px-2 py-3">
-        {items.map((it, idx) =>
-          it.divider ? (
-            <div key={`div-${idx}`} className="my-2 border-t border-border" />
-          ) : (
-            <Link
-              key={it.href}
-              href={it.href}
-              className={`flex items-center gap-3 px-3 py-2 rounded-lg transition
-                ${isActive(pathname, it.href) ? "bg-black/10 dark:bg-white/10" : "hover:bg-black/5 dark:hover:bg-white/5"}`}
-            >
-              <span className="text-xl">{it.icon}</span>
-              <span className="text-sm">{it.label}</span>
-            </Link>
-          )
-        )}
-      </nav>
+    <nav className="px-2 py-3">
+      {items.map((it, idx) =>
+        it.divider ? (
+          <div key={`div-${idx}`} className="my-2 border-t border-border" />
+        ) : (
+          <Link
+            key={it.href}
+            href={it.href}
+            className={`flex items-center gap-3 px-3 py-2 rounded-lg transition
+              ${isActive(pathname, it.href) ? "bg-black/10 dark:bg-white/10" : "hover:bg-black/5 dark:hover:bg-white/5"}`}
+          >
+            <span className="text-xl">{it.icon}</span>
+            <span className="text-sm">{it.label}</span>
+          </Link>
+        )
+      )}
+    </nav>
+  );
+}
+
+export default function DesktopSidebar({ isOpen, desktopInGrid = false }) {
+  return (
+    <aside
+      className={`${
+        desktopInGrid
+          ? "hidden lg:block lg:sticky lg:top-14 lg:h-[calc(100vh-56px)] w-64 " +
+            "bg-card text-foreground border-r border-border overflow-y-auto overscroll-contain sidebar-scroll " +
+            "lg:transform lg:transition-transform lg:duration-200 " +
+            (isOpen ? "lg:translate-x-0" : "lg:-translate-x-full")
+          : "hidden"
+      }`}
+    >
+      <DesktopNav />
     </aside>
   );
 }

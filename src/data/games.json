@@ -12,270 +12,267 @@
       "image": "/images/games/brain-game.png",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/BrainGame/index.html",
-      "description": "https://games-dun-one.vercel.app/BrainGame/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/BrainGame/description.html"
     },
     "color-water-sort": {
       "title": "Color Water Sort",
       "image": "/images/games/color-water-sort.png",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/ColorWaterSort/index.html",
-      "description": "https://games-dun-one.vercel.app/ColorWaterSort/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/ColorWaterSort/description.html"
     },
     "drag-slam": {
       "title": "Drag Slam",
       "image": "/images/games/DragSlam.png",
       "genre": "Adventure",
       "playPath": "https://games-dun-one.vercel.app/DragSlam/index.html",
-      "description": "https://games-dun-one.vercel.app/DragSlam/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/DragSlam/description.html"
     },
     "dungeon-quest": {
       "title": "Dungeon Quest",
       "image": "/images/games/dungeon-quest.png",
       "genre": "Adventure",
       "playPath": "https://games-dun-one.vercel.app/DungeonQuest/index.html",
-      "description": "https://games-dun-one.vercel.app/DungeonQuest/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/DungeonQuest/description.html"
     },
     "dunk-drawing": {
       "title": "Dunk Drawing",
       "image": "/images/games/dunk-drawing.png",
       "genre": "Sports",
       "playPath": "https://games-dun-one.vercel.app/DunkDrawing/index.html",
-      "description": "https://games-dun-one.vercel.app/DunkDrawing/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/DunkDrawing/description.html"
     },
     "foot-pong": {
       "title": "Foot Pong",
       "image": "/images/games/foot-pong.png",
       "genre": "Sports",
       "playPath": "https://games-dun-one.vercel.app/FootPong/index.html",
-      "description": "https://games-dun-one.vercel.app/FootPong/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/FootPong/description.html"
     },
     "fruit-party": {
       "title": "Fruit Party",
       "image": "/images/games/fruit-party.avif",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/FruitParty/index.html",
-      "description": "https://games-dun-one.vercel.app/FruitParty/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/FruitParty/description.html"
     },
     "granny-hero": {
       "title": "Granny Hero",
       "image": "/images/games/granny-hero.png",
       "genre": "Action",
       "playPath": "https://games-dun-one.vercel.app/GrannyHero/index.html",
-      "description": "https://games-dun-one.vercel.app/GrannyHero/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/GrannyHero/description.html"
     },
     "hero-blaster": {
       "title": "Hero Blaster",
       "image": "/images/games/hero-blaster.png",
       "genre": "Shooter",
       "playPath": "https://games-dun-one.vercel.app/HeroBlaster/index.html",
-      "description": "https://games-dun-one.vercel.app/HeroBlaster/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/HeroBlaster/description.html"
     },
     "invace-spaders": {
       "title": "Invace Spaders",
       "image": "/images/games/invace-spaders.png",
       "genre": "Shooter",
       "playPath": "https://games-dun-one.vercel.app/InvaceSpaders/index.html",
-      "description": "https://games-dun-one.vercel.app/InvaceSpaders/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/InvaceSpaders/description.html"
     },
     "math-tiles": {
       "title": "Math Tiles",
       "image": "/images/games/mathup.png",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/MathTiles/index.html",
-      "description": "https://games-dun-one.vercel.app/MathTiles/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/MathTiles/description.html"
     },
     "mathup": {
       "title": "MathUp",
       "image": "/images/games/mathup.png",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/MathUp/index.html",
-      "description": "https://games-dun-one.vercel.app/MathUp/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/MathUp/description.html"
     },
     "neon-pong": {
       "title": "Neon Pong",
       "image": "/images/games/neon-pong.jpg",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/NeonPong/index.html",
-      "description": "https://games-dun-one.vercel.app/NeonPong/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/NeonPong/description.html"
     },
     "neon-rider": {
       "title": "Neon Rider",
       "image": "/images/games/neon-rider.png",
       "genre": "Bike",
       "playPath": "https://games-dun-one.vercel.app/NeonRider/index.html",
-      "description": "https://games-dun-one.vercel.app/NeonRider/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/NeonRider/description.html"
     },
     "pac-chef": {
       "title": "Pac Chef",
       "image": "/images/games/pac-chef.png",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/PacChef/index.html",
-      "description": "https://games-dun-one.vercel.app/PacChef/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/PacChef/description.html"
     },
     "pac-rat": {
       "title": "Pac Rat",
       "image": "/images/games/pac-rat.jpg",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/PacRat/index.html",
-      "description": "https://games-dun-one.vercel.app/PacRat/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/PacRat/description.html"
     },
     "pink-and-blue": {
       "title": "Pink and Blue",
       "image": "/images/games/pink-and-blue.png",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/PinkAndBlue/index.html",
-      "description": "https://games-dun-one.vercel.app/PinkAndBlue/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/PinkAndBlue/description.html"
     },
     "retro-bowl": {
       "title": "Retro Bowl",
       "image": "/images/games/retro-bowl.png",
       "genre": "Sports",
       "playPath": "https://games-dun-one.vercel.app/RetroBowl/index.html",
-      "description": "https://games-dun-one.vercel.app/RetroBowl/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/RetroBowl/description.html"
     },
     "snakegame": {
       "title": "Snake Game",
       "image": "/images/games/snakegame.png",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/SnakeGame/index.html",
-      "description": "https://games-dun-one.vercel.app/SnakeGame/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/SnakeGame/description.html"
     },
     "space-invace": {
       "title": "Space Invace",
       "image": "/images/games/space-invace.png",
       "genre": "Shooter",
       "playPath": "https://games-dun-one.vercel.app/SpaceInvace/index.html",
-      "description": "https://games-dun-one.vercel.app/SpaceInvace/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/SpaceInvace/description.html"
     },
     "spider-solitaire": {
       "title": "Spider Solitaire",
       "image": "/images/games/spider-solitaire.jpg",
       "genre": "Shooter",
       "playPath": "https://games-dun-one.vercel.app/SpiderSolitaire/index.html",
-      "description": "https://games-dun-one.vercel.app/SpiderSolitaire/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/SpiderSolitaire/description.html"
     },
     "sticky": {
       "title": "Sticky",
       "image": "/images/games/sticky.png",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/Sticky/index.html",
-      "description": "https://games-dun-one.vercel.app/Sticky/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/Sticky/description.html"
     },
     "super-agent": {
       "title": "Super Agent",
       "image": "/images/games/super-agent.png",
       "genre": "Action",
       "playPath": "https://games-dun-one.vercel.app/SuperAgent/index.html",
-      "description": "https://games-dun-one.vercel.app/SuperAgent/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/SuperAgent/description.html"
     },
     "super-pix": {
       "title": "Super Pix",
       "image": "/images/games/super-pix.png",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/SuperPix/index.html",
-      "description": "https://games-dun-one.vercel.app/SuperPix/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/SuperPix/description.html"
     },
     "treasure-hunters": {
       "title": "Treasure Hunters",
       "image": "/images/games/treasure-hunters.png",
       "genre": "Adventure",
       "playPath": "https://games-dun-one.vercel.app/TreasureHunters/index.html",
-      "description": "https://games-dun-one.vercel.app/TreasureHunters/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/TreasureHunters/description.html"
     },
     "plug-heads": {
       "title": "Plug Heads",
       "image": "/images/games/plug-heads.png",
       "genre": "Multiplayer",
       "playPath": "https://games-dun-one.vercel.app/PlugHeads/index.html",
-      "description": "https://games-dun-one.vercel.app/PlugHeads/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/PlugHeads/description.html"
     },
     "gun-merge": {
       "title": "Gun Merge",
       "image": "/images/games/gun-merge.png",
       "genre": "Merge",
       "playPath": "https://games-dun-one.vercel.app/GunMerge/index.html",
-      "description": "https://games-dun-one.vercel.app/GunMerge/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/GunMerge/description.html"
     },
     "braindom": {
       "title": "Braindom",
       "image": "/images/games/braindom.png",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/Braindom/index.html",
-      "description": "https://games-dun-one.vercel.app/Braindom/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/Braindom/description.html"
     },
     "braindom-2": {
       "title": "Braindom 2",
       "image": "/images/games/braindom-2.png",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/Braindom2/index.html",
-      "description": "https://games-dun-one.vercel.app/Braindom2/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/Braindom2/description.html"
     },
     "rotated-cups": {
       "title": "Rotated Cups",
       "image": "/images/games/rotated-cups.png",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/RotatedCups/index.html",
-      "description": "https://games-dun-one.vercel.app/RotatedCups/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/RotatedCups/description.html"
     },
     "cups-tower-builder": {
       "title": "Cups Tower Builder",
       "image": "/images/games/cups-tower-builder.jpeg",
       "genre": "Stack",
       "playPath": "https://games-dun-one.vercel.app/CupsTowerBuilder/index.html",
-      "description": "https://games-dun-one.vercel.app/CupsTowerBuilder/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/CupsTowerBuilder/description.html"
     },
     "fire-truck-driving": {
       "title": "Fire Truck Driving",
       "image": "/images/games/fire-truck-driving.png",
       "genre": "Driving",
       "playPath": "https://games-dun-one.vercel.app/FireTruckDriving/index.html",
-      "description": "https://games-dun-one.vercel.app/FireTruckDriving/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/FireTruckDriving/description.html"
     },
     "archery": {
       "title": "Archery",
       "image": "/images/games/archery.png",
       "genre": "Sports",
       "playPath": "https://games-dun-one.vercel.app/archery/index.html",
-      "description": "https://games-dun-one.vercel.app/archery/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/archery/description.html"
     },
     "three-cups": {
       "title": "Three Cups",
       "image": "/images/games/three-cups.png",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/ThreeCups/index.html",
-      "description": "https://games-dun-one.vercel.app/ThreeCups/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/ThreeCups/description.html"
     },
-      "kindergarten-teacher": {
-        "title": "Kindergarten Teacher",
-        "image": "/images/games/mathup.png",
-        "genre": "Puzzle",
-        "playPath": "https://games-dun-one.vercel.app/KindergartenTeacher/index.html",
-        "description": "https://games-dun-one.vercel.app/KindergartenTeacher/description.html"
+    "kindergarten-teacher": {
+      "title": "Kindergarten Teacher",
+      "image": "/images/games/mathup.png",
+      "genre": "Puzzle",
+      "playPath": "https://games-dun-one.vercel.app/KindergartenTeacher/index.html",
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/KindergartenTeacher/description.html"
     },
     "what-is-the-password": {
       "title": "What Is The Password",
       "image": "/images/games/mathup.png",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/WhatIsThePassword/index.html",
-      "description": "https://games-dun-one.vercel.app/WhatIsThePassword/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/WhatIsThePassword/description.html"
     }
   },
   "sections": {
-    "featured": ["neon-rider", "sticky", "plug-heads", "bomberman", "fruit-party", "retro-bowl"],
+    "featured": ["plug-heads", "bomberman", "fruit-party", "retro-bowl"],
     "new": ["braindom", "braindom-2", "rotated-cups", "cups-tower-builder", "fire-truck-driving", "neon-pong", "super-pix"],
-
-    "trending": ["neon-rider", "retro-bowl", "fruit-party", "sticky", "super-pix"],
+    "trending": ["retro-bowl", "fruit-party", "super-pix"],
     "updated": ["braindom-2", "rotated-cups", "fire-truck-driving", "gun-merge"],
     "originals": ["super-agent", "plug-heads", "super-pix"],
-
     "multiplayer": ["pink-and-blue", "neon-pong"],
     "action": ["super-agent", "granny-hero"],
     "adventure": ["dungeon-quest", "treasure-hunters", "pink-and-blue"],
     "sports": ["retro-bowl", "foot-pong", "archery", "drag-slam", "dunk-drawing"],
-    "driving": ["neon-rider", "fire-truck-driving"],
-    "racing": ["neon-rider"],
-
-    "arcade": ["bomberman", "neon-pong", "snakegame", "sticky", "pac-chef", "pac-rat", "super-pix"],
+    "driving": ["fire-truck-driving"],
+    "racing": [],
+    "arcade": ["bomberman", "neon-pong", "snakegame", "pac-chef", "pac-rat", "super-pix"],
     "puzzle": ["color-water-sort", "rotated-cups", "three-cups", "dunk-drawing", "pink-and-blue", "mathup", "fruit-party", "kindergarten-teacher"],
     "shooter": ["hero-blaster", "invace-spaders", "space-invace", "gun-merge"],
     "brain": ["brain-game", "mathup", "braindom", "braindom-2", "math-tiles", "what-is-the-password"],
@@ -288,5 +285,4 @@
     "retro": ["pac-chef", "pac-rat", "bomberman", "snakegame", "space-invace", "neon-pong"],
     "kids": ["fruit-party", "color-water-sort", "mathup", "pink-and-blue"]
   }
-
 }

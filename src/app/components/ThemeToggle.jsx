@@ -22,7 +22,7 @@ export function ThemeToggle() {
 
   if (!mounted) {
     return (
-      <Button variant="ghost" size="icon" aria-label="Toggle theme">
+      <Button variant="ghost" size="icon" aria-label="Toggle theme" className="hover:bg-[#7C3BED] hover:text-white">
         <Sun className="h-[18px] w-[18px]" /> {/* Icône par défaut pour éviter mismatch */}
       </Button>
     );
@@ -34,7 +34,7 @@ export function ThemeToggle() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" aria-label="Toggle theme">
+        <Button variant="ghost" size="icon" aria-label="Toggle theme" className="hover:bg-[#7C3BED] hover:text-white">
           <Icon className="h-[18px] w-[18px]" />
         </Button>
       </DropdownMenuTrigger>

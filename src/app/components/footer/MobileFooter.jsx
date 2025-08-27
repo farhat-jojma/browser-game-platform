@@ -43,25 +43,25 @@ export default function MobileFooter() {
           <div className="flex items-center justify-center whitespace-nowrap">
             <a 
               className="inline-block py-1.5 px-3 text-sm text-muted-foreground hover:text-foreground active:text-foreground transition-colors duration-200 rounded-lg hover:bg-muted/50 active:bg-muted" 
-              href="#"
+              href="/privacy-policy"
             >
               Privacy Policy
             </a>
             <a 
               className="inline-block py-1.5 px-3 text-sm text-muted-foreground hover:text-foreground active:text-foreground transition-colors duration-200 rounded-lg hover:bg-muted/50 active:bg-muted" 
-              href="#"
+              href="/privacy-policy"
             >
               Terms of Service
             </a>
             <a 
               className="inline-block py-1.5 px-3 text-sm text-muted-foreground hover:text-foreground active:text-foreground transition-colors duration-200 rounded-lg hover:bg-muted/50 active:bg-muted" 
-              href="#"
+              href="/contact"
             >
               Contact Us
             </a>
             <a 
                 className="inline-block py-1.5 px-3 text-sm text-muted-foreground hover:text-foreground active:text-foreground transition-colors duration-200 rounded-lg hover:bg-muted/50 active:bg-muted" 
-                href="#"
+                href="/about"
             >
               About
             </a>

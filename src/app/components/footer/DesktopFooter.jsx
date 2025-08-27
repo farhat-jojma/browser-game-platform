@@ -18,25 +18,25 @@ export default function DesktopFooter() {
             <div className="flex items-center space-x-6">
               <a 
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200" 
-                href="#"
+                href="/privacy-policy"
               >
                 Privacy Policy
               </a>
               <a 
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200" 
-                href="#"
+                href="/terms-of-service"
               >
                 Terms of Service
               </a>
               <a 
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200" 
-                href="#"
+                href="/contact"
               >
                 Contact Us
               </a>
               <a 
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200" 
-                href="#"
+                href="/about"
               >
                 About
               </a>

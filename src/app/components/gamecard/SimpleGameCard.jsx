@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 /** Gradient + text color per genre (badge) */
 const GENRE_BADGE = {
@@ -66,6 +67,8 @@ export default function SimpleGameCard({ game }) {
   const badgeText = game.badge ?? game.genre;
   const gradient  = game.badgeColor || badgeGradientFor(game.badgeGenre ?? game.genre);
   const borderClr = game.badgeBorder || borderClassFor(game.badgeGenre ?? game.genre);
+  const [imageError, setImageError] = useState(false);
+  const hasImage = Boolean(game.image) && !imageError;
 
   return (
     <Link href={href} className="group block">
@@ -73,16 +76,23 @@ export default function SimpleGameCard({ game }) {
       <div className="relative rounded-xl ring-1 ring-white/10 transition-colors duration-300">
         {/* INNER: content + clipping */}
         <div className="relative overflow-hidden rounded-xl">
-          {/* Image */}
-          <div className="relative aspect-[16/9] w-full bg-white/5">
-            <Image
-              src={game.image}
-              alt={game.title}
-              fill
-              className="object-cover transition duration-300 group-hover:scale-[1.02]"
-              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
-            />
-            <div className="absolute inset-0 bg-black/0 transition group-hover:bg-black/20" />
+          {/* Image or genre-colored fallback */}
+          <div className="relative aspect-[16/9] w-full">
+            {hasImage ? (
+              <>
+                <Image
+                  src={game.image}
+                  alt={game.title}
+                  fill
+                  className="object-cover transition duration-300 group-hover:scale-[1.02]"
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                  onError={() => setImageError(true)}
+                />
+                <div className="absolute inset-0 bg-black/0 transition group-hover:bg-black/20" />
+              </>
+            ) : (
+              <div className={`absolute inset-0 rounded-xl bg-gradient-to-b ${gradient}`} />
+            )}
           </div>
 
           {/* FULL 4-side border overlay on hover (matches badge color) */}

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import GamePlayer from "../../components/GamePlayer";
+import GamePlayer from "../../components/gameplayer/GamePlayer";
 import data from "../../../data/games.json";
 
 import path from "node:path";

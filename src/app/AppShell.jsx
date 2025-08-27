@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
-import Footer from "./components/Footer";
+import Header from "./components/header/Header";
+import Sidebar from "./components/sidebar/Sidebar";
+import Footer from "./components/footer/Footer";
 
 export default function AppShell({ children }) {
   const [sidebarOpen, setSidebarOpen] = useState(true);

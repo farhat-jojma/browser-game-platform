@@ -1,6 +1,6 @@
 import Link from "next/link";
 import data from "../data/games.json";
-import RowCarousel from "./components/RowCarousel";
+import RowCarousel from "./components/rowcarousel/RowCarousel";
 
 // Turn a list of slugs into card props from games.json
 function slugsToItems(slugs = [], games = {}) {

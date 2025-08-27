@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import SimpleGameCard from "./SimpleGameCard";
+import SimpleGameCard from "../gamecard/SimpleGameCard";
 
 export default function RowCarousel({ title, items, viewMoreHref }) {
   const scrollerRef = useRef(null);

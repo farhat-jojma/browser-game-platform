@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import SimpleGameCard from "../../components/SimpleGameCard";
+import SimpleGameCard from "../../components/gamecard/SimpleGameCard";
 import data from "../../../data/games.json"; // <- JSON source
 
 // Build items from a list of slugs using games.json

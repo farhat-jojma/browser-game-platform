@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import data from "../../data/games.json"; // adjust the relative path if needed
+import data from "../../../data/games.json"; // adjust the relative path if needed
 
 // Labels/icons for known sections
 const SECTION_META = {

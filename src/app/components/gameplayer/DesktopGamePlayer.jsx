@@ -1,10 +1,10 @@
-// src/app/components/GamePlayer.jsx
+// src/app/components/GamePlayerDesktop.jsx
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-export default function GamePlayer({ src, title, coverSrc }) {
+export default function GamePlayerDesktop({ src, title, coverSrc }) {
   const router = useRouter();
   const containerRef = useRef(null);
   const iframeRef = useRef(null);

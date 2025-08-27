@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import SimpleGameCard from "../components/SimpleGameCard";
+import SimpleGameCard from "../components/gamecard/SimpleGameCard";
 import data from "../../data/games.json";
 
 /** ...copie tout le code de SearchPage ici, sauf l'export default function SearchPage... */

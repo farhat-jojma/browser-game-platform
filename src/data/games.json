@@ -5,7 +5,7 @@
       "image": "/images/games/bomberman.png",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/BomberMan/index.html",
-      "description": "https://games-dun-one.vercel.app/BomberMan/description.html"
+      "description": "/api/desc?url=https://games-dun-one.vercel.app/BomberMan/description.html"
     },
     "brain-game": {
       "title": "Brain Game",

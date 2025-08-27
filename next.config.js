@@ -1,13 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   output: "export",
-  trailingSlash: true,   // génère un dossier /out
+  trailingSlash: true,
   images: {
+    unoptimized: true ,
     // autorise les images distantes depuis picsum.photos
     domains: ["picsum.photos"],
-    unoptimized: true 
-  }
+  },
 };
-
-module.exports = nextConfig;
 

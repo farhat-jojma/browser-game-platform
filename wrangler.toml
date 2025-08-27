@@ -1,5 +1,0 @@
-name = "browser-game-platform"
-compatibility_date = "2025-08-27"
-
-[site]
-bucket = ".vercel/output/static"

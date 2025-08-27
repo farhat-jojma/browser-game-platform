@@ -14,14 +14,34 @@ export async function generateStaticParams() {
 
 async function loadDescriptionHTML(descField) {
   if (!descField) return null;
+  const trimmed = String(descField).trim();
+
+  // ✅ If it's already HTML markup
+  if (trimmed.startsWith("<")) return trimmed;
+
+  // ✅ If it's a proxy API or external URL → fetch
+  if (trimmed.startsWith("http://") || 
+      trimmed.startsWith("https://") || 
+      trimmed.startsWith("/api/")) {
+    try {
+      const res = await fetch(trimmed, { cache: "no-store" });
+      if (!res.ok) return null;
+      return await res.text();
+    } catch {
+      return null;
+    }
+  }
+
+  // ✅ Otherwise assume it's a relative path inside /public
+  const rel = trimmed.startsWith("/") ? trimmed.slice(1) : trimmed;
+  const full = path.join(process.cwd(), "public", rel);
   try {
-    const res = await fetch(descField, { cache: "no-store" });
-    if (!res.ok) return null;
-    return await res.text();
+    return await fs.readFile(full, "utf8");
   } catch {
     return null;
   }
 }
+
 
 
 export default async function GamePage({ params }) {

@@ -1,5 +1,7 @@
 // src/app/api/desc/route.js
 
+export const dynamic = "force-dynamic";
+
 export async function GET(req) {
   const { searchParams } = new URL(req.url);
   const url = searchParams.get("url");
@@ -13,13 +15,13 @@ export async function GET(req) {
     if (!res.ok) {
       return new Response("Failed to fetch description", { status: res.status });
     }
+
     const html = await res.text();
 
     return new Response(html, {
       status: 200,
       headers: {
-        "Content-Type": "text/html; charset=utf-8",
-        "Access-Control-Allow-Origin": "*"
+        "Content-Type": "text/html; charset=utf-8"
       }
     });
   } catch (err) {

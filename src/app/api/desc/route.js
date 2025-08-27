@@ -1,6 +1,5 @@
 // src/app/api/desc/route.js
-
-export const dynamic = "force-dynamic";
+export const dynamic = "force-dynamic"; // Vercel/Cloudflare Workers l’acceptent
 
 export async function GET(req) {
   const { searchParams } = new URL(req.url);

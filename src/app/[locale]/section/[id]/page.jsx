@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import SectionPageClient from "./SectionPageClient";
 import data from "../../../../data/games.json";
 

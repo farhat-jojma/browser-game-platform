@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 "use client";
 
 import { Suspense } from "react";

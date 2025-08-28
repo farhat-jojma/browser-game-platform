@@ -1,0 +1,217 @@
+{
+  "home": {
+    "sections": {
+      "featured": "Featured",
+      "new": "New",
+      "trending": "Trending",
+      "updated": "Updated",
+      "originals": "Originals",
+      "arcade": "Arcade",
+      "puzzle": "Puzzle",
+      "racing": "Racing",
+      "driving": "Driving",
+      "multiplayer": "Multiplayer",
+      "sports": "Sports",
+      "action": "Action",
+      "adventure": "Adventure",
+      "shooter": "Shooter",
+      "brain": "Brain",
+      "merge": "Merge",
+      "stack": "Stack",
+      "platformer": "Platformer",
+      "strategy": "Strategy",
+      "retro": "Retro",
+      "kids": "Kids",
+      "bike": "Bike",
+      "rpg": "RPG",
+    "physics": "Physics"
+    }
+  },
+  "game": {
+    "about": "About {title}",
+    "noDescription": "No description available yet.",
+    "moreGames": "More games"
+  },
+  "search": {
+    "title": "Search",
+    "placeholder": "Type something in the search bar to find games.",
+    "resultsFor": "Results for “{query}”",
+    "includesSection": "Includes section: {section}",
+    "genreMatch": "Genre match: {genre}",
+    "resultsCount": "{count} result{plural}",
+    "noGames": "No games found",
+    "noGamesMessage": "We couldn't find results for “{query}”. Try another keyword or explore a category below.",
+    "clearSearch": "Clear search",
+    "browseAll": "Browse all games",
+    "suggestions": {
+      "featured": "Featured",
+      "new": "New",
+      "trending": "Trending",
+      "arcade": "Arcade",
+      "multiplayer": "2 Player",
+      "puzzle": "Puzzle"
+    }
+  },
+  "section": {
+    "backHome": "← Back to home",
+    "titles": {
+      "featured": "Featured",
+      "new": "New",
+      "trending": "Trending",
+      "updated": "Updated",
+      "originals": "Originals"
+    }
+  },
+  "theme": {
+    "label": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "footer": {
+    "copyright": "© {year} Browser Game Platform",
+    "rights": "All rights reserved.",
+    "slogan": "Bringing you the best browser games since 2024",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "contact": "Contact Us",
+      "about": "About"
+    }
+  },
+  "genres": {
+    "arcade": "Arcade",
+    "puzzle": "Puzzle",
+    "racing": "Racing",
+    "driving": "Driving",
+    "multiplayer": "Multiplayer",
+    "sports": "Sports",
+    "action": "Action",
+    "adventure": "Adventure",
+    "shooter": "Shooter",
+    "brain": "Brain",
+    "merge": "Merge",
+    "stack": "Stack",
+    "platformer": "Platformer",
+    "strategy": "Strategy",
+    "retro": "Retro",
+    "kids": "Kids",
+    "bike": "Bike"
+  },
+  "gameplayer": {
+    "toolbar": {
+      "reload": "Reload",
+      "fullscreen": "Fullscreen",
+      "controlsActiveDesktop": "Game controls active - Click outside to scroll page",
+      "controlsActiveMobile": "Game active - Touch outside to scroll"
+    },
+    "overlay": {
+      "checking": "Checking game files…",
+      "ready": "Ready when you are.",
+      "loading": "Loading…",
+      "error": "Oops! We can't load this game"
+    },
+    "cta": {
+      "play": "Play Now",
+      "tryAgain": "↻ Try again",
+      "goBack": "← Go back",
+      "browse": "Browse games"
+    },
+    "hint": {
+      "desktop": "Hover over the game or click to activate controls. Click outside the game area to scroll the page.",
+      "mobile": "Touch the game to activate controls. Touch outside the game area to scroll the page."
+    }
+  },
+  "header": {
+    "brand": "Browser Game Platform",
+    "search": {
+      "placeholder": "Search games, genres, sections…",
+      "button": "Search"
+    },
+    "sidebar": {
+      "show": "Show sidebar",
+      "hide": "Hide sidebar"
+    }
+  },
+  "carousel": {
+    "viewMore": "View more",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "sidebar": {
+    "home": "Home",
+    "featured": "Featured",
+    "new": "New",
+    "trending": "Trending",
+    "updated": "Updated",
+    "originals": "Originals",
+    "multiplayer": "2 Player",
+    "action": "Action",
+    "adventure": "Adventure",
+    "sports": "Sports",
+    "driving": "Driving",
+    "racing": "Racing",
+    "arcade": "Arcade",
+    "puzzle": "Puzzle",
+    "shooter": "Shooter",
+    "brain": "Brain",
+    "merge": "Merge",
+    "stack": "Stack",
+    "platformer": "Platformer",
+    "strategy": "Strategy",
+    "rpg": "RPG",
+    "physics": "Physics",
+    "retro": "Retro",
+    "kids": "Kids"
+  },
+  "about": {
+    "meta": {
+      "title": "About Us - Browser Game Platform",
+      "description": "Learn more about Browser Game Platform and our mission."
+    },
+    "title": "About Us",
+    "intro": "Welcome to <strong>Browser Game Platform</strong>! Our mission is to provide players with fun, safe, and accessible browser games. We curate high-quality titles so you can enjoy gaming directly in your browser without downloads."
+  },
+
+  "contact": {
+    "meta": {
+      "title": "Contact Us - Browser Game Platform",
+      "description": "Get in touch with the Browser Game Platform team."
+    },
+    "title": "Contact Us",
+    "intro": "Have questions, feedback, or business inquiries? Reach out to us at:",
+    "email": "Email",
+    "phone": "Phone"
+  },
+
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy - Browser Game Platform",
+      "description": "Read Browser Game Platform's privacy policy."
+    },
+    "title": "Privacy Policy",
+    "intro": "Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information when you use Browser Game Platform.",
+    "section1": {
+      "title": "1. Information We Collect",
+      "content": "We may collect non-personal data such as usage statistics, browser type, and device information."
+    },
+    "section2": {
+      "title": "2. How We Use Information",
+      "content": "We use this data to improve our services, fix issues, and enhance your gaming experience."
+    }
+  },
+
+  "terms": {
+    "meta": {
+      "title": "Terms of Service - Browser Game Platform",
+      "description": "Read Browser Game Platform's terms of service."
+    },
+    "title": "Terms of Service",
+    "intro": "By accessing and using Browser Game Platform, you agree to the following terms:",
+    "items": [
+      "Games are provided “as is” without warranties.",
+      "You agree not to misuse or exploit the platform.",
+      "We may update these terms at any time without prior notice."
+    ]
+  }
+}

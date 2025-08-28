@@ -1,11 +1,11 @@
-/** @type {import('next').NextConfig} */
-module.exports = {
-  output: "export",
+const createNextIntlPlugin = require("next-intl/plugin");
+
+const withNextIntl = createNextIntlPlugin(); // ✅ no path needed since we use default ./src/i18n/request.js
+
+module.exports = withNextIntl({
   trailingSlash: true,
   images: {
-    unoptimized: true ,
-    // autorise les images distantes depuis picsum.photos
-    domains: ["picsum.photos"],
-  },
-};
-
+    unoptimized: true,
+    domains: ["picsum.photos"]
+  }
+});

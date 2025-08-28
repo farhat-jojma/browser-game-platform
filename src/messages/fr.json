@@ -1,0 +1,217 @@
+{
+  "home": {
+    "sections": {
+      "featured": "Jeux Populaires",
+      "new": "Nouveaux Jeux",
+      "trending": "Tendances",
+      "updated": "Mise à jour",
+      "originals": "Originaux",
+      "arcade": "Arcade",
+      "puzzle": "Casse-tête",
+      "racing": "Course",
+      "driving": "Conduite",
+      "multiplayer": "Multijoueur",
+      "sports": "Sport",
+      "action": "Action",
+      "adventure": "Aventure",
+      "shooter": "Tir",
+      "brain": "Réflexion",
+      "merge": "Fusion",
+      "stack": "Empilement",
+      "platformer": "Plateforme",
+      "strategy": "Stratégie",
+      "retro": "Rétro",
+      "kids": "Enfants",
+      "bike": "Moto",
+      "rpg": "RPG",
+    "physics": "Physique"
+    }
+  },
+  "game": {
+    "about": "À propos de {title}",
+    "noDescription": "Pas encore de description disponible.",
+    "moreGames": "Autres jeux"
+  },
+  "search": {
+    "title": "Recherche",
+    "placeholder": "Tapez quelque chose dans la barre de recherche pour trouver des jeux.",
+    "resultsFor": "Résultats pour « {query} »",
+    "includesSection": "Inclut la section : {section}",
+    "genreMatch": "Genre correspondant : {genre}",
+    "resultsCount": "{count} résultat{plural}",
+    "noGames": "Aucun jeu trouvé",
+    "noGamesMessage": "Nous n'avons trouvé aucun résultat pour « {query} ». Essayez un autre mot-clé ou explorez une catégorie ci-dessous.",
+    "clearSearch": "Effacer la recherche",
+    "browseAll": "Parcourir tous les jeux",
+    "suggestions": {
+      "featured": "À la une",
+      "new": "Nouveaux",
+      "trending": "Tendances",
+      "arcade": "Arcade",
+      "multiplayer": "2 Joueurs",
+      "puzzle": "Puzzle"
+    }
+  },
+  "section": {
+    "backHome": "← Retour à l'accueil",
+    "titles": {
+      "featured": "À la une",
+      "new": "Nouveaux",
+      "trending": "Tendances",
+      "updated": "Mise à jour",
+      "originals": "Originaux"
+    }
+  },
+  "theme": {
+    "label": "Thème",
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système"
+  },
+  "footer": {
+    "copyright": "© {year} Browser Game Platform",
+    "rights": "Tous droits réservés.",
+    "slogan": "Vous offrir les meilleurs jeux de navigateur depuis 2024",
+    "links": {
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation",
+      "contact": "Contact",
+      "about": "À propos"
+    }
+  },
+  "genres": {
+    "arcade": "Arcade",
+    "puzzle": "Casse-tête",
+    "racing": "Course",
+    "driving": "Conduite",
+    "multiplayer": "Multijoueur",
+    "sports": "Sport",
+    "action": "Action",
+    "adventure": "Aventure",
+    "shooter": "Tir",
+    "brain": "Réflexion",
+    "merge": "Fusion",
+    "stack": "Empilement",
+    "platformer": "Plateforme",
+    "strategy": "Stratégie",
+    "retro": "Rétro",
+    "kids": "Enfants",
+    "bike": "Moto"
+  },
+  "gameplayer": {
+    "toolbar": {
+      "reload": "Recharger",
+      "fullscreen": "Plein écran",
+      "controlsActiveDesktop": "Contrôles du jeu actifs - Cliquez à l’extérieur pour défiler la page",
+      "controlsActiveMobile": "Jeu actif - Touchez à l’extérieur pour défiler"
+    },
+    "overlay": {
+      "checking": "Vérification des fichiers du jeu…",
+      "ready": "Prêt quand vous l’êtes.",
+      "loading": "Chargement…",
+      "error": "Oups ! Impossible de charger ce jeu"
+    },
+    "cta": {
+      "play": "Jouer maintenant",
+      "tryAgain": "↻ Réessayer",
+      "goBack": "← Retour",
+      "browse": "Voir les jeux"
+    },
+    "hint": {
+      "desktop": "Survolez le jeu ou cliquez pour activer les contrôles. Cliquez à l’extérieur de la zone de jeu pour faire défiler la page.",
+      "mobile": "Touchez le jeu pour activer les contrôles. Touchez à l’extérieur de la zone de jeu pour faire défiler la page."
+    }
+  },
+  "header": {
+    "brand": "Plateforme de Jeux Navigateur",
+    "search": {
+      "placeholder": "Recherchez des jeux, genres, sections…",
+      "button": "Rechercher"
+    },
+    "sidebar": {
+      "show": "Afficher la barre latérale",
+      "hide": "Masquer la barre latérale"
+    }
+  },
+  "carousel": {
+    "viewMore": "Voir plus",
+    "previous": "Précédent",
+    "next": "Suivant"
+  },
+  "sidebar": {
+    "home": "Accueil",
+    "featured": "À la une",
+    "new": "Nouveaux",
+    "trending": "Tendances",
+    "updated": "Mise à jour",
+    "originals": "Originaux",
+    "multiplayer": "2 Joueurs",
+    "action": "Action",
+    "adventure": "Aventure",
+    "sports": "Sport",
+    "driving": "Conduite",
+    "racing": "Course",
+    "arcade": "Arcade",
+    "puzzle": "Casse-tête",
+    "shooter": "Tir",
+    "brain": "Réflexion",
+    "merge": "Fusion",
+    "stack": "Empilement",
+    "platformer": "Plateforme",
+    "strategy": "Stratégie",
+    "rpg": "RPG",
+    "physics": "Physique",
+    "retro": "Rétro",
+    "kids": "Enfants"
+  },
+  "about": {
+    "meta": {
+      "title": "À Propos - Plateforme de Jeux en Ligne Gratuits",
+      "description": "Découvrez notre plateforme de jeux en ligne gratuits et notre mission : offrir les meilleurs jeux de navigateur accessibles à tous."
+    },
+    "title": "À Propos",
+    "intro": "Bienvenue sur <strong>Plateforme de Jeux en Ligne</strong> ! Notre mission est de proposer aux joueurs des <strong>jeux de navigateur gratuits, amusants et sécurisés</strong>. Nous sélectionnons les meilleurs titres pour que vous puissiez jouer instantanément sans téléchargement."
+  },
+
+  "contact": {
+    "meta": {
+      "title": "Contact - Plateforme de Jeux en Ligne",
+      "description": "Contactez l'équipe de notre plateforme de jeux en ligne gratuits pour toute question ou collaboration."
+    },
+    "title": "Contact",
+    "intro": "Une question, un avis ou une proposition de partenariat ? Contactez-nous dès maintenant :",
+    "email": "Email",
+    "phone": "Téléphone"
+  },
+
+  "privacy": {
+    "meta": {
+      "title": "Politique de Confidentialité - Plateforme de Jeux en Ligne",
+      "description": "Consultez la politique de confidentialité de notre plateforme de jeux de navigateur gratuits."
+    },
+    "title": "Politique de Confidentialité",
+    "intro": "Votre vie privée est essentielle pour nous. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations lorsque vous jouez sur notre plateforme.",
+    "section1": {
+      "title": "1. Informations Collectées",
+      "content": "Nous collectons certaines données non personnelles comme les statistiques d'utilisation, le type de navigateur et les informations sur l'appareil."
+    },
+    "section2": {
+      "title": "2. Utilisation des Informations",
+      "content": "Ces données nous permettent d'améliorer nos services, de corriger des bugs et d'optimiser votre expérience de jeu."
+    }
+  },
+
+  "terms": {
+    "meta": {
+      "title": "Conditions d'Utilisation - Plateforme de Jeux en Ligne",
+      "description": "Lisez attentivement les conditions d'utilisation de notre plateforme de jeux gratuits en ligne."
+    },
+    "title": "Conditions d'Utilisation",
+    "intro": "En accédant et en utilisant notre plateforme de jeux en ligne, vous acceptez les conditions suivantes :",
+    "items": [
+      "Les jeux sont fournis « tels quels » sans garantie.",
+      "Vous vous engagez à ne pas abuser ni exploiter la plateforme.",
+      "Nous pouvons mettre à jour ces conditions à tout moment sans préavis."
+    ]
+  }
+}

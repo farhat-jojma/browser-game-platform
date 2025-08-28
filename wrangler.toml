@@ -1,0 +1,5 @@
+name = "browser-game-platform"
+compatibility_date = "2024-08-01"
+
+# 👉 Cloudflare doit pointer vers .vercel/output
+pages_build_output_dir = ".vercel/output"

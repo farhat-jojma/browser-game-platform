@@ -2,5 +2,7 @@ name = "browser-game-platform"
 compatibility_date = "2024-08-01"
 
 [build]
-command = "npm run build"
+# Cloudflare lancera ceci pour builder ton Next.js
+command = "npm run build && npx @cloudflare/next-on-pages"
+# Important : on dit bien que la sortie se trouve ici
 pages_build_output_dir = ".vercel/output"

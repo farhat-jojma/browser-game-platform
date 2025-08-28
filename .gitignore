@@ -1,11 +1,17 @@
 # Dependencies
 node_modules/
+
 # Next.js
 .next/
 out/
+
 # Env & tooling
 .env*
-.vercel/
+# ⚠️ Garde le dossier .vercel/output pour Cloudflare Pages
+# Ignore seulement le reste de .vercel
+.vercel/*
+!.vercel/output
+
 dist/
 build/
 coverage/
@@ -13,5 +19,3 @@ coverage/
 npm-debug.log*
 yarn-debug.log*
 pnpm-debug.log*
-
-.vercel/

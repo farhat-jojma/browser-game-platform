@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { useTranslations } from "next-intl";
 
 export const metadata = {

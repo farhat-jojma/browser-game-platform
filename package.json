@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy:cf": "npx @cloudflare/next-on-pages"
+    "cf:build": "npx @cloudflare/next-on-pages",
+    "cf:preview": "npx wrangler pages dev .vercel/output"
   },
   "repository": {
     "type": "git",

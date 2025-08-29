@@ -29,6 +29,7 @@ const SECTION_META = {
   physics:     { icon: "🧪" },
   retro:       { icon: "📼" },
   kids:        { icon: "🧒" },
+  bike:        { icon: "🚲" },
   card:        { icon: "🃏" }
 };
 
@@ -54,7 +55,7 @@ function buildItems(t, locale) {
   const order = [
     "multiplayer","action","adventure","sports","driving","racing",
     "arcade","puzzle","shooter","brain","platformer","strategy",
-    "rpg","physics","retro","kids","merge","stack","card"
+    "rpg","physics","retro","kids","merge","stack","card","bike"
   ];
   for (const key of order) {
     if (has(key)) {
@@ -106,7 +107,7 @@ export default function DesktopSidebar({ isOpen, desktopInGrid = false }) {
     <aside
       className={`${
         desktopInGrid
-          ? "hidden lg:block lg:sticky lg:top-14 lg:h-[calc(100vh-56px)] w-64 bg-card text-foreground border-r border-border overflow-y-auto overscroll-contain sidebar-scroll lg:transform lg:transition-transform lg:duration-200 " +
+          ? "hidden lg:block lg:fixed lg:top-14 lg:h-[calc(100vh-56px)] w-64 bg-card text-foreground border-r border-border overflow-y-auto overscroll-contain sidebar-scroll lg:transform lg:transition-transform lg:duration-200 " +
             (isOpen ? "lg:translate-x-0" : "lg:-translate-x-full")
           : "hidden"
       }`}

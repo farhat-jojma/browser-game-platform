@@ -41,17 +41,17 @@ function gradientForGenre(genre) {
 }
 
 // Lire fichier description HTML
-async function loadDescriptionHTML(descField) {
+async function loadDescriptionHTML(descField, locale) {
   if (!descField) return null;
-  const trimmed = String(descField).trim();
 
-  if (trimmed.startsWith("<")) return trimmed;
+  // on ajoute .en.html ou .fr.html
+  const rel = descField.endsWith(".html")
+    ? descField
+    : `${descField}.${locale}.html`;
 
-  if (
-    trimmed.startsWith("http://") ||
-    trimmed.startsWith("https://") ||
-    trimmed.startsWith("/api/")
-  ) {
+  const trimmed = String(rel).trim();
+
+  if (trimmed.startsWith("http://") || trimmed.startsWith("https://")) {
     try {
       const res = await fetch(trimmed, { cache: "no-store" });
       if (!res.ok) return null;
@@ -61,8 +61,7 @@ async function loadDescriptionHTML(descField) {
     }
   }
 
-  const rel = trimmed.startsWith("/") ? trimmed.slice(1) : trimmed;
-  const full = path.join(process.cwd(), "public", rel);
+  const full = path.join(process.cwd(), "public", trimmed.startsWith("/") ? trimmed.slice(1) : trimmed);
   try {
     return await fs.readFile(full, "utf8");
   } catch {
@@ -95,7 +94,7 @@ export default async function GamePage({ params }) {
     .slice(0, 8)
     .map(([s, g]) => ({ slug: s, ...g }));
 
-  const descHTML = await loadDescriptionHTML(game.description);
+  const descHTML = await loadDescriptionHTML(game.description, locale);
 
   return (
     <div className="space-y-6">

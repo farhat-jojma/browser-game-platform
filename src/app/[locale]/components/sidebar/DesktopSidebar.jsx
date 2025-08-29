@@ -28,7 +28,8 @@ const SECTION_META = {
   rpg:         { icon: "🗺️" },
   physics:     { icon: "🧪" },
   retro:       { icon: "📼" },
-  kids:        { icon: "🧒" }
+  kids:        { icon: "🧒" },
+  card:        { icon: "🃏" }
 };
 
 function buildItems(t, locale) {
@@ -53,7 +54,7 @@ function buildItems(t, locale) {
   const order = [
     "multiplayer","action","adventure","sports","driving","racing",
     "arcade","puzzle","shooter","brain","platformer","strategy",
-    "rpg","physics","retro","kids","merge","stack"
+    "rpg","physics","retro","kids","merge","stack","card"
   ];
   for (const key of order) {
     if (has(key)) {

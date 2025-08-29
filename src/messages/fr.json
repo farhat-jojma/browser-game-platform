@@ -24,7 +24,8 @@
       "kids": "Enfants",
       "bike": "Moto",
       "rpg": "RPG",
-    "physics": "Physique"
+      "physics": "Physique",
+      "card": "Cartes"
     }
   },
   "game": {
@@ -55,11 +56,31 @@
   "section": {
     "backHome": "← Retour à l'accueil",
     "titles": {
-      "featured": "À la une",
-      "new": "Nouveaux",
+      "featured": "Jeux Populaires",
+      "new": "Nouveaux Jeux",
       "trending": "Tendances",
       "updated": "Mise à jour",
-      "originals": "Originaux"
+      "originals": "Originaux",
+      "arcade": "Arcade",
+      "puzzle": "Casse-tête",
+      "racing": "Course",
+      "driving": "Conduite",
+      "multiplayer": "Multijoueur",
+      "sports": "Sport",
+      "action": "Action",
+      "adventure": "Aventure",
+      "shooter": "Tir",
+      "brain": "Réflexion",
+      "merge": "Fusion",
+      "stack": "Empilement",
+      "platformer": "Plateforme",
+      "strategy": "Stratégie",
+      "retro": "Rétro",
+      "kids": "Enfants",
+      "bike": "Moto",
+      "rpg": "RPG",
+      "physics": "Physique",
+      "card": "Cartes"
     }
   },
   "theme": {
@@ -96,7 +117,8 @@
     "strategy": "Stratégie",
     "retro": "Rétro",
     "kids": "Enfants",
-    "bike": "Moto"
+    "bike": "Moto",
+    "card": "Cartes"
   },
   "gameplayer": {
     "toolbar": {
@@ -162,7 +184,8 @@
     "rpg": "RPG",
     "physics": "Physique",
     "retro": "Rétro",
-    "kids": "Enfants"
+    "kids": "Enfants",
+    "card": "Cartes"
   },
   "about": {
     "meta": {

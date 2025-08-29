@@ -24,7 +24,8 @@
       "kids": "Kids",
       "bike": "Bike",
       "rpg": "RPG",
-    "physics": "Physics"
+      "physics": "Physics",
+      "card": "Card"
     }
   },
   "game": {
@@ -59,7 +60,27 @@
       "new": "New",
       "trending": "Trending",
       "updated": "Updated",
-      "originals": "Originals"
+      "originals": "Originals",
+      "arcade": "Arcade",
+      "puzzle": "Puzzle",
+      "racing": "Racing",
+      "driving": "Driving",
+      "multiplayer": "Multiplayer",
+      "sports": "Sports",
+      "action": "Action",
+      "adventure": "Adventure",
+      "shooter": "Shooter",
+      "brain": "Brain",
+      "merge": "Merge",
+      "stack": "Stack",
+      "platformer": "Platformer",
+      "strategy": "Strategy",
+      "retro": "Retro",
+      "kids": "Kids",
+      "bike": "Bike",
+      "rpg": "RPG",
+      "physics": "Physics",
+      "card": "Card"
     }
   },
   "theme": {
@@ -96,7 +117,8 @@
     "strategy": "Strategy",
     "retro": "Retro",
     "kids": "Kids",
-    "bike": "Bike"
+    "bike": "Bike",
+    "card": "Card"
   },
   "gameplayer": {
     "toolbar": {
@@ -162,7 +184,8 @@
     "rpg": "RPG",
     "physics": "Physics",
     "retro": "Retro",
-    "kids": "Kids"
+    "kids": "Kids",
+    "card": "Card"
   },
   "about": {
     "meta": {

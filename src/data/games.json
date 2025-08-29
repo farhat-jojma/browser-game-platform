@@ -258,31 +258,66 @@
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/WhatIsThePassword/index.html",
       "description": "/games/WhatIsThePassword/description.html"
+    },
+    "uno": {
+      "title": "Uno",
+      "image": "/games/Uno/uno.jpg",
+      "genre": "Card",
+      "playPath": "https://games-dun-one.vercel.app/Uno/index.html",
+      "description": "/games/Uno/description.html"
+    },
+    "uno-monument-edition": {
+      "title": "Uno Monument Edition",
+      "image": "/games/UnoMonument/uno-monument.jpg",
+      "genre": "Card",
+      "playPath": "https://games-dun-one.vercel.app/UnoMonumentEdition/index.html",
+      "description": "/games/UnoMonument/description.html"
+    },
+    "memory-chess": {
+      "title": "Memory Chess",
+      "image": "/games/MemoryChess/memory-chess.png",
+      "genre": "Brain",
+      "playPath": "https://games-dun-one.vercel.app/MemoryChess/index.html",
+      "description": "/games/MemoryChess/description.html"
+    },
+    "card-legends": {
+      "title": "Card Legends",
+      "image": "/games/CardLegends/card-legends.png",
+      "genre": "Card",
+      "playPath": "https://games-dun-one.vercel.app/CardLegends/index.html",
+      "description": "/games/CardLegends/description.html"
     }
+
+
+
+
+
+
   },
   "sections": {
-    "featured": ["plug-heads", "bomberman", "fruit-party", "retro-bowl"],
-    "new": ["braindom", "braindom-2", "rotated-cups", "cups-tower-builder", "fire-truck-driving", "neon-pong", "super-pix"],
+    "featured": ["plug-heads", "bomberman", "fruit-party", "retro-bowl", "uno", "uno-monument-edition", "memory-chess", "card-legends"],
+    "new": ["uno", "uno-monument-edition", "memory-chess", "card-legends"],
     "trending": ["retro-bowl", "fruit-party", "super-pix"],
     "updated": ["braindom-2", "rotated-cups", "fire-truck-driving", "gun-merge"],
     "originals": ["super-agent", "plug-heads", "super-pix"],
-    "multiplayer": ["pink-and-blue", "neon-pong"],
-    "action": ["super-agent", "granny-hero"],
+    "multiplayer": ["pink-and-blue", "neon-pong", "memory-chess"],
+    "action": ["super-agent", "card-legends"],
     "adventure": ["dungeon-quest", "treasure-hunters", "pink-and-blue"],
     "sports": ["retro-bowl", "foot-pong", "archery", "drag-slam", "dunk-drawing"],
     "driving": ["fire-truck-driving"],
     "racing": [],
-    "arcade": ["bomberman", "neon-pong", "snakegame", "pac-chef", "pac-rat", "super-pix"],
+    "arcade": ["bomberman", "neon-pong", "snakegame", "pac-chef", "pac-rat", "super-pix", "uno", "uno-monument-edition"],
     "puzzle": ["color-water-sort", "rotated-cups", "three-cups", "dunk-drawing", "pink-and-blue", "mathup", "fruit-party", "kindergarten-teacher"],
     "shooter": ["hero-blaster", "invace-spaders", "space-invace", "gun-merge"],
-    "brain": ["brain-game", "mathup", "braindom", "braindom-2", "math-tiles", "what-is-the-password"],
+    "brain": ["brain-game", "mathup", "braindom", "braindom-2", "math-tiles", "what-is-the-password", "memory-chess"],
     "merge": ["gun-merge"],
     "stack": ["cups-tower-builder"],
     "platformer": ["pink-and-blue"],
-    "strategy": ["spider-solitaire", "gun-merge", "cups-tower-builder", "rotated-cups"],
+    "strategy": ["spider-solitaire", "gun-merge", "cups-tower-builder", "rotated-cups", "uno", "uno-monument-edition"],
     "rpg": ["dungeon-quest", "treasure-hunters"],
     "physics": ["dunk-drawing"],
     "retro": ["pac-chef", "pac-rat", "bomberman", "snakegame", "space-invace", "neon-pong"],
-    "kids": ["fruit-party", "color-water-sort", "mathup", "pink-and-blue"]
+    "kids": ["fruit-party", "color-water-sort", "mathup", "pink-and-blue"],
+    "card": ["spider-solitaire", "uno", "uno-monument-edition", "card-legends"]
   }
 }

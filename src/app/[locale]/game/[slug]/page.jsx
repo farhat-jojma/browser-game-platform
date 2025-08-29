@@ -2,11 +2,43 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import GamePlayer from "../../components/gameplayer/GamePlayer";
+import MoreGameThumb from "../../components/gameplayer/MoreGameThumb";
 import data from "../../../../data/games.json";
 
 import path from "node:path";
 import { promises as fs } from "node:fs";
 import { getTranslations } from "next-intl/server";
+
+// Simple genre -> gradient mapping (matches home card style)
+const GENRE_GRADIENT = {
+  Arcade:      "from-amber-300 to-amber-500",
+  Puzzle:      "from-sky-300 to-sky-500",
+  Racing:      "from-fuchsia-300 to-fuchsia-500",
+  Driving:     "from-emerald-300 to-emerald-500",
+  Multiplayer: "from-violet-300 to-violet-600",
+  Sports:      "from-orange-300 to-orange-500",
+  Action:      "from-rose-300 to-rose-500",
+  Adventure:   "from-indigo-300 to-indigo-600",
+  Shooter:     "from-red-300 to-red-500",
+  Brain:       "from-lime-300 to-lime-500",
+  Merge:       "from-teal-300 to-teal-500",
+  Stack:       "from-cyan-300 to-cyan-500",
+  Platformer:  "from-yellow-300 to-yellow-500",
+  Strategy:    "from-slate-300 to-slate-600",
+  Retro:       "from-pink-300 to-pink-500",
+  Kids:        "from-green-300 to-green-500",
+  Bike:        "from-green-300 to-green-500",
+  Card:        "from-purple-300 to-purple-500"
+};
+
+function gradientForGenre(genre) {
+  if (!genre) return "from-amber-300 to-amber-500";
+  if (GENRE_GRADIENT[genre]) return GENRE_GRADIENT[genre];
+  const k = Object.keys(GENRE_GRADIENT).find(
+    (x) => x.toLowerCase() === String(genre).toLowerCase()
+  );
+  return k ? GENRE_GRADIENT[k] : "from-amber-300 to-amber-500";
+}
 
 // Lire fichier description HTML
 async function loadDescriptionHTML(descField) {
@@ -111,14 +143,7 @@ export default async function GamePage({ params }) {
                 href={`/${locale}/game/${g.slug}`}
                 className="flex items-center gap-3 rounded-lg p-2 hover:bg-white/5 transition"
               >
-                <div className="relative w-24 min-w-24 aspect-video rounded-md overflow-hidden bg-white/5">
-                  <Image
-                    src={g.image}
-                    alt={g.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+                <MoreGameThumb image={g.image} title={g.title} genre={g.badgeGenre || g.genre} />
                 <div className="min-w-0">
                   <div className="font-medium leading-tight truncate text-foreground">
                     {g.title}

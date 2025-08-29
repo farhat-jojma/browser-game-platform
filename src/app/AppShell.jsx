@@ -19,7 +19,7 @@ export default function AppShell({ children }) {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Fixed, full-width header */}
       <Header
         onToggleSidebar={() => setSidebarOpen((s) => !s)}

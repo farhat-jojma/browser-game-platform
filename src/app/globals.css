@@ -98,3 +98,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Prevent horizontal scroll globally */
+html, body, #__next {
+  overflow-x: hidden;
+  width: 100%;
+}

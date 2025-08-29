@@ -46,7 +46,7 @@ export default function MobileFooter() {
             </a>
           </div>
 
-          <div className="flex items-center justify-center whitespace-nowrap flex-nowrap gap-2">
+          <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
             <a
               className="inline-block py-1 px-2 text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 rounded-lg hover:bg-muted/50"
               href={`/${locale}/privacy-policy`}  // ✅ corrigé

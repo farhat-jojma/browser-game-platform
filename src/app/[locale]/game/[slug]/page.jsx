@@ -68,8 +68,8 @@ export default async function GamePage({ params }) {
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-extrabold">{game.title}</h1>
-        <span className="text-sm text-white/60">{game.genre}</span>
+        <h1 className="text-2xl font-extrabold text-foreground">{game.title}</h1>
+        <span className="text-sm text-muted-foreground">{game.genre}</span>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6">
@@ -85,7 +85,7 @@ export default async function GamePage({ params }) {
 
             {descHTML ? (
               <article
-                className="leading-relaxed text-white/80 space-y-3
+                className="leading-relaxed text-muted-foreground space-y-3
                   [&_h2]:mt-6 [&_h2]:text-xl [&_h2]:font-semibold
                   [&_h3]:mt-4 [&_h3]:text-lg [&_h3]:font-semibold
                   [&_a]:text-violet-400 hover:[&_a]:underline
@@ -94,14 +94,14 @@ export default async function GamePage({ params }) {
                 <div dangerouslySetInnerHTML={{ __html: descHTML }} />
               </article>
             ) : (
-              <p className="text-white/75">{t("noDescription")}</p>
+              <p className="text-muted-foreground">{t("noDescription")}</p>
             )}
           </section>
         </div>
 
         {/* More games */}
         <aside className="lg:sticky lg:top-20 h-max">
-          <h3 className="text-sm font-semibold text-white/70 uppercase mb-3">
+          <h3 className="text-sm font-semibold text-muted-foreground uppercase mb-3">
             {t("moreGames")}
           </h3>
           <div className="space-y-2">
@@ -120,10 +120,10 @@ export default async function GamePage({ params }) {
                   />
                 </div>
                 <div className="min-w-0">
-                  <div className="font-medium leading-tight truncate">
+                  <div className="font-medium leading-tight truncate text-foreground">
                     {g.title}
                   </div>
-                  <div className="text-xs text-white/50">{g.genre}</div>
+                  <div className="text-xs text-muted-foreground">{g.genre}</div>
                 </div>
               </Link>
             ))}

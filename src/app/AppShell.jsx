@@ -1,11 +1,22 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "./[locale]/components/header/Header";
 import Sidebar from "./[locale]/components/sidebar/Sidebar";
 import Footer from "./[locale]/components/footer/Footer";
 
 export default function AppShell({ children }) {
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  // Open on desktop (lg and up), close on mobile
+  useEffect(() => {
+    const syncWithViewport = () => {
+      const isDesktop = typeof window !== "undefined" && window.innerWidth >= 1024; // lg breakpoint
+      setSidebarOpen(isDesktop);
+    };
+    syncWithViewport();
+    window.addEventListener("resize", syncWithViewport);
+    return () => window.removeEventListener("resize", syncWithViewport);
+  }, []);
 
   return (
     <div className="min-h-screen bg-background text-foreground">

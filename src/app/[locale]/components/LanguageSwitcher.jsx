@@ -14,20 +14,19 @@ export default function LanguageSwitcher() {
     return segments.join("/");
   }
 
+  const locales = ["en", "fr", "es", "de", "it", "pt"];
+
   return (
-    <div className="flex gap-2">
-      <Link
-        href={redirectPathname("en")}
-        className="px-3 py-1.5 rounded-md text-sm font-medium hover:bg-white/10"
-      >
-        EN
-      </Link>
-      <Link
-        href={redirectPathname("fr")}
-        className="px-3 py-1.5 rounded-md text-sm font-medium hover:bg-white/10"
-      >
-        FR
-      </Link>
+    <div className="flex gap-2 flex-wrap">
+      {locales.map((locale) => (
+        <Link
+          key={locale}
+          href={redirectPathname(locale)}
+          className="px-3 py-1.5 rounded-md text-sm font-medium hover:bg-white/10"
+        >
+          {locale.toUpperCase()}
+        </Link>
+      ))}
     </div>
   );
 }

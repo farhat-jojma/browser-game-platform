@@ -1,0 +1,238 @@
+{
+  "home": {
+    "sections": {
+      "featured": "Empfohlen",
+      "new": "Neu",
+      "trending": "Angesagt",
+      "updated": "Aktualisiert",
+      "originals": "Originale",
+      "arcade": "Arcade",
+      "puzzle": "Puzzle",
+      "racing": "Rennen",
+      "driving": "Fahren",
+      "multiplayer": "Mehrspieler",
+      "sports": "Sport",
+      "action": "Action",
+      "adventure": "Abenteuer",
+      "shooter": "Shooter",
+      "brain": "Gehirn",
+      "merge": "Kombinieren",
+      "stack": "Stapeln",
+      "platformer": "Plattformer",
+      "strategy": "Strategie",
+      "retro": "Retro",
+      "kids": "Kinder",
+      "bike": "Fahrrad",
+      "rpg": "RPG",
+      "physics": "Physik",
+      "card": "Karten"
+    }
+  },
+  "game": {
+    "about": "Über {title}",
+    "noDescription": "Noch keine Beschreibung verfügbar.",
+    "moreGames": "Mehr Spiele"
+  },
+  "search": {
+    "title": "Suche",
+    "placeholder": "Gib etwas in die Suchleiste ein, um Spiele zu finden.",
+    "resultsFor": "Ergebnisse für “{query}”",
+    "includesSection": "Beinhaltet Abschnitt: {section}",
+    "genreMatch": "Genre-Treffer: {genre}",
+    "resultsCount": "{count} Ergebnis{plural}",
+    "noGames": "Keine Spiele gefunden",
+    "noGamesMessage": "Wir konnten keine Ergebnisse für “{query}” finden. Versuche ein anderes Stichwort oder entdecke unten eine Kategorie.",
+    "clearSearch": "Suche löschen",
+    "browseAll": "Alle Spiele durchsuchen",
+    "suggestions": {
+      "featured": "Empfohlen",
+      "new": "Neu",
+      "trending": "Angesagt",
+      "arcade": "Arcade",
+      "multiplayer": "2 Spieler",
+      "puzzle": "Puzzle"
+    }
+  },
+  "section": {
+    "backHome": "← Zurück zur Startseite",
+    "titles": {
+      "featured": "Empfohlen",
+      "new": "Neu",
+      "trending": "Angesagt",
+      "updated": "Aktualisiert",
+      "originals": "Originale",
+      "arcade": "Arcade",
+      "puzzle": "Puzzle",
+      "racing": "Rennen",
+      "driving": "Fahren",
+      "multiplayer": "Mehrspieler",
+      "sports": "Sport",
+      "action": "Action",
+      "adventure": "Abenteuer",
+      "shooter": "Shooter",
+      "brain": "Gehirn",
+      "merge": "Kombinieren",
+      "stack": "Stapeln",
+      "platformer": "Plattformer",
+      "strategy": "Strategie",
+      "retro": "Retro",
+      "kids": "Kinder",
+      "bike": "Fahrrad",
+      "rpg": "RPG",
+      "physics": "Physik",
+      "card": "Karten"
+    }
+  },
+  "theme": {
+    "label": "Thema",
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System"
+  },
+  "footer": {
+    "copyright": "© {year} Browser Game Platform",
+    "rights": "Alle Rechte vorbehalten.",
+    "slogan": "Wir bringen dir die besten Browser-Spiele seit 2024",
+    "links": {
+      "privacy": "Datenschutz",
+      "terms": "Nutzungsbedingungen",
+      "contact": "Kontakt",
+      "about": "Über uns"
+    }
+  },
+  "genres": {
+    "arcade": "Arcade",
+    "puzzle": "Puzzle",
+    "racing": "Rennen",
+    "driving": "Fahren",
+    "multiplayer": "Mehrspieler",
+    "sports": "Sport",
+    "action": "Action",
+    "adventure": "Abenteuer",
+    "shooter": "Shooter",
+    "brain": "Gehirn",
+    "merge": "Kombinieren",
+    "stack": "Stapeln",
+    "platformer": "Plattformer",
+    "strategy": "Strategie",
+    "retro": "Retro",
+    "kids": "Kinder",
+    "bike": "Fahrrad",
+    "card": "Karten"
+  },
+  "gameplayer": {
+    "toolbar": {
+      "reload": "Neu laden",
+      "fullscreen": "Vollbild",
+      "controlsActiveDesktop": "Spielsteuerung aktiv – Klicke außerhalb, um zu scrollen",
+      "controlsActiveMobile": "Spiel aktiv – Tippe außerhalb, um zu scrollen"
+    },
+    "overlay": {
+      "checking": "Spieldateien werden geprüft…",
+      "ready": "Bereit, wenn du es bist.",
+      "loading": "Lädt…",
+      "error": "Ups! Wir können dieses Spiel nicht laden"
+    },
+    "cta": {
+      "play": "Jetzt spielen",
+      "tryAgain": "↻ Erneut versuchen",
+      "goBack": "← Zurück",
+      "browse": "Spiele durchsuchen"
+    },
+    "hint": {
+      "desktop": "Fahre mit der Maus über das Spiel oder klicke, um die Steuerung zu aktivieren. Klicke außerhalb, um zu scrollen.",
+      "mobile": "Tippe auf das Spiel, um die Steuerung zu aktivieren. Tippe außerhalb, um zu scrollen."
+    }
+  },
+  "header": {
+    "brand": "Browser Game Platform",
+    "search": {
+      "placeholder": "Spiele, Genres, Abschnitte suchen…",
+      "button": "Suchen"
+    },
+    "sidebar": {
+      "show": "Seitenleiste anzeigen",
+      "hide": "Seitenleiste ausblenden"
+    }
+  },
+  "carousel": {
+    "viewMore": "Mehr anzeigen",
+    "previous": "Zurück",
+    "next": "Weiter"
+  },
+  "sidebar": {
+    "home": "Startseite",
+    "featured": "Empfohlen",
+    "new": "Neu",
+    "trending": "Angesagt",
+    "updated": "Aktualisiert",
+    "originals": "Originale",
+    "multiplayer": "2 Spieler",
+    "action": "Action",
+    "adventure": "Abenteuer",
+    "sports": "Sport",
+    "driving": "Fahren",
+    "racing": "Rennen",
+    "arcade": "Arcade",
+    "puzzle": "Puzzle",
+    "shooter": "Shooter",
+    "brain": "Gehirn",
+    "merge": "Kombinieren",
+    "stack": "Stapeln",
+    "platformer": "Plattformer",
+    "strategy": "Strategie",
+    "rpg": "RPG",
+    "physics": "Physik",
+    "retro": "Retro",
+    "kids": "Kinder",
+    "card": "Karten",
+    "bike": "Fahrrad"
+  },
+  "about": {
+    "meta": {
+      "title": "Über uns - Browser Game Platform",
+      "description": "Erfahre mehr über Browser Game Platform und unsere Mission."
+    },
+    "title": "Über uns",
+    "intro": "Willkommen bei <strong>Browser Game Platform</strong>! Unsere Mission ist es, Spielern unterhaltsame, sichere und zugängliche Browser-Spiele zu bieten. Wir kuratieren hochwertige Titel, die du direkt im Browser genießen kannst – ohne Downloads."
+  },
+  "contact": {
+    "meta": {
+      "title": "Kontakt - Browser Game Platform",
+      "description": "Nimm Kontakt mit dem Browser Game Platform-Team auf."
+    },
+    "title": "Kontakt",
+    "intro": "Hast du Fragen, Feedback oder geschäftliche Anfragen? Kontaktiere uns unter:",
+    "email": "E-Mail",
+    "phone": "Telefon"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Datenschutz - Browser Game Platform",
+      "description": "Lies die Datenschutzrichtlinie von Browser Game Platform."
+    },
+    "title": "Datenschutz",
+    "intro": "Deine Privatsphäre ist uns wichtig. Diese Richtlinie erklärt, wie wir Informationen sammeln, nutzen und schützen.",
+    "section1": {
+      "title": "1. Informationen, die wir sammeln",
+      "content": "Wir können nicht-personenbezogene Daten wie Nutzungsstatistiken, Browsertyp und Geräteinformationen sammeln."
+    },
+    "section2": {
+      "title": "2. Wie wir Informationen nutzen",
+      "content": "Wir verwenden diese Daten, um unsere Dienste zu verbessern, Probleme zu beheben und dein Spielerlebnis zu optimieren."
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Nutzungsbedingungen - Browser Game Platform",
+      "description": "Lies die Nutzungsbedingungen von Browser Game Platform."
+    },
+    "title": "Nutzungsbedingungen",
+    "intro": "Durch den Zugriff auf und die Nutzung von Browser Game Platform stimmst du den folgenden Bedingungen zu:",
+    "items": [
+      "Spiele werden „wie besehen“ ohne Garantien bereitgestellt.",
+      "Du verpflichtest dich, die Plattform nicht missbräuchlich zu nutzen.",
+      "Wir können diese Bedingungen jederzeit ohne vorherige Ankündigung ändern."
+    ]
+  }
+}

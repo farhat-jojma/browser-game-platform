@@ -51,7 +51,7 @@ export default function SectionPageClient({ id }) {
         </h1>
         <Link
           href={`/${locale}`}
-          className="text-sm text-white/70 hover:text-white"
+          className="text-sm text-foreground/70 hover:text-foreground"
         >
           {t("backHome")}
         </Link>

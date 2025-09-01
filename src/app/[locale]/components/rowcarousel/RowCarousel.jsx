@@ -87,7 +87,7 @@ export default function RowCarousel({ title, items, viewMoreHref }) {
       <div className="mb-4 flex items-center justify-between">
         <h2 className="text-xl font-bold capitalize">{title}</h2>
         {viewMoreUrl && (
-          <Link href={viewMoreUrl} className="text-sm text-white/70 hover:text-white">
+          <Link href={viewMoreUrl} className="text-sm text-foreground/70 hover:text-foreground">
             {t("viewMore")}
           </Link>
         )}

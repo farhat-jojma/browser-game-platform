@@ -1,9 +1,6 @@
-import { useTranslations } from "next-intl";
+"use client";
 
-export const metadata = {
-  title: "privacy.meta.title",
-  description: "privacy.meta.description"
-};
+import { useTranslations } from "next-intl";
 
 export default function PrivacyPolicyPage() {
   const t = useTranslations("privacy");

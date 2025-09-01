@@ -1,9 +1,6 @@
-import { useTranslations } from "next-intl";
+"use client";
 
-export const metadata = {
-  title: "terms.meta.title",
-  description: "terms.meta.description"
-};
+import { useTranslations } from "next-intl";
 
 export default function TermsOfServicePage() {
   const t = useTranslations("terms");

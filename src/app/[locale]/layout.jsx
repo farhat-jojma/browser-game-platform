@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 
 // ✅ Dynamic metadata based on locale
 export async function generateMetadata({ params }) {
-  const { locale } = params;
+  const { locale } = await params;
 
   try {
     const messages = (await import(`../../messages/${locale}.json`)).default;
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function LocaleLayout({ children, params }) {
-  const { locale } = params;
+  const { locale } = await params;
 
   let messages;
   try {

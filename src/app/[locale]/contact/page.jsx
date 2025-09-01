@@ -1,10 +1,7 @@
+"use client";
+
 export const runtime = 'edge';
 import { useTranslations } from "next-intl";
-
-export const metadata = {
-  title: "contact.meta.title",
-  description: "contact.meta.description"
-};
 
 export default function ContactPage() {
   const t = useTranslations("contact");

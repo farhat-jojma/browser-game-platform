@@ -16,7 +16,7 @@
     },
     "color-water-sort": {
       "title": "Color Water Sort",
-      "image": "/games/ColorWaterSort/color-water-sort.png",
+      "image": "/games/ColorWaterSort/color-water-sort.jpg",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/ColorWaterSort/index.html",
       "description": "/games/ColorWaterSort/description"
@@ -37,7 +37,7 @@
     },
     "dunk-drawing": {
       "title": "Dunk Drawing",
-      "image": "/games/DunkDrawing/dunk-drawing.png",
+      "image": "/games/DunkDrawing/dunk-drawing.jpg",
       "genre": "Sports",
       "playPath": "https://games-dun-one.vercel.app/DunkDrawing/index.html",
       "description": "/games/DunkDrawing/description"
@@ -79,14 +79,14 @@
     },
     "math-tiles": {
       "title": "Math Tiles",
-      "image": "/games/MathTiles/mathup.png",
+      "image": "/games/MathTiles/math-tiles.jpg",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/MathTiles/index.html",
       "description": "/games/MathTiles/description"
     },
     "mathup": {
       "title": "MathUp",
-      "image": "/games/MathUp/mathup.png",
+      "image": "/games/MathUp/mathup.jpg",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/MathUp/index.html",
       "description": "/games/MathUp/description"
@@ -142,7 +142,7 @@
     },
     "space-invace": {
       "title": "Space Invace",
-      "image": "/games/SpaceInvace/space-invace.png",
+      "image": "/games/SpaceInvace/space-invace.jpg",
       "genre": "Shooter",
       "playPath": "https://games-dun-one.vercel.app/SpaceInvace/index.html",
       "description": "/games/SpaceInvace/description"
@@ -163,21 +163,21 @@
     },
     "super-agent": {
       "title": "Super Agent",
-      "image": "/games/SuperAgent/super-agent.png",
+      "image": "/games/SuperAgent/super-agent.jpg",
       "genre": "Action",
       "playPath": "https://games-dun-one.vercel.app/SuperAgent/index.html",
       "description": "/games/SuperAgent/description"
     },
     "super-pix": {
       "title": "Super Pix",
-      "image": "/games/SuperPix/super-pix.png",
+      "image": "/games/SuperPix/super-pix.jpg",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/SuperPix/index.html",
       "description": "/games/SuperPix/description"
     },
     "treasure-hunters": {
       "title": "Treasure Hunters",
-      "image": "/games/TreasureHunters/treasure-hunters.png",
+      "image": "/games/TreasureHunters/treasure-hunters.jpg",
       "genre": "Adventure",
       "playPath": "https://games-dun-one.vercel.app/TreasureHunters/index.html",
       "description": "/games/TreasureHunters/description"
@@ -212,7 +212,7 @@
     },
     "rotated-cups": {
       "title": "Rotated Cups",
-      "image": "/games/RotatedCups/rotated-cups.png",
+      "image": "/games/RotatedCups/rotated-cups.jpg",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/RotatedCups/index.html",
       "description": "/games/RotatedCups/description"
@@ -233,28 +233,28 @@
     },
     "archery": {
       "title": "Archery",
-      "image": "/games/Archery/archery.png",
+      "image": "/games/Archery/archery.jpg",
       "genre": "Sports",
       "playPath": "https://games-dun-one.vercel.app/archery/index.html",
       "description": "/games/Archery/description"
     },
     "three-cups": {
       "title": "Three Cups",
-      "image": "/games/ThreeCups/three-cups.png",
+      "image": "/games/ThreeCups/three-cups.jpg",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/ThreeCups/index.html",
       "description": "/games/ThreeCups/description"
     },
     "kindergarten-teacher": {
       "title": "Kindergarten Teacher",
-      "image": "/games/KindergartenTeacher/mathup.png",
+      "image": "/games/KindergartenTeacher/kindergarten-teacher.jpg",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/KindergartenTeacher/index.html",
       "description": "/games/KindergartenTeacher/description"
     },
     "what-is-the-password": {
       "title": "What Is The Password",
-      "image": "/games/WhatIsThePassword/mathup.png",
+      "image": "/games/WhatIsThePassword/what-is-the-password.jpg",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/WhatIsThePassword/index.html",
       "description": "/games/WhatIsThePassword/description"

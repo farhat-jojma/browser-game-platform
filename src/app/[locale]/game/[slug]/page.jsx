@@ -74,8 +74,41 @@ export async function generateStaticParams() {
   return Object.keys(data?.games ?? {}).map((slug) => ({ slug }));
 }
 
+// Dynamic metadata for game pages
+export async function generateMetadata({ params }) {
+  const { slug, locale } = params;
+  const game = data?.games?.[slug];
+
+  if (!game) {
+    return {
+      title: "Game Not Found",
+    };
+  }
+
+  try {
+    const messages = (await import(`../../../../messages/${locale}.json`)).default;
+    // Set title to only the game title without platform name
+    const title = game.title;
+
+    // Use game description if available, otherwise use default
+    const description = game.description
+      ? `${game.title} - ${game.genre} game. ${messages?.metadata?.description || "Play browser games online for free!"}`
+      : messages?.metadata?.description || "Play browser games online for free!";
+
+    return {
+      title,
+      description,
+    };
+  } catch (error) {
+    return {
+      title: game.title,
+      description: `${game.title} - ${game.genre} game. Play browser games online for free!`,
+    };
+  }
+}
+
 export default async function GamePage({ params }) {
-  const { slug, locale } = await params;   // ✅ fix ici
+  const { slug, locale } = params;
   const game = data?.games?.[slug];
   if (!game) return notFound();
 

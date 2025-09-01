@@ -4,18 +4,30 @@ import { ThemeProvider } from "./components/theme-provider";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 
-// Metadata (optionnellement traduisible)
-export const metadata = {
-  title: "Browser Game Platform",
-  description: "Play browser games online for free!",
-};
+// ✅ Dynamic metadata based on locale
+export async function generateMetadata({ params }) {
+  const { locale } = params;
+
+  try {
+    const messages = (await import(`../../messages/${locale}.json`)).default;
+
+    return {
+      title: messages?.metadata?.title || "Browser Game Platform",
+      description: messages?.metadata?.description || "Play browser games online for free!",
+    };
+  } catch (error) {
+    return {
+      title: "Browser Game Platform",
+      description: "Play browser games online for free!",
+    };
+  }
+}
 
 export default async function LocaleLayout({ children, params }) {
-  const { locale } = await params; // ✅ attendre params
+  const { locale } = params;
 
   let messages;
   try {
-    // Charger le fichier JSON de la locale
     messages = (await import(`../../messages/${locale}.json`)).default;
   } catch (error) {
     notFound(); // si la locale n'existe pas

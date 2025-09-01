@@ -144,8 +144,12 @@
       "mobile": "Toque no jogo para ativar os controles. Toque fora para rolar."
     }
   },
+  "metadata": {
+    "title": "Plataforma de jogos no navegador",
+    "description": "Jogue jogos de navegador online gratuitamente!"
+  },
   "header": {
-    "brand": "Browser Game Platform",
+    "brand": "Plataforma de jogos de navegador",
     "search": {
       "placeholder": "Pesquisar jogos, gêneros, seções…",
       "button": "Pesquisar"

@@ -144,6 +144,10 @@
       "mobile": "Touchez le jeu pour activer les contrôles. Touchez à l’extérieur de la zone de jeu pour faire défiler la page."
     }
   },
+  "metadata": {
+    "title": "Plateforme de jeux en ligne",
+    "description": "Jouez à des jeux de navigateur gratuitement en ligne !"
+  },
   "header": {
     "brand": "Plateforme de Jeux Navigateur",
     "search": {

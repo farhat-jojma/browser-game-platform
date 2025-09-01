@@ -144,8 +144,12 @@
       "mobile": "Toca el juego para activar los controles. Toca afuera para desplazarte."
     }
   },
+  "metadata": {
+    "title": "Plataforma de juegos en navegador",
+    "description": "¡Juega juegos de navegador gratis en línea!"
+  },
   "header": {
-    "brand": "Browser Game Platform",
+    "brand": "Plataforma de juegos de navegador",
     "search": {
       "placeholder": "Buscar juegos, géneros, secciones…",
       "button": "Buscar"

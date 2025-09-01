@@ -144,8 +144,12 @@
       "mobile": "Tocca il gioco per attivare i controlli. Tocca fuori per scorrere."
     }
   },
+   "metadata": {
+    "title": "Piattaforma di giochi da browser",
+    "description": "Gioca online gratis ai tuoi giochi preferiti!"
+  },
   "header": {
-    "brand": "Browser Game Platform",
+    "brand": "Piattaforma di giochi da browsers",
     "search": {
       "placeholder": "Cerca giochi, generi, sezioni…",
       "button": "Cerca"

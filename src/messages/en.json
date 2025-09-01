@@ -144,6 +144,10 @@
       "mobile": "Touch the game to activate controls. Touch outside the game area to scroll the page."
     }
   },
+  "metadata": {
+    "title": "Browser Game Platform",
+    "description": "Play browser games online for free!"
+  },
   "header": {
     "brand": "Browser Game Platform",
     "search": {

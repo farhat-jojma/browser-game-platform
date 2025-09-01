@@ -144,8 +144,12 @@
       "mobile": "Tippe auf das Spiel, um die Steuerung zu aktivieren. Tippe außerhalb, um zu scrollen."
     }
   },
+  "metadata": {
+    "title": "Browser-Spielplattform",
+    "description": "Spielen Sie Browser-Spiele kostenlos online!"
+  },
   "header": {
-    "brand": "Browser Game Platform",
+    "brand": "Browser-Spielplattform",
     "search": {
       "placeholder": "Spiele, Genres, Abschnitte suchen…",
       "button": "Suchen"

@@ -128,7 +128,7 @@
     },
     "retro-bowl": {
       "title": "Retro Bowl",
-      "image": "/games/RetroBowl/retro-bowl.png",
+      "image": "/games/RetroBowl/retro-bowl.jpg",
       "genre": "Sports",
       "playPath": "https://games-dun-one.vercel.app/RetroBowl/index.html",
       "description": "/games/RetroBowl/description"

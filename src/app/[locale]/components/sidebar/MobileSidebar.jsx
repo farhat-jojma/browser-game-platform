@@ -84,7 +84,7 @@ function MobileNav() {
     <nav className="px-1 py-3 overflow-x-hidden">
       {items.map((it, idx) =>
         it.divider ? (
-          <div key={`div-${idx}`} className="my-2 border-t border-border mx-2" />
+          <div key={`div-${idx}`} className="my-2 border-t-4 border-border mx-2" />
         ) : (
           <Link
             key={it.href}

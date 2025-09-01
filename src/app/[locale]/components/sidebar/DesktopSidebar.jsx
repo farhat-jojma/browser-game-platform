@@ -83,7 +83,7 @@ function DesktopNav() {
     <nav className="px-2 py-3">
       {items.map((it, idx) =>
         it.divider ? (
-          <div key={`div-${idx}`} className="my-2 border-t border-border" />
+          <div key={`div-${idx}`} className="my-2 border-t-4 border-border" />
         ) : (
           <Link
             key={it.href}

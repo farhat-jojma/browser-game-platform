@@ -113,15 +113,18 @@ export default function GamePlayerMobile({ src, title, coverSrc }) {
   }, [src, reloadKey]);
 
   // Mobile-specific fullscreen handling
-  const toggleFullscreen = () => {
+  const [isIOSFullscreen, setIsIOSFullscreen] = useState(false);
+
+const toggleFullscreen = () => {
   const el = containerRef.current;
   if (!el) return;
 
   const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   if (isIOS) {
-    document.body.classList.toggle("ios-no-scroll"); // disable body scroll
+    document.body.classList.toggle("ios-no-scroll");
     el.classList.toggle("ios-fullscreen");
+    setIsIOSFullscreen((prev) => !prev);
   } else {
     if (document.fullscreenElement) {
       document.exitFullscreen();
@@ -130,6 +133,7 @@ export default function GamePlayerMobile({ src, title, coverSrc }) {
     }
   }
 };
+
 
 
   const handleGameTouch = () => setGameActive(true);
@@ -169,10 +173,10 @@ export default function GamePlayerMobile({ src, title, coverSrc }) {
       <div
         ref={containerRef}
         className={`relative w-full rounded-xl overflow-hidden border bg-black transition-all duration-200 ${
-          gameActive && loaded && started
-            ? "border-violet-500 ring-2 ring-violet-500/30 shadow-lg shadow-violet-500/20"
-            : "border-white/10"
-        }`}
+    gameActive && loaded && started
+      ? "border-violet-500 ring-2 ring-violet-500/30 shadow-lg shadow-violet-500/20"
+      : "border-white/10"
+  } ${!isIOSFullscreen ? "aspect-video" : ""}`}
         style={{ aspectRatio: "16/9", minHeight: "250px", maxHeight: "70vh" }}
         onTouchStart={handleGameTouch}
       >

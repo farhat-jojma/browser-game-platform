@@ -81,22 +81,22 @@ export default function GamePlayerDesktop({ src, title, coverSrc }) {
   }, [src, reloadKey]);
 
   const toggleFullscreen = () => {
-  const el = containerRef.current;
-    if (!el) return;
+    const el = containerRef.current;
+      if (!el) return;
 
-    // Détection iOS
-    const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+      // Détection iOS
+      const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-    if (isIOS) {
-      // Fallback CSS fullscreen
-      el.classList.toggle("ios-fullscreen");
-    } else {
-      if (document.fullscreenElement) {
-        document.exitFullscreen();
+      if (isIOS) {
+        // Fallback CSS fullscreen
+        el.classList.toggle("ios-fullscreen");
       } else {
-        el.requestFullscreen?.();
+        if (document.fullscreenElement) {
+          document.exitFullscreen();
+        } else {
+          el.requestFullscreen?.();
+        }
       }
-    }
   };
 
 

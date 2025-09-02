@@ -114,3 +114,13 @@ html, body, #__next {
   z-index: 9999;
   background: black;
 }
+
+.ios-fullscreen iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.ios-no-scroll {
+  overflow: hidden !important;
+  height: 100% !important;
+}

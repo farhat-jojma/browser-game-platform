@@ -114,23 +114,23 @@ export default function GamePlayerMobile({ src, title, coverSrc }) {
 
   // Mobile-specific fullscreen handling
   const toggleFullscreen = () => {
-    const el = containerRef.current;
-      if (!el) return;
+  const el = containerRef.current;
+  if (!el) return;
 
-      // Détection iOS
-      const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+  const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-      if (isIOS) {
-        // Fallback CSS fullscreen
-        el.classList.toggle("ios-fullscreen");
-      } else {
-        if (document.fullscreenElement) {
-          document.exitFullscreen();
-        } else {
-          el.requestFullscreen?.();
-        }
-      }
-  };
+  if (isIOS) {
+    document.body.classList.toggle("ios-no-scroll"); // disable body scroll
+    el.classList.toggle("ios-fullscreen");
+  } else {
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    } else {
+      el.requestFullscreen?.();
+    }
+  }
+};
+
 
   const handleGameTouch = () => setGameActive(true);
 

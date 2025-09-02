@@ -23,7 +23,7 @@
     },
     "drag-slam": {
       "title": "Drag Slam",
-      "image": "/games/DragSlam/DragSlam.png",
+      "image": "/games/DragSlam/drag-slam.png",
       "genre": "Adventure",
       "playPath": "https://games-dun-one.vercel.app/DragSlam/index.html",
       "description": "/games/DragSlam/description"

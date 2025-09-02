@@ -40,6 +40,16 @@ function gradientForGenre(genre) {
   return k ? GENRE_GRADIENT[k] : "from-amber-300 to-amber-500";
 }
 
+// Simple in-place shuffle copy
+function shuffleArray(items) {
+  const arr = [...items];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 // Lire fichier description HTML
 async function loadDescriptionHTML(descField, locale) {
   if (!descField) return null;
@@ -122,10 +132,15 @@ export default async function GamePage({ params }) {
 
   const coverSrc = game.cover || game.banner || game.backdrop || game.image;
 
-  const moreGames = Object.entries(data.games)
+  const allOtherGames = Object.entries(data.games)
     .filter(([s]) => s !== slug)
-    .slice(0, 8)
     .map(([s, g]) => ({ slug: s, ...g }));
+
+  // Create three non-overlapping randomized groups for mobile
+  const shuffled = shuffleArray(allOtherGames);
+  const moreGamesTop = shuffled.slice(0, 8);
+  const moreGamesBottom = shuffled.slice(8, 16);
+  const moreGamesList = shuffled.slice(16, 32);
 
   const descHTML = await loadDescriptionHTML(game.description, locale);
 
@@ -140,6 +155,38 @@ export default async function GamePage({ params }) {
         <div className="space-y-4">
           {/* GamePlayer */}
           <GamePlayer src={playerSrc} title={game.title} coverSrc={coverSrc} />
+
+          {/* More games - mobile carousel (top) */}
+          <section className="lg:hidden">
+            <h3 className="text-sm font-semibold text-muted-foreground uppercase mb-3">
+              {t("moreGames")}
+            </h3>
+            <div className="flex gap-3 overflow-x-auto pb-2 -mx-4 px-4 snap-x">
+              {moreGamesTop.map((g) => (
+                <Link
+                  key={g.slug}
+                  href={`/${locale}/game/${g.slug}`}
+                  className="shrink-0 snap-start w-40"
+                >
+                  <div className="relative w-40 h-24 rounded-lg overflow-hidden">
+                    <Image
+                      src={g.image || "/logo.png"}
+                      alt={g.title}
+                      fill
+                      sizes="160px"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="mt-2 text-sm font-medium truncate text-foreground">
+                    {g.title}
+                  </div>
+                  <div className="text-xs text-muted-foreground truncate">{g.genre}</div>
+                </Link>
+              ))}
+            </div>
+          </section>
+
+          
 
           {/* Description */}
           <section className="mt-2">
@@ -161,31 +208,60 @@ export default async function GamePage({ params }) {
               <p className="text-muted-foreground">{t("noDescription")}</p>
             )}
           </section>
-        </div>
 
-        {/* More games */}
-        <aside className="lg:sticky lg:top-20 h-max">
-          <h3 className="text-sm font-semibold text-muted-foreground uppercase mb-3">
-            {t("moreGames")}
-          </h3>
-          <div className="space-y-2">
-            {moreGames.map((g) => (
-              <Link
-                key={g.slug}
-                href={`/${locale}/game/${g.slug}`}
-                className="flex items-center gap-3 rounded-lg p-2 hover:bg-white/5 transition"
-              >
-                <MoreGameThumb image={g.image} title={g.title} genre={g.badgeGenre || g.genre} />
-                <div className="min-w-0">
-                  <div className="font-medium leading-tight truncate text-foreground">
+          {/* More games - mobile bottom (different set) */}
+          <section className="lg:hidden">
+            <h3 className="text-sm font-semibold text-muted-foreground uppercase mb-3">
+              {t("moreGames")}
+            </h3>
+            <div className="flex gap-3 overflow-x-auto pb-2 -mx-4 px-4 snap-x">
+              {moreGamesBottom.map((g) => (
+                <Link
+                  key={g.slug}
+                  href={`/${locale}/game/${g.slug}`}
+                  className="shrink-0 snap-start w-40"
+                >
+                  <div className="relative w-40 h-24 rounded-lg overflow-hidden">
+                    <Image
+                      src={g.image || "/logo.png"}
+                      alt={g.title}
+                      fill
+                      sizes="160px"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="mt-2 text-sm font-medium truncate text-foreground">
                     {g.title}
                   </div>
-                  <div className="text-xs text-muted-foreground">{g.genre}</div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </aside>
+                  <div className="text-xs text-muted-foreground truncate">{g.genre}</div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        </div>
+        <div className="my-2 border-t-4 border-border" />
+          {/* Other games - mobile list (middle) */}
+          <section className="lg:hidden">
+            
+            <div className="space-y-2">
+              {moreGamesList.map((g) => (
+                <Link
+                  key={g.slug}
+                  href={`/${locale}/game/${g.slug}`}
+                  className="flex items-center gap-3 rounded-lg p-2 hover:bg-white/5 transition"
+                >
+                  <MoreGameThumb image={g.image} title={g.title} genre={g.badgeGenre || g.genre} />
+                  <div className="min-w-0">
+                    <div className="font-medium leading-tight truncate text-foreground">
+                      {g.title}
+                    </div>
+                    <div className="text-xs text-muted-foreground">{g.genre}</div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        
       </div>
     </div>
   );

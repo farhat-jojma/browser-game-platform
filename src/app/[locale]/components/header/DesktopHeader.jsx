@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { ThemeToggle } from "../ThemeToggle";
 import { useTranslations, useLocale } from "next-intl";
@@ -67,9 +68,8 @@ export default function DesktopHeader({ onToggleSidebar, isSidebarOpen }) {
       </button>
 
       {/* Logo */}
-      <Link href={`/${locale}`} className="flex items-center gap-2 shrink-0">
-        <span className="text-2xl">🎮</span>
-        <span className="font-semibold text-base">{t("brand")}</span>
+      <Link href={`/${locale}`} className="flex items-center shrink-0">
+        <Image src="/logo.png" alt="Logo" height={30} width={90} />
       </Link>
 
       {/* Search */}

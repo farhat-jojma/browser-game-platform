@@ -151,7 +151,7 @@
   "header": {
     "brand": "Plataforma de juegos de navegador",
     "search": {
-      "placeholder": "Buscar juegos, géneros, secciones…",
+      "placeholder": "Buscar",
       "button": "Buscar"
     },
     "sidebar": {

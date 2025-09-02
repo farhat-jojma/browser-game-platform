@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ThemeToggle } from "../ThemeToggle";
 import { useTranslations, useLocale } from "next-intl";
+import LanguageSwitcher from "../LanguageSwitcher"; // 👈 ajoute ton switcher
 
 export default function MobileHeader({ onToggleSidebar, isSidebarOpen }) {
   const t = useTranslations("header");
@@ -33,7 +34,8 @@ export default function MobileHeader({ onToggleSidebar, isSidebarOpen }) {
       </Link>
 
       {/* Right actions */}
-      <div className="flex items-center gap-1">
+      <div className="flex items-center gap-2">
+        <LanguageSwitcher /> {/* 👈 ajouté ici */}
         <ThemeToggle />
       </div>
     </div>

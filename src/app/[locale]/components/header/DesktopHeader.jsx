@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ThemeToggle } from "../ThemeToggle";
 import { useTranslations, useLocale } from "next-intl";
+import LanguageSwitcher from "../LanguageSwitcher"; // 👈 ajoute ton switcher
 
 function HeaderSearch() {
   const t = useTranslations("header.search");
@@ -77,7 +78,8 @@ export default function DesktopHeader({ onToggleSidebar, isSidebarOpen }) {
       </div>
 
       {/* Right actions */}
-      <div className="flex items-center gap-1">
+      <div className="flex items-center gap-2">
+        <LanguageSwitcher /> {/* 👈 ajouté ici */}
         <ThemeToggle />
       </div>
 

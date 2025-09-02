@@ -171,15 +171,16 @@ const toggleFullscreen = () => {
 
       {/* === PLAYER FRAME === */}
       <div
-        ref={containerRef}
-        className={`relative w-full rounded-xl overflow-hidden border bg-black transition-all duration-200 ${
+  ref={containerRef}
+  className={`relative w-full rounded-xl overflow-hidden border bg-black transition-all duration-200 ${
     gameActive && loaded && started
       ? "border-violet-500 ring-2 ring-violet-500/30 shadow-lg shadow-violet-500/20"
       : "border-white/10"
-  } ${!isIOSFullscreen ? "aspect-video" : ""}`}
-        style={{ aspectRatio: "16/9", minHeight: "250px", maxHeight: "70vh" }}
-        onTouchStart={handleGameTouch}
-      >
+  } ${!isIOSFullscreen ? "aspect-video" : "ios-fullscreen"}`}
+  style={!isIOSFullscreen ? { aspectRatio: "16/9", minHeight: "250px", maxHeight: "70vh" } : {}}
+  onTouchStart={handleGameTouch}
+>
+
         {/* IFRAME */}
         {status === "ok" && started && (
           <iframe

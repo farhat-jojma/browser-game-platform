@@ -239,7 +239,7 @@ export default async function GamePage({ params }) {
             </div>
           </section>
         </div>
-        <div className="my-2 border-t-4 border-border" />
+        <div className="my-2 border-t-4 border-border lg:hidden" />
           {/* Other games - mobile list (middle) */}
           <section className="lg:hidden">
             
@@ -262,6 +262,29 @@ export default async function GamePage({ params }) {
             </div>
           </section>
         
+        {/* More games - desktop sidebar */}
+        <aside className="hidden lg:sticky lg:top-20 lg:block h-max">
+          <h3 className="text-sm font-semibold text-muted-foreground uppercase mb-3">
+            {t("moreGames")}
+          </h3>
+          <div className="space-y-2">
+            {allOtherGames.slice(0, 8).map((g) => (
+              <Link
+                key={g.slug}
+                href={`/${locale}/game/${g.slug}`}
+                className="flex items-center gap-3 rounded-lg p-2 hover:bg-white/5 transition"
+              >
+                <MoreGameThumb image={g.image} title={g.title} genre={g.badgeGenre || g.genre} />
+                <div className="min-w-0">
+                  <div className="font-medium leading-tight truncate text-foreground">
+                    {g.title}
+                  </div>
+                  <div className="text-xs text-muted-foreground">{g.genre}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </aside>
       </div>
     </div>
   );

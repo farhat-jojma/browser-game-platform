@@ -81,11 +81,24 @@ export default function GamePlayerDesktop({ src, title, coverSrc }) {
   }, [src, reloadKey]);
 
   const toggleFullscreen = () => {
-    const el = containerRef.current;
+  const el = containerRef.current;
     if (!el) return;
-    if (document.fullscreenElement) document.exitFullscreen();
-    else el.requestFullscreen?.();
+
+    // Détection iOS
+    const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if (isIOS) {
+      // Fallback CSS fullscreen
+      el.classList.toggle("ios-fullscreen");
+    } else {
+      if (document.fullscreenElement) {
+        document.exitFullscreen();
+      } else {
+        el.requestFullscreen?.();
+      }
+    }
   };
+
 
   const handleGameClick = () => setGameActive(true);
 
@@ -137,6 +150,7 @@ return (
             className="absolute inset-0 w-full h-full"
             allow="autoplay; fullscreen; gamepad; pointer-lock; cross-origin-isolated"
             allowFullScreen
+            webkitallowfullscreen="true"
             onLoad={() => setLoaded(true)}
           />
         )}

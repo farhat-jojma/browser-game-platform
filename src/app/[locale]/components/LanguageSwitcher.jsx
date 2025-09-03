@@ -1,7 +1,6 @@
 "use client";
 
-import { usePathname } from "next/navigation";
-import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -21,6 +20,7 @@ const LOCALES = [
 
 export default function LanguageSwitcher() {
   const pathname = usePathname();
+  const router = useRouter();
 
   // Remplace la locale dans l’URL
   function redirectPathname(locale) {
@@ -34,6 +34,12 @@ export default function LanguageSwitcher() {
   const activeLocale = pathname?.split("/")[1] || "en";
   const current = LOCALES.find((l) => l.code === activeLocale) || LOCALES[0];
 
+  // Handle locale change with client-side navigation to avoid full reload
+  function handleLocaleChange(locale) {
+    const newPath = redirectPathname(locale);
+    router.push(newPath, { forceOptimisticNavigation: true });
+  }
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="flex items-center gap-2 px-3 py-1.5 rounded-md border bg-secondary hover:bg-secondary/80 text-sm">
@@ -42,14 +48,13 @@ export default function LanguageSwitcher() {
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-44">
         {LOCALES.map((loc) => (
-          <DropdownMenuItem key={loc.code} asChild>
-            <Link
-              href={redirectPathname(loc.code)}
-              className="flex items-center gap-2"
-            >
-              <span className={`fi fi-${loc.flag}`} />
-              <span>{loc.label}</span>
-            </Link>
+          <DropdownMenuItem
+            key={loc.code}
+            onSelect={() => handleLocaleChange(loc.code)}
+            className="flex items-center gap-2 cursor-pointer"
+          >
+            <span className={`fi fi-${loc.flag}`} />
+            <span>{loc.label}</span>
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

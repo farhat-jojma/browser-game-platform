@@ -1,13 +1,11 @@
-# TODO: Replace Site Name with Logo in Headers
+# Fix Sidebar Flash on Language Switch
 
 ## Tasks
-- [x] Update DesktopHeader.jsx: Import Image, replace logo section with Image component
-- [x] Update MobileHeader.jsx: Import Image, replace logo section with Image component
-- [ ] Test the changes by running the development server
+- [x] Modify sidebarOpen state initialization to read from localStorage synchronously
+- [x] Update useEffect to remove redundant initialization logic
+- [ ] Test the fix to ensure no flash occurs on language switch
 
-## Details
-- Logo path: public/logo.png
-- Use Next.js Image component for optimization
-- Set height to 30px, width 90px
-- Keep the Link wrapper for navigation
-- Remove the emoji 🎮 and text {t("brand")}
+## Current Status
+- Successfully implemented the fix by changing sidebarOpen state to initialize synchronously from localStorage
+- Removed redundant initialization logic from useEffect
+- Ready for testing

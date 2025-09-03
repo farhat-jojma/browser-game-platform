@@ -1,18 +1,81 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "./[locale]/components/header/Header";
 import Sidebar from "./[locale]/components/sidebar/Sidebar";
 import Footer from "./[locale]/components/footer/Footer";
 
-
 export default function AppShell({ children }) {
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  // Start with false to avoid hydration mismatch
+  const [isClient, setIsClient] = useState(false);
+
+  // Initialize sidebarOpen state synchronously to avoid flash
+  const [sidebarOpen, setSidebarOpen] = useState(() => {
+    if (typeof window === 'undefined') {
+      // Server side: default to false to avoid hydration mismatch
+      return false;
+    }
+    const isMobile = window.innerWidth < 1024;
+    if (isMobile) {
+      // Mobile: always start collapsed
+      return false;
+    }
+    // Desktop: read from localStorage or default to true
+    const savedState = localStorage.getItem('sidebarOpen');
+    if (savedState !== null) {
+      return JSON.parse(savedState);
+    }
+    return true;
+  });
+
+  useEffect(() => {
+    setIsClient(true);
+
+    // Handle resize events
+    const handleResize = () => {
+      const isMobileNow = window.innerWidth < 1024;
+      if (isMobileNow) {
+        // If switching to mobile, always collapse
+        setSidebarOpen(false);
+      } else {
+        // If switching to desktop, restore saved preference
+        const savedState = localStorage.getItem('sidebarOpen');
+        if (savedState !== null) {
+          setSidebarOpen(JSON.parse(savedState));
+        } else {
+          setSidebarOpen(true);
+        }
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Custom toggle function that saves to localStorage on desktop
+  const toggleSidebar = () => {
+    setSidebarOpen((prev) => {
+      const newState = !prev;
+
+      // Only save to localStorage on desktop
+      if (typeof window !== 'undefined' && window.innerWidth >= 1024) {
+        localStorage.setItem('sidebarOpen', JSON.stringify(newState));
+      }
+
+      return newState;
+    });
+  };
+
+  // Prevent hydration mismatch by not rendering until client-side
+  if (!isClient) {
+    // Render minimal placeholder to avoid sidebar flash
+    return <div className="min-h-screen bg-background text-foreground" />;
+  }
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Fixed, full-width header */}
       <Header
-        onToggleSidebar={() => setSidebarOpen((s) => !s)}
+        onToggleSidebar={toggleSidebar}
         isSidebarOpen={sidebarOpen}
       />
 

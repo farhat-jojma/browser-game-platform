@@ -198,7 +198,7 @@
       "description": "Learn more about Browser Game Platform and our mission."
     },
     "title": "About Us",
-    "intro": "Welcome to <strong>Browser Game Platform</strong>! Our mission is to provide players with fun, safe, and accessible browser games. We curate high-quality titles so you can enjoy gaming directly in your browser without downloads."
+    "intro": "Welcome to Browser Game Platform."
   },
 
   "contact": {
@@ -208,8 +208,8 @@
     },
     "title": "Contact Us",
     "intro": "Have questions, feedback, or business inquiries? Reach out to us at:",
-    "email": "Email",
-    "phone": "Phone"
+    "email": "contact@gamesonlinegratis.com",
+    "phone": "+212 663-161240"
   },
 
   "privacy": {

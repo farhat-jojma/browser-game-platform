@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next dev",
+    "dev": "next dev --experimental-https",
+    "dev:http": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",

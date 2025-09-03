@@ -1,4 +1,8 @@
+
 "use client";
+
+export const runtime = "edge";
+
 import Link from "next/link";
 import data from "../../data/games.json";
 import RowCarousel from "./components/rowcarousel/RowCarousel"

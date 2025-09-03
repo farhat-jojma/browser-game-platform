@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -8,6 +9,8 @@ import data from "../../../../data/games.json";
 import path from "node:path";
 import { promises as fs } from "node:fs";
 import { getTranslations } from "next-intl/server";
+
+export const runtime = "nodejs";
 
 // Simple genre -> gradient mapping (matches home card style)
 const GENRE_GRADIENT = {
@@ -289,3 +292,4 @@ export default async function GamePage({ params }) {
     </div>
   );
 }
+

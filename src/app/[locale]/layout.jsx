@@ -1,3 +1,5 @@
+export const runtime = "nodejs";
+
 import "../globals.css";
 import AppShell from "../AppShell";
 import { ThemeProvider } from "./components/theme-provider";

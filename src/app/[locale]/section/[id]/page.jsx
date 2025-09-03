@@ -1,4 +1,6 @@
 
+export const runtime = "nodejs";
+
 import SectionPageClient from "./SectionPageClient";
 import data from "../../../../data/games.json";
 

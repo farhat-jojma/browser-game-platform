@@ -13,13 +13,22 @@ module.exports = withNextIntl({
     domains: ["picsum.photos"]
   },
 
-  // HTTPS configuration for development
-  ...(process.env.NODE_ENV === 'development' && {
-    serverOptions: {
-      https: {
-        key: fs.readFileSync(path.join(process.cwd(), 'localhost-key.pem')),
-        cert: fs.readFileSync(path.join(process.cwd(), 'localhost.pem')),
+  // HTTPS configuration for development (optional if cert files exist)
+  ...(process.env.NODE_ENV === 'development' && (() => {
+    const keyPath = path.join(process.cwd(), 'localhost-key.pem');
+    const certPath = path.join(process.cwd(), 'localhost.pem');
+    const hasKey = fs.existsSync(keyPath);
+    const hasCert = fs.existsSync(certPath);
+    if (!hasKey || !hasCert) {
+      return {};
+    }
+    return {
+      serverOptions: {
+        https: {
+          key: fs.readFileSync(keyPath),
+          cert: fs.readFileSync(certPath),
+        },
       },
-    },
-  }),
+    };
+  })()),
 });

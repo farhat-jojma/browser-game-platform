@@ -68,11 +68,11 @@ export default function DesktopFooter() {
                   <path d="M13.5 9H16l.5-3h-3V4.5c0-.866.176-1.2 1.4-1.2H16V0h-2.1C10.9 0 10 1.343 10 4.1V6H8v3h2v9h3.5V9Z"/>
                 </svg>
               </a> */}
-              <a aria-label="GitHub" href="https://github.com/farhat-jojma/browser-game-platform" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+              {/* <a aria-label="GitHub" href="https://github.com/farhat-jojma/browser-game-platform" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                   <path fillRule="evenodd" d="M12 .5C5.648.5.5 5.648.5 12c0 5.088 3.292 9.393 7.868 10.91.575.106.786-.25.786-.556 0-.274-.01-1.17-.016-2.123-3.2.695-3.878-1.363-3.878-1.363-.523-1.328-1.278-1.682-1.278-1.682-1.044-.714.08-.699.08-.699 1.155.081 1.763 1.186 1.763 1.186 1.027 1.76 2.694 1.252 3.35.957.104-.744.402-1.252.73-1.54-2.555-.29-5.242-1.278-5.242-5.687 0-1.256.448-2.284 1.183-3.09-.119-.29-.512-1.46.112-3.043 0 0 .965-.309 3.164 1.18.917-.255 1.9-.382 2.878-.386.978.004 1.961.131 2.88.386 2.197-1.489 3.161-1.18 3.161-1.18.626 1.583.233 2.753.114 3.043.737.806 1.182 1.834 1.182 3.09 0 4.42-2.692 5.393-5.256 5.677.413.355.78 1.053.78 2.123 0 1.532-.014 2.766-.014 3.145 0 .309.208.668.792.554C20.213 21.39 23.5 17.086 23.5 12 23.5 5.648 18.352.5 12 .5Z" clipRule="evenodd"/>
                 </svg>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-   "dev": "next dev",
-  "build": "npx @cloudflare/next-on-pages@1 build",
-  "start": "next start",
-  "lint": "next lint"
-},"repository": {
+  "scripts": {
+    "dev": "next dev",
+    "build": "npx @cloudflare/next-on-pages@1",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/farhat-jojma/browser-game-platform.git"
   },

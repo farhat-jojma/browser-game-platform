@@ -1,5 +1,2 @@
 name = "browser-game-platform"
 compatibility_date = "2025-09-04"
-
-[build]
-pages_build_output_dir = ".vercel/output/static"

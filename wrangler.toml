@@ -1,26 +1,10 @@
 name = "gaming-website-2"
 compatibility_date = "2024-01-01"
 
-# Cloudflare Pages configuration for Next.js 15
 [build]
 command = "npm run cf:build"
-cwd = "."
-
-[build.upload]
-format = "service-worker"
-
-# Build output directory for Cloudflare Pages
 pages_build_output_dir = ".vercel/output/static"
 
-# Environment variables
 [vars]
-NODE_VERSION = "18"
-
-# Pages configuration
-[[pages_build_config]]
-# Build command for Next.js with Cloudflare Pages
-build_command = "npm run cf:build"
-# Destination directory
-destination_dir = ".vercel/output/static"
-# Root directory
-root_dir = "."
+# optional, Cloudflare already provides Node 22 by default
+# NODE_VERSION = "22"

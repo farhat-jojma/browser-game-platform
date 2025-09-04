@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next dev",
     "dev:https": "next dev --experimental-https",
-    "build": "npx @cloudflare/next-on-pages@1",
+    "build": "next build",
     "start": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint",

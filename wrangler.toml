@@ -1,6 +1,10 @@
 name = "gaming-website-2"
 compatibility_date = "2024-01-01"
 
+[build]
+command = "npx @cloudflare/next-on-pages@1"
+pages_build_output_dir = ".vercel/output/static"
+
 [vars]
 # optional, Cloudflare already provides Node 22 by default
 # NODE_VERSION = "22"

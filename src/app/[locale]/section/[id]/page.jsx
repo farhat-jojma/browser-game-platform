@@ -6,8 +6,15 @@ import data from "../../../../data/games.json";
 
 // Prebuild static paths for the section ids you have
 export async function generateStaticParams() {
+  const locales = ['en', 'fr', 'es', 'de', 'it', 'pt'];
   const ids = Object.keys(data?.sections ?? { featured: [], new: [] });
-  return ids.map((id) => ({ id }));
+  const params = [];
+  for (const locale of locales) {
+    for (const id of ids) {
+      params.push({ locale, id });
+    }
+  }
+  return params;
 }
 
 // Optional: better tab title

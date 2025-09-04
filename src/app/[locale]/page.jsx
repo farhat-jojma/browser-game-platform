@@ -1,7 +1,14 @@
 
-"use client";
+// Remove "use client" to allow generateStaticParams and server-side rendering
 
-export const runtime = "edge";
+// Remove runtime edge to allow generateStaticParams
+// export const runtime = "edge";
+
+// Generate static params for locales
+export async function generateStaticParams() {
+  const locales = ['en', 'fr', 'es', 'de', 'it', 'pt'];
+  return locales.map((locale) => ({ locale }));
+}
 
 import Link from "next/link";
 import data from "../../data/games.json";

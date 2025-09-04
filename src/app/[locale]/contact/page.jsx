@@ -1,6 +1,7 @@
-"use client";
+// Mark as client component to use React hooks and next/navigation
 
-export const runtime = 'edge';
+// Add generateStaticParams to support output: export config
+
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";

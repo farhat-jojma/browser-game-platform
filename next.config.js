@@ -11,7 +11,7 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 // 👉 Wrap with both plugins
 module.exports = withBundleAnalyzer(
   withNextIntl({
-    output: "export",
+    output: "standalone",
 
     trailingSlash: true,
     images: {

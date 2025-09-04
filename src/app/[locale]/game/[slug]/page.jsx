@@ -83,7 +83,15 @@ async function loadDescriptionHTML(descField, locale) {
 
 // Générer les slugs statiques
 export async function generateStaticParams() {
-  return Object.keys(data?.games ?? {}).map((slug) => ({ slug }));
+  const locales = ['en', 'fr', 'es', 'de', 'it', 'pt'];
+  const slugs = Object.keys(data?.games ?? {});
+  const params = [];
+  for (const locale of locales) {
+    for (const slug of slugs) {
+      params.push({ locale, slug });
+    }
+  }
+  return params;
 }
 
 // Dynamic metadata for game pages

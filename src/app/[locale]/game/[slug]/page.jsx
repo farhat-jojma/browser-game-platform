@@ -1,8 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
-import { notFound } from "next/navigation";
-import GamePlayer from "../../components/gameplayer/GamePlayer";
-import MoreGameThumb from "../../components/gameplayer/MoreGameThumb";
+import data from "../../../../data/games.json";
+import data from "../../../../data/games.json";
 import data from "../../../../data/games.json";
 
 import path from "node:path";
@@ -94,10 +91,8 @@ export async function generateStaticParams() {
   return params;
 }
 
-// Dynamic metadata for game pages
-// Dynamic metadata for game pages
 export async function generateMetadata({ params }) {
-  const { slug, locale } = await params; // ✅ fix
+  const { slug, locale } = params;
 
   const game = data?.games?.[slug];
   if (!game) {
@@ -121,16 +116,15 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function GamePage({ params }) {
-  const { slug, locale } = await params; // ✅ fix
+  const { slug, locale } = params;
 
   const game = data?.games?.[slug];
   if (!game) return notFound();
 
   const t = await getTranslations({ locale, namespace: "game" });
 
-
-  // ✅ si playPath est une URL externe → garder telle quelle
-  // ✅ sinon → charger depuis /public/games/[slug]/index.html
+  // si playPath est une URL externe → garder telle quelle
+  // sinon → charger depuis /public/games/[slug]/index.html
   const playerSrc = game.playPath?.startsWith("http")
     ? game.playPath
     : `/games/${slug}/index.html`;
@@ -190,8 +184,6 @@ export default async function GamePage({ params }) {
               ))}
             </div>
           </section>
-
-          
 
           {/* Description */}
           <section className="mt-2">
@@ -294,4 +286,3 @@ export default async function GamePage({ params }) {
     </div>
   );
 }
-

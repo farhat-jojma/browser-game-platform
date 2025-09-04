@@ -3,6 +3,7 @@ import AppShell from "../AppShell";
 import { ThemeProvider } from "./components/theme-provider";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
+import BackToTopButton from "./components/BackToTopButton";
 
 // ✅ Dynamic metadata based on locale
 export async function generateMetadata({ params }) {
@@ -41,6 +42,7 @@ export default async function LocaleLayout({ children, params }) {
             <AppShell>{children}</AppShell>
           </ThemeProvider>
         </NextIntlClientProvider>
+        <BackToTopButton />
       </body>
     </html>
   );

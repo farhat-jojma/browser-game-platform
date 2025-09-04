@@ -8,7 +8,7 @@ import { notFound } from "next/navigation";
 
 // ✅ Dynamic metadata based on locale
 export async function generateMetadata({ params }) {
-  const { locale } = await params;
+  const { locale } = await params; // await here ✅
 
   try {
     const messages = (await import(`../../messages/${locale}.json`)).default;
@@ -26,24 +26,20 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function LocaleLayout({ children, params }) {
-  const { locale } = await params;
+  const { locale } = await params; // await here ✅
 
   let messages;
   try {
     messages = (await import(`../../messages/${locale}.json`)).default;
   } catch (error) {
-    notFound(); // si la locale n'existe pas
+    notFound();
   }
 
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <body className="min-h-screen bg-background text-foreground" suppressHydrationWarning>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <AppShell>{children}</AppShell>
-          </ThemeProvider>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <AppShell>{children}</AppShell>
+      </ThemeProvider>
+    </NextIntlClientProvider>
   );
 }

@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -88,31 +87,24 @@ export async function generateStaticParams() {
 }
 
 // Dynamic metadata for game pages
+// Dynamic metadata for game pages
 export async function generateMetadata({ params }) {
-  const { slug, locale } = params;
-  const game = data?.games?.[slug];
+  const { slug, locale } = await params; // ✅ fix
 
+  const game = data?.games?.[slug];
   if (!game) {
-    return {
-      title: "Game Not Found",
-    };
+    return { title: "Game Not Found" };
   }
 
   try {
     const messages = (await import(`../../../../messages/${locale}.json`)).default;
-    // Set title to only the game title without platform name
     const title = game.title;
-
-    // Use game description if available, otherwise use default
     const description = game.description
       ? `${game.title} - ${game.genre} game. ${messages?.metadata?.description || "Play browser games online for free!"}`
       : messages?.metadata?.description || "Play browser games online for free!";
 
-    return {
-      title,
-      description,
-    };
-  } catch (error) {
+    return { title, description };
+  } catch {
     return {
       title: game.title,
       description: `${game.title} - ${game.genre} game. Play browser games online for free!`,
@@ -121,11 +113,13 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function GamePage({ params }) {
-  const { slug, locale } = params;
+  const { slug, locale } = await params; // ✅ fix
+
   const game = data?.games?.[slug];
   if (!game) return notFound();
 
   const t = await getTranslations({ locale, namespace: "game" });
+
 
   // ✅ si playPath est une URL externe → garder telle quelle
   // ✅ sinon → charger depuis /public/games/[slug]/index.html

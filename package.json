@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    
+
     "dev:https": "next dev --experimental-https",
-     "dev": "next dev",
-     "build": "npx @cloudflare/next-on-pages@1",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint",
+
     "cf:build": "npx @cloudflare/next-on-pages@1",
     "cf:preview": "npm run cf:build && npx wrangler pages dev .vercel/output/static --compatibility-date 2024-01-01",
     "cf:deploy": "npm run cf:build && npx wrangler pages deploy .vercel/output/static",

@@ -37,8 +37,9 @@ export default function LanguageSwitcher() {
   // Handle locale change with client-side navigation to avoid full reload
   function handleLocaleChange(locale) {
     const newPath = redirectPathname(locale);
-    router.push(newPath, { forceOptimisticNavigation: true });
+    router.replace(newPath, { scroll: false }); // 👈 important
   }
+
 
   return (
     <DropdownMenu>
@@ -50,12 +51,16 @@ export default function LanguageSwitcher() {
         {LOCALES.map((loc) => (
           <DropdownMenuItem
             key={loc.code}
-            onSelect={() => handleLocaleChange(loc.code)}
+            onClick={(e) => {
+              e.preventDefault();
+              handleLocaleChange(loc.code);
+            }}
             className="flex items-center gap-2 cursor-pointer"
           >
             <span className={`fi fi-${loc.flag}`} />
             <span>{loc.label}</span>
           </DropdownMenuItem>
+
         ))}
       </DropdownMenuContent>
     </DropdownMenu>

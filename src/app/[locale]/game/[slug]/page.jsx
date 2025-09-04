@@ -86,7 +86,7 @@ export async function generateStaticParams() {
 
 // Dynamic metadata for game pages
 export async function generateMetadata({ params }) {
-  const { slug, locale } = params;
+  const { slug, locale } = await params;
   const game = data?.games?.[slug];
 
   if (!game) {
@@ -118,7 +118,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function GamePage({ params }) {
-  const { slug, locale } = params;
+  const { slug, locale } = await params;
   const game = data?.games?.[slug];
   if (!game) return notFound();
 

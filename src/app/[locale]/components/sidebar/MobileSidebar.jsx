@@ -70,9 +70,22 @@ function buildItems(t, locale) {
   return items;
 }
 
-function isActive(pathname, href) {
-  return pathname === href || pathname.startsWith(href + "/");
+function normalize(path) {
+  return path.endsWith("/") && path.length > 1 ? path.slice(0, -1) : path;
 }
+
+function isActive(pathname, href) {
+  const p = normalize(pathname);
+  const h = normalize(href);
+
+  if (/^\/[a-z]{2}$/.test(h)) {
+    return p === h;
+  }
+
+  return p === h || p.startsWith(h + "/");
+}
+
+
 
 function MobileNav() {
   const pathname = usePathname();

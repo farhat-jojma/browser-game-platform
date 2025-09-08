@@ -38,6 +38,21 @@ export default async function LocaleLayout({ children, params }) {
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        {/* ✅ Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-RB3Q1DXSDP"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RB3Q1DXSDP');
+          `}
+        </Script>
+      </head>
       <body className="min-h-screen bg-background text-foreground" suppressHydrationWarning>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
@@ -46,20 +61,6 @@ export default async function LocaleLayout({ children, params }) {
         </NextIntlClientProvider>
 
         <BackToTopButton />
-
-        {/* ✅ Correct way to add Google Analytics */}
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-RB3Q1DXSDP"
-        />
-        <Script id="google-analytics">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-RB3Q1DXSDP');
-          `}
-        </Script>
       </body>
     </html>
   );

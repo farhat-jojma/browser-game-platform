@@ -185,7 +185,7 @@
     "plug-heads": {
       "title": "Plug Heads",
       "image": "https://farhat-jojma.github.io/my-assets-repo/plug-heads.png",
-      "genre": "Multiplayer",
+      "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/PlugHeads/index.html",
       "description": "/games/PlugHeads/description"
     },

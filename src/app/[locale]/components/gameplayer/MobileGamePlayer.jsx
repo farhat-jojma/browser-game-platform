@@ -207,13 +207,15 @@ const toggleFullscreen = () => {
             <MobileCard
               title={title}
               subtitle={t("overlay.ready")}
+              coverSrc={coverSrc}
               cta={
                 <button
                   onClick={() => setStarted(true)}
-                  className="w-full px-6 py-4 rounded-full bg-violet-600 hover:bg-violet-500 active:bg-violet-700 transition shadow-lg text-white font-semibold text-lg"
+                  className="w-full px-4 py-2 rounded-full bg-violet-600 hover:bg-violet-500 active:bg-violet-700 transition shadow-md text-white font-semibold text-sm"
                 >
                   {t("cta.play")}
                 </button>
+
               }
             />
           </MobileOverlay>
@@ -284,14 +286,32 @@ function MobileOverlay({ coverSrc, children }) {
   );
 }
 
-function MobileCard({ title, subtitle, cta }) {
+function MobileCard({ title, subtitle, cta, coverSrc }) {
   return (
-    <div className="w-full max-w-sm rounded-2xl bg-white/90 backdrop-blur-md border border-black/10 p-6 shadow-2xl text-center text-slate-900">
-      <h2 className="text-2xl sm:text-3xl font-extrabold leading-tight">
-        {title}
-      </h2>
-      {subtitle && <p className="mt-2 text-slate-700 text-sm sm:text-base">{subtitle}</p>}
-      {cta && <div className="mt-6">{cta}</div>}
+    <div className="w-full max-w-xs sm:max-w-sm rounded-xl overflow-hidden shadow-xl border border-black/10">
+      {/* background image */}
+      {coverSrc && (
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url(${coverSrc})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            filter: "blur(6px) brightness(0.8)",
+          }}
+        />
+      )}
+
+      {/* overlay content */}
+      <div className="relative z-10 p-4 text-center text-white">
+        <h2 className="text-lg sm:text-xl font-bold leading-snug drop-shadow-md">
+          {title}
+        </h2>
+        {subtitle && (
+          <p className="mt-1 text-sm sm:text-base opacity-90">{subtitle}</p>
+        )}
+        {cta && <div className="mt-3">{cta}</div>}
+      </div>
     </div>
   );
 }

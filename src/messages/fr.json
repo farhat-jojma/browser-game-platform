@@ -193,6 +193,9 @@
     "card": "Cartes",
     "bike": "Moto"
   },
+  "suggestions": {
+    "title": "Vous aimerez peut-être aussi"
+  },
   "about": {
     "meta": {
       "title": "À Propos - Plateforme de Jeux en Ligne Gratuits",

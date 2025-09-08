@@ -193,6 +193,9 @@
     "card": "Karten",
     "bike": "Fahrrad"
   },
+  "suggestions": {
+    "title": "Das könnte dir auch gefallen"
+  },
   "about": {
     "meta": {
       "title": "Über uns - Browser Game Platform",

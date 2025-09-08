@@ -50,14 +50,14 @@ export default async function LocaleLayout({ children, params }) {
         {/* ✅ Correct way to add Google Analytics */}
         <Script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-LVBE1ZKW1G"
+          src="https://www.googletagmanager.com/gtag/js?id=G-RB3Q1DXSDP"
         />
         <Script id="google-analytics">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-LVBE1ZKW1G');
+            gtag('config', 'G-RB3Q1DXSDP');
           `}
         </Script>
       </body>

@@ -5,6 +5,8 @@ import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import BackToTopButton from "./components/BackToTopButton";
 import Script from "next/script";
+import AnalyticsTracker from "../components/AnalyticsTracker";
+
 
 // ✅ Dynamic metadata based on locale
 export async function generateMetadata({ params }) {
@@ -61,6 +63,8 @@ export default async function LocaleLayout({ children, params }) {
         </NextIntlClientProvider>
 
         <BackToTopButton />
+        <AnalyticsTracker />
+
       </body>
     </html>
   );

@@ -152,7 +152,8 @@
     "brand": "Browser Game Platform",
     "search": {
       "placeholder": "Search",
-      "button": "Search"
+      "button": "Search",
+      "title": "Search Games"
     },
     "sidebar": {
       "show": "Show sidebar",

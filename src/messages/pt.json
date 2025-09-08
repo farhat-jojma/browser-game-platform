@@ -156,7 +156,8 @@
     },
     "sidebar": {
       "show": "Mostrar barra lateral",
-      "hide": "Ocultar barra lateral"
+      "hide": "Ocultar barra lateral",
+      "title": "Navegação do site"
     }
   },
   "carousel": {

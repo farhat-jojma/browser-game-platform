@@ -152,7 +152,8 @@
     "brand": "Plateforme de Jeux Navigateur",
     "search": {
       "placeholder": "Recherchez",
-      "button": "Rechercher"
+      "button": "Rechercher",
+      "title": "Rechercher des jeux"
     },
     "sidebar": {
       "show": "Afficher la barre latérale",

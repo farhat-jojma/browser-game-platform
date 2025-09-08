@@ -152,7 +152,8 @@
     "brand": "Browser-Spielplattform",
     "search": {
       "placeholder": "Spiele",
-      "button": "Suchen"
+      "button": "Suchen",
+      "title": "Spiele suchen"
     },
     "sidebar": {
       "show": "Seitenleiste anzeigen",

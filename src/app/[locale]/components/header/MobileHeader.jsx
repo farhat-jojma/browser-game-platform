@@ -5,7 +5,7 @@ import Image from "next/image";
 import { ThemeToggle } from "../ThemeToggle";
 import { useTranslations, useLocale } from "next-intl";
 import LanguageSwitcher from "../LanguageSwitcher";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { X } from "lucide-react";
 
@@ -25,45 +25,65 @@ function MobileSearchModal({ open, onClose }) {
     onClose();
   };
 
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }, [open]);
+
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 dark:bg-black/80">
-  <div className="relative w-11/12 max-w-md rounded-2xl bg-white dark:bg-gray-900 shadow-lg p-6">
-    {/* Bouton fermer */}
-    <button
-      onClick={onClose}
-      className="absolute top-3 right-3 text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white"
-    >
-      <X className="w-6 h-6" />
-    </button>
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 dark:bg-black/70 h-screen">
+      <div
+        className="relative w-11/12 max-w-md rounded-2xl 
+                   bg-background dark:bg-secondary border border-[#8b5cf6]/40 
+                   animate-glow overflow-hidden"
+      >
+        {/* Barre gradient en haut */}
+        <div className="h-2 w-full bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#3b82f6]" />
 
-    {/* Titre */}
-    <h2 className="text-xl font-semibold text-center mb-4 text-gray-900 dark:text-gray-100">
-      {t("title", { default: "Search" })}
-    </h2>
+        <div className="p-6">
+          {/* Bouton fermer */}
+          <button
+            onClick={onClose}
+            className="absolute top-3 right-3 text-gray-400 hover:text-[#8b5cf6] transition"
+          >
+            <X className="w-6 h-6" />
+          </button>
 
-    {/* Input */}
-    <input
-      ref={inputRef}
-      autoFocus
-      value={q}
-      onChange={(e) => setQ(e.target.value)}
-      onKeyDown={(e) => e.key === "Enter" && go()}
-      placeholder={t("placeholder")}
-      className="w-full rounded-lg border px-4 py-3 text-base bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-    />
+          {/* Titre */}
+          <h2 className="text-lg font-semibold text-center mb-5 text-foreground dark:text-white">
+            <span className="text-[#8b5cf6]">🔍</span>{" "}
+            {t("title", { default: "Search Games" })}
+          </h2>
 
-    {/* Bouton */}
-    <button
-      onClick={go}
-      className="mt-5 w-full bg-blue-600 hover:bg-blue-700 text-white rounded-lg py-3 text-base font-medium transition"
-    >
-      {t("button", { default: "Search" })}
-    </button>
-  </div>
-</div>
+          {/* Input */}
+          <input
+            ref={inputRef}
+            autoFocus
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
+            onKeyDown={(e) => e.key === "Enter" && go()}
+            placeholder={t("placeholder")}
+            className="w-full rounded-xl border border-[#8b5cf6] px-4 py-3 text-base 
+                       bg-muted dark:bg-gray-800 text-foreground dark:text-white 
+                       focus:outline-none focus:ring-2 focus:ring-[#8b5cf6]"
+          />
 
+          {/* Bouton */}
+          <button
+            onClick={go}
+            className="mt-6 w-full bg-gradient-to-r from-[#8b5cf6] to-[#3b82f6] 
+                       hover:opacity-90 text-white rounded-xl py-3 text-base font-medium transition"
+          >
+            {t("button", { default: "Search" })}
+          </button>
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -75,7 +95,7 @@ export default function MobileHeader({ onToggleSidebar, isSidebarOpen }) {
   return (
     <>
       <div className="lg:hidden flex items-center justify-between h-full px-4 sm:px-6 gap-3">
-        {/* Toggle */}
+        {/* Menu burger */}
         <button
           onClick={onToggleSidebar}
           aria-label={isSidebarOpen ? t("sidebar.hide") : t("sidebar.show")}
@@ -96,12 +116,12 @@ export default function MobileHeader({ onToggleSidebar, isSidebarOpen }) {
           <Image src="/logo.png" alt="Logo" height={30} width={90} />
         </Link>
 
-        {/* Search Button → ouvre la modal */}
+        {/* Bouton Search → reste toujours visible */}
         <button
           onClick={() => setSearchOpen(true)}
-          className="flex-1 max-w-xl mx-2 rounded-lg border px-3 py-1.5 text-sm text-gray-500 dark:text-gray-300 bg-secondary dark:bg-gray-800"
+          className="flex-1 max-w-xl mx-2 flex items-center gap-2 rounded-lg border px-3 py-1.5 text-sm text-gray-500 dark:text-gray-300 bg-secondary dark:bg-gray-800"
         >
-          {t("placeholder")}
+          🔍 {t("search.placeholder")}
         </button>
 
         {/* Right actions */}
@@ -111,7 +131,7 @@ export default function MobileHeader({ onToggleSidebar, isSidebarOpen }) {
         </div>
       </div>
 
-      {/* Modal plein écran */}
+      {/* Modal */}
       <MobileSearchModal open={searchOpen} onClose={() => setSearchOpen(false)} />
     </>
   );

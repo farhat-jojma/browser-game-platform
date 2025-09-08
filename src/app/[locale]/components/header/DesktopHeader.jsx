@@ -25,7 +25,7 @@ function HeaderSearch() {
   return (
     <div className="relative">
       <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-foreground/60">
-        🔍
+        🔎
       </span>
       <input
         ref={inputRef}

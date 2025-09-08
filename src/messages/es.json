@@ -152,7 +152,8 @@
     "brand": "Plataforma de juegos de navegador",
     "search": {
       "placeholder": "Buscar",
-      "button": "Buscar"
+      "button": "Buscar",
+      "title": "Buscar juegos"
     },
     "sidebar": {
       "show": "Mostrar barra lateral",

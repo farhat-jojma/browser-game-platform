@@ -152,7 +152,8 @@
     "brand": "Piattaforma di giochi da browsers",
     "search": {
       "placeholder": "Cerca",
-      "button": "Cerca"
+      "button": "Cerca",
+      "title": "Cerca giochi"
     },
     "sidebar": {
       "show": "Mostra barra laterale",

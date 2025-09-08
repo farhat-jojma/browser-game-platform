@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { pageview } from "../../lib/gtag";
+import { pageview } from "../../../lib/gtag"
 
 export default function AnalyticsTracker() {
   const pathname = usePathname();

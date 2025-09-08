@@ -4,17 +4,19 @@ import { ThemeProvider } from "./components/theme-provider";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import BackToTopButton from "./components/BackToTopButton";
+import Script from "next/script";
 
 // ✅ Dynamic metadata based on locale
 export async function generateMetadata({ params }) {
-  const { locale } = await params;
+  const { locale } = params;
 
   try {
     const messages = (await import(`../../messages/${locale}.json`)).default;
 
     return {
       title: messages?.metadata?.title || "Browser Game Platform",
-      description: messages?.metadata?.description || "Play browser games online for free!",
+      description:
+        messages?.metadata?.description || "Play browser games online for free!",
     };
   } catch (error) {
     return {
@@ -25,13 +27,13 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function LocaleLayout({ children, params }) {
-  const { locale } = await params;
+  const { locale } = params;
 
   let messages;
   try {
     messages = (await import(`../../messages/${locale}.json`)).default;
   } catch (error) {
-    notFound(); // si la locale n'existe pas
+    notFound(); // if locale does not exist
   }
 
   return (
@@ -42,7 +44,22 @@ export default async function LocaleLayout({ children, params }) {
             <AppShell>{children}</AppShell>
           </ThemeProvider>
         </NextIntlClientProvider>
+
         <BackToTopButton />
+
+        {/* ✅ Correct way to add Google Analytics */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LVBE1ZKW1G"
+        />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LVBE1ZKW1G');
+          `}
+        </Script>
       </body>
     </html>
   );

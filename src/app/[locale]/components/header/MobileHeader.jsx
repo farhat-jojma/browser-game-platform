@@ -121,7 +121,7 @@ export default function MobileHeader({ onToggleSidebar, isSidebarOpen }) {
           onClick={() => setSearchOpen(true)}
           className="flex-1 max-w-xl mx-2 flex items-center gap-2 rounded-lg border px-3 py-1.5 text-sm text-gray-500 dark:text-gray-300 bg-secondary dark:bg-gray-800"
         >
-          🔍 {t("search.placeholder")}
+          {t("search.placeholder")}
         </button>
 
         {/* Right actions */}

@@ -1,5 +1,5 @@
-
 import SectionPageClient from "./SectionPageClient";
+import Suggestions from "../../components/Suggestions";
 import data from "../../../../data/games.json";
 
 // Prebuild static paths for the section ids you have
@@ -10,7 +10,7 @@ export async function generateStaticParams() {
 
 // Optional: better tab title
 export async function generateMetadata({ params }) {
-  const { id, locale } = await params;   // ✅ on attend params
+  const { id, locale } = params; // ❌ pas besoin de await
 
   try {
     const messages = (await import(`../../../../messages/${locale}.json`)).default;
@@ -22,7 +22,24 @@ export async function generateMetadata({ params }) {
   }
 }
 
-export default async function SectionPage({ params }) {
-  const { id } = await params;   // ✅ on attend params
-  return <SectionPageClient id={id} />;
+export default function SectionPage({ params }) {
+  const { id, locale } = params;
+
+  const suggestions = [
+    { label: "Play Retro Games", href: `/${locale}/section/retro` },
+    { label: "Discover Racing", href: `/${locale}/section/racing` },
+    { label: "Puzzle Games", href: `/${locale}/section/puzzle` },
+  ];
+
+  return (
+    <>
+      {/* Affichage principal */}
+      <SectionPageClient id={id} />
+
+      {/* Suggestions à la fin */}
+      {/* <div className="p-6">
+        <Suggestions items={suggestions} />
+      </div> */}
+    </>
+  );
 }

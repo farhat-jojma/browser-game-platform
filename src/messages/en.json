@@ -193,6 +193,9 @@
     "card": "Card",
     "bike": "Bike"
   },
+  "suggestions": {
+    "title": "You may also like"
+  },
   "about": {
     "meta": {
       "title": "About Us - Browser Game Platform",

@@ -7,10 +7,9 @@ import BackToTopButton from "./components/BackToTopButton";
 import Script from "next/script";
 import AnalyticsTracker from "./components/AnalyticsTracker";
 
-
 // ✅ Dynamic metadata based on locale
 export async function generateMetadata({ params }) {
-  const { locale } = params;
+  const { locale } = await params; // ⬅️ await is required
 
   try {
     const messages = (await import(`../../messages/${locale}.json`)).default;
@@ -29,7 +28,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function LocaleLayout({ children, params }) {
-  const { locale } = params;
+  const { locale } = await params; // ⬅️ await is required
 
   let messages;
   try {
@@ -55,7 +54,10 @@ export default async function LocaleLayout({ children, params }) {
           `}
         </Script>
       </head>
-      <body className="min-h-screen bg-background text-foreground" suppressHydrationWarning>
+      <body
+        className="min-h-screen bg-background text-foreground"
+        suppressHydrationWarning
+      >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <AppShell>{children}</AppShell>
@@ -64,7 +66,6 @@ export default async function LocaleLayout({ children, params }) {
 
         <BackToTopButton />
         <AnalyticsTracker />
-
       </body>
     </html>
   );

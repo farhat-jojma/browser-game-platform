@@ -286,9 +286,65 @@
       "genre": "Card",
       "playPath": "https://games-dun-one.vercel.app/CardLegends/index.html",
       "description": "/games/CardLegends/description"
+    },
+
+    "sweety-cooking": {
+      "title": "Sweety Cooking",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/sweety-cooking.png",
+      "genre": "Puzzle",
+      "playPath": "https://games-dun-one.vercel.app/SweetyCooking/index.html",
+      "description": "/games/SweetyCooking/description"
+    },
+    "brawl-viking": {
+      "title": "Brawl Viking",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/brawl-viking.png",
+      "genre": "Action",
+      "playPath": "https://games-dun-one.vercel.app/BrawlViking/index.html",
+      "description": "/games/BrawlViking/description"
+    },
+    "bubble-stars": {
+      "title": "Bubble Stars",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/bubble-stars.png",
+      "genre": "Puzzle",
+      "playPath": "https://games-dun-one.vercel.app/BubbleStars/index.html",
+      "description": "/games/BubbleStars/description"
+    },
+    "card-attack": {
+      "title": "Card Attack",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/card-attack.png",
+      "genre": "Card",
+      "playPath": "https://games-dun-one.vercel.app/CardAttack/index.html",
+      "description": "/games/CardAttack/description"
+    },
+    "zombie-attack": {
+      "title": "Zombie Attack",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/zombie-attack.png",
+      "genre": "Shooter",
+      "playPath": "https://games-dun-one.vercel.app/ZombieAttack/index.html",
+      "description": "/games/ZombieAttack/description"
+    },
+    "super-kid-adventure": {
+      "title": "Super Kid Adventure",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/super-kid-adventure.png",
+      "genre": "Adventure",
+      "playPath": "https://games-dun-one.vercel.app/SuperKidAdventure/index.html",
+      "description": "/games/SuperKidAdventure/description"
+    },
+    "find-the-differences": {
+      "title": "Find The Differences",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/find-the-differences.png",
+      "genre": "Brain",
+      "playPath": "https://games-dun-one.vercel.app/FindTheDifferences/index.html",
+      "description": "/games/FindTheDifferences/description"
+    },
+    "hat-hands": {
+      "title": "Hat Hands",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/hat-hands.png",
+      "genre": "Arcade",
+      "playPath": "https://games-dun-one.vercel.app/HatHands/index.html",
+      "description": "/games/HatHands/description"
     }
-
-
+    
 
 
 
@@ -296,29 +352,39 @@
   },
   "sections": {
     "featured": ["bomberman", "fruit-party", "retro-bomberman", "uno", "super-pix", "dungeon-quest", "granny-hero", "neon-rider"],
-    "new": ["uno-monument-edition", "mathup", "gun-merge", "neon-rider", "kindergarten-teacher", "plug-heads"],
+    "new": ["sweety-cooking", "brawl-viking", "bubble-stars", "card-attack", "zombie-attack", "super-kid-adventure", "find-the-differences", "hat-hands",
+              "uno-monument-edition", "mathup", "gun-merge", "neon-rider", "kindergarten-teacher", "plug-heads"],
     "trending": ["retro-bowl", "fruit-party", "super-pix", "space-invace", "snakegame"],
     "updated": ["braindom-2", "rotated-cups", "fire-truck-driving", "brain-game"],
     "originals": ["super-agent", "plug-heads", "super-pix", "sticky"],
     "multiplayer": ["pink-and-blue", "neon-pong", "memory-chess"],
-    "shooter": ["super-agent", "hero-blaster", "invace-spaders", "space-invace", "gun-merge"],
-    "adventure": ["dungeon-quest", "treasure-hunters", "drag-slam"],
-    "action": ["super-agent", "hero-blaster", "invace-spaders", "space-invace"],
+    "shooter": ["super-agent", "hero-blaster", "invace-spaders", "space-invace", "gun-merge",
+                "zombie-attack"],
+    "adventure": ["dungeon-quest", "treasure-hunters", "drag-slam",
+                  "super-kid-adventure"],
+    "action": ["super-agent", "hero-blaster", "invace-spaders", "space-invace",
+               "brawl-viking"],
     "rpg": ["dungeon-quest", "treasure-hunters"],
     "sports": ["retro-bowl", "foot-pong", "archery", "drag-slam", "dunk-drawing"],
     "driving": ["fire-truck-driving"],
     "racing": ["neon-rider"],
-    "arcade": ["bomberman", "neon-pong", "snakegame", "pac-chef", "pac-rat", "super-pix", "uno", "uno-monument-edition"],
-    "puzzle": ["color-water-sort", "rotated-cups", "three-cups", "dunk-drawing", "pink-and-blue", "mathup", "fruit-party", "kindergarten-teacher", "braindom", "braindom-2", "math-tiles", "what-is-the-password", "plug-heads"],
+    "arcade": ["bomberman", "neon-pong", "snakegame", "pac-chef", "pac-rat", "super-pix", "uno", "uno-monument-edition",
+               "hat-hands"],
+    "puzzle": ["color-water-sort", "rotated-cups", "three-cups", "dunk-drawing", "pink-and-blue", "mathup", "fruit-party", "kindergarten-teacher", "braindom", "braindom-2", "math-tiles", "what-is-the-password", "plug-heads",
+               "sweety-cooking", "bubble-stars"],
     "merge": ["gun-merge"],
     "stack": ["cups-tower-builder"],
     "platformer": ["pink-and-blue"],
     "physics": ["dunk-drawing"],
     "retro": ["pac-chef", "pac-rat", "bomberman", "snakegame", "space-invace", "neon-pong"],
-    "kids": ["fruit-party", "color-water-sort", "mathup", "pink-and-blue", "kindergarten-teacher"],
-    "card": ["spider-solitaire", "uno", "uno-monument-edition", "card-legends"],
+    "kids": ["fruit-party", "color-water-sort", "mathup", "pink-and-blue", "kindergarten-teacher",
+             "super-kid-adventure"],
+    "card": ["spider-solitaire", "uno", "uno-monument-edition", "card-legends",
+             "card-attack"],
     "bike": ["neon-rider"],
-    "brain": ["brain-game", "mathup", "braindom", "braindom-2", "math-tiles", "what-is-the-password", "memory-chess"],
+    "brain": ["brain-game", "mathup", "braindom", "braindom-2", "math-tiles", "what-is-the-password", "memory-chess",
+              "find-the-differences"],
     "strategy": ["spider-solitaire", "gun-merge", "cups-tower-builder", "rotated-cups", "uno", "uno-monument-edition"]
-  }
+}
+
 }

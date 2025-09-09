@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import GamePlayer from "../../components/gameplayer/GamePlayer";
 import MoreGameThumb from "../../components/gameplayer/MoreGameThumb";
 import data from "../../../../data/games.json";
+import ExpandableDescription from "../../components/gameplayer/ExpandableDescription";
 
 import path from "node:path";
 import { promises as fs } from "node:fs";
@@ -195,18 +196,11 @@ export default async function GamePage({ params }) {
             </h2>
 
             {descHTML ? (
-              <article
-                className="leading-relaxed text-muted-foreground space-y-3
-                  [&_h2]:mt-6 [&_h2]:text-xl [&_h2]:font-semibold
-                  [&_h3]:mt-4 [&_h3]:text-lg [&_h3]:font-semibold
-                  [&_a]:text-violet-400 hover:[&_a]:underline
-                  [&_img]:rounded-xl [&_img]:my-3"
-              >
-                <div dangerouslySetInnerHTML={{ __html: descHTML }} />
-              </article>
+              <ExpandableDescription html={descHTML} previewChars={300} />
             ) : (
               <p className="text-muted-foreground">{t("noDescription")}</p>
             )}
+
           </section>
 
           {/* More games - mobile bottom (different set) */}

@@ -290,56 +290,56 @@
 
     "sweety-cooking": {
       "title": "Sweety Cooking",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/sweety-cooking.png",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/sweety-cooking.jpg",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/SweetyCooking/index.html",
       "description": "/games/SweetyCooking/description"
     },
     "brawl-viking": {
       "title": "Brawl Viking",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/brawl-viking.png",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/brawl-viking.jpg",
       "genre": "Action",
       "playPath": "https://games-dun-one.vercel.app/BrawlViking/index.html",
       "description": "/games/BrawlViking/description"
     },
     "bubble-stars": {
       "title": "Bubble Stars",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/bubble-stars.png",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/bubble-stars.jpg",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/BubbleStars/index.html",
       "description": "/games/BubbleStars/description"
     },
     "card-attack": {
       "title": "Card Attack",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/card-attack.png",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/card-attack.jpg",
       "genre": "Card",
       "playPath": "https://games-dun-one.vercel.app/CardAttack/index.html",
       "description": "/games/CardAttack/description"
     },
     "zombie-attack": {
       "title": "Zombie Attack",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/zombie-attack.png",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/zombie-attack.jpg",
       "genre": "Shooter",
       "playPath": "https://games-dun-one.vercel.app/ZombieAttack/index.html",
       "description": "/games/ZombieAttack/description"
     },
     "super-kid-adventure": {
       "title": "Super Kid Adventure",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/super-kid-adventure.png",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/super-kid-adventure.jpg",
       "genre": "Adventure",
       "playPath": "https://games-dun-one.vercel.app/SuperKidAdventure/index.html",
       "description": "/games/SuperKidAdventure/description"
     },
     "find-the-differences": {
       "title": "Find The Differences",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/find-the-differences.png",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/find-the-differences.jpg",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/FindTheDifferences/index.html",
       "description": "/games/FindTheDifferences/description"
     },
     "hat-hands": {
       "title": "Hat Hands",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/hat-hands.png",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/hat-hands.jpg",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/HatHands/index.html",
       "description": "/games/HatHands/description"

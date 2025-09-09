@@ -6,6 +6,8 @@ import { notFound } from "next/navigation";
 import BackToTopButton from "./components/BackToTopButton";
 import Script from "next/script";
 import AnalyticsTracker from "./components/AnalyticsTracker";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 // ✅ Dynamic metadata based on locale
 export async function generateMetadata({ params }) {
@@ -63,9 +65,16 @@ export default async function LocaleLayout({ children, params }) {
             <AppShell>{children}</AppShell>
           </ThemeProvider>
         </NextIntlClientProvider>
-
         <BackToTopButton />
+
+        {/* Google Analytics */}
         <AnalyticsTracker />
+
+        {/* Vercel Analytics */}
+        <Analytics/>
+
+        {/* Vercel Speed Insights */}
+        <SpeedInsights/>
       </body>
     </html>
   );

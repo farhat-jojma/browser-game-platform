@@ -10,7 +10,8 @@ export async function generateStaticParams() {
 
 // Optional: better tab title
 export async function generateMetadata({ params }) {
-  const { id, locale } = params; // ❌ pas besoin de await
+  const resolvedParams = await params; // ✅ ensure it's unwrapped
+  const { id, locale } = resolvedParams;
 
   try {
     const messages = (await import(`../../../../messages/${locale}.json`)).default;
@@ -22,8 +23,10 @@ export async function generateMetadata({ params }) {
   }
 }
 
-export default function SectionPage({ params }) {
-  const { id, locale } = params;
+
+export default async function SectionPage({ params }) {
+  const resolvedParams = await params; // ✅
+  const { id, locale } = resolvedParams;
 
   const suggestions = [
     { label: "Play Retro Games", href: `/${locale}/section/retro` },
@@ -33,13 +36,12 @@ export default function SectionPage({ params }) {
 
   return (
     <>
-      {/* Affichage principal */}
       <SectionPageClient id={id} />
-
-      {/* Suggestions à la fin */}
-      {/* <div className="p-6">
+      {/* 
+      <div className="p-6">
         <Suggestions items={suggestions} />
-      </div> */}
+      </div>
+      */}
     </>
   );
 }

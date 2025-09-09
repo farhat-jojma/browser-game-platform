@@ -171,16 +171,27 @@ const toggleFullscreen = () => {
 
       {/* === PLAYER FRAME === */}
       <div
-  ref={containerRef}
-  className={`relative w-full rounded-xl overflow-hidden border bg-black transition-all duration-200 ${
-    gameActive && loaded && started
-      ? "border-violet-500 ring-2 ring-violet-500/30 shadow-lg shadow-violet-500/20"
-      : "border-white/10"
-  } ${!isIOSFullscreen ? "aspect-video" : "ios-fullscreen"}`}
-  style={!isIOSFullscreen ? { aspectRatio: "16/9", minHeight: "250px", maxHeight: "70vh" } : {}}
-  onTouchStart={handleGameTouch}
->
-
+        ref={containerRef}
+        className={`relative w-full rounded-xl overflow-hidden border bg-black transition-all duration-200 ${
+          gameActive && loaded && started
+            ? "border-violet-500 ring-2 ring-violet-500/30 shadow-lg shadow-violet-500/20"
+            : "border-white/10"
+        } ${!isIOSFullscreen ? "aspect-video" : "ios-fullscreen"}`}
+        style={!isIOSFullscreen ? { aspectRatio: "16/9", minHeight: "250px", maxHeight: "70vh" } : {}}
+        onTouchStart={handleGameTouch}
+      >
+        {/* EXIT BUTTON */}
+        {started && loaded && (
+          <button
+            onClick={() => router.back()}
+            className="absolute top-1/2 -left-12 transform -translate-y-1/2 
+                      bg-violet-600 hover:bg-violet-500 text-white font-semibold 
+                      px-3 py-2 rounded-r-xl shadow-md"
+            style={{ writingMode: "vertical-rl" }}
+          >
+            Exit
+          </button>
+        )}
         {/* IFRAME */}
         {status === "ok" && started && (
           <iframe

@@ -102,7 +102,7 @@
     "system": "Sistema"
   },
   "footer": {
-    "copyright": "© {year} Piattaforma di giochi da browsers",
+    "copyright": "© {year} gamesonlinegratis.com",
     "rights": "Tutti i diritti riservati.",
     "slogan": "Ti portiamo i migliori giochi per browser dal 2024",
     "links": {
@@ -157,11 +157,11 @@
     }
   },
    "metadata": {
-    "title": "Piattaforma di giochi da browser",
-    "description": "Gioca online gratis ai tuoi giochi preferiti!"
+    "title": "Games Online Gratis",
+    "description": "Gioca online gratis ai tuoi giochi preferiti !"
   },
   "header": {
-    "brand": "Piattaforma di giochi da browsers",
+    "brand": "Games Online Gratis",
     "search": {
       "placeholder": "Cerca",
       "button": "Cerca",
@@ -210,16 +210,16 @@
   },
   "about": {
     "meta": {
-      "title": "Chi siamo - Browser Game Platform",
-      "description": "Scopri di più su Browser Game Platform e la nostra missione."
+      "title": "Chi siamo - Games Online Gratis",
+      "description": "Scopri di più su Games Online Gratis e la nostra missione."
     },
     "title": "Chi siamo",
-    "intro": "Benvenuto su <strong>Browser Game Platform</strong>! La nostra missione è offrire giochi divertenti, sicuri e accessibili. Selezioniamo titoli di alta qualità che puoi goderti direttamente nel tuo browser senza download."
+    "intro": "Benvenuto su <strong>Games Online Gratis</strong>! La nostra missione è offrire giochi divertenti, sicuri e accessibili. Selezioniamo titoli di alta qualità che puoi goderti direttamente nel tuo browser senza download."
   },
   "contact": {
     "meta": {
-      "title": "Contattaci - Browser Game Platform",
-      "description": "Mettiti in contatto con il team di Browser Game Platform."
+      "title": "Contattaci - Games Online Gratis",
+      "description": "Mettiti in contatto con il team di Games Online Gratis."
     },
     "title": "Contattaci",
     "intro": "Hai domande, suggerimenti o richieste commerciali? Scrivici a:",
@@ -228,8 +228,8 @@
   },
   "privacy": {
     "meta": {
-      "title": "Informativa sulla privacy - Browser Game Platform",
-      "description": "Leggi l'informativa sulla privacy di Browser Game Platform."
+      "title": "Informativa sulla privacy - Games Online Gratis",
+      "description": "Leggi l'informativa sulla privacy di Games Online Gratis."
     },
     "title": "Informativa sulla privacy",
     "intro": "La tua privacy è importante per noi. Questa informativa spiega come raccogliamo, usiamo e proteggiamo le tue informazioni.",
@@ -244,11 +244,11 @@
   },
   "terms": {
     "meta": {
-      "title": "Termini di servizio - Browser Game Platform",
-      "description": "Leggi i termini di servizio di Browser Game Platform."
+      "title": "Termini di servizio - Games Online Gratis",
+      "description": "Leggi i termini di servizio di Games Online Gratis."
     },
     "title": "Termini di servizio",
-    "intro": "Accedendo e utilizzando Browser Game Platform, accetti i seguenti termini:",
+    "intro": "Accedendo e utilizzando Games Online Gratis, accetti i seguenti termini:",
     "items": [
       "I giochi sono forniti “così come sono” senza garanzie.",
       "Accetti di non utilizzare in modo improprio o sfruttare la piattaforma.",

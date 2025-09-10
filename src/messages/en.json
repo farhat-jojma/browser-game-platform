@@ -103,7 +103,7 @@
     "system": "System"
   },
   "footer": {
-    "copyright": "© {year} Browser Game Platform",
+    "copyright": "© {year} gamesonlinegratis.com",
     "rights": "All rights reserved.",
     "slogan": "Bringing you the best browser games since 2024",
     "links": {
@@ -158,11 +158,11 @@
     }
   },
   "metadata": {
-    "title": "Browser Game Platform",
-    "description": "Play browser games online for free!"
+    "title": "Games Online Gratis",
+    "description": "Play browser games online for free !"
   },
   "header": {
-    "brand": "Browser Game Platform",
+    "brand": "Games Online Gratis",
     "search": {
       "placeholder": "Search",
       "button": "Search",
@@ -211,17 +211,17 @@
   },
   "about": {
     "meta": {
-      "title": "About Us - Browser Game Platform",
-      "description": "Learn more about Browser Game Platform and our mission."
+      "title": "About Us - Games Online Gratis",
+      "description": "Learn more about Games Online Gratis and our mission."
     },
     "title": "About Us",
-    "intro": "Welcome to Browser Game Platform."
+    "intro": "Welcome to Games Online Gratis."
   },
 
   "contact": {
     "meta": {
-      "title": "Contact Us - Browser Game Platform",
-      "description": "Get in touch with the Browser Game Platform team."
+      "title": "Contact Us - Games Online Gratis",
+      "description": "Get in touch with the Games Online Gratis team."
     },
     "title": "Contact Us",
     "intro": "Have questions, feedback, or business inquiries? Reach out to us at:",
@@ -231,11 +231,11 @@
 
   "privacy": {
     "meta": {
-      "title": "Privacy Policy - Browser Game Platform",
-      "description": "Read Browser Game Platform's privacy policy."
+      "title": "Privacy Policy - Games Online Gratis",
+      "description": "Read Games Online Gratis's privacy policy."
     },
     "title": "Privacy Policy",
-    "intro": "Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information when you use Browser Game Platform.",
+    "intro": "Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information when you use Games Online Gratis.",
     "section1": {
       "title": "1. Information We Collect",
       "content": "We may collect non-personal data such as usage statistics, browser type, and device information."
@@ -248,11 +248,11 @@
 
   "terms": {
     "meta": {
-      "title": "Terms of Service - Browser Game Platform",
-      "description": "Read Browser Game Platform's terms of service."
+      "title": "Terms of Service - Games Online Gratis",
+      "description": "Read Games Online Gratis's terms of service."
     },
     "title": "Terms of Service",
-    "intro": "By accessing and using Browser Game Platform, you agree to the following terms:",
+    "intro": "By accessing and using Games Online Gratis, you agree to the following terms:",
     "items": [
       "Games are provided “as is” without warranties.",
       "You agree not to misuse or exploit the platform.",

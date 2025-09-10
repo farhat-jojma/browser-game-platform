@@ -102,7 +102,7 @@
     "system": "Système"
   },
   "footer": {
-    "copyright": "© {year} Plateforme de Jeux Navigateur",
+    "copyright": "© {year} gamesonlinegratis.com",
     "rights": "Tous droits réservés.",
     "slogan": "Vous offrir les meilleurs jeux de navigateur depuis 2024",
     "links": {
@@ -157,11 +157,11 @@
     }
   },
   "metadata": {
-    "title": "Plateforme de jeux en ligne",
+    "title": "Games Online Gratis",
     "description": "Jouez à des jeux de navigateur gratuitement en ligne !"
   },
   "header": {
-    "brand": "Plateforme de Jeux Navigateur",
+    "brand": "Games Online Gratis",
     "search": {
       "placeholder": "Recherchez",
       "button": "Rechercher",

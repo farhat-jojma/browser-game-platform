@@ -102,7 +102,7 @@
     "system": "Sistema"
   },
   "footer": {
-    "copyright": "© {year} Plataforma de juegos de navegador",
+    "copyright": "© {year} gamesonlinegratis.com",
     "rights": "Todos los derechos reservados.",
     "slogan": "Trayéndote los mejores juegos de navegador desde 2024",
     "links": {
@@ -157,11 +157,11 @@
     }
   },
   "metadata": {
-    "title": "Plataforma de juegos en navegador",
-    "description": "¡Juega juegos de navegador gratis en línea!"
+    "title": "Games Online Gratis",
+    "description": "¡Juega juegos de navegador gratis en línea !"
   },
   "header": {
-    "brand": "Plataforma de juegos de navegador",
+    "brand": "Games Online Gratis",
     "search": {
       "placeholder": "Buscar",
       "button": "Buscar",
@@ -210,16 +210,16 @@
   },
   "about": {
     "meta": {
-      "title": "Sobre nosotros - Browser Game Platform",
-      "description": "Conoce más sobre Browser Game Platform y nuestra misión."
+      "title": "Sobre nosotros - Games Online Gratis",
+      "description": "Conoce más sobre Games Online Gratis y nuestra misión."
     },
     "title": "Sobre nosotros",
-    "intro": "Bienvenido a <strong>Browser Game Platform</strong>! Nuestra misión es proporcionar a los jugadores juegos divertidos, seguros y accesibles. Seleccionamos títulos de alta calidad para que disfrutes directamente en tu navegador sin descargas."
+    "intro": "Bienvenido a <strong>Games Online Gratis</strong>! Nuestra misión es proporcionar a los jugadores juegos divertidos, seguros y accesibles. Seleccionamos títulos de alta calidad para que disfrutes directamente en tu navegador sin descargas."
   },
   "contact": {
     "meta": {
-      "title": "Contáctanos - Browser Game Platform",
-      "description": "Ponte en contacto con el equipo de Browser Game Platform."
+      "title": "Contáctanos - Games Online Gratis",
+      "description": "Ponte en contacto con el equipo de Games Online Gratis."
     },
     "title": "Contáctanos",
     "intro": "¿Tienes preguntas, comentarios o propuestas comerciales? Escríbenos a:",
@@ -228,8 +228,8 @@
   },
   "privacy": {
     "meta": {
-      "title": "Política de privacidad - Browser Game Platform",
-      "description": "Lee la política de privacidad de Browser Game Platform."
+      "title": "Política de privacidad - Games Online Gratis",
+      "description": "Lee la política de privacidad de Games Online Gratis."
     },
     "title": "Política de privacidad",
     "intro": "Tu privacidad es importante para nosotros. Esta política explica cómo recopilamos, usamos y protegemos tu información.",
@@ -244,11 +244,11 @@
   },
   "terms": {
     "meta": {
-      "title": "Términos de servicio - Browser Game Platform",
-      "description": "Lee los términos de servicio de Browser Game Platform."
+      "title": "Términos de servicio - Games Online Gratis",
+      "description": "Lee los términos de servicio de Games Online Gratis."
     },
     "title": "Términos de servicio",
-    "intro": "Al acceder y usar Browser Game Platform, aceptas los siguientes términos:",
+    "intro": "Al acceder y usar Games Online Gratis, aceptas los siguientes términos:",
     "items": [
       "Los juegos se proporcionan “tal cual” sin garantías.",
       "Aceptas no hacer un uso indebido o explotar la plataforma.",

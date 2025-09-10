@@ -103,8 +103,8 @@ export async function generateMetadata({ params }) {
 
     // Use game description if available, otherwise use default
     const description = game.description
-      ? `${game.title} - ${game.genre} game. ${messages?.metadata?.description || "Play browser games online for free!"}`
-      : messages?.metadata?.description || "Play browser games online for free!";
+      ? `${game.title} - ${game.genre} game. ${messages?.metadata?.description || "Play browser games online for free !"}`
+      : messages?.metadata?.description || "Play browser games online for free !";
 
     return {
       title,

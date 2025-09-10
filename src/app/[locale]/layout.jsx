@@ -17,13 +17,13 @@ export async function generateMetadata({ params }) {
     const messages = (await import(`../../messages/${locale}.json`)).default;
 
     return {
-      title: messages?.metadata?.title || "Browser Game Platform",
+      title: messages?.metadata?.title || "Games Online Gratis",
       description:
-        messages?.metadata?.description || "Play browser games online for free!",
+        messages?.metadata?.description || "Play browser games online for free !",
     };
   } catch (error) {
     return {
-      title: "Browser Game Platform",
+      title: "Games Online Gratis",
       description: "Play browser games online for free!",
     };
   }

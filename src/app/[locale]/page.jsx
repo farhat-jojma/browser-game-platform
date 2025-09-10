@@ -1,7 +1,8 @@
 import Hero from "./components/hero/Hero";
 import data from "../../data/games.json";
 import RowCarousel from "./components/rowcarousel/RowCarousel";
-import { useTranslations} from "next-intl";
+import { useTranslations } from "next-intl";
+import Head from "next/head"; // ✅ pour insérer preload
 
 // utils inside page.jsx
 function slugsToItems(slugs = [], games = {}) {
@@ -47,30 +48,36 @@ export default function Pages() {
   const sections = buildSections(data, t);
 
   return (
-    <div className="space-y-10">
-  {/* === Game Carousels (les 5 premiers) === */}
-  {sections.slice(0, 5).map((section) => (
-    <RowCarousel
-      key={section.id}
-      title={section.title}
-      items={section.items}
-      viewMoreHref={`/section/${section.id}`}
-    />
-  ))}
+    <>
+      {/* ✅ Preload Hero image (remplace hero.webp par ton vrai fichier) */}
+      <Head>
+        <link rel="preload" as="image" href="/hero.webp" />
+      </Head>
 
-  {/* === Hero en 6ème === */}
-  <Hero />
+      <div className="space-y-10">
+        {/* === Game Carousels (les 5 premiers) === */}
+        {sections.slice(0, 5).map((section) => (
+          <RowCarousel
+            key={section.id}
+            title={section.title}
+            items={section.items}
+            viewMoreHref={`/section/${section.id}`}
+          />
+        ))}
 
-  {/* === Le reste des sections === */}
-  {sections.slice(5).map((section) => (
-    <RowCarousel
-      key={section.id}
-      title={section.title}
-      items={section.items}
-      viewMoreHref={`/section/${section.id}`}
-    />
-  ))}
-</div>
+        {/* === Hero en 6ème === */}
+        <Hero />
 
+        {/* === Le reste des sections === */}
+        {sections.slice(5).map((section) => (
+          <RowCarousel
+            key={section.id}
+            title={section.title}
+            items={section.items}
+            viewMoreHref={`/section/${section.id}`}
+          />
+        ))}
+      </div>
+    </>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 
 export default function MobileHero() {
@@ -24,25 +25,24 @@ export default function MobileHero() {
 
         {/* Avantages */}
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 mb-6">
-  {[
-    { title: t("homepage.benefit1"), desc: t("homepage.benefit1Desc") },
-    { title: t("homepage.benefit2"), desc: t("homepage.benefit2Desc") },
-    { title: t("homepage.benefit3"), desc: t("homepage.benefit3Desc") },
-    { title: t("homepage.benefit4"), desc: t("homepage.benefit4Desc") },
-  ].map((b, i) => (
-    <div
-      key={i}
-      className={`flex flex-col items-center text-center bg-gradient-to-br from-purple-700/40 to-purple-900/40 p-4 rounded-2xl shadow-md animate-float`}
-      style={{ animationDelay: `${i * 0.3}s` }}
-    >
-      <h3 className="font-semibold text-xs sm:text-sm text-white mb-1">{b.title}</h3>
-      <p className="text-[11px] sm:text-xs text-gray-200 opacity-80">{b.desc}</p>
-    </div>
-  ))}
-</div>
+          {[
+            { title: t("homepage.benefit1"), desc: t("homepage.benefit1Desc") },
+            { title: t("homepage.benefit2"), desc: t("homepage.benefit2Desc") },
+            { title: t("homepage.benefit3"), desc: t("homepage.benefit3Desc") },
+            { title: t("homepage.benefit4"), desc: t("homepage.benefit4Desc") },
+          ].map((b, i) => (
+            <div
+              key={i}
+              className="flex flex-col items-center text-center bg-gradient-to-br from-purple-700/40 to-purple-900/40 p-4 rounded-2xl shadow-md animate-float"
+              style={{ animationDelay: `${i * 0.3}s` }}
+            >
+              <h3 className="font-semibold text-xs sm:text-sm text-white mb-1">{b.title}</h3>
+              <p className="text-[11px] sm:text-xs text-gray-200 opacity-80">{b.desc}</p>
+            </div>
+          ))}
+        </div>
 
-
-        {/* Jeux */}
+        {/* Jeux optimisés */}
         <div className="grid grid-cols-3 gap-3 sm:grid-cols-3 lg:grid-cols-2">
           {[
             {
@@ -59,21 +59,19 @@ export default function MobileHero() {
               slug: "dungeon-quest",
               src: "https://farhat-jojma.github.io/my-assets-repo/dungeon-quest.png",
               title: "Dungeon Quest",
-            },
-            {
-              slug: "neon-pong",
-              src: "https://farhat-jojma.github.io/my-assets-repo/neon-pong.jpg",
-              title: "Neon Pong",
-            },
-          ].map((game) => (
+            }
+          ].map((game, i) => (
             <Link
               key={game.slug}
               href={`/${locale}/game/${game.slug}`}
               className="group relative block rounded-xl overflow-hidden transition-all duration-300 border-2 border-transparent hover:border-cyan-400 hover:shadow-[0_0_12px_rgba(34,211,238,0.6)]"
             >
-              <img
+              <Image
                 src={game.src}
                 alt={`Play ${game.title}`}
+                width={400}
+                height={200}
+                priority={i === 0} // 🚀 première image prioritaire
                 className="rounded-xl object-cover w-full h-28 sm:h-32 lg:h-36 transition-transform duration-300 group-hover:scale-[1.05]"
               />
               <div className="absolute inset-0 bg-black/0 transition group-hover:bg-black/30" />

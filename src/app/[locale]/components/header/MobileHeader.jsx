@@ -39,9 +39,12 @@ function MobileSearchModal({ open, onClose }) {
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 dark:bg-black/70 h-screen">
       <div
         className="relative w-11/12 max-w-md rounded-2xl 
-                   bg-background dark:bg-secondary border border-[#8b5cf6]/50 
-                   shadow-[0_0_25px_rgba(139,92,246,0.6)] animate-glow overflow-hidden"
+                   bg-background dark:bg-secondary border border-[#8b5cf6]/40 
+                   animate-glow overflow-hidden"
       >
+        {/* Barre gradient en haut */}
+        <div className="h-2 w-full bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#3b82f6]" />
+
         <div className="p-6">
           {/* Bouton fermer */}
           <button
@@ -73,8 +76,8 @@ function MobileSearchModal({ open, onClose }) {
           {/* Bouton */}
           <button
             onClick={go}
-            className="mt-6 w-full bg-[#8b5cf6] hover:bg-[#7c3aed] 
-                       text-white rounded-xl py-3 text-base font-medium transition"
+            className="mt-6 w-full bg-gradient-to-r from-[#8b5cf6] to-[#3b82f6] 
+                       hover:opacity-90 text-white rounded-xl py-3 text-base font-medium transition"
           >
             {t("button", { default: "Search" })}
           </button>
@@ -110,7 +113,13 @@ export default function MobileHeader({ onToggleSidebar, isSidebarOpen }) {
 
         {/* Logo */}
         <Link href={`/${locale}`} className="flex items-center shrink-0">
-          <Image src="/logo.png" alt="Logo" height={30} width={90} />
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            width={90}
+            height={29}
+            className="h-[80px] w-auto"
+          />
         </Link>
 
         {/* Bouton Search → reste toujours visible */}

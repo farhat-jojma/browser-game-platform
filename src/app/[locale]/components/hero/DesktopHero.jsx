@@ -54,10 +54,14 @@ export default function DesktopHero() {
               title: "Neon Rider",
             },
             {
+              slug: "dungeon-quest",
+              src: "https://farhat-jojma.github.io/my-assets-repo/dungeon-quest.png",
+              title: "Dungeon Quest",
+            },
+            {
               slug: "neon-pong",
               src: "https://farhat-jojma.github.io/my-assets-repo/neon-pong.jpg",
               title: "Neon Pong",
-              span: "col-span-2",
             },
           ].map((game) => (
             <Link

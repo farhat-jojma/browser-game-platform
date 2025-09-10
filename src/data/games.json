@@ -343,7 +343,225 @@
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/HatHands/index.html",
       "description": "/games/HatHands/description"
+    },
+    "fruit-ninja": {
+      "title": "Fruit Ninja",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/fruit-ninja.jpg",
+      "genre": "Arcade",
+      "playPath": "https://games-dun-one.vercel.app/FruitNinja/index.html",
+      "description": "/games/FruitNinja/description"
+    },
+    "liquid-sort": {
+      "title": "Liquid Sort",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/liquid-sort.jpg",
+      "genre": "Puzzle",
+      "playPath": "https://games-dun-one.vercel.app/LiquidSort/index.html",
+      "description": "/games/LiquidSort/description"
+    },
+    "street-skater": {
+      "title": "Street Skater",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/street-skater.png",
+      "genre": "Sports",
+      "playPath": "https://games-dun-one.vercel.app/StreetSkater/index.html",
+      "description": "/games/StreetSkater/description"
+    },
+    "hungry-snake-feed": {
+      "title": "Hungry Snake Feed",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/hungry-snake-feed.jpg",
+      "genre": "Arcade",
+      "playPath": "https://games-dun-one.vercel.app/HungrySnakeFeed/index.html",
+      "description": "/games/HungrySnakeFeed/description"
+    },
+    "pool-puzzle": {
+      "title": "Pool Puzzle",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/pool-puzzle.jpg",
+      "genre": "Puzzle",
+      "playPath": "https://games-dun-one.vercel.app/PoolPuzzle/index.html",
+      "description": "/games/PoolPuzzle/description"
+    },
+    "wrench-puzzle": {
+      "title": "Wrench Puzzle",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/wrench-puzzle.jpg",
+      "genre": "Puzzle",
+      "playPath": "https://games-dun-one.vercel.app/WrenchPuzzle/index.html",
+      "description": "/games/WrenchPuzzle/description"
+    },
+    "brainrot-jet-ski": {
+      "title": "Brainrot Jet Ski",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/brainrot-jet-ski.jpg",
+      "genre": "Sports",
+      "playPath": "https://games-dun-one.vercel.app/BrainrotJetSki/index.html",
+      "description": "/games/BrainrotJetSki/description"
+    },
+    "sushi-chef": {
+      "title": "Sushi Chef",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/sushi-chef.jpg",
+      "genre": "Puzzle",
+      "playPath": "https://games-dun-one.vercel.app/SushiChef/index.html",
+      "description": "/games/SushiChef/description"
+    },
+    "philosophers-merge": {
+      "title": "Philosophers Merge",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/philosophers-merge.jpg",
+      "genre": "Merge",
+      "playPath": "https://games-dun-one.vercel.app/PhilosophersMerge/index.html",
+      "description": "/games/PhilosophersMerge/description"
+    },
+    "food-match-game": {
+      "title": "Food Match Game",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/food-match.jpg",
+      "genre": "Puzzle",
+      "playPath": "https://games-dun-one.vercel.app/FoodMatchGame/index.html",
+      "description": "/games/FoodMatchGame/description"
+    },
+    "tanks-of-the-galaxy": {
+      "title": "Tanks of the Galaxy",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/tanks-of-the-galaxy.jpg",
+      "genre": "Shooter",
+      "playPath": "https://games-dun-one.vercel.app/TanksOfTheGalaxy/index.html",
+      "description": "/games/TanksOfTheGalaxy/description"
+    },
+    "subway-runner": {
+      "title": "Subway Runner",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/subway-runner.jpg",
+      "genre": "Adventure",
+      "playPath": "https://games-dun-one.vercel.app/SubwayRunner/index.html",
+      "description": "/games/SubwayRunner/description"
+    },
+    "city-blocks": {
+      "title": "City Blocks",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/city-bloks.jpg",
+      "genre": "Strategy",
+      "playPath": "https://games-dun-one.vercel.app/CityBlocks/index.html",
+      "description": "/games/CityBlocks/description"
+    },
+    "inside-light": {
+      "title": "Inside Light",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/Inside-Light.jpg",
+      "genre": "Puzzle",
+      "playPath": "https://games-dun-one.vercel.app/InsideLight/index.html",
+      "description": "/games/InsideLight/description"
+    },
+    "traffic-command": {
+      "title": "Traffic Command",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/traffic-command.jpg",
+      "genre": "Strategy",
+      "playPath": "https://games-dun-one.vercel.app/TrafficCommand/index.html",
+      "description": "/games/TrafficCommand/description"
+    },
+    "pet-party-columns": {
+      "title": "Pet Party Columns",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/pet-party-columns.jpg",
+      "genre": "Puzzle",
+      "playPath": "https://games-dun-one.vercel.app/PetPartyColumns/index.html",
+      "description": "/games/PetPartyColumns/description"
+    },
+    "galaga": {
+      "title": "Galaga",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/galaga.jpg",
+      "genre": "Shooter",
+      "playPath": "https://games-dun-one.vercel.app/Galaga/index.html",
+      "description": "/games/Galaga/description"
+    },
+    "mega-man-1930": {
+      "title": "Mega Man 1930",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/mega-man-1930.jpg",
+      "genre": "Adventure",
+      "playPath": "https://games-dun-one.vercel.app/MegaMan1930/index.html",
+      "description": "/games/MegaMan1930/description"
+    },
+    "twist-tactics": {
+      "title": "Twist Tactics",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/twist-tactics.png",
+      "genre": "Strategy",
+      "playPath": "https://games-dun-one.vercel.app/TwistTactics/index.html",
+      "description": "/games/TwistTactics/description"
+    },
+    "box-match": {
+      "title": "Box Match",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/box-match.jpg",
+      "genre": "Puzzle",
+      "playPath": "https://games-dun-one.vercel.app/BoxMatch/index.html",
+      "description": "/games/BoxMatch/description"
+    },
+    "brick-breaker": {
+      "title": "Brick Breaker",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/brick-breaker.jpg",
+      "genre": "Arcade",
+      "playPath": "https://games-dun-one.vercel.app/BrickBreaker/index.html",
+      "description": "/games/BrickBreaker/description"
+    },
+    "mad-boy-adventures": {
+      "title": "Mad Boy Adventures",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/mad-boy-adventures.jpg",
+      "genre": "Adventure",
+      "playPath": "https://games-dun-one.vercel.app/MadBoyAdventures/index.html",
+      "description": "/games/MadBoyAdventures/description"
+    },
+    "fruit-bucket": {
+      "title": "Fruit Bucket",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/fruit-bucket.png",
+      "genre": "Puzzle",
+      "playPath": "https://games-dun-one.vercel.app/FruitBucket/index.html",
+      "description": "/games/FruitBucket/description"
+    },
+    "throw-daggers": {
+      "title": "Throw Daggers",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/throw-daggers.jpg",
+      "genre": "Action",
+      "playPath": "https://games-dun-one.vercel.app/ThrowDaggers/index.html",
+      "description": "/games/ThrowDaggers/description"
+    },
+    "diino-defense": {
+      "title": "Diino Defense",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/diino-defense.jpg",
+      "genre": "Strategy",
+      "playPath": "https://games-dun-one.vercel.app/DiinoDefense/index.html",
+      "description": "/games/DiinoDefense/description"
+    },
+    "robo-tracker": {
+      "title": "Robo Tracker",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/robo-tracker.png",
+      "genre": "Shooter",
+      "playPath": "https://games-dun-one.vercel.app/RoboTracker/index.html",
+      "description": "/games/RoboTracker/description"
+    },
+    "car-race-game": {
+      "title": "Car Race Game",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/car-race.jpg",
+      "genre": "Racing",
+      "playPath": "https://games-dun-one.vercel.app/CarRaceGame/index.html",
+      "description": "/games/CarRaceGame/description"
+    },
+    "math-pop": {
+      "title": "Math Pop",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/math-pop.png",
+      "genre": "Brain",
+      "playPath": "https://games-dun-one.vercel.app/MathPop/index.html",
+      "description": "/games/MathPop/description"
+    },
+    "builditekt": {
+      "title": "Builditekt",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/buildi-tekt.jpg",
+      "genre": "Strategy",
+      "playPath": "https://games-dun-one.vercel.app/Builditekt/index.html",
+      "description": "/games/Builditekt/description"
+    },
+    "shadow-boy-adventures": {
+      "title": "Shadow Boy Adventures",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/shadow-boy-adventures.jpg",
+      "genre": "Adventure",
+      "playPath": "https://games-dun-one.vercel.app/ShadowBoyAdventures/index.html",
+      "description": "/games/ShadowBoyAdventures/description"
+    },
+    "robotic-snake-attack": {
+      "title": "Robotic Snake Attack",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/robotic-snake-attack.png",
+      "genre": "Arcade",
+      "playPath": "https://games-dun-one.vercel.app/RoboticSnakeAttack/index.html",
+      "description": "/games/RoboticSnakeAttack/description"
     }
+
     
 
 
@@ -351,40 +569,115 @@
 
   },
   "sections": {
-    "featured": ["bomberman", "fruit-party", "retro-bomberman", "uno", "super-pix", "dungeon-quest", "granny-hero", "neon-rider"],
-    "new": ["sweety-cooking", "brawl-viking", "bubble-stars", "card-attack", "zombie-attack", "super-kid-adventure", "find-the-differences", "hat-hands",
-              "uno-monument-edition", "mathup", "gun-merge", "neon-rider", "kindergarten-teacher", "plug-heads"],
-    "trending": ["retro-bowl", "fruit-party", "super-pix", "space-invace", "snakegame"],
-    "updated": ["braindom-2", "rotated-cups", "fire-truck-driving", "brain-game"],
-    "originals": ["super-agent", "plug-heads", "super-pix", "sticky"],
-    "multiplayer": ["pink-and-blue", "neon-pong", "memory-chess", "hat-hands", "brawl-viking"],
-    "shooter": ["super-agent", "hero-blaster", "invace-spaders", "space-invace", "gun-merge",
-                "zombie-attack"],
-    "adventure": ["dungeon-quest", "treasure-hunters", "drag-slam",
-                  "super-kid-adventure"],
-    "action": ["super-agent", "hero-blaster", "invace-spaders", "space-invace",
-               "brawl-viking"],
-    "rpg": ["dungeon-quest", "treasure-hunters"],
-    "sports": ["retro-bowl", "foot-pong", "archery", "drag-slam", "dunk-drawing"],
-    "driving": ["fire-truck-driving"],
-    "racing": ["neon-rider"],
-    "arcade": ["bomberman", "neon-pong", "snakegame", "pac-chef", "pac-rat", "super-pix", "uno", "uno-monument-edition",
-               "hat-hands"],
-    "puzzle": ["color-water-sort", "rotated-cups", "three-cups", "dunk-drawing", "pink-and-blue", "mathup", "fruit-party", "kindergarten-teacher", "braindom", "braindom-2", "math-tiles", "what-is-the-password", "plug-heads",
-               "sweety-cooking", "bubble-stars"],
-    "merge": ["gun-merge"],
-    "stack": ["cups-tower-builder"],
-    "platformer": ["pink-and-blue"],
-    "physics": ["dunk-drawing"],
-    "retro": ["pac-chef", "pac-rat", "bomberman", "snakegame", "space-invace", "neon-pong"],
-    "kids": ["fruit-party", "color-water-sort", "mathup", "pink-and-blue", "kindergarten-teacher",
-             "super-kid-adventure"],
-    "card": ["spider-solitaire", "uno", "uno-monument-edition", "card-legends",
-             "card-attack"],
-    "bike": ["neon-rider"],
-    "brain": ["brain-game", "mathup", "braindom", "braindom-2", "math-tiles", "what-is-the-password", "memory-chess",
-              "find-the-differences"],
-    "strategy": ["spider-solitaire", "gun-merge", "cups-tower-builder", "rotated-cups", "uno", "uno-monument-edition"]
-}
+    "featured": [
+      "dungeon-quest", "bomberman", "fruit-party", "retro-bomberman", "uno",
+      "super-pix", "granny-hero", "neon-rider",
+      "fruit-ninja", "subway-runner", "galaga"
+    ],
+    "new": [
+      "fruit-ninja", "liquid-sort", "street-skater", "hungry-snake-feed",
+      "pool-puzzle", "wrench-puzzle", "brainrot-jet-ski", "sushi-chef",
+      "philosophers-merge", "food-match-game", "tanks-of-the-galaxy",
+      "subway-runner", "city-blocks", "inside-light", "traffic-command",
+      "pet-party-columns", "galaga", "mega-man-1930",
+      "twist-tactics", "box-match", "brick-breaker", "mad-boy-adventures",
+      "fruit-bucket", "throw-daggers", "diino-defense", "robo-tracker",
+      "car-race-game", "math-pop", "builditekt", "shadow-boy-adventures",
+      "robotic-snake-attack",
+      "sweety-cooking", "brawl-viking", "bubble-stars", "card-attack", "zombie-attack",
+      "super-kid-adventure", "find-the-differences", "hat-hands",
+      "uno-monument-edition", "mathup", "gun-merge", "neon-rider",
+      "kindergarten-teacher", "plug-heads"
+    ],
+    "trending": [
+      "retro-bowl", "fruit-party", "super-pix", "space-invace", "snakegame",
+      "fruit-ninja", "brick-breaker"
+    ],
+    "updated": [
+      "braindom-2", "rotated-cups", "fire-truck-driving", "brain-game",
+      "city-blocks", "traffic-command"
+    ],
+    "originals": [
+      "super-agent", "plug-heads", "super-pix", "sticky"
+    ],
+    "multiplayer": [
+      "pink-and-blue", "neon-pong", "memory-chess", "hat-hands", "brawl-viking",
+      "pet-party-columns"
+    ],
+    "shooter": [
+      "super-agent", "hero-blaster", "invace-spaders", "space-invace", "gun-merge",
+      "zombie-attack", "tanks-of-the-galaxy", "galaga", "robo-tracker", "throw-daggers"
+    ],
+    "adventure": [
+      "dungeon-quest", "treasure-hunters", "drag-slam", "super-kid-adventure",
+      "subway-runner", "mega-man-1930", "mad-boy-adventures", "shadow-boy-adventures"
+    ],
+    "action": [
+      "super-agent", "hero-blaster", "invace-spaders", "space-invace", "brawl-viking",
+      "throw-daggers", "robotic-snake-attack"
+    ],
+    "rpg": [
+      "dungeon-quest", "treasure-hunters"
+    ],
+    "sports": [
+      "retro-bowl", "foot-pong", "archery", "drag-slam", "dunk-drawing",
+      "street-skater", "brainrot-jet-ski", "random-basketball"
+    ],
+    "driving": [
+      "fire-truck-driving"
+    ],
+    "racing": [
+      "neon-rider", "car-race-game"
+    ],
+    "arcade": [
+      "bomberman", "neon-pong", "snakegame", "pac-chef", "pac-rat", "super-pix",
+      "uno", "uno-monument-edition", "hat-hands",
+      "fruit-ninja", "hungry-snake-feed", "brick-breaker", "robotic-snake-attack"
+    ],
+    "puzzle": [
+      "color-water-sort", "rotated-cups", "three-cups", "dunk-drawing", "pink-and-blue",
+      "mathup", "fruit-party", "kindergarten-teacher", "braindom", "braindom-2",
+      "math-tiles", "what-is-the-password", "plug-heads", "sweety-cooking", "bubble-stars",
+      "liquid-sort", "pool-puzzle", "wrench-puzzle", "sushi-chef", "food-match-game",
+      "inside-light", "pet-party-columns", "box-match", "fruit-bucket"
+    ],
+    "merge": [
+      "gun-merge", "philosophers-merge"
+    ],
+    "stack": [
+      "cups-tower-builder"
+    ],
+    "platformer": [
+      "pink-and-blue", "mad-boy-adventures", "shadow-boy-adventures"
+    ],
+    "physics": [
+      "dunk-drawing"
+    ],
+    "retro": [
+      "pac-chef", "pac-rat", "bomberman", "snakegame", "space-invace", "neon-pong",
+      "galaga", "mega-man-1930", "brick-breaker"
+    ],
+    "kids": [
+      "fruit-party", "color-water-sort", "mathup", "pink-and-blue",
+      "kindergarten-teacher", "super-kid-adventure", "fruit-bucket", "sushi-chef"
+    ],
+    "card": [
+      "spider-solitaire", "uno", "uno-monument-edition", "card-legends", "card-attack"
+    ],
+    "bike": [
+      "neon-rider"
+    ],
+    "brain": [
+      "brain-game", "mathup", "braindom", "braindom-2", "math-tiles",
+      "what-is-the-password", "memory-chess", "find-the-differences",
+      "math-pop"
+    ],
+    "strategy": [
+      "spider-solitaire", "gun-merge", "cups-tower-builder", "rotated-cups", "uno",
+      "uno-monument-edition", "city-blocks", "traffic-command", "twist-tactics",
+      "diino-defense", "builditekt"
+    ]
+  }
+
 
 }

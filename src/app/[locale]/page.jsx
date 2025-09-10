@@ -1,10 +1,9 @@
-"use client";
-import Link from "next/link";
+import Hero from "./components/hero/Hero";
 import data from "../../data/games.json";
-import RowCarousel from "./components/rowcarousel/RowCarousel"
-import { useTranslations } from "next-intl";
+import RowCarousel from "./components/rowcarousel/RowCarousel";
+import { useTranslations} from "next-intl";
 
-// Convertit slugs en objets carte
+// utils inside page.jsx
 function slugsToItems(slugs = [], games = {}) {
   return slugs
     .map((slug) => {
@@ -20,14 +19,13 @@ function slugsToItems(slugs = [], games = {}) {
     .filter(Boolean);
 }
 
-// Construit les sections
 function buildSections(json, t) {
   const games = json?.games ?? {};
 
   if (json?.sections && typeof json.sections === "object") {
     return Object.entries(json.sections).map(([id, slugs]) => ({
       id,
-      title: t(`home.sections.${id}`, { default: id }), // traduction dynamique
+      title: t(`home.sections.${id}`, { default: id }),
       items: slugsToItems(slugs, games),
     }));
   }
@@ -50,6 +48,10 @@ export default function Pages() {
 
   return (
     <div className="space-y-10">
+      {/* === SEO Hero Section === */}
+      <Hero />
+
+      {/* === Game Carousels === */}
       {sections.map((section) => (
         <RowCarousel
           key={section.id}

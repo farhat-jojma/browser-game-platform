@@ -1,4 +1,16 @@
 {
+  "homepage": {
+    "seoTitle": "Kostenlos Online-Spiele spielen",
+    "seoIntro": "Entdecken Sie GamesOnlineGratis, eine Plattform, auf der Sie kostenlos Online-Spiele ohne Downloads spielen können. Von Retro-Arcade bis hin zu modernen Multiplayer-Spielen.",
+    "benefit1": "Sofort spielen",
+    "benefit1Desc": "Beginnen Sie sofort zu spielen, ohne Installation. Alles läuft direkt in Ihrem Browser.",
+    "benefit2": "Plattformübergreifend",
+    "benefit2Desc": "Nahtloses Spielen auf Desktop, Tablet oder Smartphone.",
+    "benefit3": "Immer neu",
+    "benefit3Desc": "Jede Woche werden neue Spiele hinzugefügt – es gibt also immer etwas Spannendes zu entdecken.",
+    "benefit4": "Sicher & spaßig",
+    "benefit4Desc": "Ein sicherer und familienfreundlicher Raum für Gelegenheitsspieler und Hardcore-Gamer gleichermaßen."
+  },
   "home": {
     "sections": {
       "featured": "Empfohlen",

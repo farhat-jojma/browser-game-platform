@@ -1,4 +1,17 @@
 {
+  "homepage": {
+    "seoTitle": "Play Games Online Free on GamesOnlineGratis",
+    "seoIntro": "Discover GamesOnlineGratis, a platform where you can play games online free without downloads. From retro arcade to modern multiplayer, enjoy instant fun on desktop and mobile.",
+    "benefit1": "Instant Play",
+    "benefit1Desc": "Start playing right away with no installs. Everything runs directly in your browser.",
+    "benefit2": "Cross-Platform",
+    "benefit2Desc": "Play seamlessly on desktop, tablet, or smartphone.",
+    "benefit3": "Always Fresh",
+    "benefit3Desc": "New games are added every week, so there's always something exciting to try.",
+    "benefit4": "Safe & Fun",
+    "benefit4Desc": "A secure and family-friendly space for casual and hardcore players alike."
+  },
+
   "home": {
     "sections": {
       "featured": "Featured",

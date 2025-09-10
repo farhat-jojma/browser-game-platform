@@ -1,4 +1,16 @@
 {
+  "homepage": {
+    "seoTitle": "Jouez à des jeux en ligne gratuits",
+    "seoIntro": "Découvrez GamesOnlineGratis, une plateforme où vous pouvez jouer gratuitement à des jeux en ligne sans téléchargement. Des classiques rétro aux multijoueurs modernes.",
+    "benefit1": "Jeu instantané",
+    "benefit1Desc": "Commencez à jouer immédiatement sans installation. Tout fonctionne directement dans votre navigateur.",
+    "benefit2": "Multi-plateforme",
+    "benefit2Desc": "Jouez sans interruption sur ordinateur, tablette ou smartphone.",
+    "benefit3": "Toujours frais",
+    "benefit3Desc": "De nouveaux jeux sont ajoutés chaque semaine, il y a donc toujours quelque chose d'excitant à essayer.",
+    "benefit4": "Sûr et amusant",
+    "benefit4Desc": "Un espace sécurisé et familial pour les joueurs occasionnels comme pour les passionnés."
+  },
   "home": {
     "sections": {
       "featured": "Jeux Populaires",

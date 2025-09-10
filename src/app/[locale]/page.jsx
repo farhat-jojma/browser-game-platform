@@ -48,18 +48,29 @@ export default function Pages() {
 
   return (
     <div className="space-y-10">
-      {/* === SEO Hero Section === */}
-      <Hero />
+  {/* === Game Carousels (les 5 premiers) === */}
+  {sections.slice(0, 5).map((section) => (
+    <RowCarousel
+      key={section.id}
+      title={section.title}
+      items={section.items}
+      viewMoreHref={`/section/${section.id}`}
+    />
+  ))}
 
-      {/* === Game Carousels === */}
-      {sections.map((section) => (
-        <RowCarousel
-          key={section.id}
-          title={section.title}
-          items={section.items}
-          viewMoreHref={`/section/${section.id}`}
-        />
-      ))}
-    </div>
+  {/* === Hero en 6ème === */}
+  <Hero />
+
+  {/* === Le reste des sections === */}
+  {sections.slice(5).map((section) => (
+    <RowCarousel
+      key={section.id}
+      title={section.title}
+      items={section.items}
+      viewMoreHref={`/section/${section.id}`}
+    />
+  ))}
+</div>
+
   );
 }

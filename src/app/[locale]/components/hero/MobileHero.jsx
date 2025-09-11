@@ -47,17 +47,17 @@ export default function MobileHero() {
           {[
             {
               slug: "retro-bowl",
-              src: "https://farhat-jojma.github.io/my-assets-repo/retro-bowl.jpg",
+              src: "https://farhat-jojma.github.io/my-assets-repo/retro-bowl.webp",
               title: "Retro Bowl",
             },
             {
               slug: "neon-rider",
-              src: "https://farhat-jojma.github.io/my-assets-repo/neon-rider.png",
+              src: "https://farhat-jojma.github.io/my-assets-repo/neon-rider.webp",
               title: "Neon Rider",
             },
             {
               slug: "dungeon-quest",
-              src: "https://farhat-jojma.github.io/my-assets-repo/dungeon-quest.png",
+              src: "https://farhat-jojma.github.io/my-assets-repo/dungeon-quest.webp",
               title: "Dungeon Quest",
             }
           ].map((game, i) => (

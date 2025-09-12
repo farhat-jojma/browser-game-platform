@@ -15,10 +15,10 @@ export default function DesktopHero() {
         {/* Texte */}
         <div className="overflow-hidden">
           <h1 className="text-[clamp(1.3rem,3.5vw,2.2rem)] font-extrabold mb-4 drop-shadow-lg line-clamp-2">
-            {t("homepage.seoTitle")}
+            {t("hero.seoTitle")}
           </h1>
           <p className="text-[clamp(0.9rem,1.5vw,1.1rem)] mb-6 leading-relaxed opacity-95 line-clamp-3">
-            {t("homepage.seoIntro")}
+            {t("hero.seoIntro")}
           </p>
 
           <div className="grid grid-cols-2 gap-4">
@@ -29,10 +29,10 @@ export default function DesktopHero() {
                 style={{ animationDelay: `${i * 0.3}s` }}
               >
                 <h3 className="font-semibold mb-1 text-sm">
-                  {t(`homepage.benefit${i}`)}
+                  {t(`hero.benefit${i}`)}
                 </h3>
                 <p className="text-xs opacity-80">
-                  {t(`homepage.benefit${i}Desc`)}
+                  {t(`hero.benefit${i}Desc`)}
                 </p>
               </div>
             ))}

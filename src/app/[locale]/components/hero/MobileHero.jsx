@@ -16,20 +16,20 @@ export default function MobileHero() {
         {/* Texte principal */}
         <div className="text-center lg:text-left">
           <h1 className="text-2xl md:text-4xl font-extrabold mb-3 drop-shadow-lg">
-            {t("homepage.seoTitle")}
+            {t("hero.seoTitle")}
           </h1>
           <p className="text-sm md:text-lg mb-6 leading-relaxed opacity-90 max-w-2xl mx-auto lg:mx-0">
-            {t("homepage.seoIntro")}
+            {t("hero.seoIntro")}
           </p>
         </div>
 
         {/* Avantages */}
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 mb-6">
           {[
-            { title: t("homepage.benefit1"), desc: t("homepage.benefit1Desc") },
-            { title: t("homepage.benefit2"), desc: t("homepage.benefit2Desc") },
-            { title: t("homepage.benefit3"), desc: t("homepage.benefit3Desc") },
-            { title: t("homepage.benefit4"), desc: t("homepage.benefit4Desc") },
+            { title: t("hero.benefit1"), desc: t("hero.benefit1Desc") },
+            { title: t("hero.benefit2"), desc: t("hero.benefit2Desc") },
+            { title: t("hero.benefit3"), desc: t("hero.benefit3Desc") },
+            { title: t("hero.benefit4"), desc: t("hero.benefit4Desc") },
           ].map((b, i) => (
             <div
               key={i}

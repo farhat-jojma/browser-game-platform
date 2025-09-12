@@ -1,3 +1,4 @@
+"use client";
 import Hero from "./components/hero/Hero";
 import data from "../../data/games.json";
 import RowCarousel from "./components/rowcarousel/RowCarousel";

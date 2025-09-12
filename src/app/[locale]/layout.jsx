@@ -7,37 +7,37 @@ import BackToTopButton from "./components/BackToTopButton";
 import Script from "next/script";
 import AnalyticsTracker from "./components/AnalyticsTracker";
 import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
-// ✅ Dynamic metadata based on locale
+// ✅ Pre-import messages to avoid dynamic import (faster TTFB)
+import en from "../../messages/en.json";
+import fr from "../../messages/fr.json";
+import es from "../../messages/es.json";
+import de from "../../messages/de.json";
+import it from "../../messages/it.json";
+import pt from "../../messages/pt.json";
+import hi from "../../messages/hi.json";
+
+const messagesMap = { en, fr, es, de, it, pt, hi };
+
+// ✅ Metadata per locale
 export async function generateMetadata({ params }) {
-  const { locale } = await params; // ⬅️ await is required
+  const { locale } = params;
+  const messages = messagesMap[locale] || messagesMap["en"];
 
-  try {
-    const messages = (await import(`../../messages/${locale}.json`)).default;
-
-    return {
-      title: messages?.metadata?.title || "Games Online Gratis",
-      description:
-        messages?.metadata?.description || "Play browser games online for free !",
-    };
-  } catch (error) {
-    return {
-      title: "Games Online Gratis",
-      description: "Play browser games online for free!",
-    };
-  }
+  return {
+    title: messages?.metadata?.title || "Games Online Gratis",
+    description:
+      messages?.metadata?.description ||
+      "Play browser games online for free!",
+  };
 }
 
-export default async function LocaleLayout({ children, params }) {
-  const { locale } = await params; // ⬅️ await is required
+export default function LocaleLayout({ children, params }) {
+  const { locale } = params;
 
-  let messages;
-  try {
-    messages = (await import(`../../messages/${locale}.json`)).default;
-  } catch (error) {
-    notFound(); // if locale does not exist
-  }
+  const messages = messagesMap[locale];
+  if (!messages) notFound();
 
   return (
     <html lang={locale} suppressHydrationWarning>
@@ -65,16 +65,17 @@ export default async function LocaleLayout({ children, params }) {
             <AppShell>{children}</AppShell>
           </ThemeProvider>
         </NextIntlClientProvider>
+
         <BackToTopButton />
 
         {/* Google Analytics */}
         <AnalyticsTracker />
 
         {/* Vercel Analytics */}
-        <Analytics/>
+        <Analytics />
 
         {/* Vercel Speed Insights */}
-        <SpeedInsights/>
+        <SpeedInsights />
       </body>
     </html>
   );

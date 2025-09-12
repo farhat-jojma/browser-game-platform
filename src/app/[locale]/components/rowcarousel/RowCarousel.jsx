@@ -2,15 +2,14 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import SimpleGameCard from "../gamecard/SimpleGameCard";
-import { useTranslations, useLocale } from "next-intl";
+import { useLocale } from "next-intl";
 
-export default function RowCarousel({ title, items, viewMoreHref }) {
+export default function RowCarousel({ title, items, viewMoreHref, labels }) {
   const scrollerRef = useRef(null);
   const [canL, setCanL] = useState(false);
   const [canR, setCanR] = useState(false);
 
-  const t = useTranslations("carousel");
-  const locale = useLocale(); // ✅ récupérer locale en haut
+  const locale = useLocale();
 
   // show/hide arrows
   useEffect(() => {
@@ -34,7 +33,9 @@ export default function RowCarousel({ title, items, viewMoreHref }) {
   useEffect(() => {
     const el = scrollerRef.current;
     if (!el) return;
-    let down = false, startX = 0, startScroll = 0;
+    let down = false,
+      startX = 0,
+      startScroll = 0;
 
     const onDown = (e) => {
       down = true;
@@ -77,7 +78,7 @@ export default function RowCarousel({ title, items, viewMoreHref }) {
     el.scrollBy({ left: dir * step * 3, behavior: "smooth" });
   };
 
-  // ✅ sécuriser viewMoreHref
+  // ✅ Build localized URL
   const viewMoreUrl = viewMoreHref
     ? `/${locale}${viewMoreHref.startsWith("/") ? viewMoreHref : `/${viewMoreHref}`}`
     : null;
@@ -88,14 +89,14 @@ export default function RowCarousel({ title, items, viewMoreHref }) {
         <h2 className="text-xl font-bold capitalize">{title}</h2>
         {viewMoreUrl && (
           <Link href={viewMoreUrl} className="text-sm text-foreground/70 hover:text-foreground">
-            {t("viewMore")}
+            {labels.viewMore}
           </Link>
         )}
       </div>
 
       <div className="relative">
-        <Paddle side="left" show={canL} onClick={() => scrollStep(-1)} />
-        <Paddle side="right" show={canR} onClick={() => scrollStep(1)} />
+        <Paddle side="left" show={canL} onClick={() => scrollStep(-1)} label={labels.previous} />
+        <Paddle side="right" show={canR} onClick={() => scrollStep(1)} label={labels.next} />
 
         <div
           ref={scrollerRef}
@@ -116,8 +117,7 @@ export default function RowCarousel({ title, items, viewMoreHref }) {
   );
 }
 
-function Paddle({ side, show, onClick }) {
-  const t = useTranslations("carousel");
+function Paddle({ side, show, onClick, label }) {
   const base = "absolute top-0 bottom-0 w-10 z-10 flex items-center justify-center";
   const pos = side === "left" ? "left-0" : "right-0";
   const grad =
@@ -127,7 +127,7 @@ function Paddle({ side, show, onClick }) {
 
   return (
     <button
-      aria-label={side === "left" ? t("previous") : t("next")}
+      aria-label={label}
       onClick={onClick}
       className={`${base} ${pos} ${grad} transition ${
         show ? "opacity-100" : "opacity-0 pointer-events-none"

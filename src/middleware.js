@@ -1,10 +1,15 @@
 import createMiddleware from "next-intl/middleware";
 
 export default createMiddleware({
-  locales: ["en", "fr", "es", "de", "it", "pt", "hi"], // ✅ ajouté
-  defaultLocale: "en"
+  locales: ["en", "fr", "es", "de", "it", "pt", "hi"], // ✅ added Hindi
+  defaultLocale: "en",
 });
 
 export const config = {
-  matcher: ["/", "/(en|fr|es|de|it|pt|hi)/:path*"] // ✅ ajouté
+  // ✅ Skip static assets (_next, images, fonts, etc.)
+  matcher: [
+    "/((?!_next|.*\\..*).*)",
+    "/",
+    "/(en|fr|es|de|it|pt|hi)/:path*",
+  ],
 };

@@ -1,21 +1,18 @@
-"use client";
 import Hero from "./components/hero/Hero";
 import data from "../../data/games.json";
 import RowCarousel from "./components/rowcarousel/RowCarousel";
-import { useTranslations } from "next-intl";
-import Head from "next/head"; // ✅ pour insérer preload
+import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
-// utils inside page.jsx
+// ISR: revalidate homepage every hour
+export const revalidate = 3600;
+
+// utils
 function slugsToItems(slugs = [], games = {}) {
   return slugs
     .map((slug) => {
       const g = games[slug];
-      if (!g) {
-        if (process.env.NODE_ENV !== "production") {
-          console.warn(`[pages] Missing game in games.json: ${slug}`);
-        }
-        return null;
-      }
+      if (!g) return null;
       return { id: slug, url: `/game/${slug}`, ...g };
     })
     .filter(Boolean);
@@ -44,41 +41,54 @@ function buildSections(json, t) {
   ];
 }
 
-export default function Pages() {
-  const t = useTranslations();
+export default async function Pages({ params }) {
+  // ✅ Server-side translations
+  const t = await getTranslations({ locale: params.locale });
   const sections = buildSections(data, t);
 
+  // ✅ Prepare carousel labels once, pass to child
+  const tCarousel = {
+    viewMore: t("carousel.viewMore"),
+    previous: t("carousel.previous"),
+    next: t("carousel.next"),
+  };
+
   return (
-    <>
-      {/* ✅ Preload Hero image (remplace hero.webp par ton vrai fichier) */}
-      <Head>
-        <link rel="preload" as="image" href="/hero.webp" />
-      </Head>
+    <div className="space-y-10">
+      {/* ✅ Preload Hero image */}
+      <Image
+        src="/hero.webp"
+        alt="Hero"
+        width={1200}
+        height={600}
+        priority
+        className="hidden"
+      />
 
-      <div className="space-y-10">
-        {/* === Game Carousels (les 5 premiers) === */}
-        {sections.slice(0, 5).map((section) => (
-          <RowCarousel
-            key={section.id}
-            title={section.title}
-            items={section.items}
-            viewMoreHref={`/section/${section.id}`}
-          />
-        ))}
+      {/* === First 5 sections === */}
+      {sections.slice(0, 5).map((section) => (
+        <RowCarousel
+          key={section.id}
+          title={section.title}
+          items={section.items}
+          viewMoreHref={`/section/${section.id}`}
+          labels={tCarousel}
+        />
+      ))}
 
-        {/* === Hero en 6ème === */}
-        <Hero />
+      {/* === Hero as 6th === */}
+      <Hero />
 
-        {/* === Le reste des sections === */}
-        {sections.slice(5).map((section) => (
-          <RowCarousel
-            key={section.id}
-            title={section.title}
-            items={section.items}
-            viewMoreHref={`/section/${section.id}`}
-          />
-        ))}
-      </div>
-    </>
+      {/* === Remaining sections === */}
+      {sections.slice(5).map((section) => (
+        <RowCarousel
+          key={section.id}
+          title={section.title}
+          items={section.items}
+          viewMoreHref={`/section/${section.id}`}
+          labels={tCarousel}
+        />
+      ))}
+    </div>
   );
 }

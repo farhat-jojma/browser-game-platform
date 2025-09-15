@@ -1,6 +1,6 @@
 # Autoriser le site par défaut
 User-agent: *
-Allow: /
+Disallow: /
 
 # Bloquer les anciennes URLs internes qui génèrent des 404
 Disallow: /games/*/description

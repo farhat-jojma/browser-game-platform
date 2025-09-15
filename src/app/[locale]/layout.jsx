@@ -18,8 +18,9 @@ import it from "../../messages/it.json";
 import pt from "../../messages/pt.json";
 import hi from "../../messages/hi.json";
 import th from "../../messages/th.json";
+import bg from "../../messages/bg.json"
 
-const messagesMap = { en, fr, es, de, it, pt, hi, th };
+const messagesMap = { en, fr, es, de, it, pt, hi, th, bg };
 
 // ✅ Metadata per locale
 export async function generateMetadata({ params }) {

@@ -17,7 +17,8 @@ const LOCALES = [
   { code: "it", label: "Italiano", flag: "it" },
   { code: "pt", label: "Português", flag: "pt" },
   { code: "hi", label: "हिन्दी", flag: "in" }, // 'in' = India
-  { code: "th", label: "ไทย", flag: "th" }, // 'th' = Thailand
+  { code: "th", label: "ไทย", flag: "th" },
+  { code: "bg", label: "Български", flag: "bg" },  // 'bg' = Bulgaria
 ];
 
 export default function LanguageSwitcher() {

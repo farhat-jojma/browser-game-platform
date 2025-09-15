@@ -24,7 +24,7 @@ module.exports = {
     ];
 
     // locales que tu supportes
-    const locales = ['en', 'fr', 'es', 'de', 'pt', 'it', "hi", "th"]; // ✅ ajouté 'hi' pour Hindi
+    const locales = ['en', 'fr', 'es', 'de', 'pt', 'it', "hi", "th", "bg"];
 
     staticPages.forEach((page) => {
       locales.forEach((locale) => {

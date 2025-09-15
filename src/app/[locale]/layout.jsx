@@ -9,7 +9,14 @@ import AnalyticsTracker from "./components/AnalyticsTracker";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-// ✅ Pre-import messages to avoid dynamic import (faster TTFB)
+// ✅ Use next/font for Inter (no more 404)
+import { Inter } from "next/font/google";
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap", // prevents FOIT
+});
+
+// ✅ Pre-import messages
 import en from "../../messages/en.json";
 import fr from "../../messages/fr.json";
 import es from "../../messages/es.json";
@@ -18,7 +25,7 @@ import it from "../../messages/it.json";
 import pt from "../../messages/pt.json";
 import hi from "../../messages/hi.json";
 import th from "../../messages/th.json";
-import bg from "../../messages/bg.json"
+import bg from "../../messages/bg.json";
 
 const messagesMap = { en, fr, es, de, it, pt, hi, th, bg };
 
@@ -30,8 +37,7 @@ export async function generateMetadata({ params }) {
   return {
     title: messages?.metadata?.title || "Games Online Gratis",
     description:
-      messages?.metadata?.description ||
-      "Play browser games online for free!",
+      messages?.metadata?.description || "Play browser games online for free!",
   };
 }
 
@@ -44,7 +50,15 @@ export default async function LocaleLayout({ children, params }) {
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
-        {/* ✅ Google Analytics */}
+        {/* ✅ Preload hero image (make sure /public/hero-image.avif exists) */}
+        <link
+          rel="preload"
+          href="/favicon.png"
+          as="image"
+          type="image/avif"
+        />
+
+        {/* ✅ Google Analytics (non-blocking) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-RB3Q1DXSDP"
           strategy="afterInteractive"
@@ -54,12 +68,12 @@ export default async function LocaleLayout({ children, params }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-RB3Q1DXSDP');
+            gtag('config', 'G-RB3Q1DXSDP', { send_page_view: false });
           `}
         </Script>
       </head>
       <body
-        className="min-h-screen bg-background text-foreground"
+        className={`${inter.className} min-h-screen bg-background text-foreground`}
         suppressHydrationWarning
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
@@ -68,15 +82,10 @@ export default async function LocaleLayout({ children, params }) {
           </ThemeProvider>
         </NextIntlClientProvider>
 
+        {/* ✅ Non-critical components (load after FCP) */}
         <BackToTopButton />
-
-        {/* Google Analytics */}
         <AnalyticsTracker />
-
-        {/* Vercel Analytics */}
         <Analytics />
-
-        {/* Vercel Speed Insights */}
         <SpeedInsights />
       </body>
     </html>

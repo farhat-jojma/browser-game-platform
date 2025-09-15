@@ -570,8 +570,8 @@
   },
   "sections": {
     "featured": [
-      "dungeon-quest", "bomberman", "fruit-party", "retro-bomberman", "uno",
-      "super-pix", "granny-hero", "neon-rider",
+      "dungeon-quest", "bomberman", "fruit-party","super-pix", "retro-bowl",
+      "uno", "granny-hero", "neon-rider",
       "fruit-ninja", "subway-runner", "galaga"
     ],
     "new": [

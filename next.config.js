@@ -1,13 +1,24 @@
 const createNextIntlPlugin = require("next-intl/plugin");
 
-const withNextIntl = createNextIntlPlugin(); // ✅ no path needed since we use default ./src/i18n/request.js
+const withNextIntl = createNextIntlPlugin(); // ✅ i18n plugin
 
 module.exports = withNextIntl({
-  output: 'standalone',
-  
+  output: "standalone",
+
   trailingSlash: true,
   images: {
     unoptimized: true,
-    domains: ["picsum.photos"]
-  }
+    domains: ["picsum.photos"],
+  },
+
+  async redirects() {
+    return [
+      // Redirige toutes les anciennes descriptions vers la bonne page de jeu
+      {
+        source: "/games/:slug/description",
+        destination: "/game/:slug",
+        permanent: true, // 301 permanent (SEO-friendly)
+      },
+    ];
+  },
 });

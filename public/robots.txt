@@ -1,9 +1,12 @@
-# *
+# Autoriser le site par défaut
 User-agent: *
 Allow: /
 
-# Host
+# Bloquer les anciennes URLs internes qui génèrent des 404
+Disallow: /games/*/description
+
+# Hôte principal
 Host: https://www.gamesonlinegratis.com
 
-# Sitemaps
+# Sitemap principal
 Sitemap: https://www.gamesonlinegratis.com/sitemap.xml

@@ -42,9 +42,12 @@ function buildSections(json, t) {
 }
 
 export default async function Pages({ params }) {
+  // ✅ Must await params in Next.js 15
+  const { locale } = await params;
+
   // ✅ Server-side translations
-  const t = await getTranslations({ locale: params.locale });
-  const sections = buildSections(data, t);
+  const t = await getTranslations({ locale });
+  const sections = await buildSections(data, t);
 
   // ✅ Prepare carousel labels once, pass to child
   const tCarousel = {
@@ -57,7 +60,7 @@ export default async function Pages({ params }) {
     <div className="space-y-10">
       {/* ✅ Preload Hero image */}
       <Image
-        src="/hero.webp"
+        src="/favicon.png"
         alt="Hero"
         width={1200}
         height={600}

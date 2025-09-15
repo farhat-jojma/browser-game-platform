@@ -1,7 +1,7 @@
 import createMiddleware from "next-intl/middleware";
 
 export default createMiddleware({
-  locales: ["en", "fr", "es", "de", "it", "pt", "hi"], // ✅ added Hindi
+  locales: ["en", "fr", "es", "de", "it", "pt", "hi", "th"], // ✅ added Hindi
   defaultLocale: "en",
 });
 

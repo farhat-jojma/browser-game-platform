@@ -17,12 +17,13 @@ import de from "../../messages/de.json";
 import it from "../../messages/it.json";
 import pt from "../../messages/pt.json";
 import hi from "../../messages/hi.json";
+import th from "../../messages/th.json";
 
-const messagesMap = { en, fr, es, de, it, pt, hi };
+const messagesMap = { en, fr, es, de, it, pt, hi, th };
 
 // ✅ Metadata per locale
 export async function generateMetadata({ params }) {
-  const { locale } = params;
+  const { locale } = await params;
   const messages = messagesMap[locale] || messagesMap["en"];
 
   return {
@@ -33,8 +34,8 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function LocaleLayout({ children, params }) {
-  const { locale } = params;
+export default async function LocaleLayout({ children, params }) {
+  const { locale } = await params;
 
   const messages = messagesMap[locale];
   if (!messages) notFound();

@@ -43,14 +43,14 @@ export default function DesktopHero() {
         <div className="grid grid-cols-2 gap-4">
           {[
             {
-              slug: "retro-bowl",
-              src: "https://farhat-jojma.github.io/my-assets-repo/retro-bowl.webp",
-              title: "Retro Bowl",
+              slug: "super-pix",
+              src: "https://farhat-jojma.github.io/my-assets-repo/super-pix.webp",
+              title: "Super Pix",
             },
             {
-              slug: "neon-rider",
-              src: "https://farhat-jojma.github.io/my-assets-repo/neon-rider.webp",
-              title: "Neon Rider",
+              slug: "fruit-party",
+              src: "https://farhat-jojma.github.io/my-assets-repo/fruit-party.avif",
+              title: "Fruit Party",
             },
             {
               slug: "dungeon-quest",
@@ -58,9 +58,9 @@ export default function DesktopHero() {
               title: "Dungeon Quest",
             },
             {
-              slug: "neon-pong",
-              src: "https://farhat-jojma.github.io/my-assets-repo/neon-pong.webp",
-              title: "Neon Pong",
+              slug: "bomberman",
+              src: "https://farhat-jojma.github.io/my-assets-repo/bomberman.webp",
+              title: "Bomberman",
             },
           ].map((game, i) => (
             <Link

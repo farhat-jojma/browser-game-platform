@@ -1,68 +1,15 @@
-"use client";
+// contact/page.jsx (server)
+import ContactContent from "./ContactContent";
+import { getTranslations } from "next-intl/server";
 
-export const runtime = 'edge';
-import { useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
-
-export default function ContactPage() {
-  const t = useTranslations("contact");
-  const params = useParams();
-  const locale = typeof params?.locale === "string" ? params.locale : "en";
-
-  const [html, setHtml] = useState("");
-  const [error, setError] = useState(false);
-
-  useEffect(() => {
-    let isMounted = true;
-    async function load() {
-      setError(false);
-      try {
-        const paths = [
-          `/contact/contact.${locale}.html`,
-          `/contact/contact.en.html`
-        ];
-        let content = "";
-        for (const p of paths) {
-          const res = await fetch(p, { cache: "no-store" });
-          if (res.ok) {
-            content = await res.text();
-            break;
-          }
-        }
-        if (!isMounted) return;
-        if (content) setHtml(content);
-        else setError(true);
-      } catch {
-        if (!isMounted) return;
-        setError(true);
-      }
-    }
-    load();
-    return () => {
-      isMounted = false;
-    };
-  }, [locale]);
+export default async function ContactPage({ params }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "contact" });
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-12 space-y-6">
       <h1 className="text-3xl font-extrabold">{t("title")}</h1>
-      {html && (
-        <article
-          className="leading-relaxed text-muted-foreground space-y-3
-            [&_h2]:mt-6 [&_h2]:text-xl [&_h2]:font-semibold
-            [&_h3]:mt-4 [&_h3]:text-lg [&_h3]:font-semibold
-            [&_a]:text-violet-400 hover:[&_a]:underline
-            [&_img]:rounded-xl [&_img]:my-3"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      )}
-      {!html && !error && (
-        <p className="text-muted-foreground">Loading…</p>
-      )}
-      {!html && error && (
-        <p className="text-muted-foreground">{t("intro")}</p>
-      )}
+      <ContactContent locale={locale} fallbackText={t("intro")} />
     </main>
   );
 }

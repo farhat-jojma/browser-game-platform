@@ -46,20 +46,20 @@ export default function MobileHero() {
         <div className="grid grid-cols-3 gap-3 sm:grid-cols-3 lg:grid-cols-2">
           {[
             {
-              slug: "retro-bowl",
-              src: "https://farhat-jojma.github.io/my-assets-repo/retro-bowl.webp",
-              title: "Retro Bowl",
-            },
-            {
-              slug: "neon-rider",
-              src: "https://farhat-jojma.github.io/my-assets-repo/neon-rider.webp",
-              title: "Neon Rider",
+              slug: "super-pix",
+              src: "https://farhat-jojma.github.io/my-assets-repo/super-pix.webp",
+              title: "Super Pix",
             },
             {
               slug: "dungeon-quest",
               src: "https://farhat-jojma.github.io/my-assets-repo/dungeon-quest.webp",
               title: "Dungeon Quest",
-            }
+            },
+            {
+              slug: "bomberman",
+              src: "https://farhat-jojma.github.io/my-assets-repo/bomberman.webp",
+              title: "Bomberman",
+            },
           ].map((game, i) => (
             <Link
               key={game.slug}

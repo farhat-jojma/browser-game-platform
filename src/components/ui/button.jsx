@@ -35,14 +35,45 @@ const buttonVariants = cva(
 )
 
 const Button = React.forwardRef(({ className, variant, size, asChild = false, ...props }, ref) => {
-  const Comp = asChild ? Slot : "button"
+  const Comp = asChild ? Slot : "button";
+
+  // Extract aria attributes and disabled from props
+  const { disabled, "aria-label": ariaLabel, "aria-pressed": ariaPressed, "aria-expanded": ariaExpanded, role, onKeyDown, ...rest } = props;
+
+  // If rendered as non-button element, add role="button" and keyboard handlers for accessibility
+  const accessibilityProps = asChild
+    ? {
+        role: role || "button",
+        tabIndex: disabled ? -1 : 0,
+        "aria-disabled": disabled || undefined,
+        "aria-label": ariaLabel,
+        "aria-pressed": ariaPressed,
+        "aria-expanded": ariaExpanded,
+        onKeyDown: (event) => {
+          if (onKeyDown) onKeyDown(event);
+          if (disabled) return;
+          if (event.key === " " || event.key === "Enter") {
+            event.preventDefault();
+            if (rest.onClick) rest.onClick(event);
+          }
+        },
+      }
+    : {
+        disabled,
+        "aria-label": ariaLabel,
+        "aria-pressed": ariaPressed,
+        "aria-expanded": ariaExpanded,
+      };
+
   return (
     <Comp
       className={cn(buttonVariants({ variant, size, className }))}
       ref={ref}
-      {...props} />
+      {...rest}
+      {...accessibilityProps}
+    />
   );
-})
-Button.displayName = "Button"
+});
+Button.displayName = "Button";
 
 export { Button, buttonVariants }

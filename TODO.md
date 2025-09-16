@@ -1,11 +1,9 @@
-# Fix Sidebar Flash on Language Switch
+# TODO: Improve Button Accessibility
 
-## Tasks
-- [x] Modify sidebarOpen state initialization to read from localStorage synchronously
-- [x] Update useEffect to remove redundant initialization logic
-- [ ] Test the fix to ensure no flash occurs on language switch
+## Completed
+- [x] Enhance Button component with accessibility features (role, keyboard handlers, aria attributes)
+- [x] Update ScrollToTopButton with keyboard handlers and explicit role
+- [x] Update BackToTopButton with keyboard handlers and explicit role
 
-## Current Status
-- Successfully implemented the fix by changing sidebarOpen state to initialize synchronously from localStorage
-- Removed redundant initialization logic from useEffect
-- Ready for testing
+## Pending
+- [ ] Test accessibility improvements with keyboard navigation and screen readers

@@ -35,6 +35,15 @@ export default function ScrollToTopButton() {
       onClick={scrollToTop}
       aria-label="Scroll to top"
       className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-12 h-12 rounded-full bg-purple-600 text-white shadow-lg hover:bg-purple-700 transition-colors"
+      type="button"
+      role="button"
+      tabIndex={0}
+      onKeyDown={(event) => {
+        if (event.key === " " || event.key === "Enter") {
+          event.preventDefault();
+          scrollToTop();
+        }
+      }}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

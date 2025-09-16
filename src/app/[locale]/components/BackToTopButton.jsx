@@ -30,6 +30,15 @@ export default function BackToTopButton() {
           onClick={scrollToTop}
           className="fixed bottom-6 right-6 z-50 rounded-full bg-purple-600 p-3 text-white shadow-lg hover:bg-purple-700 transition"
           aria-label="Back to top"
+          type="button"
+          role="button"
+          tabIndex={0}
+          onKeyDown={(event) => {
+            if (event.key === " " || event.key === "Enter") {
+              event.preventDefault();
+              scrollToTop();
+            }
+          }}
         >
           <ArrowUp size={20} />
         </button>

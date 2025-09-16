@@ -1,8 +1,8 @@
-import * as React from "react"
-import { Slot } from "@radix-ui/react-slot"
+import * as React from "react";
+import { Slot } from "@radix-ui/react-slot";
 import { cva } from "class-variance-authority";
 
-import { cn } from "../../lib/utils"
+import { cn } from "../../lib/utils";
 
 const buttonVariants = cva(
   "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
@@ -32,64 +32,75 @@ const buttonVariants = cva(
       size: "default",
     },
   }
-)
+);
 
-const Button = React.forwardRef(({ className, variant, size, asChild = false, ...props }, ref) => {
-  const Comp = asChild ? Slot : "button";
+const Button = React.forwardRef(
+  ({ className, variant, size, asChild = false, ...props }, ref) => {
+    const Comp = asChild ? Slot : "button";
 
-  // Extract aria attributes and disabled from props
-  const { disabled, "aria-label": ariaLabel, "aria-labelledby": ariaLabelledBy, "aria-pressed": ariaPressed, "aria-expanded": ariaExpanded, role, onKeyDown, children, ...rest } = props;
+    // Extract aria attributes
+    const {
+      disabled,
+      "aria-label": ariaLabel,
+      "aria-labelledby": ariaLabelledBy,
+      "aria-pressed": ariaPressed,
+      "aria-expanded": ariaExpanded,
+      role,
+      onKeyDown,
+      children,
+      ...rest
+    } = props;
 
-  // Accessibility check: Ensure button or role="button" has discernible text or aria-label/aria-labelledby
-  const hasAccessibleName =
-    (typeof children === "string" && children.trim().length > 0) ||
-    (ariaLabel && ariaLabel.trim().length > 0) ||
-    (ariaLabelledBy && ariaLabelledBy.trim().length > 0);
+    const hasAccessibleName =
+      (typeof children === "string" && children.trim().length > 0) ||
+      (ariaLabel && ariaLabel.trim().length > 0) ||
+      (ariaLabelledBy && ariaLabelledBy.trim().length > 0);
 
-  // If rendered as non-button element, add role="button" and keyboard handlers for accessibility
-  const accessibilityProps = asChild
-    ? {
-        role: role || "button",
-        tabIndex: disabled ? -1 : 0,
-        "aria-disabled": disabled || undefined,
-        "aria-label": ariaLabel,
-        "aria-labelledby": ariaLabelledBy,
-        "aria-pressed": ariaPressed,
-        "aria-expanded": ariaExpanded,
-        onKeyDown: (event) => {
-          if (onKeyDown) onKeyDown(event);
-          if (disabled) return;
-          if (event.key === " " || event.key === "Enter") {
-            event.preventDefault();
-            if (rest.onClick) rest.onClick(event);
-          }
-        },
-      }
-    : {
-        disabled,
-        "aria-label": ariaLabel,
-        "aria-labelledby": ariaLabelledBy,
-        "aria-pressed": ariaPressed,
-        "aria-expanded": ariaExpanded,
-      };
+    const accessibilityProps = asChild
+      ? {
+          role: role || "button",
+          tabIndex: disabled ? -1 : 0,
+          "aria-disabled": disabled || undefined,
+          "aria-label": ariaLabel,
+          "aria-labelledby": ariaLabelledBy,
+          "aria-pressed": ariaPressed,
+          "aria-expanded": ariaExpanded,
+          onKeyDown: (event) => {
+            if (onKeyDown) onKeyDown(event);
+            if (disabled) return;
+            if (event.key === " " || event.key === "Enter") {
+              event.preventDefault();
+              if (rest.onClick) rest.onClick(event);
+            }
+          },
+        }
+      : {
+          disabled,
+          "aria-label": ariaLabel,
+          "aria-labelledby": ariaLabelledBy,
+          "aria-pressed": ariaPressed,
+          "aria-expanded": ariaExpanded,
+        };
 
-  if (!hasAccessibleName && role !== "presentation" && role !== "none") {
-    console.warn(
-      "Accessibility warning: Button or role='button' element should have discernible inner text, aria-label, or aria-labelledby."
+    if (!hasAccessibleName && role !== "presentation" && role !== "none") {
+      console.warn(
+        "Accessibility warning: Button or role='button' element should have discernible inner text, aria-label, or aria-labelledby."
+      );
+    }
+
+    return (
+      <Comp
+        ref={ref}
+        className={cn(buttonVariants({ variant, size }), className)}
+        {...rest}
+        {...accessibilityProps}
+      >
+        {children}
+      </Comp>
     );
   }
+);
 
-  return (
-    <Comp
-      className={cn(buttonVariants({ variant, size, className }))}
-      ref={ref}
-      {...rest}
-      {...accessibilityProps}
-    >
-      {children}
-    </Comp>
-  );
-});
 Button.displayName = "Button";
 
-export { Button, buttonVariants }
+export { Button, buttonVariants };

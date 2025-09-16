@@ -39,7 +39,7 @@ function MobileSearchModal({ open, onClose }) {
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 dark:bg-black/70 h-screen">
       <div
         className="relative w-11/12 max-w-md rounded-2xl 
-                   bg-background dark:bg-secondary border border-[#8b5cf6]/40 
+                   bg-white dark:bg-gray-900 border border-[#8b5cf6]/40 
                    animate-glow overflow-hidden"
       >
         {/* Barre gradient en haut */}
@@ -50,13 +50,13 @@ function MobileSearchModal({ open, onClose }) {
           <button
             onClick={onClose}
             aria-label="Close search modal"
-            className="absolute top-3 right-3 text-gray-400 hover:text-[#8b5cf6] transition"
+            className="absolute top-3 right-3 text-gray-500 dark:text-gray-300 hover:text-[#8b5cf6] transition"
           >
             <X className="w-6 h-6" />
           </button>
 
           {/* Titre */}
-          <h2 className="text-lg font-semibold text-center mb-5 text-foreground dark:text-white">
+          <h2 className="text-lg font-semibold text-center mb-5 text-gray-900 dark:text-white">
             <span className="text-[#8b5cf6]">🔍</span>{" "}
             {t("title", { default: "Search Games" })}
           </h2>
@@ -69,8 +69,9 @@ function MobileSearchModal({ open, onClose }) {
             onChange={(e) => setQ(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && go()}
             placeholder={t("placeholder")}
-            className="w-full rounded-xl border border-[#8b5cf6] px-4 py-3 text-base 
-                       bg-muted dark:bg-gray-800 text-foreground dark:text-white 
+            className="w-full rounded-xl border border-gray-300 dark:border-gray-600 px-4 py-3 text-base 
+                       bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 
+                       placeholder-gray-500 dark:placeholder-gray-400 
                        focus:outline-none focus:ring-2 focus:ring-[#8b5cf6]"
           />
 
@@ -126,7 +127,14 @@ export default function MobileHeader({ onToggleSidebar, isSidebarOpen }) {
         {/* Bouton Search → reste toujours visible */}
         <button
           onClick={() => setSearchOpen(true)}
-          className="flex-1 max-w-xl mx-2 flex items-center gap-2 rounded-lg border px-3 py-1.5 text-sm text-gray-500 dark:text-gray-300 bg-secondary dark:bg-gray-800"
+          className="flex-1 max-w-xl mx-2 flex items-center gap-2 rounded-lg border 
+                     border-gray-300 dark:border-gray-600 
+                     px-3 py-1.5 text-sm 
+                     bg-white dark:bg-gray-800 
+                     text-gray-700 dark:text-gray-200 
+                     placeholder-gray-500 dark:placeholder-gray-400 
+                     hover:bg-gray-50 dark:hover:bg-gray-700 
+                     focus:outline-none focus:ring-2 focus:ring-[#8b5cf6]"
         >
           {t("search.placeholder")}
         </button>

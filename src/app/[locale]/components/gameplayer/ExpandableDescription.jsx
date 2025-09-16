@@ -20,7 +20,7 @@ export default function ExpandableDescription({ html, previewChars = 300 }) {
       {plainText.length > previewChars && (
         <button
           onClick={() => setExpanded(!expanded)}
-          className="mt-2 text-violet-500 hover:underline font-medium"
+          className="mt-2 text-violet-600 hover:underline font-medium"
         >
           {expanded ? "Show less" : "Show more"}
         </button>

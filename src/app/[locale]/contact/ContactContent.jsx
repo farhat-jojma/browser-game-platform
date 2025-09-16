@@ -43,7 +43,7 @@ export default function ContactContent({ locale, fallbackText }) {
         className="leading-relaxed text-muted-foreground space-y-3
           [&_h2]:mt-6 [&_h2]:text-xl [&_h2]:font-semibold
           [&_h3]:mt-4 [&_h3]:text-lg [&_h3]:font-semibold
-          [&_a]:text-violet-400 hover:[&_a]:underline
+          [&_a]:text-violet-600 hover:[&_a]:underline
           [&_img]:rounded-xl [&_img]:my-3"
         dangerouslySetInnerHTML={{ __html: html }}
       />

@@ -24,7 +24,7 @@ function HeaderSearch() {
 
   return (
     <div className="relative">
-      <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-foreground/60">
+      <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-foreground/80">
         🔎
       </span>
       <input
@@ -33,11 +33,11 @@ function HeaderSearch() {
         onChange={(e) => setQ(e.target.value)}
         onKeyDown={(e) => e.key === "Enter" && go()}
         
-        className="w-full rounded-full ring-1 outline-none py-2 pl-9 pr-20 text-sm bg-secondary ring-border focus:ring-2 focus:ring-ring placeholder-black/50 dark:placeholder-white/50"
+        className="w-full rounded-full ring-1 outline-none py-2 pl-9 pr-20 text-sm bg-secondary ring-border focus:ring-2 focus:ring-ring placeholder-black/70 dark:placeholder-black/70"
       />
       <button
         onClick={go}
-        className="absolute right-1.5 top-1/2 -translate-y-1/2 px-3 py-1.5 text-sm rounded-full dark:bg-white/10 dark:hover:bg-white/20 bg-black/10 hover:bg-black/20"
+        className="absolute right-1.5 top-1/2 -translate-y-1/2 px-3 py-1.5 text-sm rounded-full dark:bg-white/20 dark:hover:bg-white/30 bg-black/20 hover:bg-black/30"
       >
         {t("button")}
       </button>

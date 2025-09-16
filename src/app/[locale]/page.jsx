@@ -24,6 +24,7 @@ function buildSections(json, t) {
   if (json?.sections && typeof json.sections === "object") {
     return Object.entries(json.sections).map(([id, slugs]) => ({
       id,
+      // ✅ Utiliser clé directe au lieu de t.raw
       title: t(`home.sections.${id}`, { default: id }),
       items: slugsToItems(slugs, games),
     }));
@@ -36,29 +37,34 @@ function buildSections(json, t) {
   }));
 
   return [
-    { id: "featured", title: t("home.sections.featured"), items: all.slice(0, 6) },
-    { id: "new", title: t("home.sections.new"), items: all.slice(6, 12) },
+    {
+      id: "featured",
+      title: t("home.sections.featured", { default: "Featured" }),
+      items: all.slice(0, 6),
+    },
+    {
+      id: "new",
+      title: t("home.sections.new", { default: "New" }),
+      items: all.slice(6, 12),
+    },
   ];
 }
 
 export default async function Pages({ params }) {
-  // ✅ Must await params in Next.js 15
   const { locale } = await params;
-
-  // ✅ Server-side translations
   const t = await getTranslations({ locale });
-  const sections = await buildSections(data, t);
 
-  // ✅ Prepare carousel labels once, pass to child
+  const sections = buildSections(data, t);
+
+  // ✅ appeler clés directes
   const tCarousel = {
-    viewMore: t("carousel.viewMore"),
-    previous: t("carousel.previous"),
-    next: t("carousel.next"),
+    viewMore: t("carousel.viewMore", { default: "View more" }),
+    previous: t("carousel.previous", { default: "Previous" }),
+    next: t("carousel.next", { default: "Next" }),
   };
 
   return (
     <div className="space-y-10">
-      {/* ✅ Preload Hero image */}
       <Image
         src="/favicon.png"
         alt="Hero"
@@ -68,7 +74,6 @@ export default async function Pages({ params }) {
         className="hidden"
       />
 
-      {/* === First 5 sections === */}
       {sections.slice(0, 5).map((section) => (
         <RowCarousel
           key={section.id}
@@ -79,10 +84,8 @@ export default async function Pages({ params }) {
         />
       ))}
 
-      {/* === Hero as 6th === */}
       <Hero />
 
-      {/* === Remaining sections === */}
       {sections.slice(5).map((section) => (
         <RowCarousel
           key={section.id}

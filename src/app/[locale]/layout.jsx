@@ -9,11 +9,11 @@ import AnalyticsTracker from "./components/AnalyticsTracker";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-// ✅ Use next/font for Inter (no more 404)
+// ✅ Use next/font for Inter
 import { Inter } from "next/font/google";
 const inter = Inter({
   subsets: ["latin"],
-  display: "swap", // prevents FOIT
+  display: "swap", // avoids FOIT
 });
 
 // ✅ Pre-import messages
@@ -43,22 +43,24 @@ export async function generateMetadata({ params }) {
 
 export default async function LocaleLayout({ children, params }) {
   const { locale } = await params;
+  const messages = messagesMap[locale] || messagesMap["en"];
 
-  const messages = messagesMap[locale];
   if (!messages) notFound();
+
+  console.log(
+    "Loaded locale:",
+    locale,
+    "messages keys:",
+    Object.keys(messages)
+  );
 
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
-        {/* ✅ Preload hero image (make sure /public/hero-image.avif exists) */}
-        <link
-          rel="preload"
-          href="/favicon.png"
-          as="image"
-          type="image/avif"
-        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
 
-        {/* ✅ Google Analytics (non-blocking) */}
+        {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-RB3Q1DXSDP"
           strategy="afterInteractive"
@@ -82,7 +84,6 @@ export default async function LocaleLayout({ children, params }) {
           </ThemeProvider>
         </NextIntlClientProvider>
 
-        {/* ✅ Non-critical components (load after FCP) */}
         <BackToTopButton />
         <AnalyticsTracker />
         <Analytics />

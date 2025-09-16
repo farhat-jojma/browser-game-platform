@@ -49,6 +49,7 @@ function MobileSearchModal({ open, onClose }) {
           {/* Bouton fermer */}
           <button
             onClick={onClose}
+            aria-label="Close search modal"
             className="absolute top-3 right-3 text-gray-400 hover:text-[#8b5cf6] transition"
           >
             <X className="w-6 h-6" />

@@ -38,7 +38,13 @@ const Button = React.forwardRef(({ className, variant, size, asChild = false, ..
   const Comp = asChild ? Slot : "button";
 
   // Extract aria attributes and disabled from props
-  const { disabled, "aria-label": ariaLabel, "aria-pressed": ariaPressed, "aria-expanded": ariaExpanded, role, onKeyDown, ...rest } = props;
+  const { disabled, "aria-label": ariaLabel, "aria-labelledby": ariaLabelledBy, "aria-pressed": ariaPressed, "aria-expanded": ariaExpanded, role, onKeyDown, children, ...rest } = props;
+
+  // Accessibility check: Ensure button or role="button" has discernible text or aria-label/aria-labelledby
+  const hasAccessibleName =
+    (typeof children === "string" && children.trim().length > 0) ||
+    (ariaLabel && ariaLabel.trim().length > 0) ||
+    (ariaLabelledBy && ariaLabelledBy.trim().length > 0);
 
   // If rendered as non-button element, add role="button" and keyboard handlers for accessibility
   const accessibilityProps = asChild
@@ -47,6 +53,7 @@ const Button = React.forwardRef(({ className, variant, size, asChild = false, ..
         tabIndex: disabled ? -1 : 0,
         "aria-disabled": disabled || undefined,
         "aria-label": ariaLabel,
+        "aria-labelledby": ariaLabelledBy,
         "aria-pressed": ariaPressed,
         "aria-expanded": ariaExpanded,
         onKeyDown: (event) => {
@@ -61,9 +68,16 @@ const Button = React.forwardRef(({ className, variant, size, asChild = false, ..
     : {
         disabled,
         "aria-label": ariaLabel,
+        "aria-labelledby": ariaLabelledBy,
         "aria-pressed": ariaPressed,
         "aria-expanded": ariaExpanded,
       };
+
+  if (!hasAccessibleName && role !== "presentation" && role !== "none") {
+    console.warn(
+      "Accessibility warning: Button or role='button' element should have discernible inner text, aria-label, or aria-labelledby."
+    );
+  }
 
   return (
     <Comp
@@ -71,7 +85,9 @@ const Button = React.forwardRef(({ className, variant, size, asChild = false, ..
       ref={ref}
       {...rest}
       {...accessibilityProps}
-    />
+    >
+      {children}
+    </Comp>
   );
 });
 Button.displayName = "Button";

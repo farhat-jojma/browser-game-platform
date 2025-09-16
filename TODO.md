@@ -1,9 +1,10 @@
-# TODO: Improve Button Accessibility
+# TODO: Ensure Button Accessibility
+
+## Tasks
+- [x] Add aria-label to close button in MobileHeader.jsx
+- [x] Verify all button elements have required accessibility attributes
+- [ ] Test accessibility compliance
 
 ## Completed
-- [x] Enhance Button component with accessibility features (role, keyboard handlers, aria attributes)
-- [x] Update ScrollToTopButton with keyboard handlers and explicit role
-- [x] Update BackToTopButton with keyboard handlers and explicit role
-
-## Pending
-- [ ] Test accessibility improvements with keyboard navigation and screen readers
+- [x] Analyze button components and usages
+- [x] Identify close button in MobileHeader.jsx as needing aria-label

@@ -32,7 +32,7 @@ function HeaderSearch() {
         value={q}
         onChange={(e) => setQ(e.target.value)}
         onKeyDown={(e) => e.key === "Enter" && go()}
-        placeholder={t("placeholder")}
+        
         className="w-full rounded-full ring-1 outline-none py-2 pl-9 pr-20 text-sm bg-secondary ring-border focus:ring-2 focus:ring-ring placeholder-black/50 dark:placeholder-white/50"
       />
       <button

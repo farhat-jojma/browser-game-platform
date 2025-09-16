@@ -1,5 +1,4 @@
 const createNextIntlPlugin = require("next-intl/plugin");
-const Critters = require("critters-webpack-plugin");
 
 const withNextIntl = createNextIntlPlugin();
 
@@ -12,17 +11,8 @@ module.exports = withNextIntl({
     domains: ["picsum.photos"],
   },
 
-  // ✅ Add webpack customization for Critters
-  webpack: (config, { dev, isServer }) => {
-    if (!dev && !isServer) {
-      config.plugins.push(
-        new Critters({
-          preload: "swap",   // Preload critical CSS with <link rel="preload">
-          compress: true,    // Minify critical CSS
-          pruneSource: true, // Remove inlined CSS from external stylesheet
-        })
-      );
-    }
+  webpack: (config) => {
+    // ❌ Remove manual Critters
     return config;
   },
 

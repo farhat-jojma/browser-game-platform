@@ -1,50 +1,57 @@
 {
   "games": {
+    "freecell": {
+      "title": "FreeCell",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/freecell.jpg",
+      "genre": "Card",
+      "playPath": "https://games-dun-one.vercel.app/freecell/index.html",
+      "description": "/games/freecell/description"
+    },
     "bomberman": {
       "title": "BomberMan",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/bomberman.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/bomberman.jpg",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/BomberMan/index.html",
       "description": "/games/bomberman/description"
     },
     "brain-game": {
       "title": "Brain Game",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/brain-game.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/brain-game.png",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/BrainGame/index.html",
       "description": "/games/braingame/description"
     },
     "color-water-sort": {
       "title": "Color Water Sort",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/color-water-sort.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/color-water-sort.jpg",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/ColorWaterSort/index.html",
       "description": "/games/colorwatersort/description"
     },
     "drag-slam": {
       "title": "Drag Slam",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/drag-slam.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/drag-slam.png",
       "genre": "Adventure",
       "playPath": "https://games-dun-one.vercel.app/DragSlam/index.html",
       "description": "/games/dragslam/description"
     },
     "dungeon-quest": {
       "title": "Dungeon Quest",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/dungeon-quest.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/dungeon-quest.png",
       "genre": "Adventure",
       "playPath": "https://games-dun-one.vercel.app/DungeonQuest/index.html",
       "description": "/games/dungeonquest/description"
     },
     "dunk-drawing": {
       "title": "Dunk Drawing",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/dunk-drawing.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/dunk-drawing.jpg",
       "genre": "Sports",
       "playPath": "https://games-dun-one.vercel.app/DunkDrawing/index.html",
       "description": "/games/dunkdrawing/description"
     },
     "foot-pong": {
       "title": "Foot Pong",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/foot-pong.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/foot-pong.png",
       "genre": "Sports",
       "playPath": "https://games-dun-one.vercel.app/FootPong/index.html",
       "description": "/games/footpong/description"
@@ -58,504 +65,504 @@
     },
     "granny-hero": {
       "title": "Granny Hero",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/granny-hero.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/granny-hero.png",
       "genre": "Action",
       "playPath": "https://games-dun-one.vercel.app/GrannyHero/index.html",
       "description": "/games/grannyhero/description"
     },
     "hero-blaster": {
       "title": "Hero Blaster",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/hero-blaster.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/hero-blaster.png",
       "genre": "Shooter",
       "playPath": "https://games-dun-one.vercel.app/HeroBlaster/index.html",
       "description": "/games/heroblaster/description"
     },
     "invace-spaders": {
       "title": "Invace Spaders",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/invace-spaders.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/invace-spaders.jpg",
       "genre": "Shooter",
       "playPath": "https://games-dun-one.vercel.app/InvaceSpaders/index.html",
       "description": "/games/invacespaders/description"
     },
     "math-tiles": {
       "title": "Math Tiles",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/math-tiles.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/math-tiles.jpg",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/MathTiles/index.html",
       "description": "/games/mathtiles/description"
     },
     "mathup": {
       "title": "MathUp",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/mathup.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/mathup.jpg",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/MathUp/index.html",
       "description": "/games/mathup/description"
     },
     "neon-pong": {
       "title": "Neon Pong",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/neon-pong.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/neon-pong.jpg",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/NeonPong/index.html",
       "description": "/games/neonpong/description"
     },
     "neon-rider": {
       "title": "Neon Rider",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/neon-rider.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/neon-rider.png",
       "genre": "Bike",
       "playPath": "https://games-dun-one.vercel.app/NeonRider/index.html",
       "description": "/games/neonrider/description"
     },
     "pac-chef": {
       "title": "Pac Chef",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/pac-chef.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/pac-chef.jpg",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/PacChef/index.html",
       "description": "/games/pacchef/description"
     },
     "pac-rat": {
       "title": "Pac Rat",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/pac-rat.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/pac-rat.jpg",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/PacRat/index.html",
       "description": "/games/pacrat/description"
     },
     "pink-and-blue": {
       "title": "Pink and Blue",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/pink-and-blue.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/pink-and-blue.png",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/PinkAndBlue/index.html",
       "description": "/games/pinkandblue/description"
     },
     "retro-bowl": {
       "title": "Retro Bowl",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/retro-bowl.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/retro-bowl.jpg",
       "genre": "Sports",
       "playPath": "https://games-dun-one.vercel.app/RetroBowl/index.html",
       "description": "/games/retrobowl/description"
     },
     "snakegame": {
       "title": "Snake Game",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/snakegame.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/snakegame.png",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/SnakeGame/index.html",
       "description": "/games/snakegame/description"
     },
     "space-invace": {
       "title": "Space Invace",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/space-invace.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/space-invace.jpg",
       "genre": "Shooter",
       "playPath": "https://games-dun-one.vercel.app/SpaceInvace/index.html",
       "description": "/games/spaceinvace/description"
     },
     "spider-solitaire": {
       "title": "Spider Solitaire",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/spider-solitaire.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/spider-solitaire.jpg",
       "genre": "Shooter",
       "playPath": "https://games-dun-one.vercel.app/SpiderSolitaire/index.html",
       "description": "/games/spidersolitaire/description"
     },
     "sticky": {
       "title": "Sticky",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/sticky.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/sticky.png",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/Sticky/index.html",
       "description": "/games/sticky/description"
     },
     "super-agent": {
       "title": "Super Agent",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/super-agent.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/super-agent.jpg",
       "genre": "Action",
       "playPath": "https://games-dun-one.vercel.app/SuperAgent/index.html",
       "description": "/games/superagent/description"
     },
     "super-pix": {
       "title": "Super Pix",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/super-pix.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/super-pix.jpg",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/SuperPix/index.html",
       "description": "/games/superpix/description"
     },
     "treasure-hunters": {
       "title": "Treasure Hunters",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/treasure-hunters.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/treasure-hunters.jpg",
       "genre": "Adventure",
       "playPath": "https://games-dun-one.vercel.app/TreasureHunters/index.html",
       "description": "/games/treasurehunters/description"
     },
     "plug-heads": {
       "title": "Plug Heads",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/plug-heads.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/plug-heads.jpg",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/PlugHeads/index.html",
       "description": "/games/plugheads/description"
     },
     "gun-merge": {
       "title": "Gun Merge",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/gun-merge.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/gun-merge.jpg",
       "genre": "Merge",
       "playPath": "https://games-dun-one.vercel.app/GunMerge/index.html",
       "description": "/games/gunmerge/description"
     },
     "braindom": {
       "title": "Braindom",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/braindom.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/braindom.png",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/Braindom/index.html",
       "description": "/games/braindom/description"
     },
     "braindom-2": {
       "title": "Braindom 2",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/braindom-2.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/braindom-2.png",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/Braindom2/index.html",
       "description": "/games/braindom2/description"
     },
     "rotated-cups": {
       "title": "Rotated Cups",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/rotated-cups.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/rotated-cups.jpg",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/RotatedCups/index.html",
       "description": "/games/rotatedcups/description"
     },
     "cups-tower-builder": {
       "title": "Cups Tower Builder",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/cups-tower-builder.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/cups-tower-builder.jpg",
       "genre": "Stack",
       "playPath": "https://games-dun-one.vercel.app/CupsTowerBuilder/index.html",
       "description": "/games/cupstowerbuilder/description"
     },
     "fire-truck-driving": {
       "title": "Fire Truck Driving",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/fire-truck-driving.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/fire-truck-driving.png",
       "genre": "Driving",
       "playPath": "https://games-dun-one.vercel.app/FireTruckDriving/index.html",
       "description": "/games/firetruckdriving/description"
     },
     "archery": {
       "title": "Archery",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/archery.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/archery.jpg",
       "genre": "Sports",
       "playPath": "https://games-dun-one.vercel.app/archery/index.html",
       "description": "/games/archery/description"
     },
     "three-cups": {
       "title": "Three Cups",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/three-cups.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/three-cups.jpg",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/ThreeCups/index.html",
       "description": "/games/threecups/description"
     },
     "kindergarten-teacher": {
       "title": "Kindergarten Teacher",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/kindergarten-teacher.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/kindergarten-teacher.jpg",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/KindergartenTeacher/index.html",
       "description": "/games/kindergartenteacher/description"
     },
     "what-is-the-password": {
       "title": "What Is The Password",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/what-is-the-password.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/what-is-the-password.jpg",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/WhatIsThePassword/index.html",
       "description": "/games/whatisthepassword/description"
     },
     "uno": {
       "title": "Uno",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/uno.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/uno.jpg",
       "genre": "Card",
       "playPath": "https://games-dun-one.vercel.app/Uno/index.html",
       "description": "/games/uno/description"
     },
     "uno-monument-edition": {
       "title": "Uno Monument Edition",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/uno-monument.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/uno-monument.jpg",
       "genre": "Card",
       "playPath": "https://games-dun-one.vercel.app/UnoMonumentEdition/index.html",
       "description": "/games/unomonument/description"
     },
     "memory-chess": {
       "title": "Memory Chess",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/memory-chess.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/memory-chess.png",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/MemoryChess/index.html",
       "description": "/games/memorychess/description"
     },
     "card-legends": {
       "title": "Card Legends",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/card-legends.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/card-legends.png",
       "genre": "Card",
       "playPath": "https://games-dun-one.vercel.app/CardLegends/index.html",
       "description": "/games/cardlegends/description"
     },
     "sweety-cooking": {
       "title": "Sweety Cooking",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/sweety-cooking.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/sweety-cooking.jpg",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/SweetyCooking/index.html",
       "description": "/games/sweetycooking/description"
     },
     "brawl-viking": {
       "title": "Brawl Viking",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/brawl-viking.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/brawl-viking.jpg",
       "genre": "Action",
       "playPath": "https://games-dun-one.vercel.app/BrawlViking/index.html",
       "description": "/games/brawlviking/description"
     },
     "bubble-stars": {
       "title": "Bubble Stars",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/bubble-stars.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/bubble-stars.jpg",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/BubbleStars/index.html",
       "description": "/games/bubblestars/description"
     },
     "card-attack": {
       "title": "Card Attack",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/card-attack.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/card-attack.jpg",
       "genre": "Card",
       "playPath": "https://games-dun-one.vercel.app/CardAttack/index.html",
       "description": "/games/cardattack/description"
     },
     "zombie-attack": {
       "title": "Zombie Attack",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/zombie-attack.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/zombie-attack.jpg",
       "genre": "Shooter",
       "playPath": "https://games-dun-one.vercel.app/ZombieAttack/index.html",
       "description": "/games/zombieattack/description"
     },
     "super-kid-adventure": {
       "title": "Super Kid Adventure",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/super-kid-adventure.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/super-kid-adventure.jpg",
       "genre": "Adventure",
       "playPath": "https://games-dun-one.vercel.app/SuperKidAdventure/index.html",
       "description": "/games/superkidadventure/description"
     },
     "find-the-differences": {
       "title": "Find The Differences",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/find-the-differences.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/find-the-differences.jpg",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/FindTheDifferences/index.html",
       "description": "/games/findthedifferences/description"
     },
     "hat-hands": {
       "title": "Hat Hands",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/hat-hands.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/hat-hands.jpg",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/HatHands/index.html",
       "description": "/games/hathands/description"
     },
     "fruit-ninja": {
       "title": "Fruit Ninja",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/fruit-ninja.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/fruit-ninja.jpg",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/FruitNinja/index.html",
       "description": "/games/fruitninja/description"
     },
     "liquid-sort": {
       "title": "Liquid Sort",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/liquid-sort.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/liquid-sort.jpg",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/LiquidSort/index.html",
       "description": "/games/liquidsort/description"
     },
     "street-skater": {
       "title": "Street Skater",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/street-skater.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/street-skater.png",
       "genre": "Sports",
       "playPath": "https://games-dun-one.vercel.app/StreetSkater/index.html",
       "description": "/games/streetskater/description"
     },
     "hungry-snake-feed": {
       "title": "Hungry Snake Feed",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/hungry-snake-feed.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/hungry-snake-feed.jpg",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/HungrySnakeFeed/index.html",
       "description": "/games/hungrysnakefeed/description"
     },
     "pool-puzzle": {
       "title": "Pool Puzzle",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/pool-puzzle.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/pool-puzzle.jpg",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/PoolPuzzle/index.html",
       "description": "/games/poolpuzzle/description"
     },
     "wrench-puzzle": {
       "title": "Wrench Puzzle",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/wrench-puzzle.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/wrench-puzzle.jpg",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/WrenchPuzzle/index.html",
       "description": "/games/wrenchpuzzle/description"
     },
     "brainrot-jet-ski": {
       "title": "Brainrot Jet Ski",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/brainrot-jet-ski.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/brainrot-jet-ski.jpg",
       "genre": "Sports",
       "playPath": "https://games-dun-one.vercel.app/BrainrotJetSki/index.html",
       "description": "/games/brainrotjetski/description"
     },
     "sushi-chef": {
       "title": "Sushi Chef",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/sushi-chef.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/sushi-chef.jpg",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/SushiChef/index.html",
       "description": "/games/sushichef/description"
     },
     "philosophers-merge": {
       "title": "Philosophers Merge",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/philosophers-merge.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/philosophers-merge.jpg",
       "genre": "Merge",
       "playPath": "https://games-dun-one.vercel.app/PhilosophersMerge/index.html",
       "description": "/games/philosophersmerge/description"
     },
     "food-match-game": {
       "title": "Food Match Game",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/food-match.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/food-match.jpg",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/FoodMatchGame/index.html",
       "description": "/games/foodmatchgame/description"
     },
     "tanks-of-the-galaxy": {
       "title": "Tanks of the Galaxy",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/tanks-of-the-galaxy.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/tanks-of-the-galaxy.jpg",
       "genre": "Shooter",
       "playPath": "https://games-dun-one.vercel.app/TanksOfTheGalaxy/index.html",
       "description": "/games/tanksofthegalaxy/description"
     },
     "subway-runner": {
       "title": "Subway Runner",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/subway-runner.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/subway-runner.jpg",
       "genre": "Adventure",
       "playPath": "https://games-dun-one.vercel.app/SubwayRunner/index.html",
       "description": "/games/subwayrunner/description"
     },
     "city-blocks": {
       "title": "City Blocks",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/city-bloks.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/city-bloks.jpg",
       "genre": "Strategy",
       "playPath": "https://games-dun-one.vercel.app/CityBlocks/index.html",
       "description": "/games/cityblocks/description"
     },
     "inside-light": {
       "title": "Inside Light",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/Inside-Light.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/Inside-Light.jpg",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/InsideLight/index.html",
       "description": "/games/insidelight/description"
     },
     "traffic-command": {
       "title": "Traffic Command",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/traffic-command.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/traffic-command.jpg",
       "genre": "Strategy",
       "playPath": "https://games-dun-one.vercel.app/TrafficCommand/index.html",
       "description": "/games/trafficcommand/description"
     },
     "pet-party-columns": {
       "title": "Pet Party Columns",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/pet-party-columns.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/pet-party-columns.jpg",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/PetPartyColumns/index.html",
       "description": "/games/petpartycolumns/description"
     },
     "galaga": {
       "title": "Galaga",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/galaga.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/galaga.jpg",
       "genre": "Shooter",
       "playPath": "https://games-dun-one.vercel.app/Galaga/index.html",
       "description": "/games/galaga/description"
     },
     "mega-man-1930": {
       "title": "Mega Man 1930",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/mega-man-1930.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/mega-man-1930.jpg",
       "genre": "Adventure",
       "playPath": "https://games-dun-one.vercel.app/MegaMan1930/index.html",
       "description": "/games/megaman1930/description"
     },
     "twist-tactics": {
       "title": "Twist Tactics",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/twist-tactics.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/twist-tactics.png",
       "genre": "Strategy",
       "playPath": "https://games-dun-one.vercel.app/TwistTactics/index.html",
       "description": "/games/twisttactics/description"
     },
     "box-match": {
       "title": "Box Match",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/box-match.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/box-match.jpg",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/BoxMatch/index.html",
       "description": "/games/boxmatch/description"
     },
     "brick-breaker": {
       "title": "Brick Breaker",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/brick-breaker.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/brick-breaker.jpg",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/BrickBreaker/index.html",
       "description": "/games/brickbreaker/description"
     },
     "mad-boy-adventures": {
       "title": "Mad Boy Adventures",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/mad-boy-adventures.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/mad-boy-adventures.jpg",
       "genre": "Adventure",
       "playPath": "https://games-dun-one.vercel.app/MadBoyAdventures/index.html",
       "description": "/games/madboyadventures/description"
     },
     "fruit-bucket": {
       "title": "Fruit Bucket",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/fruit-bucket.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/fruit-bucket.png",
       "genre": "Puzzle",
       "playPath": "https://games-dun-one.vercel.app/FruitBucket/index.html",
       "description": "/games/fruitbucket/description"
     },
     "throw-daggers": {
       "title": "Throw Daggers",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/throw-daggers.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/throw-daggers.jpg",
       "genre": "Action",
       "playPath": "https://games-dun-one.vercel.app/ThrowDaggers/index.html",
       "description": "/games/throwdaggers/description"
     },
     "diino-defense": {
       "title": "Diino Defense",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/diino-defense.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/diino-defense.jpg",
       "genre": "Strategy",
       "playPath": "https://games-dun-one.vercel.app/DiinoDefense/index.html",
       "description": "/games/diinodefense/description"
     },
     "robo-tracker": {
       "title": "Robo Tracker",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/robo-tracker.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/robo-tracker.png",
       "genre": "Shooter",
       "playPath": "https://games-dun-one.vercel.app/RoboTracker/index.html",
       "description": "/games/robotracker/description"
     },
     "car-race-game": {
       "title": "Car Race Game",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/car-race.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/car-race.jpg",
       "genre": "Racing",
       "playPath": "https://games-dun-one.vercel.app/CarRaceGame/index.html",
       "description": "/games/carracegame/description"
     },
     "math-pop": {
       "title": "Math Pop",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/math-pop.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/math-pop.png",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/MathPop/index.html",
       "description": "/games/mathpop/description"
     },
     "builditekt": {
       "title": "Builditekt",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/buildi-tekt.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/buildi-tekt.jpg",
       "genre": "Strategy",
       "playPath": "https://games-dun-one.vercel.app/Builditekt/index.html",
       "description": "/games/builditekt/description"
     },
     "shadow-boy-adventures": {
       "title": "Shadow Boy Adventures",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/shadow-boy-adventures.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/shadow-boy-adventures.jpg",
       "genre": "Adventure",
       "playPath": "https://games-dun-one.vercel.app/ShadowBoyAdventures/index.html",
       "description": "/games/shadowboyadventures/description"
     },
     "robotic-snake-attack": {
       "title": "Robotic Snake Attack",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/robotic-snake-attack.webp",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/robotic-snake-attack.png",
       "genre": "Arcade",
       "playPath": "https://games-dun-one.vercel.app/RoboticSnakeAttack/index.html",
       "description": "/games/roboticsnakeattack/description"
@@ -567,6 +574,7 @@
       "bomberman",
       "fruit-party",
       "super-pix",
+      "freecell",
       "retro-bowl",
       "uno",
       "granny-hero",
@@ -576,6 +584,7 @@
       "galaga"
     ],
     "new": [
+      "freecell",
       "fruit-ninja",
       "liquid-sort",
       "street-skater",
@@ -695,8 +704,7 @@
       "drag-slam",
       "dunk-drawing",
       "street-skater",
-      "brainrot-jet-ski",
-      "random-basketball"
+      "brainrot-jet-ski"
     ],
     "driving": [
       "fire-truck-driving"
@@ -726,6 +734,7 @@
       "three-cups",
       "dunk-drawing",
       "pink-and-blue",
+      "freecell",
       "mathup",
       "fruit-party",
       "kindergarten-teacher",
@@ -787,7 +796,8 @@
       "uno",
       "uno-monument-edition",
       "card-legends",
-      "card-attack"
+      "card-attack",
+      "freecell"
     ],
     "bike": [
       "neon-rider"
@@ -801,11 +811,13 @@
       "what-is-the-password",
       "memory-chess",
       "find-the-differences",
-      "math-pop"
+      "math-pop",
+      "freecell"
     ],
     "strategy": [
       "spider-solitaire",
       "gun-merge",
+      "freecell",
       "cups-tower-builder",
       "rotated-cups",
       "uno",

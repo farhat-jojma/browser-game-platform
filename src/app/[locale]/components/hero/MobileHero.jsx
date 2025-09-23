@@ -47,17 +47,17 @@ export default function MobileHero() {
           {[
             {
               slug: "super-pix",
-              src: "https://farhat-jojma.github.io/my-assets-repo/super-pix.webp",
+              src: "https://farhat-jojma.github.io/my-assets-repo/super-pix.jpg",
               title: "Super Pix",
             },
             {
               slug: "dungeon-quest",
-              src: "https://farhat-jojma.github.io/my-assets-repo/dungeon-quest.webp",
+              src: "https://farhat-jojma.github.io/my-assets-repo/dungeon-quest.jpg",
               title: "Dungeon Quest",
             },
             {
               slug: "bomberman",
-              src: "https://farhat-jojma.github.io/my-assets-repo/bomberman.webp",
+              src: "https://farhat-jojma.github.io/my-assets-repo/bomberman.jpg",
               title: "Bomberman",
             },
           ].map((game, i) => (

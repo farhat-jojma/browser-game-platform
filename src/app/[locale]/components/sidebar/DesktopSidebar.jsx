@@ -37,7 +37,10 @@ function buildItems(t, locale) {
   const sections = data?.sections ?? {};
   const has = (id) => Array.isArray(sections[id]) && sections[id].length > 0;
 
-  const items = [{ label: t("sidebar.home"), icon: "🏠", href: `/${locale}` }];
+  const items = [
+    { label: t("sidebar.home"), icon: "🏠", href: `/${locale}` },
+    { label: t("sidebar.allGames") || "All Games", icon: "🌐", href: `/${locale}/games` } // ✅ new
+  ];
 
   const main = ["new", "featured", "trending", "updated", "originals"];
   for (const key of main) {

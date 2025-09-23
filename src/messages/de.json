@@ -1,4 +1,13 @@
 {
+  "expandable": {
+  "showMore": "Mehr anzeigen",
+  "showLess": "Weniger anzeigen"
+},
+
+  "games": {
+  "allGames": "Alle Spiele",
+  "browseAll": "Durchstöbere und spiele all unsere kostenlosen Online-Spiele."
+},
   "hero": {
     "seoTitle": "Kostenlos Online-Spiele spielen",
     "seoIntro": "Entdecken Sie GamesOnlineGratis, eine Plattform, auf der Sie kostenlos Online-Spiele ohne Downloads spielen können. Von Retro-Arcade bis hin zu modernen Multiplayer-Spielen.",
@@ -179,6 +188,7 @@
   },
   "sidebar": {
     "home": "Startseite",
+    "allGames": "Alle Spiele",
     "featured": "Empfohlen",
     "new": "Neu",
     "trending": "Angesagt",
@@ -214,7 +224,7 @@
       "description": "Erfahre mehr über Games Online Gratis und unsere Mission."
     },
     "title": "Über uns",
-    "intro": "Willkommen bei <strong>Games Online Gratis</strong>! Unsere Mission ist es, Spielern unterhaltsame, sichere und zugängliche Browser-Spiele zu bieten. Wir kuratieren hochwertige Titel, die du direkt im Browser genießen kannst – ohne Downloads."
+    "intro": "Willkommen bei Games Online Gratis! Unsere Mission ist es, Spielern unterhaltsame, sichere und zugängliche Browser-Spiele zu bieten. Wir kuratieren hochwertige Titel, die du direkt im Browser genießen kannst – ohne Downloads."
   },
   "contact": {
     "meta": {

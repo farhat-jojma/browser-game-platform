@@ -1,4 +1,14 @@
 {
+  "expandable": {
+  "showMore": "Afficher plus",
+  "showLess": "Afficher moins"
+},
+
+  "games": {
+  "allGames": "Tous les jeux",
+  "browseAll": "Découvrez et jouez à tous nos jeux en ligne gratuits."
+},
+
   "hero": {
     "seoTitle": "Jouez à des jeux en ligne gratuits",
     "seoIntro": "Découvrez GamesOnlineGratis, une plateforme où vous pouvez jouer gratuitement à des jeux en ligne sans téléchargement. Des classiques rétro aux multijoueurs modernes.",
@@ -179,6 +189,7 @@
   },
   "sidebar": {
     "home": "Accueil",
+    "allGames": "Tous les jeux",
     "featured": "À la une",
     "new": "Nouveaux",
     "trending": "Tendances",
@@ -214,7 +225,7 @@
       "description": "Découvrez notre plateforme de jeux en ligne gratuits et notre mission : offrir les meilleurs jeux de navigateur accessibles à tous."
     },
     "title": "À Propos",
-    "intro": "Bienvenue sur <strong>Plateforme de Jeux en Ligne</strong> ! Notre mission est de proposer aux joueurs des <strong>jeux de navigateur gratuits, amusants et sécurisés</strong>. Nous sélectionnons les meilleurs titres pour que vous puissiez jouer instantanément sans téléchargement."
+    "intro": "Bienvenue sur Plateforme de Jeux en Ligne ! Notre mission est de proposer aux joueurs des jeux de navigateur gratuits, amusants et sécurisés. Nous sélectionnons les meilleurs titres pour que vous puissiez jouer instantanément sans téléchargement."
   },
 
   "contact": {

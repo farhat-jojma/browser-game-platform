@@ -1,4 +1,14 @@
 {
+  "expandable": {
+  "showMore": "Mostrar más",
+  "showLess": "Mostrar menos"
+},
+
+  "games": {
+  "allGames": "Todos los juegos",
+  "browseAll": "Explora y juega todos nuestros juegos en línea gratis."
+},
+
   "hero": {
     "seoTitle": "Juega gratis a juegos online en GamesOnlineGratis",
     "seoIntro": "Descubre GamesOnlineGratis, una plataforma donde puedes jugar gratis a juegos online sin descargas. Desde clásicos retro hasta multijugador moderno.",
@@ -179,6 +189,7 @@
   },
   "sidebar": {
     "home": "Inicio",
+    "allGames": "Todos los juegos",
     "featured": "Destacado",
     "new": "Nuevo",
     "trending": "Tendencias",
@@ -214,7 +225,7 @@
       "description": "Conoce más sobre Games Online Gratis y nuestra misión."
     },
     "title": "Sobre nosotros",
-    "intro": "Bienvenido a <strong>Games Online Gratis</strong>! Nuestra misión es proporcionar a los jugadores juegos divertidos, seguros y accesibles. Seleccionamos títulos de alta calidad para que disfrutes directamente en tu navegador sin descargas."
+    "intro": "Bienvenido a Games Online Gratis! Nuestra misión es proporcionar a los jugadores juegos divertidos, seguros y accesibles. Seleccionamos títulos de alta calidad para que disfrutes directamente en tu navegador sin descargas."
   },
   "contact": {
     "meta": {

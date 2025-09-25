@@ -1,11 +1,11 @@
 {
   "games": {
     "king-ludo": {
-      "title": "King Ludo",
+      "title": "Ludo King",
       "image": "https://farhat-jojma.github.io/my-assets-repo/king-ludo.jpg",
       "genre": "Card",
       "playPath": "https://games-dun-one.vercel.app/KingLudo/index.html",
-      "description": "/games/freecell/description"
+      "description": "/games/kingludo/description"
     },
     "freecell": {
       "title": "FreeCell",

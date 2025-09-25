@@ -49,12 +49,12 @@ export default function DesktopHero() {
             },
             {
               slug: "fruit-party",
-              src: "https://farhat-jojma.github.io/my-assets-repo/fruit-party.jpg",
+              src: "https://farhat-jojma.github.io/my-assets-repo/fruit-party.avif",
               title: "Fruit Party",
             },
             {
               slug: "dungeon-quest",
-              src: "https://farhat-jojma.github.io/my-assets-repo/dungeon-quest.jpg",
+              src: "https://farhat-jojma.github.io/my-assets-repo/dungeon-quest.png",
               title: "Dungeon Quest",
             },
             {

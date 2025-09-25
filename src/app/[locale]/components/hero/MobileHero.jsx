@@ -52,7 +52,7 @@ export default function MobileHero() {
             },
             {
               slug: "dungeon-quest",
-              src: "https://farhat-jojma.github.io/my-assets-repo/dungeon-quest.jpg",
+              src: "https://farhat-jojma.github.io/my-assets-repo/dungeon-quest.png",
               title: "Dungeon Quest",
             },
             {

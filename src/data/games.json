@@ -1,5 +1,12 @@
 {
   "games": {
+    "king-ludo": {
+      "title": "King Ludo",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/kingludo.jpg",
+      "genre": "Card",
+      "playPath": "https://games-dun-one.vercel.app/KingLudo/index.html",
+      "description": "/games/freecell/description"
+    },
     "freecell": {
       "title": "FreeCell",
       "image": "https://farhat-jojma.github.io/my-assets-repo/freecell.jpg",
@@ -191,7 +198,7 @@
     },
     "plug-heads": {
       "title": "Plug Heads",
-      "image": "https://farhat-jojma.github.io/my-assets-repo/plug-heads.jpg",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/plug-heads.png",
       "genre": "Brain",
       "playPath": "https://games-dun-one.vercel.app/PlugHeads/index.html",
       "description": "/games/plugheads/description"
@@ -570,6 +577,7 @@
   },
   "sections": {
     "featured": [
+      "king-ludo",
       "dungeon-quest",
       "bomberman",
       "fruit-party",
@@ -585,6 +593,7 @@
     ],
     "new": [
       "freecell",
+      "king-ludo",
       "fruit-ninja",
       "liquid-sort",
       "street-skater",

@@ -1,5 +1,40 @@
 {
   "games": {
+    "draw-pixels": {
+      "title": "Draw Pixels",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/draw-pixels.jpg",
+      "genre": "Drawing",
+      "playPath": "https://games-dun-one.vercel.app/DrawPixels/index.html",
+      "description": "/games/drawpixels/description"
+    },
+    "drawing-space": {
+      "title": "Drawing Space",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/drawing-space.jpg",
+      "genre": "Drawing",
+      "playPath": "https://games-dun-one.vercel.app/DrawingSpace/index.html",
+      "description": "/games/drawingspace/description"
+    },
+    "learn-drawing": {
+      "title": "Learn Drawing",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/learn-drawing.jpg",
+      "genre": "Drawing",
+      "playPath": "https://games-dun-one.vercel.app/LearnDrawing/index.html",
+      "description": "/games/learndrawing/description"
+    },
+    "draw-line": {
+      "title": "Draw Line",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/draw-line.jpg",
+      "genre": "Drawing",
+      "playPath": "https://games-dun-one.vercel.app/DrawLine/index.html",
+      "description": "/games/drawline/description"
+    },
+    "drawing-paint": {
+      "title": "Drawing and Paint",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/drawing-paint.jpg",
+      "genre": "Drawing",
+      "playPath": "https://games-dun-one.vercel.app/DrawingandPaint/index.html",
+      "description": "/games/drawingpaint/description"
+    },
     "king-ludo": {
       "title": "Ludo King",
       "image": "https://farhat-jojma.github.io/my-assets-repo/king-ludo.jpg",
@@ -592,6 +627,11 @@
       "galaga"
     ],
     "new": [
+      "drawing-paint",
+      "draw-line",
+      "learn-drawing",
+      "drawing-space",
+      "draw-pixels",
       "freecell",
       "king-ludo",
       "fruit-ninja",
@@ -836,6 +876,14 @@
       "twist-tactics",
       "diino-defense",
       "builditekt"
+    ],
+    "drawing": [
+      "drawing-paint",
+      "draw-line",
+      "learn-drawing",
+      "drawing-space",
+      "draw-pixels",
+      "dunk-drawing"
     ]
   }
 }

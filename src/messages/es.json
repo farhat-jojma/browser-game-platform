@@ -47,7 +47,8 @@
       "bike": "Bicicleta",
       "rpg": "RPG",
       "physics": "Física",
-      "card": "Cartas"
+      "card": "Cartas",
+      "drawing": "Dibujo"
     }
   },
   "game": {
@@ -102,7 +103,8 @@
       "bike": "Bicicleta",
       "rpg": "RPG",
       "physics": "Física",
-      "card": "Cartas"
+      "card": "Cartas",
+      "drawing": "Dibujo"
     }
   },
   "theme": {
@@ -140,7 +142,8 @@
     "retro": "Retro",
     "kids": "Niños",
     "bike": "Bicicleta",
-    "card": "Cartas"
+    "card": "Cartas",
+    "drawing": "Dibujo"
   },
   "gameplayer": {
     "toolbar": {
@@ -214,7 +217,8 @@
     "retro": "Retro",
     "kids": "Niños",
     "card": "Cartas",
-    "bike": "Bicicleta"
+    "bike": "Bicicleta",
+    "drawing": "Dibujo"
   },
   "suggestions": {
     "title": "También te puede gustar"

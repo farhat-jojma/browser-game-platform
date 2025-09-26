@@ -20,7 +20,8 @@ const GENRE_GRADIENT = {
   Retro:       "from-pink-300 to-pink-500",
   Kids:        "from-green-300 to-green-500",
   Bike:        "from-green-300 to-green-500",
-  Card:        "from-purple-300 to-purple-500"
+  Card:        "from-purple-300 to-purple-500",
+  Drawing:     "from-stone-300 to-stone-500",
 };
 
 function gradientForGenre(genre) {

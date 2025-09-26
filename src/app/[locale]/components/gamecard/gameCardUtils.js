@@ -17,6 +17,7 @@ const GENRE_BADGE = {
   Kids: "from-green-300   to-green-500   text-black",
   Bike: "from-green-300   to-green-500   text-black",
   Card: "from-purple-300 to-purple-500 text-white",
+  Drawing: "from-stone-300   to-stone-500   text-black",
 };
 
 const GENRE_BORDER = {
@@ -38,6 +39,7 @@ const GENRE_BORDER = {
   Kids: "border-green-400",
   Bike: "border-green-400",
   Card: "border-purple-400",
+  Drawing: "border-stone-400",
 };
 
 export function badgeGradientFor(genre) {

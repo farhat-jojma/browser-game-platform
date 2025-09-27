@@ -60,6 +60,9 @@ export default async function LocaleLayout({ children, params }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
 
+        {/* ✅ Google Search Console */}
+        <meta name="google-site-verification" content="nwxIY1JKO52vhjSD4XNiIwRBpxziWZbbCLfxvau-Axk" />
+
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-RB3Q1DXSDP"

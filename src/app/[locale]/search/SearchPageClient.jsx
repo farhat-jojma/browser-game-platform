@@ -10,12 +10,110 @@ const norm = (s = "") =>
   s.toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "");
 
 const SECTION_ALIASES = {
-  featured: ["featured", "à la une", "a la une"],
-  new: ["new", "nouveaux", "nouveau"],
-  trending: ["trending", "trending now", "tendance", "tendances"],
-  updated: ["updated", "mise a jour", "mise à jour", "maj"],
-  originals: ["originals", "originaux", "originales"],
+  featured: [
+    "featured", "à la une", "a la une", "destacado", "ausgewählt", "in primo piano",
+    "em destaque", "精选", "विशेष", "แนะนำ"
+  ],
+  new: [
+    "new", "nouveau", "nouveaux", "nuevo", "neu", "nuovo", "novo", "ново", "नया", "ใหม่"
+  ],
+  trending: [
+    "trending", "tendance", "tendances", "tendencia", "tendencias", "im trend",
+    "di tendenza", "tendência", "тренд", "ट्रेंडिंग", "กำลังมาแรง"
+  ],
+  updated: [
+    "updated", "mise à jour", "maj", "actualizado", "aktualisiert", "aggiornato",
+    "atualizado", "актуализирано", "अपडेट", "อัปเดต"
+  ],
+  originals: [
+    "originals", "originaux", "originales", "originales", "originale", "originali",
+    "originais", "оригинали", "मूल", "ต้นฉบับ"
+  ],
+  multiplayer: [
+    "multiplayer", "multijoueur", "multijoueurs", "2 player", "dos jugadores",
+    "mehrspieler", "multigiocatore", "multijogador", "мултиплейър", "मल्टीप्लेयर", "ผู้เล่นหลายคน"
+  ],
+  action: [
+    "action", "action", "acción", "azione", "ação", "акция", "कार्य", "แอ็กชัน"
+  ],
+  adventure: [
+    "adventure", "aventure", "aventura", "abenteuer", "avventura",
+    "aventura", "приключение", "साहसिक", "ผจญภัย"
+  ],
+  sports: [
+    "sports", "sport", "deportes", "sportarten", "sport", "esportes",
+    "спорт", "खेल", "กีฬา"
+  ],
+  driving: [
+    "driving", "conduite", "conducción", "fahren", "guida",
+    "condução", "шофиране", "ड्राइविंग", "การขับรถ"
+  ],
+  racing: [
+    "racing", "course", "carrera", "rennen", "corsa", "corrida",
+    "надбягване", "रेसिंग", "แข่งรถ"
+  ],
+  arcade: [
+    "arcade", "arcade", "arcada", "spielhalle", "sala giochi", "arcada",
+    "аркада", "आर्केड", "อาร์เคด"
+  ],
+  puzzle: [
+    "puzzle", "casse-tête", "rompecabezas", "rätsel", "puzzle",
+    "quebra-cabeça", "пъзел", "पहेली", "ปริศนา"
+  ],
+  shooter: [
+    "shooter", "tireur", "tirador", "schütze", "sparatutto",
+    "atirador", "стрелец", "शूटर", "เกมยิง"
+  ],
+  brain: [
+    "brain", "cerveau", "mente", "kopf", "cervello", "cérebro",
+    "мозък", "दिमाग", "สมอง"
+  ],
+  merge: [
+    "merge", "fusion", "combinar", "zusammenführen", "unire", "fundir",
+    "сливане", "मर्ज", "ผสาน"
+  ],
+  stack: [
+    "stack", "pile", "apilar", "stapel", "impilare", "pilha",
+    "купчина", "स्टैक", "กอง"
+  ],
+  platformer: [
+    "platformer", "plateforme", "plataformas", "plattformspiel",
+    "platform", "plataforma", "платформер", "प्लेटफार्मर", "แพลตฟอร์ม"
+  ],
+  strategy: [
+    "strategy", "stratégie", "estrategia", "strategie", "strategia",
+    "estratégia", "стратегия", "रणनीति", "กลยุทธ์"
+  ],
+  rpg: [
+    "rpg", "jeu de rôle", "rol", "rollenspiel", "gioco di ruolo",
+    "jogo de interpretação", "ролева игра", "आरपीजी", "เกมสวมบทบาท"
+  ],
+  physics: [
+    "physics", "physique", "física", "physik", "fisica",
+    "física", "физика", "भौतिकी", "ฟิสิกส์"
+  ],
+  retro: [
+    "retro", "rétro", "retro", "retro", "retrò", "retrô",
+    "ретро", "रेट्रो", "เรโทร"
+  ],
+  kids: [
+    "kids", "enfants", "niños", "kinder", "bambini", "crianças",
+    "деца", "बच्चे", "เด็ก"
+  ],
+  card: [
+    "card", "carte", "carta", "karte", "carta", "carta",
+    "карта", "कार्ड", "ไพ่"
+  ],
+  bike: [
+    "bike", "vélo", "bicicleta", "fahrrad", "bicicletta",
+    "bicicleta", "колело", "साइकिल", "จักรยาน"
+  ],
+  drawing: [
+    "drawing", "dessin", "dibujo", "zeichnen", "disegno",
+    "desenho", "рисуване", "ड्राइंग", "การวาดภาพ"
+  ]
 };
+
 
 function resolveSectionId(query) {
   const q = norm(query);

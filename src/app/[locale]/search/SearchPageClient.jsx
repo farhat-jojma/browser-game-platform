@@ -57,7 +57,7 @@ const SECTION_ALIASES = {
     "аркада", "आर्केड", "อาร์เคด"
   ],
   puzzle: [
-    "puzzle", "casse-tête", "rompecabezas", "rätsel", "puzzle",
+    "puzzle", "casse-tête", "casse tete", "rompecabezas", "rätsel", "puzzle",
     "quebra-cabeça", "пъзел", "पहेली", "ปริศนา"
   ],
   shooter: [

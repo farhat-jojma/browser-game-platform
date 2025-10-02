@@ -1,5 +1,12 @@
 {
   "games": {
+    "roblox": {
+      "title": "Roblox",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/roblox.jpg",
+      "genre": "Adventure",
+      "playPath": "https://games-dun-one.vercel.app/Roblox/index.html",
+      "description": "/games/roblox/description"
+    },
     "draw-pixels": {
       "title": "Draw Pixels",
       "image": "https://farhat-jojma.github.io/my-assets-repo/draw-pixels.jpg",
@@ -627,6 +634,7 @@
       "galaga"
     ],
     "new": [
+      "roblox",
       "drawing-paint",
       "draw-line",
       "learn-drawing",

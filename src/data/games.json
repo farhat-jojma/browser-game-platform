@@ -1,5 +1,12 @@
 {
   "games": {
+    "car-game": {
+      "title": "Racing Car",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/car-game.avif",
+      "genre": "Racing",
+      "playPath": "https://games-dun-one.vercel.app/CarGame/index.html",
+      "description": "/games/cargame/description"
+    },
     "roblox": {
       "title": "Roblox",
       "image": "https://farhat-jojma.github.io/my-assets-repo/roblox.jpg",
@@ -636,6 +643,7 @@
     ],
     "new": [
       "roblox",
+      "car-game",
       "drawing-paint",
       "draw-line",
       "learn-drawing",
@@ -769,6 +777,7 @@
       "fire-truck-driving"
     ],
     "racing": [
+      "car-game",
       "neon-rider",
       "car-race-game"
     ],

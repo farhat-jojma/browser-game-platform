@@ -1,5 +1,12 @@
 {
   "games": {
+    "wednesday": {
+      "title": "Wednesday",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/wednesday.jpg",
+      "genre": "Adventure",
+      "playPath": "https://games-dun-one.vercel.app/Wednesday/index.html",
+      "description": "/games/wednesday/description"
+    },
     "car-game": {
       "title": "Racing Car",
       "image": "https://farhat-jojma.github.io/my-assets-repo/car-game.avif",
@@ -642,6 +649,7 @@
       "galaga"
     ],
     "new": [
+      "wednesday",
       "roblox",
       "car-game",
       "drawing-paint",
@@ -763,6 +771,9 @@
     "rpg": [
       "dungeon-quest",
       "treasure-hunters"
+    ],
+    "girls": [
+      "wednesday"
     ],
     "sports": [
       "retro-bowl",

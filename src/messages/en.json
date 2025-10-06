@@ -49,7 +49,8 @@
       "rpg": "RPG",
       "physics": "Physics",
       "card": "Card",
-      "drawing": "Drawing"
+      "drawing": "Drawing",
+      "girls": "Girls"
     }
   },
   "game": {
@@ -105,7 +106,8 @@
       "rpg": "RPG",
       "physics": "Physics",
       "card": "Card",
-      "drawing": "Drawing"
+      "drawing": "Drawing",
+      "girls": "Girls"
     }
   },
   "theme": {
@@ -144,7 +146,8 @@
     "kids": "Kids",
     "bike": "Bike",
     "card": "Card",
-    "drawing": "Drawing"
+    "drawing": "Drawing",
+    "girls": "Girls"
   },
   "gameplayer": {
     "toolbar": {
@@ -219,7 +222,8 @@
     "kids": "Kids",
     "card": "Card",
     "bike": "Bike",
-    "drawing": "Drawing"
+    "drawing": "Drawing",
+    "girls": "Girls"
   },
   "suggestions": {
     "title": "You may also like"

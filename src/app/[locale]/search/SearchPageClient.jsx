@@ -111,6 +111,11 @@ const SECTION_ALIASES = {
   drawing: [
     "drawing", "dessin", "dibujo", "zeichnen", "disegno",
     "desenho", "рисуване", "ड्राइंग", "การวาดภาพ"
+  ],
+  girls: [
+    "girl", "girls", "fille", "filles", "chica", "chicas",
+    "mädchen", "ragazza", "ragazze", "menina", "meninas",
+    "момиче", "момичета", "लड़की", "लड़कियाँ", "สาว", "สาวๆ"
   ]
 };
 

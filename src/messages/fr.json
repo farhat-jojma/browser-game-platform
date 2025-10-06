@@ -48,7 +48,8 @@
       "rpg": "RPG",
       "physics": "Physique",
       "card": "Cartes",
-      "drawing": "Dessin"
+      "drawing": "Dessin",
+      "girls": "Filles"
     }
   },
   "game": {
@@ -104,7 +105,8 @@
       "rpg": "RPG",
       "physics": "Physique",
       "card": "Cartes",
-      "drawing": "Dessin"
+      "drawing": "Dessin",
+      "girls": "Filles"
     }
   },
   "theme": {
@@ -143,7 +145,8 @@
     "kids": "Enfants",
     "bike": "Moto",
     "card": "Cartes",
-    "drawing": "Dessin"
+    "drawing": "Dessin",
+    "girls": "Filles"
   },
   "gameplayer": {
     "toolbar": {
@@ -218,7 +221,8 @@
     "kids": "Enfants",
     "card": "Cartes",
     "bike": "Moto",
-    "drawing": "Dessin"
+    "drawing": "Dessin",
+    "girls": "Filles"
   },
   "suggestions": {
     "title": "Vous aimerez peut-être aussi"

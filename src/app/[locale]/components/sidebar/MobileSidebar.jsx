@@ -99,7 +99,7 @@ function MobileNav() {
   const items = buildItems(t, locale);
 
   return (
-    <nav className="px-1 py-3 overflow-x-hidden">
+    <nav className="px-1 py-3 overflow-x-hidden bg-background">
       {items.map((it, idx) =>
         it.divider ? (
           <div key={`div-${idx}`} className="my-2 border-t-4 border-border mx-2" />

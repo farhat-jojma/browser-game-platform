@@ -18,7 +18,7 @@ const GENRE_BADGE = {
   Bike: "from-green-300   to-green-500   text-black",
   Card: "from-purple-300 to-purple-500 text-white",
   Drawing: "from-stone-300   to-stone-500   text-black",
-  Girl: "from-pink-300    to-pink-500    text-black",
+  Girls: "from-pink-300    to-pink-500    text-black",
 };
 
 const GENRE_BORDER = {

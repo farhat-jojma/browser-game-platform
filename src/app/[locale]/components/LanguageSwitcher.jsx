@@ -12,6 +12,7 @@ import "flag-icons/css/flag-icons.min.css"; // 👈 important pour activer les d
 const LOCALES = [
   { code: "en", label: "English", flag: "gb" }, // 'gb' = Union Jack
   { code: "fr", label: "Français", flag: "fr" },
+  { code: "ar", label: "العربية", flag: "sa" }, // 'sa' = Saudi Arabia
   { code: "es", label: "Español", flag: "es" },
   { code: "de", label: "Deutsch", flag: "de" },
   { code: "it", label: "Italiano", flag: "it" },

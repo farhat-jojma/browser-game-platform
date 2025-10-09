@@ -23,7 +23,7 @@ const games = [
 ];
 
 // Locales
-const locales = ["en", "fr", "es", "de", "it", "pt", "hi", "th", "bg"];
+const locales = ["en", "fr", "ar", "es", "de", "it", "pt", "hi", "th", "bg"];
 
 // Pages statiques
 const staticPages = [

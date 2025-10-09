@@ -19,6 +19,7 @@ const inter = Inter({
 // ✅ Pre-import messages
 import en from "../../messages/en.json";
 import fr from "../../messages/fr.json";
+import ar from "../../messages/ar.json";
 import es from "../../messages/es.json";
 import de from "../../messages/de.json";
 import it from "../../messages/it.json";
@@ -27,7 +28,7 @@ import hi from "../../messages/hi.json";
 import th from "../../messages/th.json";
 import bg from "../../messages/bg.json";
 
-const messagesMap = { en, fr, es, de, it, pt, hi, th, bg };
+const messagesMap = { en, fr, ar, es, de, it, pt, hi, th, bg };
 
 // ✅ Metadata per locale
 export async function generateMetadata({ params }) {

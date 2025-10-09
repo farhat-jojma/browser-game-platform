@@ -151,7 +151,7 @@ export default async function GamePage({ params }) {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-extrabold text-foreground">{game.title}</h1>
-        <span className="text-sm text-muted-foreground">{game.genre}</span>
+        {/* <span className="text-sm text-muted-foreground">{game.genre}</span> */}
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6">

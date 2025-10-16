@@ -27,8 +27,10 @@ import pt from "../../messages/pt.json";
 import hi from "../../messages/hi.json";
 import th from "../../messages/th.json";
 import bg from "../../messages/bg.json";
+import lv from "../../messages/lv.json";
+import pl from "../../messages/pl.json";
 
-const messagesMap = { en, fr, ar, es, de, it, pt, hi, th, bg };
+const messagesMap = { en, fr, ar, es, de, it, pt, hi, th, bg, lv, pl };
 
 // ✅ Metadata per locale
 export async function generateMetadata({ params }) {

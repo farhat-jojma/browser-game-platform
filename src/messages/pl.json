@@ -1,0 +1,277 @@
+{
+  "expandable": {
+    "showMore": "Pokaż więcej",
+    "showLess": "Pokaż mniej"
+  },
+
+  "games": {
+    "allGames": "Wszystkie gry",
+    "browseAll": "Przeglądaj i graj we wszystkie nasze darmowe gry online."
+  },
+  "hero": {
+    "seoTitle": "Graj w gry online za darmo na GamesOnlineGratis",
+    "seoIntro": "Odkryj GamesOnlineGratis — platformę, gdzie możesz grać w gry online za darmo bez pobierania. Od retro arkad po nowoczesne gry wieloosobowe — ciesz się natychmiastową zabawą na komputerze i urządzeniach mobilnych.",
+    "benefit1": "Natychmiastowa gra",
+    "benefit1Desc": "Zacznij grać od razu, bez instalacji. Wszystko działa bezpośrednio w przeglądarce.",
+    "benefit2": "Cross-platform",
+    "benefit2Desc": "Graj płynnie na komputerze, tablecie lub smartfonie.",
+    "benefit3": "Zawsze świeże",
+    "benefit3Desc": "Nowe gry dodawane są co tydzień, więc zawsze jest coś ciekawego do wypróbowania.",
+    "benefit4": "Bezpieczne i zabawne",
+    "benefit4Desc": "Bezpieczne i przyjazne miejsce dla graczy okazjonalnych i entuzjastów."
+  },
+
+  "home": {
+    "sections": {
+      "featured": "Polecane",
+      "new": "Nowe",
+      "trending": "Popularne",
+      "updated": "Zaktualizowane",
+      "originals": "Oryginalne",
+      "arcade": "Arkady",
+      "puzzle": "Puzzle",
+      "racing": "Wyścigi",
+      "driving": "Jazda",
+      "multiplayer": "Multiplayer",
+      "sports": "Sportowe",
+      "action": "Akcji",
+      "adventure": "Przygoda",
+      "shooter": "Strzelanki",
+      "brain": "Mózgowe",
+      "merge": "Łączenie",
+      "stack": "Układanie",
+      "platformer": "Platformówki",
+      "strategy": "Strategiczne",
+      "retro": "Retro",
+      "kids": "Dla dzieci",
+      "bike": "Rowerowe",
+      "rpg": "RPG",
+      "physics": "Fizyka",
+      "card": "Karty",
+      "drawing": "Rysowanie",
+      "girls": "Dla dziewczyn"
+    }
+  },
+  "game": {
+    "about": "O {title}",
+    "noDescription": "Opis niedostępny.",
+    "moreGames": "Więcej gier"
+  },
+  "search": {
+    "title": "Szukaj",
+    "placeholder": "Wpisz coś w pasku wyszukiwania, aby znaleźć gry.",
+    "resultsFor": "Wyniki dla „{query}”",
+    "includesSection": "Zawiera sekcję: {section}",
+    "genreMatch": "Pasuje gatunek: {genre}",
+    "resultsCount": "{count} wynik{plural}",
+    "noGames": "Nie znaleziono gier",
+    "noGamesMessage": "Nie znaleźliśmy wyników dla „{query}”. Spróbuj innego słowa kluczowego lub przejrzyj kategorię poniżej.",
+    "clearSearch": "Wyczyść wyszukiwanie",
+    "browseAll": "Przeglądaj wszystkie gry",
+    "suggestions": {
+      "featured": "Polecane",
+      "new": "Nowe",
+      "trending": "Popularne",
+      "arcade": "Arkady",
+      "multiplayer": "2 graczy",
+      "puzzle": "Puzzle"
+    }
+  },
+  "section": {
+    "backHome": "← Powrót do strony głównej",
+    "titles": {
+      "featured": "Polecane",
+      "new": "Nowe",
+      "trending": "Popularne",
+      "updated": "Zaktualizowane",
+      "originals": "Oryginalne",
+      "arcade": "Arkady",
+      "puzzle": "Puzzle",
+      "racing": "Wyścigi",
+      "driving": "Jazda",
+      "multiplayer": "Multiplayer",
+      "sports": "Sportowe",
+      "action": "Akcji",
+      "adventure": "Przygoda",
+      "shooter": "Strzelanki",
+      "brain": "Mózgowe",
+      "merge": "Łączenie",
+      "stack": "Układanie",
+      "platformer": "Platformówki",
+      "strategy": "Strategiczne",
+      "retro": "Retro",
+      "kids": "Dla dzieci",
+      "bike": "Rowerowe",
+      "rpg": "RPG",
+      "physics": "Fizyka",
+      "card": "Karty",
+      "drawing": "Rysowanie",
+      "girls": "Dla dziewczyn"
+    }
+  },
+  "theme": {
+    "label": "Motyw",
+    "light": "Jasny",
+    "dark": "Ciemny",
+    "system": "Systemowy"
+  },
+  "footer": {
+    "copyright": "© {year} gamesonlinegratis.com",
+    "rights": "Wszystkie prawa zastrzeżone.",
+    "slogan": "Dostarczamy najlepsze gry przeglądarkowe od 2024",
+    "links": {
+      "privacy": "Polityka prywatności",
+      "terms": "Warunki usługi",
+      "contact": "Kontakt",
+      "about": "O nas"
+    }
+  },
+  "genres": {
+    "arcade": "Arkady",
+    "puzzle": "Puzzle",
+    "racing": "Wyścigi",
+    "driving": "Jazda",
+    "multiplayer": "Multiplayer",
+    "sports": "Sportowe",
+    "action": "Akcji",
+    "adventure": "Przygoda",
+    "shooter": "Strzelanki",
+    "brain": "Mózgowe",
+    "merge": "Łączenie",
+    "stack": "Układanie",
+    "platformer": "Platformówki",
+    "strategy": "Strategiczne",
+    "retro": "Retro",
+    "kids": "Dla dzieci",
+    "bike": "Rowerowe",
+    "card": "Karty",
+    "drawing": "Rysowanie",
+    "girls": "Dla dziewczyn"
+  },
+  "gameplayer": {
+    "toolbar": {
+      "reload": "Przeładuj",
+      "fullscreen": "Pełny ekran",
+      "controlsActiveDesktop": "Sterowanie gry aktywne – kliknij poza, by przewinąć",
+      "controlsActiveMobile": "Gra aktywna – dotknij poza, by przewinąć"
+    },
+    "overlay": {
+      "checking": "Sprawdzanie plików gry…",
+      "ready": "Gotowe, kiedy jesteś.",
+      "loading": "Ładowanie…",
+      "error": "Ups! Nie można załadować tej gry"
+    },
+    "cta": {
+      "play": "Graj teraz",
+      "tryAgain": "↻ Spróbuj ponownie",
+      "goBack": "← Wróć",
+      "browse": "Przeglądaj gry"
+    },
+    "hint": {
+      "desktop": "Najedź kursorem na grę lub kliknij, aby aktywować sterowanie. Kliknij poza, by przewinąć.",
+      "mobile": "Dotknij gry, aby aktywować sterowanie. Dotknij poza, by przewinąć."
+    }
+  },
+  "metadata": {
+    "title": "Games Online Gratis",
+    "description": "Graj w gry przeglądarkowe online za darmo!"
+  },
+  "header": {
+    "brand": "Games Online Gratis",
+    "search": {
+      "placeholder": "Szukaj",
+      "button": "Szukaj",
+      "title": "Szukaj gier"
+    },
+    "sidebar": {
+      "show": "Pokaż panel boczny",
+      "hide": "Ukryj panel boczny"
+    }
+  },
+  "carousel": {
+    "viewMore": "Zobacz więcej",
+    "previous": "Poprzedni",
+    "next": "Następny"
+  },
+  "sidebar": {
+    "home": "Strona główna",
+    "allGames": "Wszystkie gry",
+    "featured": "Polecane",
+    "new": "Nowe",
+    "trending": "Popularne",
+    "updated": "Zaktualizowane",
+    "originals": "Oryginalne",
+    "multiplayer": "2 graczy",
+    "action": "Akcji",
+    "adventure": "Przygoda",
+    "sports": "Sportowe",
+    "driving": "Jazda",
+    "racing": "Wyścigi",
+    "arcade": "Arkady",
+    "puzzle": "Puzzle",
+    "shooter": "Strzelanki",
+    "brain": "Mózgowe",
+    "merge": "Łączenie",
+    "stack": "Układanie",
+    "platformer": "Platformówki",
+    "strategy": "Strategiczne",
+    "rpg": "RPG",
+    "physics": "Fizyka",
+    "retro": "Retro",
+    "kids": "Dla dzieci",
+    "card": "Karty",
+    "bike": "Rowerowe",
+    "drawing": "Rysowanie",
+    "girls": "Dla dziewczyn"
+  },
+  "suggestions": {
+    "title": "Może Ci się spodobać"
+  },
+  "about": {
+    "meta": {
+      "title": "O nas - Games Online Gratis",
+      "description": "Dowiedz się więcej o Games Online Gratis i naszej misji."
+    },
+    "title": "O nas",
+    "intro": "Witamy w Games Online Gratis — najlepszym miejscu na darmowe gry online."
+  },
+  "contact": {
+    "meta": {
+      "title": "Kontakt - Games Online Gratis",
+      "description": "Skontaktuj się z zespołem Games Online Gratis w sprawie pytań lub współpracy."
+    },
+    "title": "Kontakt",
+    "intro": "Masz pytania, feedback lub propozycję współpracy? Skontaktuj się z nami:",
+    "email": "contact@gamesonlinegratis.com",
+    "phone": "+212 663-161240"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Polityka prywatności - Games Online Gratis",
+      "description": "Przeczytaj politykę prywatności Games Online Gratis."
+    },
+    "title": "Polityka prywatności",
+    "intro": "Twoja prywatność jest dla nas ważna. Ta polityka prywatności wyjaśnia, jak zbieramy, używamy i chronimy Twoje dane podczas korzystania z Games Online Gratis.",
+    "section1": {
+      "title": "1. Informacje, które zbieramy",
+      "content": "Możemy zbierać dane nieosobowe, takie jak statystyki użytkowania, typ przeglądarki i dane urządzenia."
+    },
+    "section2": {
+      "title": "2. Jak używamy informacji",
+      "content": "Używamy tych danych, by ulepszyć nasze usługi, naprawić błędy i wzbogacić Twoje doświadczenie w grach."
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Warunki użytkowania - Games Online Gratis",
+      "description": "Przeczytaj warunki użytkowania serwisu Games Online Gratis."
+    },
+    "title": "Warunki użytkowania",
+    "intro": "Korzystając z Games Online Gratis, zgadzasz się na następujące warunki:",
+    "items": [
+      "Gry są udostępniane “tak jak są” bez gwarancji.",
+      "Zobowiązujesz się nie wykorzystywać platformy w sposób niewłaściwy lub niezgodny z prawem.",
+      "Możemy zaktualizować te warunki w dowolnym momencie bez wcześniejszego powiadomienia."
+    ]
+  }
+}

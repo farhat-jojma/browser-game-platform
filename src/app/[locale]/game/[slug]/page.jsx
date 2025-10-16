@@ -183,7 +183,7 @@ export default async function GamePage({ params }) {
                   <div className="mt-2 text-sm font-medium truncate text-foreground">
                     {g.title}
                   </div>
-                  <div className="text-xs text-muted-foreground truncate">{g.genre}</div>
+                  {/* <div className="text-xs text-muted-foreground truncate">{g.genre}</div> */}
                 </Link>
               ))}
             </div>
@@ -227,7 +227,7 @@ export default async function GamePage({ params }) {
                   <div className="mt-2 text-sm font-medium truncate text-foreground">
                     {g.title}
                   </div>
-                  <div className="text-xs text-muted-foreground truncate">{g.genre}</div>
+                  {/* <div className="text-xs text-muted-foreground truncate">{g.genre}</div> */}
                 </Link>
               ))}
             </div>
@@ -249,7 +249,7 @@ export default async function GamePage({ params }) {
                     <div className="font-medium leading-tight truncate text-foreground">
                       {g.title}
                     </div>
-                    <div className="text-xs text-muted-foreground">{g.genre}</div>
+                    {/* <div className="text-xs text-muted-foreground">{g.genre}</div> */}
                   </div>
                 </Link>
               ))}
@@ -273,7 +273,7 @@ export default async function GamePage({ params }) {
                   <div className="font-medium leading-tight truncate text-foreground">
                     {g.title}
                   </div>
-                  <div className="text-xs text-muted-foreground">{g.genre}</div>
+                  {/* <div className="text-xs text-muted-foreground">{g.genre}</div> */}
                 </div>
               </Link>
             ))}

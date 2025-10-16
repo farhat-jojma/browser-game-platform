@@ -11,15 +11,17 @@ import "flag-icons/css/flag-icons.min.css"; // 👈 important pour activer les d
 
 const LOCALES = [
   { code: "en", label: "English", flag: "gb" }, // 'gb' = Union Jack
-  { code: "fr", label: "Français", flag: "fr" },
+  { code: "fr", label: "Français", flag: "fr" }, // 'fr' = France
   { code: "ar", label: "العربية", flag: "sa" }, // 'sa' = Saudi Arabia
-  { code: "es", label: "Español", flag: "es" },
-  { code: "de", label: "Deutsch", flag: "de" },
-  { code: "it", label: "Italiano", flag: "it" },
-  { code: "pt", label: "Português", flag: "pt" },
+  { code: "es", label: "Español", flag: "es" }, // 'es' = Spain
+  { code: "de", label: "Deutsch", flag: "de" }, // 'de' = Germany
+  { code: "it", label: "Italiano", flag: "it" }, // 'it' = Italy
+  { code: "pt", label: "Português", flag: "pt" }, // 'pt' = Portugal
   { code: "hi", label: "हिन्दी", flag: "in" }, // 'in' = India
-  { code: "th", label: "ไทย", flag: "th" },
+  { code: "th", label: "ไทย", flag: "th" }, // 'th' = Thailand
   { code: "bg", label: "Български", flag: "bg" },  // 'bg' = Bulgaria
+  { code: "lv", label: "Latviski", flag: "lv" },  // 'lv' = Latvia
+  { code: "pl", label: "Polski", flag: "pl" },  // 'pl' = Poland
 ];
 
 export default function LanguageSwitcher() {

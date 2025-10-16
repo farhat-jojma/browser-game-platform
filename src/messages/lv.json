@@ -1,0 +1,277 @@
+{
+  "expandable": {
+    "showMore": "Rādīt vairāk",
+    "showLess": "Rādīt mazāk"
+  },
+
+  "games": {
+    "allGames": "Visas spēles",
+    "browseAll": "Pārlūkojiet un spēlējiet visas mūsu bezmaksas spēles tiešsaistē."
+  },
+  "hero": {
+    "seoTitle": "Spēlē spēles tiešsaistē bez maksas ar GamesOnlineGratis",
+    "seoIntro": "Atklāj GamesOnlineGratis — platformu, kur vari spēlēt spēles tiešsaistē bez lejupielādēm. No retro arkādes līdz mūsdienīgām multiplayer spēlēm — izbaudi tūlītēju prieku datorā un mobilajā ierīcē.",
+    "benefit1": "Tūlītēja spēlēšana",
+    "benefit1Desc": "Sāc spēlēt nekavējoties bez instalācijām. Viss darbojas tieši pārlūkā.",
+    "benefit2": "Daudzplatformu",
+    "benefit2Desc": "Spēlē vienmērīgi datorā, planšetē vai viedtālrunī.",
+    "benefit3": "Vienmēr svaigs",
+    "benefit3Desc": "Katru nedēļu tiek pievienotas jaunas spēles, tāpēc vienmēr ir kas aizraujošs izmēģināšanai.",
+    "benefit4": "Droši & Jautri",
+    "benefit4Desc": "Droša un ģimenēm draudzīga vide gan gadījuma spēlētājiem, gan entuziastiem."
+  },
+
+  "home": {
+    "sections": {
+      "featured": "Izceltās",
+      "new": "Jaunās",
+      "trending": "Trendā",
+      "updated": "Atjauninātas",
+      "originals": "Oriģinālās",
+      "arcade": "Arkādes",
+      "puzzle": "Mīklas",
+      "racing": "Sacīkšu",
+      "driving": "Braukšanas",
+      "multiplayer": "Multiplayer",
+      "sports": "Sporta",
+      "action": "Akcijas",
+      "adventure": "Piedzīvojumu",
+      "shooter": "Šāvēju",
+      "brain": "Prāta",
+      "merge": "Apvienošanas",
+      "stack": "Kārtošanas",
+      "platformer": "Platformeru",
+      "strategy": "Stratēģijas",
+      "retro": "Retro",
+      "kids": "Bērniem",
+      "bike": "Velosipēdu",
+      "rpg": "RPG",
+      "physics": "Fizikas",
+      "card": "Kārtis",
+      "drawing": "Zīmēšanas",
+      "girls": "Meitenēm"
+    }
+  },
+  "game": {
+    "about": "Par {title}",
+    "noDescription": "Pašlaik nav pieejama apraksta.",
+    "moreGames": "Vairāk spēļu"
+  },
+  "search": {
+    "title": "Meklēt",
+    "placeholder": "Ieraksti kaut ko meklēšanai pēc spēlēm.",
+    "resultsFor": "Rezultāti vārdam “{query}”",
+    "includesSection": "Ietver sadaļu: {section}",
+    "genreMatch": "Žanra atbilstība: {genre}",
+    "resultsCount": "{count} rezultāts{plural}",
+    "noGames": "Spēles nav atrastas",
+    "noGamesMessage": "Mēs neatradām rezultātu vārdam “{query}”. Mēģini citu atslēgvārdu vai pārlūko kategorijas zemāk.",
+    "clearSearch": "Notīrīt meklēšanu",
+    "browseAll": "Pārlūkot visas spēles",
+    "suggestions": {
+      "featured": "Izceltās",
+      "new": "Jaunās",
+      "trending": "Trendā",
+      "arcade": "Arkādes",
+      "multiplayer": "2 spēlētāji",
+      "puzzle": "Mīklas"
+    }
+  },
+  "section": {
+    "backHome": "← Atpakaļ uz sākumu",
+    "titles": {
+      "featured": "Izceltās",
+      "new": "Jaunās",
+      "trending": "Trendā",
+      "updated": "Atjauninātas",
+      "originals": "Oriģinālās",
+      "arcade": "Arkādes",
+      "puzzle": "Mīklas",
+      "racing": "Sacīkšu",
+      "driving": "Braukšanas",
+      "multiplayer": "Multiplayer",
+      "sports": "Sporta",
+      "action": "Akcijas",
+      "adventure": "Piedzīvojumu",
+      "shooter": "Šāvēju",
+      "brain": "Prāta",
+      "merge": "Apvienošanas",
+      "stack": "Kārtošanas",
+      "platformer": "Platformeru",
+      "strategy": "Stratēģijas",
+      "retro": "Retro",
+      "kids": "Bērniem",
+      "bike": "Velosipēdu",
+      "rpg": "RPG",
+      "physics": "Fizikas",
+      "card": "Kārtis",
+      "drawing": "Zīmēšanas",
+      "girls": "Meitenēm"
+    }
+  },
+  "theme": {
+    "label": "Tēma",
+    "light": "Gaišā",
+    "dark": "Tumšā",
+    "system": "Sistēma"
+  },
+  "footer": {
+    "copyright": "© {year} gamesonlinegratis.com",
+    "rights": "Visas tiesības aizsargātas.",
+    "slogan": "Piedāvājam tev labākās pārlūkprogrammas spēles kopš 2024",
+    "links": {
+      "privacy": "Privātuma politika",
+      "terms": "Lietošanas noteikumi",
+      "contact": "Sazinies ar mums",
+      "about": "Par mums"
+    }
+  },
+  "genres": {
+    "arcade": "Arkādes",
+    "puzzle": "Mīklas",
+    "racing": "Sacīkšu",
+    "driving": "Braukšanas",
+    "multiplayer": "Multiplayer",
+    "sports": "Sporta",
+    "action": "Akcijas",
+    "adventure": "Piedzīvojumu",
+    "shooter": "Šāvēju",
+    "brain": "Prāta",
+    "merge": "Apvienošanas",
+    "stack": "Kārtošanas",
+    "platformer": "Platformeru",
+    "strategy": "Stratēģijas",
+    "retro": "Retro",
+    "kids": "Bērniem",
+    "bike": "Velosipēdu",
+    "card": "Kārtis",
+    "drawing": "Zīmēšanas",
+    "girls": "Meitenēm"
+  },
+  "gameplayer": {
+    "toolbar": {
+      "reload": "Pārlādēt",
+      "fullscreen": "Pilnekrāns",
+      "controlsActiveDesktop": "Spēles vadība aktīva – klikšķini ārpus, lai ritinātu",
+      "controlsActiveMobile": "Spēle aktīva – pieskaries ārpus, lai ritinātu"
+    },
+    "overlay": {
+      "checking": "Tiek pārbaudītas spēles datnes…",
+      "ready": "Gatavs, kad tu esi.",
+      "loading": "Ielādē…",
+      "error": "Ups! Nevar ielādēt šo spēli"
+    },
+    "cta": {
+      "play": "Spēlēt tagad",
+      "tryAgain": "↻ Mēģini vēlreiz",
+      "goBack": "← Atpakaļ",
+      "browse": "Pārlūkot spēles"
+    },
+    "hint": {
+      "desktop": "Novieto kursoru virs spēles vai klikšķini, lai aktivizētu vadību. Klikšķini ārpus, lai ritinātu.",
+      "mobile": "Pieskaries spēlei, lai aktivizētu vadību. Pieskaries ārpus, lai ritinātu."
+    }
+  },
+  "metadata": {
+    "title": "Games Online Gratis",
+    "description": "Spēlē pārlūkprogrammas spēles tiešsaistē bez maksas!"
+  },
+  "header": {
+    "brand": "Games Online Gratis",
+    "search": {
+      "placeholder": "Meklēt",
+      "button": "Meklēt",
+      "title": "Meklēt spēles"
+    },
+    "sidebar": {
+      "show": "Rādīt sānjoslu",
+      "hide": "Slēpt sānjoslu"
+    }
+  },
+  "carousel": {
+    "viewMore": "Skatīt vairāk",
+    "previous": "Iepriekšējais",
+    "next": "Nākamais"
+  },
+  "sidebar": {
+    "home": "Sākums",
+    "allGames": "Visas spēles",
+    "featured": "Izceltās",
+    "new": "Jaunās",
+    "trending": "Trendā",
+    "updated": "Atjauninātas",
+    "originals": "Oriģinālās",
+    "multiplayer": "2 spēlētāji",
+    "action": "Akcijas",
+    "adventure": "Piedzīvojumu",
+    "sports": "Sporta",
+    "driving": "Braukšanas",
+    "racing": "Sacīkšu",
+    "arcade": "Arkādes",
+    "puzzle": "Mīklas",
+    "shooter": "Šāvēju",
+    "brain": "Prāta",
+    "merge": "Apvienošanas",
+    "stack": "Kārtošanas",
+    "platformer": "Platformeru",
+    "strategy": "Stratēģijas",
+    "rpg": "RPG",
+    "physics": "Fizikas",
+    "retro": "Retro",
+    "kids": "Bērniem",
+    "card": "Kārtis",
+    "bike": "Velosipēdu",
+    "drawing": "Zīmēšanas",
+    "girls": "Meitenēm"
+  },
+  "suggestions": {
+    "title": "Tev varētu patikt arī"
+  },
+  "about": {
+    "meta": {
+      "title": "Par mums - Games Online Gratis",
+      "description": "Uzzini vairāk par Games Online Gratis un mūsu misiju piedāvāt labākās bezmaksas spēles."
+    },
+    "title": "Par mums",
+    "intro": "Laipni lūdzam Games Online Gratis — labākajā vietā spēlēm tiešsaistē bez maksas."
+  },
+  "contact": {
+    "meta": {
+      "title": "Sazinies ar mums - Games Online Gratis",
+      "description": "Sazinies ar Games Online Gratis komandu ar jautājumiem vai sadarbības ierosinājumiem."
+    },
+    "title": "Sazinies ar mums",
+    "intro": "Vai ir jautājumi, atsauksmes vai biznesa piedāvājumi? Saisties ar mums šeit:",
+    "email": "contact@gamesonlinegratis.com",
+    "phone": "+212 663-161240"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privātuma politika - Games Online Gratis",
+      "description": "Izlasi Games Online Gratis privātuma politiku."
+    },
+    "title": "Privātuma politika",
+    "intro": "Tava privātums mums ir svarīgs. Šī privātuma politika paskaidro, kā mēs vācam, izmantojam un aizsargājam tavu informāciju, izmantojot Games Online Gratis.",
+    "section1": {
+      "title": "1. Informācija, ko mēs vācam",
+      "content": "Mēs varam vākt nepersonisko informāciju, piemēram, lietojuma statistiku, pārlūkprogrammas veidu un ierīces datus."
+    },
+    "section2": {
+      "title": "2. Kā mēs izmantojam informāciju",
+      "content": "Mēs izmantojam šo datu, lai uzlabotu mūsu pakalpojumus, labotu kļūdas un uzlabotu tavu spēļu pieredzi."
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Lietošanas noteikumi - Games Online Gratis",
+      "description": "Izlasi Games Online Gratis lietošanas noteikumus."
+    },
+    "title": "Lietošanas noteikumi",
+    "intro": "Izmantojot Games Online Gratis, tu piekrīti šādiem noteikumiem:",
+    "items": [
+      "Spēles tiek nodrošinātas “kā ir” bez garantijām.",
+      "Jūs piekrītat neizmantot vietni ļaunprātīgi vai nevietēji.",
+      "Mēs varam jebkurā laikā mainīt šos noteikumus bez iepriekšēja brīdinājuma."
+    ]
+  }
+}

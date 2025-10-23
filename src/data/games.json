@@ -1,5 +1,19 @@
 {
   "games": {
+    "drunken-boxing": {
+      "title": "Drunken Boxing",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/drunken-boxing.avif",
+      "genre": "Multiplayer",
+      "playPath": "https://games-dun-one.vercel.app/DrunkenBoxing/index.html",
+      "description": "/games/drunkenboxing/description"
+    },
+    "cooking-street": {
+      "title": "Cooking Street",
+      "image": "https://farhat-jojma.github.io/my-assets-repo/cooking-street.png",
+      "genre": "Arcade",
+      "playPath": "https://games-dun-one.vercel.app/CookingStreet/index.html",
+      "description": "/games/cookingstreet/description"
+    },
     "wednesday": {
       "title": "Wednesday",
       "image": "https://farhat-jojma.github.io/my-assets-repo/wednesday.jpg",
@@ -649,6 +663,8 @@
       "galaga"
     ],
     "new": [
+      "cooking-street",
+      "drunken-boxing",
       "wednesday",
       "roblox",
       "car-game",
